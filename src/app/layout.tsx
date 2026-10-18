@@ -2,35 +2,35 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#08080A",
-  colorScheme: "dark",
+  themeColor: "#F6F4EE",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI | Autonomous AI Voice Infrastructure & Spatial Web Architecture | Ayush Meena",
+  title: "DestiX AI — Systems Architecture & Conversational Intelligence Practice | Ayush Meena",
   description:
-    "We don't build standard chatbots or generic templates. DestiX AI installs human-sounding autonomous voice agents and bespoke 3D interactive web platforms that turn cold traffic into qualified pipeline 24/7. Founded by Ayush Meena.",
+    "Autonomous voice infrastructure paired with category-defining digital architectures for luxury real estate developers, private clinics, and high-ticket advisory practices. Principal & Systems Architect: Ayush Meena.",
   keywords: [
     "DestiX AI",
     "Ayush Meena",
-    "Autonomous Voice Agents",
-    "Spatial Web Architecture",
-    "Three.js Agency",
-    "Sub-45s Lead Booking",
-    "Enterprise AI OS",
+    "Systems Architecture",
+    "Conversational Intelligence Practice",
+    "Autonomous Voice Infrastructure",
+    "Luxury Digital Architecture",
+    "High-Ticket Conversion Systems",
     "ayush.company",
-    "Delhi NCR AI Studio",
+    "Delhi NCR",
   ],
   authors: [{ name: "Ayush Meena", url: "https://ayush.company" }],
   creator: "Ayush Meena",
-  publisher: "DestiX AI",
+  publisher: "DestiX AI Practice",
   metadataBase: new URL("https://ayush.company"),
   openGraph: {
-    title: "DestiX AI | Autonomous Voice Agents & Category-Defining 3D Web",
+    title: "DestiX AI — Systems Architecture & Conversational Intelligence Practice",
     description:
-      "Ultra-low-latency voice agents paired with high-performance 3D spatial digital storefronts that command instant authority.",
+      "Autonomous voice infrastructure paired with category-defining digital architectures for high-ticket developers, clinics, and advisory practices.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI | Autonomous Voice Infrastructure & Spatial 3D Web",
-    description: "Engineered for revenue velocity. Founded by Ayush Meena.",
+    title: "DestiX AI — Systems Architecture Practice",
+    description: "Systems engineered for revenue velocity. Principal: Ayush Meena.",
   },
 };
 
@@ -49,16 +49,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark bg-[#08080A] text-[#F4F4F6] scroll-smooth antialiased">
+    <html lang="en" className="bg-[#F6F4EE] text-[#181512] scroll-smooth antialiased">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-[#08080A] text-[#F4F4F6] font-sans selection:bg-[#00F5A0]/20 selection:text-[#00F5A0]">
+      <body className="min-h-screen bg-[#F6F4EE] text-[#181512] font-sans selection:bg-[#B88746]/20 selection:text-[#181512]">
         {children}
       </body>
     </html>

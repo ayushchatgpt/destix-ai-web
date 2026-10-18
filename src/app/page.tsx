@@ -4,13 +4,13 @@ import React, { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MarqueeTrack from "@/components/MarqueeTrack";
-import SpatialNeuralCore from "@/components/SpatialNeuralCore";
-import EngineeringPillars from "@/components/EngineeringPillars";
-import AudioTelemetryConsole from "@/components/AudioTelemetryConsole";
-import ArchitecturalShowcase from "@/components/ArchitecturalShowcase";
-import DeploymentSprints from "@/components/DeploymentSprints";
-import MinutesRoiCalculator from "@/components/MinutesRoiCalculator";
-import FounderDossier from "@/components/FounderDossier";
+import OperatingPrinciples from "@/components/OperatingPrinciples";
+import SelectedWorks from "@/components/SelectedWorks";
+import ProductionPlaybooks from "@/components/ProductionPlaybooks";
+import CorePracticeAreas from "@/components/CorePracticeAreas";
+import VoiceDemoConsole from "@/components/VoiceDemoConsole";
+import EngagementModel from "@/components/EngagementModel";
+import LeadershipDossier from "@/components/LeadershipDossier";
 import FaqSection from "@/components/FaqSection";
 import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
 import BookingModal from "@/components/BookingModal";
@@ -22,54 +22,54 @@ export default function HomePage() {
   const handleCloseBooking = () => setBookingOpen(false);
 
   const handleScrollToDemo = () => {
-    const el = document.getElementById("voice");
+    const el = document.getElementById("voice-console");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <main className="min-h-screen bg-[#08080A] text-[#F4F4F6] relative selection:bg-[#00F5A0]/20 selection:text-[#00F5A0]">
-      {/* Section 1: Floating Glass Navbar */}
+    <main className="min-h-screen bg-[#F6F4EE] text-[#181512] relative selection:bg-[#B88746]/20 selection:text-[#181512]">
+      {/* Section 1: The Architectural Floating Header */}
       <Header onOpenBooking={handleOpenBooking} />
 
-      {/* Section 2: The Command Center Hero */}
+      {/* Section 2: The Command Hero */}
       <Hero
         onOpenBooking={handleOpenBooking}
         onScrollToDemo={handleScrollToDemo}
       />
 
-      {/* Autonomous System Ticker Strip */}
+      {/* Section 3: The Monumental Espresso Marquee */}
       <MarqueeTrack />
 
-      {/* Section 3: The Interactive 3D Spatial Canvas (DestiX Neural Core in Three.js WebGL) */}
-      <SpatialNeuralCore />
+      {/* Section 4: (02) The DestiX Operating Principles (How We Think) */}
+      <OperatingPrinciples />
 
-      {/* Section 4: The 6 Core Engineering Pillars */}
-      <EngineeringPillars />
+      {/* Section 5: (03) Selected Works & Architectural Benchmarks */}
+      <SelectedWorks />
 
-      {/* Section 5: Interactive Audio Telemetry Console */}
-      <AudioTelemetryConsole />
+      {/* Section 6: (04) Deployed Production Playbooks (Vertical Blueprints) */}
+      <ProductionPlaybooks />
 
-      {/* Section 6: The Signature Work & Architectural Showcase */}
-      <ArchitecturalShowcase />
+      {/* Section 7: (05) The Core Practice Areas (Deep Espresso Section) */}
+      <CorePracticeAreas />
 
-      {/* Section 7: Transparent Deployment Sprints (Pricing) */}
-      <DeploymentSprints onOpenBooking={handleOpenBooking} />
+      {/* Section 8: (06) The Live Voice Demonstration Console */}
+      <VoiceDemoConsole />
 
-      {/* Section 8: Interactive Minutes & Cost Savings Calculator */}
-      <MinutesRoiCalculator onOpenBooking={handleOpenBooking} />
+      {/* Section 9: (07) The Engagement Model & Transparent Volume Modeler */}
+      <EngagementModel onOpenBooking={handleOpenBooking} />
 
-      {/* Section 9: Founder Dossier (Ayush Meena) */}
-      <FounderDossier onOpenBooking={handleOpenBooking} />
+      {/* Section 10: (08) The Studio Leadership Dossier */}
+      <LeadershipDossier onOpenBooking={handleOpenBooking} />
 
-      {/* Frequently Asked Questions */}
+      {/* Section 11: Institutional FAQ Accordion */}
       <FaqSection />
 
-      {/* Section 10: Final Deployment CTA & Clean Footer */}
+      {/* Section 12: Final Commissioning Invitation & Footer */}
       <FinalDeploymentFooter onOpenBooking={handleOpenBooking} />
 
-      {/* Interactive Booking & Discovery Modal */}
+      {/* Private Architecture Discovery Modal */}
       <BookingModal isOpen={bookingOpen} onClose={handleCloseBooking} />
     </main>
   );

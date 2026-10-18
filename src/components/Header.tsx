@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X, Radio } from "lucide-react";
+import { ArrowUpRight, Menu, X, ShieldCheck } from "lucide-react";
 
 interface HeaderProps {
   onOpenBooking: () => void;
@@ -23,89 +23,93 @@ export function Header({ onOpenBooking }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 pt-4 sm:pt-6 transition-all duration-300">
       <nav
-        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-5 sm:px-7 py-3 sm:py-3.5 rounded-full transition-all duration-300 ${
+        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-6 sm:px-8 py-3.5 sm:py-4 rounded-full transition-all duration-300 ${
           scrolled
-            ? "bg-[#111216]/85 backdrop-blur-xl border border-white/10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8),0_0_20px_-5px_rgba(0,245,160,0.1)]"
-            : "bg-[#111216]/60 backdrop-blur-md border border-white/5"
+            ? "bg-[#FFFFFF]/90 backdrop-blur-xl border border-[#E2DDD1] shadow-[0_10px_35px_-10px_rgba(20,18,16,0.08)]"
+            : "bg-[#FFFFFF]/70 backdrop-blur-md border border-[#E2DDD1]/80"
         }`}
       >
-        {/* Left: DestiX.AI Logo with live pulsating emerald beacon */}
+        {/* Brandmark: Desti + XAI in antique bronze + tiny monospace studio label */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-[#16181F] border border-white/10 group-hover:border-[#00F5A0]/40 transition-colors">
-            <span className="font-['Syne'] font-extrabold text-sm text-[#00F5A0] tracking-tighter">
-              DX
-            </span>
-            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#00F5A0] animate-beacon" />
-            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#00F5A0]" />
-          </div>
-
-          <div className="flex items-center gap-2">
-            <span className="font-['Syne'] font-bold text-lg tracking-tight text-[#F4F4F6] group-hover:text-white transition-colors">
-              DestiX<span className="text-[#00F5A0]">.AI</span>
-            </span>
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#00F5A0]/10 border border-[#00F5A0]/25 text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#00F5A0]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-pulse" />
-              Live
+          <div className="flex flex-col">
+            <div className="flex items-baseline gap-1">
+              <span className="font-['Instrument_Serif'] text-2xl font-bold tracking-tight text-[#181512]">
+                Desti
+              </span>
+              <span className="font-['Instrument_Serif'] italic text-2xl font-bold text-[#B88746]">
+                XAI
+              </span>
+            </div>
+            <span className="text-[9px] font-['JetBrains_Mono'] uppercase tracking-[0.22em] text-[#888277] -mt-1 font-semibold">
+              EST. 2026 // STUDIO
             </span>
           </div>
         </Link>
 
-        {/* Desktop Navigation Links */}
-        <div className="hidden lg:flex items-center gap-7 text-[13px] font-medium text-[#7A7D87]">
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex items-center gap-7 text-[13px] font-['Plus_Jakarta_Sans'] font-medium text-[#55514B]">
           <a
-            href="#voice"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#practice-areas"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            Autonomous Voice
+            Practice Areas
           </a>
           <a
-            href="#spatial-core"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#engagements"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            3D WebGL Architecture
+            Engagements
           </a>
           <a
-            href="#capabilities"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#works"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            Enterprise OS
+            Selected Works
           </a>
           <a
-            href="#showcase"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#hurdle-rate"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            Case Studies
+            The Hurdle Rate
           </a>
           <a
-            href="#pricing"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#leadership"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            Pricing
+            Leadership
           </a>
           <a
-            href="#faq"
-            className="hover:text-[#F4F4F6] transition-colors py-1 hover:border-b hover:border-[#00F5A0]"
+            href="#inquiries"
+            className="hover:text-[#181512] transition-colors py-1 hover:border-b hover:border-[#B88746]"
           >
-            FAQ
+            Inquiries
           </a>
         </div>
 
-        {/* Right Action */}
+        {/* Header Actions */}
         <div className="flex items-center gap-3">
+          {/* Telemetry Badge */}
+          <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] text-[#55514B]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746] animate-pulse" />
+            <span className="font-medium">Inbound Network Active</span>
+          </div>
+
+          {/* Request Consultation Pill Button */}
           <button
             onClick={onOpenBooking}
-            className="group relative inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#16181F]/90 hover:bg-[#1C202B] border border-white/10 hover:border-[#00F5A0]/50 text-xs sm:text-sm font-semibold text-[#F4F4F6] transition-all duration-300 shadow-[0_0_15px_-3px_rgba(0,245,160,0.15)] hover:shadow-[0_0_25px_-2px_rgba(0,245,160,0.35)]"
+            className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#181512] hover:bg-[#B88746] text-[#F6F4EE] text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0]" />
-            <span>Deploy an Agent</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#00F5A0] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <span>Request a Consultation</span>
+            <div className="w-5 h-5 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors">
+              <ArrowUpRight className="w-3 h-3 text-[#F6F4EE] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </div>
           </button>
 
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[#7A7D87] hover:text-[#F4F4F6] transition-colors"
-            aria-label="Toggle Menu"
+            className="lg:hidden p-2 text-[#55514B] hover:text-[#181512] transition-colors"
+            aria-label="Toggle Navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -114,48 +118,48 @@ export function Header({ onOpenBooking }: HeaderProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-4 top-20 bg-[#111216]/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 text-sm font-medium z-50">
+        <div className="lg:hidden fixed inset-x-4 top-20 bg-[#FFFFFF] border border-[#E2DDD1] rounded-2xl p-6 shadow-2xl flex flex-col gap-4 text-sm font-medium z-50 animate-fadeIn">
           <a
-            href="#voice"
+            href="#practice-areas"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2 border-b border-white/5"
+            className="text-[#181512] hover:text-[#B88746] py-2 border-b border-[#E2DDD1]"
           >
-            Autonomous Voice
+            Practice Areas
           </a>
           <a
-            href="#spatial-core"
+            href="#engagements"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2 border-b border-white/5"
+            className="text-[#181512] hover:text-[#B88746] py-2 border-b border-[#E2DDD1]"
           >
-            3D WebGL Architecture
+            Engagements
           </a>
           <a
-            href="#capabilities"
+            href="#works"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2 border-b border-white/5"
+            className="text-[#181512] hover:text-[#B88746] py-2 border-b border-[#E2DDD1]"
           >
-            Enterprise OS
+            Selected Works
           </a>
           <a
-            href="#showcase"
+            href="#hurdle-rate"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2 border-b border-white/5"
+            className="text-[#181512] hover:text-[#B88746] py-2 border-b border-[#E2DDD1]"
           >
-            Case Studies
+            The Hurdle Rate
           </a>
           <a
-            href="#pricing"
+            href="#leadership"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2 border-b border-white/5"
+            className="text-[#181512] hover:text-[#B88746] py-2 border-b border-[#E2DDD1]"
           >
-            Pricing
+            Leadership
           </a>
           <a
-            href="#faq"
+            href="#inquiries"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[#F4F4F6] hover:text-[#00F5A0] py-2"
+            className="text-[#181512] hover:text-[#B88746] py-2"
           >
-            FAQ
+            Inquiries
           </a>
 
           <button
@@ -163,9 +167,9 @@ export function Header({ onOpenBooking }: HeaderProps) {
               setMobileMenuOpen(false);
               onOpenBooking();
             }}
-            className="w-full mt-2 py-3 rounded-xl bg-[#00F5A0] text-[#08080A] font-bold text-center flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,245,160,0.3)]"
+            className="w-full mt-2 py-3 rounded-xl bg-[#181512] text-[#F6F4EE] font-bold text-center flex items-center justify-center gap-2"
           >
-            <span>Deploy an Agent</span>
+            <span>Request a Consultation</span>
             <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>
