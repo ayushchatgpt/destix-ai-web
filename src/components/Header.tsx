@@ -52,7 +52,7 @@ export function Header({ onOpenBooking }: HeaderProps) {
               </span>
             </div>
             <span className="text-[9px] font-['JetBrains_Mono'] uppercase tracking-[0.22em] text-[#888277] -mt-1 font-semibold">
-              EST. 2026 // STUDIO
+              STUDIO // PRIVATE PRACTICE
             </span>
           </div>
         </Link>

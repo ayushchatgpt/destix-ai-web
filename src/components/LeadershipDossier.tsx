@@ -53,10 +53,10 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border border-[#E2DDD1] shadow-md mb-6 group">
                 <Image
-                  src="/images/ayush-meena-dark.jpg"
+                  src="/images/ayush-meena.jpg"
                   alt="Ayush Meena - Principal & Systems Architect"
                   fill
-                  className="object-cover object-top filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-500"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181614] via-transparent to-transparent opacity-60" />
