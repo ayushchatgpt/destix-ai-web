@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { FinalCtaFooter } from "@/components/FinalCtaFooter";
+import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
 import { BookingModal } from "@/components/BookingModal";
 import {
   Mail,
@@ -11,7 +11,11 @@ import {
   Clock,
   CheckCircle2,
   ArrowRight,
-  User,
+  ArrowUpRight,
+  ShieldCheck,
+  Calendar,
+  Sparkles,
+  Phone,
 } from "lucide-react";
 import confetti from "canvas-confetti";
 
@@ -22,7 +26,8 @@ export default function ContactPage() {
     name: "",
     email: "",
     company: "",
-    service: "Autonomous AI Voice Agents",
+    service: "Autonomous AI Voice Telephony",
+    volume: "500 - 2,500 leads/mo",
     message: "",
   });
 
@@ -30,228 +35,311 @@ export default function ContactPage() {
     e.preventDefault();
     setSubmitted(true);
     confetti({
-      particleCount: 80,
-      spread: 70,
+      particleCount: 70,
+      spread: 60,
       origin: { y: 0.6 },
-      colors: ["#06B6D4", "#3B82F6", "#10B981", "#F8FAFC"],
+      colors: ["#B88746", "#C5A059", "#181614", "#F6F4EE"],
     });
   };
 
   return (
-    <div className="min-h-screen bg-[#08090C] bg-cyber-grid text-white">
+    <main className="min-h-screen bg-[#F6F4EE] text-[#181614] selection:bg-[#B88746]/20 selection:text-[#181614]">
       <Header onOpenBooking={() => setIsBookingOpen(true)} />
 
-      <main className="pt-32 pb-24">
-        <section className="px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
-            <Link href="/" className="hover:text-cyan-400">Home</Link>
-            <span>/</span>
-            <span className="text-cyan-400">Private Consultation</span>
-          </div>
+      {/* Hero Header */}
+      <section className="pt-36 sm:pt-44 pb-16 sm:pb-24 bg-architectural-grid border-b border-[#E2DDD1]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#B88746] animate-beacon" />
+              PRIVATE DESK // INTAKE & SCHEDULING
+            </div>
 
-          <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-3.5 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-cyan-300">
-              <Mail className="size-3.5" />
-              Direct Engagement
-            </span>
-
-            <h1 className="mt-6 font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight text-white">
-              Let's audit your operations.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-                Book 30-min with Ayush.
-              </span>
+            <h1 className="font-['Instrument_Serif'] text-5xl sm:text-7xl md:text-8xl leading-[0.96] text-[#181614] mb-8">
+              Let AI do the heavy lifting.{" "}
+              <span className="italic text-[#B88746]">You bank the revenue.</span>
             </h1>
 
-            <p className="mt-6 text-xl text-slate-300 leading-relaxed max-w-3xl font-light">
-              Strict 5x ROI model audit or we politely decline.
-              Schedule a strategy call or send a direct inquiry to discuss your AI voice telephony,
-              automated CRM workflows, or custom 3D WebGL storefront.
+            <p className="text-base sm:text-xl text-[#55514B] leading-relaxed mb-10 font-normal">
+              Schedule an unhurried 30-minute diagnostic session with Principal Ayush Meena or dispatch an operational intake dossier below. We audit your lead leakage against our strict 5x hurdle rate mandate.
             </p>
-          </div>
 
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12">
-            {/* Contact Form */}
-            <div className="glass-panel rounded-3xl p-8 md:p-10 border border-white/10 shadow-espresso">
-              {submitted ? (
-                <div className="py-12 text-center">
-                  <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
-                    <CheckCircle2 className="size-8" />
-                  </div>
-                  <h3 className="font-display text-3xl font-bold text-white">Inquiry Dispatched</h3>
-                  <p className="mt-3 text-sm text-slate-300 max-w-md mx-auto font-light">
-                    Thank you, {formData.name}. Ayush Meena will personally review your operational profile
-                    and follow up at <strong className="text-cyan-300">{formData.email}</strong> within 4 hours.
-                  </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <button
+                onClick={() => setIsBookingOpen(true)}
+                className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-full bg-[#B88746] hover:bg-[#A37336] text-[#F6F4EE] font-semibold text-sm transition-all duration-300 shadow-sm"
+              >
+                <span>Direct Calendar Booking</span>
+                <Calendar className="w-4 h-4 text-[#F6F4EE]" />
+              </button>
+
+              <a
+                href="mailto:ayushmeenadestixai@gmail.com"
+                className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-[#E2DDD1] bg-[#FFFFFF] hover:bg-[#EDE8DC] text-[#181614] font-semibold text-sm transition-all"
+              >
+                <Mail className="w-4 h-4 text-[#B88746]" />
+                <span>ayushmeenadestixai@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Intake Form & Direct Channels Grid */}
+      <section className="py-20 sm:py-28 max-w-6xl mx-auto px-5 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-16 items-start">
+          {/* Left Column: Form */}
+          <div className="bg-[#FFFFFF] border border-[#E2DDD1] rounded-3xl p-8 sm:p-12 shadow-[0_15px_45px_-15px_rgba(24,22,20,0.06)]">
+            {submitted ? (
+              <div className="py-12 text-center">
+                <div className="w-16 h-16 rounded-full bg-[#EDE8DC] text-[#B88746] border border-[#E2DDD1] flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle2 className="w-8 h-8" />
+                </div>
+                <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mb-3">
+                  Operational Dossier Received
+                </h3>
+                <p className="text-sm font-['Plus_Jakarta_Sans'] text-[#55514B] max-w-md mx-auto leading-relaxed mb-6">
+                  Thank you, <strong className="text-[#181614]">{formData.name}</strong>. Ayush Meena will personally analyze your operational profile and respond to <strong className="text-[#B88746]">{formData.email}</strong> within 4 business hours.
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <button
+                    onClick={() => setIsBookingOpen(true)}
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#B88746] text-[#F6F4EE] text-xs font-semibold"
+                  >
+                    <span>Add 30-min Call to Calendar</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </button>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-6 btn-primary px-6 py-2.5 text-xs font-mono uppercase tracking-wider font-semibold"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#E2DDD1] text-[#181614] text-xs font-semibold hover:bg-[#EDE8DC]"
                   >
-                    Send another message
+                    <span>Submit another inquiry</span>
                   </button>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
-                        Your Full Name
-                      </label>
-                      <input
-                        required
-                        type="text"
-                        placeholder="e.g. Rahul Singhania"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#08090C] px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
-                        Work Email
-                      </label>
-                      <input
-                        required
-                        type="email"
-                        placeholder="name@company.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#08090C] px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                      />
-                    </div>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-[0.2em] text-[#B88746] font-semibold mb-2">
+                    CONFIDENTIAL INTAKE
                   </div>
+                  <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mb-2">
+                    Request an operational audit.
+                  </h2>
+                  <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#888277]">
+                    Strict confidentiality under standard mutual non-disclosure agreement.
+                  </p>
+                </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
-                        Company Name / Domain
-                      </label>
-                      <input
-                        required
-                        type="text"
-                        placeholder="e.g. Acme Corp (acme.com)"
-                        value={formData.company}
-                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#08090C] px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
-                        Primary Strategic Focus
-                      </label>
-                      <select
-                        value={formData.service}
-                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#08090C] px-4 py-3 text-sm text-white focus:border-cyan-400 focus:outline-none"
-                      >
-                        <option>Autonomous AI Voice Agents</option>
-                        <option>Enterprise AI Operating System</option>
-                        <option>Websites That Convert & 3D WebGL</option>
-                        <option>White-Label Agency Partnership</option>
-                        <option>Full Architecture Audit</option>
-                      </select>
-                    </div>
-                  </div>
-
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">
-                      Current Operational Challenge or Call Volume
+                    <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                      Your Full Name *
                     </label>
-                    <textarea
-                      rows={4}
-                      placeholder="Tell us about your monthly call volume, current lead drop-off rate, or specific systems to integrate..."
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#08090C] px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
+                    <input
+                      required
+                      type="text"
+                      placeholder="e.g. Vikram Singhania"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] placeholder-[#888277] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
                     />
                   </div>
+                  <div>
+                    <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                      Work Email *
+                    </label>
+                    <input
+                      required
+                      type="email"
+                      placeholder="vikram@luxuryestates.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] placeholder-[#888277] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
+                    />
+                  </div>
+                </div>
 
-                  <button
-                    type="submit"
-                    className="btn-primary w-full py-4 text-xs font-mono font-semibold uppercase tracking-wider"
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                      Company Name / URL *
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      placeholder="e.g. Sovereign Living (sovereign.com)"
+                      value={formData.company}
+                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] placeholder-[#888277] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                      Monthly Lead / Call Volume
+                    </label>
+                    <select
+                      value={formData.volume}
+                      onChange={(e) => setFormData({ ...formData, volume: e.target.value })}
+                      className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
+                    >
+                      <option>&lt; 500 inquiries / month</option>
+                      <option>500 - 2,500 inquiries / month</option>
+                      <option>2,500 - 10,000 inquiries / month</option>
+                      <option>10,000+ inquiries / month (Enterprise)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                    Primary Strategic Focus *
+                  </label>
+                  <select
+                    value={formData.service}
+                    onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                    className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
                   >
-                    <span>Lock In Operational Audit</span>
-                  </button>
+                    <option>Autonomous AI Voice Telephony (&lt;45s speed to lead)</option>
+                    <option>Bespoke 3D WebGL Digital Architecture & Storefront</option>
+                    <option>AI Operating System & Automated n8n CRM Pipelines</option>
+                    <option>Complete Full-Circuit Conversion Overhaul</option>
+                  </select>
+                </div>
 
-                  <p className="text-center text-xs font-mono text-slate-500">
-                    Direct consultation with Ayush Meena. Confidentiality guaranteed under standard NDA.
+                <div>
+                  <label className="block text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#55514B] mb-2 font-semibold">
+                    Current Operational Bottleneck / Challenge
+                  </label>
+                  <textarea
+                    rows={4}
+                    placeholder="Briefly describe your current lead follow-up delays, receptionist overload, or 3D web requirements..."
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="w-full rounded-xl border border-[#E2DDD1] bg-[#FDFCFB] px-4 py-3 text-sm text-[#181614] placeholder-[#888277] focus:border-[#B88746] focus:bg-[#FFFFFF] focus:outline-none transition-colors"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="group w-full py-4 rounded-xl bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-semibold text-sm transition-all duration-300 shadow-sm flex items-center justify-center gap-2"
+                >
+                  <span>Submit Intake for Principal Review</span>
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </button>
+
+                <div className="flex items-center justify-center gap-2 text-xs font-['JetBrains_Mono'] text-[#888277]">
+                  <ShieldCheck className="w-4 h-4 text-[#B88746]" />
+                  <span>Guaranteed response within 4 hours by Ayush Meena</span>
+                </div>
+              </form>
+            )}
+          </div>
+
+          {/* Right Column: Direct Channels & Guarantee */}
+          <div className="space-y-6">
+            {/* Direct Email */}
+            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#E2DDD1] shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EDE8DC] text-[#B88746] flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#888277] font-semibold">
+                    DIRECT FOUNDER DESK
+                  </div>
+                  <a
+                    href="mailto:ayushmeenadestixai@gmail.com"
+                    className="block font-['Plus_Jakarta_Sans'] font-semibold text-sm text-[#181614] hover:text-[#B88746] mt-1"
+                  >
+                    ayushmeenadestixai@gmail.com
+                  </a>
+                  <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#55514B] mt-1">
+                    Direct inbox of Principal Ayush Meena.
                   </p>
-                </form>
-              )}
+                </div>
+              </div>
             </div>
 
-            {/* Direct Channel Cards */}
-            <div className="space-y-6">
-              <div className="glass-panel rounded-2xl p-6">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
-                    <Mail className="size-5" />
+            {/* Studio Headquarters */}
+            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#E2DDD1] shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EDE8DC] text-[#B88746] flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#888277] font-semibold">
+                    STUDIO LOCATION & JURISDICTION
                   </div>
-                  <div>
-                    <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                      Direct Founder Email
-                    </span>
-                    <a
-                      href="mailto:ayushmeenadestixai@gmail.com"
-                      className="block font-medium text-sm text-white hover:text-cyan-300 mt-0.5 font-mono"
-                    >
-                      ayushmeenadestixai@gmail.com
-                    </a>
+                  <div className="font-['Plus_Jakarta_Sans'] font-semibold text-sm text-[#181614] mt-1">
+                    Delhi NCR, India
                   </div>
+                  <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#55514B] mt-1">
+                    Global deployments across London, Dubai, Singapore, and New York.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="glass-panel rounded-2xl p-6">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
-                    <MapPin className="size-5" />
+            {/* SLA Response */}
+            <div className="p-6 rounded-2xl bg-[#FFFFFF] border border-[#E2DDD1] shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#EDE8DC] text-[#B88746] flex items-center justify-center shrink-0">
+                  <Clock className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#888277] font-semibold">
+                    RESPONSE SLA GUARANTEE
                   </div>
-                  <div>
-                    <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                      Headquarters & Laboratory
-                    </span>
-                    <div className="font-medium text-sm text-white mt-0.5">
-                      Delhi NCR, India & Remote Global Deployments
-                    </div>
+                  <div className="font-['Plus_Jakarta_Sans'] font-semibold text-sm text-[#181614] mt-1">
+                    Under 4 Business Hours
                   </div>
+                  <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#55514B] mt-1">
+                    Priority response on all operational diagnostic requests.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="glass-panel rounded-2xl p-6">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
-                    <Clock className="size-5" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
-                      Response SLA
-                    </span>
-                    <div className="font-medium text-sm text-white mt-0.5">
-                      Within 4 business hours • Active 24/7 Phone Line
-                    </div>
-                  </div>
-                </div>
+            {/* Instant Calendar Widget Card */}
+            <div className="p-7 rounded-2xl bg-[#EDE8DC] border border-[#E2DDD1]">
+              <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-[0.2em] text-[#B88746] font-semibold mb-2">
+                INSTANT SCHEDULING
               </div>
+              <h3 className="font-['Instrument_Serif'] text-2xl text-[#181614] mb-2">
+                Prefer to pick a live calendar slot?
+              </h3>
+              <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#55514B] leading-relaxed mb-5">
+                Bypass the form and select an unhurried 30-minute diagnostic session directly on Ayush Meena's schedule.
+              </p>
+              <button
+                onClick={() => setIsBookingOpen(true)}
+                className="w-full py-3.5 rounded-xl bg-[#B88746] hover:bg-[#A37336] text-[#F6F4EE] font-semibold text-xs font-['Plus_Jakarta_Sans'] transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <span>Open 30-Min Calendar Picker</span>
+                <Calendar className="w-4 h-4 text-[#F6F4EE]" />
+              </button>
+            </div>
 
-              <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/30 p-7 text-white shadow-espresso">
-                <h4 className="font-display text-2xl font-bold text-white">Prefer instant calendar booking?</h4>
-                <p className="mt-2 text-xs text-slate-300 leading-relaxed font-light">
-                  Skip the form and pick an available strategy slot directly on Ayush Meena's calendar.
-                </p>
-                <button
-                  onClick={() => setIsBookingOpen(true)}
-                  className="mt-5 btn-primary inline-flex items-center gap-2 px-6 py-3 text-xs font-mono font-semibold uppercase tracking-wider"
-                >
-                  <span>Open Calendar Scheduler</span>
-                  <ArrowRight className="size-3.5" />
-                </button>
+            {/* 5x Hurdle Rate Espresso Box */}
+            <div className="p-7 rounded-2xl bg-[#131210] text-[#F6F4EE] border border-[#2A2825]">
+              <div className="flex items-center gap-2 text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#B88746] font-semibold mb-3">
+                <Sparkles className="w-4 h-4 text-[#B88746]" />
+                THE 5X HURDLE RATE MANDATE
               </div>
+              <p className="font-['Instrument_Serif'] text-lg text-[#F6F4EE] leading-snug mb-3">
+                "If we cannot prove at least 5x the deployment cost in recovered revenue, we politely decline the engagement."
+              </p>
+              <p className="text-xs font-['Plus_Jakarta_Sans'] text-stone-400">
+                You never risk capital on speculative experiments. Every engagement is strictly benchmarked against quantifiable unit economics.
+              </p>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <FinalCtaFooter onOpenBooking={() => setIsBookingOpen(true)} />
+      <FinalDeploymentFooter onOpenBooking={() => setIsBookingOpen(true)} />
       <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-    </div>
+    </main>
   );
 }

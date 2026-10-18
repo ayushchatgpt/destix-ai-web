@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Architectural Alabaster & Warm Cognac Tokens */
+  /* Architectural Alabaster & Champagne Bronze Tokens */
   --bg-paper: #F6F4EE;
   --bg-cream: #EDE8DC;
   --bg-card: #FFFFFF;
@@ -10,7 +10,8 @@
   --text-ink: #181614;
   --text-ink-soft: #55514B;
   --text-ink-mute: #888277;
-  --accent-cognac: #B8652B;
+  --accent-bronze: #B88746;
+  --accent-gold: #C5A059;
   --accent-honey: #D4A373;
   --border-hairline: #E2DDD1;
   --border-espresso: rgba(255, 255, 255, 0.1);
@@ -28,7 +29,8 @@
   --color-ink: #181614;
   --color-ink-soft: #55514B;
   --color-ink-mute: #888277;
-  --color-cognac: #B8652B;
+  --color-bronze: #B88746;
+  --color-gold: #C5A059;
   --color-honey: #D4A373;
   --color-hairline: #E2DDD1;
   --color-cream-on-dark: #F6EFE2;
@@ -113,6 +115,6 @@ body {
   background: #EDE8DC;
 }
 ::-webkit-scrollbar-thumb {
-  background: #B8652B;
+  background: #B88746;
   border-radius: 9999px;
 }

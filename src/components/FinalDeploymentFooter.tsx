@@ -2,10 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin, Globe } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 
 interface FinalDeploymentFooterProps {
-  onOpenBooking: () => void;
+  onOpenBooking?: () => void;
 }
 
 export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterProps) {
@@ -14,13 +14,13 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Final High-Conversion Invitation Box */}
         <div className="rounded-3xl bg-[#1A1815] border border-[#2D2824] p-8 sm:p-16 mb-24 relative overflow-hidden shadow-2xl text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#23201C] border border-[#3A332E] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B8652B] mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B] animate-beacon" />
-            (10) INITIALIZE COMMISSION
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#23201C] border border-[#3A332E] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B88746] mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746] animate-beacon" />
+            INITIALIZE COMMISSION
           </div>
 
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#F6EFE2] leading-[1.0] mb-6 max-w-3xl">
-            Let AI do the <span className="italic text-[#B8652B]">heavy lifting</span>. You take the credit.
+            Let AI do the <span className="italic text-[#B88746]">heavy lifting</span>. You take the credit.
           </h2>
 
           <p className="text-base sm:text-lg text-[#C5BDB1] leading-relaxed max-w-2xl mb-10 font-normal">
@@ -29,21 +29,33 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
 
           {/* Action Row */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <button
-              onClick={onOpenBooking}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#B8652B] hover:bg-[#D4A373] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md group"
-            >
-              <span>Book Your 30-Min Diagnostic Call</span>
-              <div className="w-5 h-5 rounded-full bg-[#131210]/15 flex items-center justify-center group-hover:bg-[#131210]/25 transition-colors">
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#131210] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </div>
-            </button>
+            {onOpenBooking ? (
+              <button
+                onClick={onOpenBooking}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#C5A059] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md group"
+              >
+                <span>Book Your 30-Min Diagnostic Call</span>
+                <div className="w-5 h-5 rounded-full bg-[#131210]/15 flex items-center justify-center group-hover:bg-[#131210]/25 transition-colors">
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#131210] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </button>
+            ) : (
+              <Link
+                href="/contact"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#C5A059] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md group"
+              >
+                <span>Book Your 30-Min Diagnostic Call</span>
+                <div className="w-5 h-5 rounded-full bg-[#131210]/15 flex items-center justify-center group-hover:bg-[#131210]/25 transition-colors">
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#131210] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </Link>
+            )}
 
             <a
               href="mailto:ayushmeenadestixai@gmail.com"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#23201C] hover:bg-[#2D2824] border border-[#3A332E] text-xs font-['JetBrains_Mono'] text-[#F6EFE2] transition-colors"
             >
-              <Mail className="w-4 h-4 text-[#B8652B]" />
+              <Mail className="w-4 h-4 text-[#B88746]" />
               <span>Direct Desk: ayushmeenadestixai@gmail.com</span>
             </a>
           </div>
@@ -52,52 +64,52 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
         {/* Directory Navigation */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-[#25221F] text-xs">
           <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B8652B] font-semibold mb-4">
-              Practice Domains
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
+              Core Ecosystem
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><a href="#how-we-build" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</a></li>
-              <li><a href="#how-we-build" className="hover:text-[#F6EFE2] transition-colors">Enterprise AI Operating System</a></li>
-              <li><a href="#how-we-build" className="hover:text-[#F6EFE2] transition-colors">Bespoke 3D WebGL Storefronts</a></li>
-              <li><a href="#playbooks" className="hover:text-[#F6EFE2] transition-colors">Speed-to-Lead Outbound Interception</a></li>
-              <li><a href="#playbooks" className="hover:text-[#F6EFE2] transition-colors">Automated WhatsApp Pipelines</a></li>
+              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Agents</Link></li>
+              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">3D WebGL &amp; Digital Architecture</Link></li>
+              <li><Link href="/operating-system" className="hover:text-[#F6EFE2] transition-colors">AI Operating System &amp; n8n</Link></li>
+              <li><Link href="/use-cases" className="hover:text-[#F6EFE2] transition-colors">Industry Production Playbooks</Link></li>
+              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder Dossier &amp; Philosophy</Link></li>
             </ul>
           </div>
 
           <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B8652B] font-semibold mb-4">
-              Selected Benchmarks
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
+              Interactive Benchmarks
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><a href="#works" className="hover:text-[#F6EFE2] transition-colors">Shade of Green Bangalore Villas</a></li>
-              <li><a href="#works" className="hover:text-[#F6EFE2] transition-colors">Pranav Jha Editorial Platform</a></li>
-              <li><a href="#works" className="hover:text-[#F6EFE2] transition-colors">Digiirox 3D Spatial Experience</a></li>
-              <li><a href="#works" className="hover:text-[#F6EFE2] transition-colors">BirchStays &amp; The Well CG Benchmarks</a></li>
-              <li><a href="#voice-console" className="hover:text-[#F6EFE2] transition-colors">Voice Parity Audition Console</a></li>
+              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Shade of Green Bangalore Villas</Link></li>
+              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Pranav Jha Editorial Platform</Link></li>
+              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Digiirox 3D Spatial Experience</Link></li>
+              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Voice Parity Audition Console</Link></li>
+              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
             </ul>
           </div>
 
           <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B8652B] font-semibold mb-4">
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
               The 5x Scoping Model
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><a href="#scoping-model" className="hover:text-[#F6EFE2] transition-colors">The 5x Hurdle Rate Mandate</a></li>
-              <li><a href="#scoping-model" className="hover:text-[#F6EFE2] transition-colors">Interactive Volume Modeler</a></li>
-              <li><a href="#scoping-model" className="hover:text-[#F6EFE2] transition-colors">No SaaS Tiers Policy</a></li>
-              <li><a href="#scoping-model" className="hover:text-[#F6EFE2] transition-colors">Custom Unit Economics Audit</a></li>
-              <li><a href="#scoping-model" className="hover:text-[#F6EFE2] transition-colors">White-Label Agency Partnerships</a></li>
+              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">The 5x Hurdle Rate Mandate</a></li>
+              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">Interactive Volume Modeler</a></li>
+              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">No SaaS Tiers Policy</a></li>
+              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Custom Unit Economics Audit</Link></li>
+              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">White-Label Studio Retainers</Link></li>
             </ul>
           </div>
 
           <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B8652B] font-semibold mb-4">
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
               Practice Coordinates
             </div>
             <div className="space-y-2.5 text-[#A89F93] font-['JetBrains_Mono']">
               <div>Principal: <span className="text-[#F6EFE2]">Ayush Meena</span></div>
-              <div>Domain: <span className="text-[#B8652B]">ayush.company</span></div>
-              <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B8652B]">ayushmeenadestixai@gmail.com</a></div>
+              <div>Domain: <span className="text-[#B88746]">ayush.company</span></div>
+              <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B88746]">ayushmeenadestixai@gmail.com</a></div>
               <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>
             </div>
           </div>
@@ -113,7 +125,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
         {/* Status Strip */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-[11px] font-['JetBrains_Mono'] text-[#888277]">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#B8652B] animate-beacon" />
+            <span className="w-2 h-2 rounded-full bg-[#B88746] animate-beacon" />
             <span className="text-[#F6EFE2] font-semibold">ALL OPERATIONAL SYSTEMS NOMINAL</span>
             <span className="text-white/20">•</span>
             <span>JURISDICTION: DELHI NCR &amp; GLOBAL</span>
@@ -122,7 +134,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
           <div className="flex items-center gap-4">
             <span>© {new Date().getFullYear()} DESTIX AI STUDIO • PRINCIPAL: AYUSH MEENA</span>
             <span>•</span>
-            <span className="text-[#B8652B]">AYUSH.COMPANY</span>
+            <span className="text-[#B88746]">AYUSH.COMPANY</span>
           </div>
         </div>
       </div>
