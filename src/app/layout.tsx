@@ -14,13 +14,25 @@ export const metadata: Metadata = {
   description:
     "AI does the heavy lifting, you bank the revenue. DestiX AI installs human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that intercept, qualify, and convert high-ticket leads 24/7. Principal: Ayush Meena.",
   keywords: [
+    "Desti",
     "DestiX AI",
+    "DestiX",
+    "Ayush",
     "Ayush Meena",
+    "voice agent",
+    "AI voice agent",
+    "autonomous voice agents",
+    "3D website",
+    "3D website agency",
+    "3D web development",
+    "real estate agency website",
+    "luxury real estate website",
+    "real estate voice agent",
+    "Three.js agency",
+    "WebGL digital architecture",
     "Autonomous Voice Infrastructure",
-    "Digital Architecture Studio",
-    "High-Ticket Lead Interception",
     "Sub-45s Inbound Triage",
-    "Three.js Agency",
+    "Alliance Capital Properties Dubai",
     "ayush.company",
     "Delhi NCR",
   ],
@@ -28,6 +40,9 @@ export const metadata: Metadata = {
   creator: "Ayush Meena",
   publisher: "DestiX AI Studio",
   metadataBase: new URL("https://ayush.company"),
+  alternates: {
+    canonical: "https://ayush.company",
+  },
   openGraph: {
     title: "DestiX AI — Autonomous Conversational Infrastructure & Digital Architecture",
     description:
@@ -72,6 +87,82 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://ayush.company/#organization",
+                  "name": "DestiX AI",
+                  "alternateName": ["Desti", "DestiX", "DestiXAI", "ayush.company"],
+                  "url": "https://ayush.company",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://ayush.company/icon.svg",
+                    "caption": "DestiX AI Logo",
+                  },
+                  "founder": {
+                    "@type": "Person",
+                    "@id": "https://ayush.company/#person",
+                    "name": "Ayush Meena",
+                    "alternateName": "Ayush",
+                    "jobTitle": "Founder & Principal Systems Architect",
+                    "url": "https://ayush.company/about",
+                    "sameAs": ["https://www.linkedin.com/in/ayush-meena-065a89380/"],
+                  },
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "ayushmeenadestixai@gmail.com",
+                    "contactType": "sales",
+                    "availableLanguage": ["English", "Hindi"],
+                  },
+                  "sameAs": [
+                    "https://www.linkedin.com/in/ayush-meena-065a89380/",
+                    "https://github.com/ayushchatgpt/destix-ai-web",
+                  ],
+                  "knowsAbout": [
+                    "AI Voice Agents",
+                    "Autonomous Conversational Infrastructure",
+                    "3D Websites",
+                    "3D Web Development Agency",
+                    "Three.js WebGL Architecture",
+                    "Real Estate Agency Websites",
+                    "Sub-45s Speed to Lead",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://ayush.company/#website",
+                  "url": "https://ayush.company",
+                  "name": "DestiX AI",
+                  "alternateName": "Desti",
+                  "publisher": {
+                    "@id": "https://ayush.company/#organization",
+                  },
+                },
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#service",
+                  "name": "DestiX AI — Autonomous Conversational Infrastructure & 3D Web Studio",
+                  "url": "https://ayush.company",
+                  "parentOrganization": {
+                    "@id": "https://ayush.company/#organization",
+                  },
+                  "areaServed": "Global",
+                  "serviceType": [
+                    "AI Voice Agents",
+                    "3D Web Development",
+                    "Luxury Real Estate Agency Websites",
+                    "Telephony Inbound & Outbound Systems",
+                  ],
+                },
+              ],
+            }),
+          }}
         />
       </head>
       <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B88746]/20 selection:text-[#181614]">
