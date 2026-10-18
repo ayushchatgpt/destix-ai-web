@@ -32,6 +32,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             {onOpenBooking ? (
               <button
                 onClick={onOpenBooking}
+                data-cursor-text="BOOK"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#C5A059] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md group"
               >
                 <span>Book Your 30-Min Diagnostic Call</span>
@@ -42,6 +43,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             ) : (
               <Link
                 href="/contact"
+                data-cursor-text="BOOK"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#C5A059] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md group"
               >
                 <span>Book Your 30-Min Diagnostic Call</span>

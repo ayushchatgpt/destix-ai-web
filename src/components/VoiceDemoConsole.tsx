@@ -159,7 +159,7 @@ export function VoiceDemoConsole() {
         const y = (canvas.height - height) / 2;
 
         const gradient = ctx.createLinearGradient(0, y, 0, y + height);
-        gradient.addColorStop(0, "#B8652B");
+        gradient.addColorStop(0, "#B88746");
         gradient.addColorStop(1, "#D4A373");
 
         ctx.fillStyle = isPlaying ? gradient : "rgba(246, 239, 226, 0.2)";
@@ -250,13 +250,13 @@ export function VoiceDemoConsole() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E1C19] border border-[#332E29] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B8652B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E1C19] border border-[#332E29] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B88746] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
             (06) LIVE VOICE TELEMETRY CONSOLE
           </div>
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#F6EFE2] leading-[1.0] mb-6">
             Audition the conversational parity{" "}
-            <span className="italic text-[#B8652B]">in real-time.</span>
+            <span className="italic text-[#B88746]">in real-time.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#C5BDB1] leading-relaxed font-normal">
             Select an institutional vertical preset below. Experience sub-500ms roundtrip audio synthesis, live speech spectrum dynamics, and instant executive calendar confirmation.
@@ -273,17 +273,17 @@ export function VoiceDemoConsole() {
                 onClick={() => handleSelectPersona(persona)}
                 className={`p-5 rounded-2xl text-left border transition-all duration-300 ${
                   isSelected
-                    ? "bg-[#201D1A] border-[#B8652B] shadow-lg"
+                    ? "bg-[#201D1A] border-[#B88746] shadow-lg"
                     : "bg-[#181614] border-[#2D2824] hover:border-[#3D3732] text-[#888277]"
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#B8652B]">
+                  <span className="text-[10px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#B88746]">
                     {persona.industry}
                   </span>
                   <span
                     className={`w-2 h-2 rounded-full ${
-                      isSelected ? "bg-[#B8652B] animate-pulse" : "bg-white/20"
+                      isSelected ? "bg-[#B88746] animate-pulse" : "bg-white/20"
                     }`}
                   />
                 </div>
@@ -304,7 +304,7 @@ export function VoiceDemoConsole() {
           {/* Header Strip */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-[#2D2824] gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#23201C] border border-[#3A332E] flex items-center justify-center text-[#B8652B]">
+              <div className="w-12 h-12 rounded-xl bg-[#23201C] border border-[#3A332E] flex items-center justify-center text-[#B88746]">
                 <Radio className="w-6 h-6 animate-pulse" />
               </div>
               <div>
@@ -312,7 +312,7 @@ export function VoiceDemoConsole() {
                   <h3 className="font-['Instrument_Serif'] text-2xl text-[#F6EFE2]">
                     {selectedPersona.name}
                   </h3>
-                  <span className="px-2 py-0.5 rounded-full bg-[#B8652B]/10 border border-[#B8652B]/30 text-[10px] font-['JetBrains_Mono'] text-[#B8652B]">
+                  <span className="px-2 py-0.5 rounded-full bg-[#B88746]/10 border border-[#B88746]/30 text-[10px] font-['JetBrains_Mono'] text-[#B88746]">
                     {selectedPersona.latency}
                   </span>
                 </div>
@@ -349,7 +349,7 @@ export function VoiceDemoConsole() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={togglePlay}
-                  className="w-14 h-14 rounded-full bg-[#B8652B] hover:bg-[#D4A373] text-[#131210] flex items-center justify-center shadow-lg transition-all hover:scale-105"
+                  className="w-14 h-14 rounded-full bg-[#B88746] hover:bg-[#D4A373] text-[#131210] flex items-center justify-center shadow-lg transition-all hover:scale-105"
                   aria-label={isPlaying ? "Pause Demo" : "Play Demo"}
                 >
                   {isPlaying ? (
@@ -390,14 +390,14 @@ export function VoiceDemoConsole() {
                       key={idx}
                       className={`p-4 rounded-xl border transition-all duration-300 ${
                         isActive
-                          ? "bg-[#23201C] border-[#B8652B] shadow-md"
+                          ? "bg-[#23201C] border-[#B88746] shadow-md"
                           : "bg-[#131210]/60 border-[#2D2824]"
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1.5">
                         <span
                           className={`text-xs font-bold font-['JetBrains_Mono'] ${
-                            isAgent ? "text-[#B8652B]" : "text-[#D4A373]"
+                            isAgent ? "text-[#B88746]" : "text-[#D4A373]"
                           }`}
                         >
                           {turn.speaker}
@@ -422,7 +422,7 @@ export function VoiceDemoConsole() {
 
           {/* Outcome Footer */}
           <div className="bg-[#131210] rounded-xl p-4 border border-[#2D2824] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-['JetBrains_Mono']">
-            <div className="flex items-center gap-2 text-[#B8652B]">
+            <div className="flex items-center gap-2 text-[#B88746]">
               <CheckCircle2 className="w-4 h-4 shrink-0" />
               <span>OUTCOME: CALENDAR SLOT SECURED + WHATSAPP LOOKBOOK DISPATCHED</span>
             </div>

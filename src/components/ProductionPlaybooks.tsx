@@ -75,12 +75,12 @@ export function ProductionPlaybooks() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
             (04) DEPLOYED PRODUCTION PLAYBOOKS
           </div>
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             Hardened blueprints for{" "}
-            <span className="italic text-[#B8652B]">high-ticket verticals.</span>
+            <span className="italic text-[#B88746]">high-ticket verticals.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             These are not theoretical conversation prompts. They are hardened operational state machines with deterministic guardrails, CRM webhooks, and calendar dispatch rules.
@@ -100,8 +100,8 @@ export function ProductionPlaybooks() {
                   onClick={() => setActiveTab(idx)}
                   className={`w-full p-5 rounded-2xl text-left border transition-all duration-300 flex items-center justify-between ${
                     isSelected
-                      ? "bg-white border-[#B8652B] shadow-md -translate-x-1"
-                      : "bg-[#EDE8DC]/50 border-[#E2DDD1] hover:bg-white/80 hover:border-[#B8652B]/40"
+                      ? "bg-white border-[#B88746] shadow-md -translate-x-1"
+                      : "bg-[#EDE8DC]/50 border-[#E2DDD1] hover:bg-white/80 hover:border-[#B88746]/40"
                   }`}
                 >
                   <div className="flex items-center gap-3.5">
@@ -123,7 +123,7 @@ export function ProductionPlaybooks() {
                   </div>
                   <ArrowRight
                     className={`w-4 h-4 transition-transform ${
-                      isSelected ? "text-[#B8652B] translate-x-1" : "text-[#888277]"
+                      isSelected ? "text-[#B88746] translate-x-1" : "text-[#888277]"
                     }`}
                   />
                 </button>
@@ -135,7 +135,7 @@ export function ProductionPlaybooks() {
           <div className="lg:col-span-8 rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 shadow-xs">
             <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E2DDD1]">
               <div>
-                <span className="text-[10px] font-['JetBrains_Mono'] text-[#B8652B] tracking-[0.2em] uppercase font-bold">
+                <span className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] tracking-[0.2em] uppercase font-bold">
                   ACTIVE PRODUCTION BLUEPRINT
                 </span>
                 <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mt-1">
@@ -149,7 +149,7 @@ export function ProductionPlaybooks() {
 
             {/* Trigger Strip */}
             <div className="p-4 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] mb-8 flex items-center gap-3">
-              <span className="text-[11px] font-['JetBrains_Mono'] text-[#B8652B] uppercase font-bold shrink-0">
+              <span className="text-[11px] font-['JetBrains_Mono'] text-[#B88746] uppercase font-bold shrink-0">
                 TRIGGER:
               </span>
               <span className="text-xs sm:text-sm text-[#55514B]">
@@ -164,7 +164,7 @@ export function ProductionPlaybooks() {
               </div>
               {playbooks[activeTab].workflow.map((step, idx) => (
                 <div key={idx} className="flex items-start gap-3.5">
-                  <div className="w-5 h-5 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-['JetBrains_Mono'] text-[#B8652B] font-bold">
+                  <div className="w-5 h-5 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold">
                     {idx + 1}
                   </div>
                   <span className="text-sm text-[#55514B] leading-relaxed">
@@ -176,9 +176,9 @@ export function ProductionPlaybooks() {
 
             {/* Outcome Strip */}
             <div className="p-4 rounded-xl bg-[#131210] text-[#F6EFE2] flex items-center gap-3 text-xs sm:text-sm font-['Plus_Jakarta_Sans']">
-              <CheckCircle2 className="w-4 h-4 text-[#B8652B] shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-[#B88746] shrink-0" />
               <span>
-                <strong className="text-[#B8652B]">Conversion Outcome:</strong>{" "}
+                <strong className="text-[#B88746]">Conversion Outcome:</strong>{" "}
                 {playbooks[activeTab].outcome}
               </span>
             </div>

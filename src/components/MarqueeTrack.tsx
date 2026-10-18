@@ -27,7 +27,7 @@ export function MarqueeTrack() {
               </span>
               <span
                 aria-hidden="true"
-                className="text-[#B8652B] text-xs px-2"
+                className="text-[#B88746] text-xs px-2"
               >
                 ◆
               </span>
@@ -44,7 +44,7 @@ export function MarqueeTrack() {
               </span>
               <span
                 aria-hidden="true"
-                className="text-[#B8652B] text-xs px-2"
+                className="text-[#B88746] text-xs px-2"
               >
                 ◆
               </span>

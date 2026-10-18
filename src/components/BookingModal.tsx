@@ -38,7 +38,7 @@ export function BookingModal({
         particleCount: 70,
         spread: 60,
         origin: { y: 0.6 },
-        colors: ["#B8652B", "#D4A373", "#181614", "#F6F4EE"],
+        colors: ["#B88746", "#D4A373", "#181614", "#F6F4EE"],
       });
     }, 600);
   };
@@ -72,8 +72,8 @@ export function BookingModal({
 
         {!isBooked ? (
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-widest text-[#B8652B] uppercase mb-4 font-bold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-widest text-[#B88746] uppercase mb-4 font-bold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
               Direct Diagnostic Session
             </div>
 
@@ -93,7 +93,7 @@ export function BookingModal({
                 <select
                   value={selectedService}
                   onChange={(e) => setSelectedService(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm focus:border-[#B8652B] focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm focus:border-[#B88746] focus:outline-none transition-colors"
                 >
                   {services.map((s, idx) => (
                     <option key={idx} value={s}>
@@ -116,8 +116,8 @@ export function BookingModal({
                       onClick={() => setSelectedDate(slot)}
                       className={`px-3 py-2.5 rounded-xl text-left text-xs font-['JetBrains_Mono'] border transition-all ${
                         selectedDate === slot
-                          ? "bg-[#EDE8DC] border-[#B8652B] text-[#B8652B] font-bold shadow-2xs"
-                          : "bg-[#F6F4EE] border-[#E2DDD1] text-[#55514B] hover:border-[#B8652B]/40"
+                          ? "bg-[#EDE8DC] border-[#B88746] text-[#B88746] font-bold shadow-2xs"
+                          : "bg-[#F6F4EE] border-[#E2DDD1] text-[#55514B] hover:border-[#B88746]/40"
                       }`}
                     >
                       {slot}
@@ -138,7 +138,7 @@ export function BookingModal({
                     placeholder="e.g. Vikram Singhania"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B8652B] focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B88746] focus:outline-none"
                   />
                 </div>
 
@@ -152,7 +152,7 @@ export function BookingModal({
                     placeholder="vikram@enterprise.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B8652B] focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B88746] focus:outline-none"
                   />
                 </div>
               </div>
@@ -169,7 +169,7 @@ export function BookingModal({
                     placeholder="enterprise.com"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B8652B] focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B88746] focus:outline-none"
                   />
                 </div>
 
@@ -183,7 +183,7 @@ export function BookingModal({
                     placeholder="+91 98765 43210"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B8652B] focus:outline-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] text-[#181614] text-xs sm:text-sm placeholder:text-[#888277] focus:border-[#B88746] focus:outline-none"
                   />
                 </div>
               </div>
@@ -192,7 +192,7 @@ export function BookingModal({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full mt-4 py-4 rounded-full bg-[#181614] hover:bg-[#B8652B] text-[#F6F4EE] font-semibold text-sm tracking-tight flex items-center justify-center gap-2 transition-all duration-300 shadow-sm disabled:opacity-50"
+                className="w-full mt-4 py-4 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-semibold text-sm tracking-tight flex items-center justify-center gap-2 transition-all duration-300 shadow-sm disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <span>Reserving Calendar Slot...</span>
@@ -212,8 +212,8 @@ export function BookingModal({
         ) : (
           /* Booked Confirmation Screen */
           <div className="text-center py-8">
-            <div className="w-16 h-16 rounded-full bg-[#EDE8DC] border border-[#B8652B] text-[#B8652B] flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="w-8 h-8 text-[#B8652B]" />
+            <div className="w-16 h-16 rounded-full bg-[#EDE8DC] border border-[#B88746] text-[#B88746] flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="w-8 h-8 text-[#B88746]" />
             </div>
 
             <h3 className="font-['Instrument_Serif'] text-4xl text-[#181614] mb-3">
@@ -221,7 +221,7 @@ export function BookingModal({
             </h3>
 
             <p className="text-sm text-[#55514B] leading-relaxed max-w-md mx-auto mb-6 font-normal">
-              We have reserved <strong className="text-[#181614]">{selectedDate}</strong> for your 30-minute architecture diagnostic session with <strong className="text-[#181614]">Ayush Meena</strong>. An executive calendar invite has been sent to <span className="text-[#B8652B]">{formData.email}</span>.
+              We have reserved <strong className="text-[#181614]">{selectedDate}</strong> for your 30-minute architecture diagnostic session with <strong className="text-[#181614]">Ayush Meena</strong>. An executive calendar invite has been sent to <span className="text-[#B88746]">{formData.email}</span>.
             </p>
 
             <div className="p-4 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1] text-xs text-[#55514B] font-['JetBrains_Mono'] max-w-md mx-auto mb-8 space-y-1 text-left">
@@ -232,7 +232,7 @@ export function BookingModal({
 
             <button
               onClick={onClose}
-              className="px-8 py-3 rounded-full bg-[#181614] hover:bg-[#B8652B] text-xs font-semibold text-[#F6F4EE] transition-colors"
+              className="px-8 py-3 rounded-full bg-[#181614] hover:bg-[#B88746] text-xs font-semibold text-[#F6F4EE] transition-colors"
             >
               Return to Studio Platform
             </button>

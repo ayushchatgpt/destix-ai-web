@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { CustomCursor } from "@/components/CustomCursor";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -58,7 +59,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B8652B]/20 selection:text-[#181614]">
+      <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B88746]/20 selection:text-[#181614]">
+        <CustomCursor />
         {children}
       </body>
     </html>

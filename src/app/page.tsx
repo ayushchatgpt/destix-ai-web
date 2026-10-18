@@ -29,7 +29,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F6F4EE] text-[#181614] relative selection:bg-[#B8652B]/20 selection:text-[#181614]">
+    <main className="min-h-screen bg-[#F6F4EE] text-[#181614] relative selection:bg-[#B88746]/20 selection:text-[#181614]">
       {/* Section 1: Sticky Glass Header (Always Converting) */}
       <Header onOpenBooking={handleOpenBooking} />
 

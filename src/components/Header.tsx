@@ -82,6 +82,7 @@ export function Header({ onOpenBooking }: HeaderProps) {
           {onOpenBooking ? (
             <button
               onClick={onOpenBooking}
+              data-cursor-text="BOOK"
               className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm"
             >
               <span>Book a Consultation</span>
@@ -92,6 +93,7 @@ export function Header({ onOpenBooking }: HeaderProps) {
           ) : (
             <Link
               href="/contact"
+              data-cursor-text="BOOK"
               className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm"
             >
               <span>Book a Consultation</span>

@@ -31,12 +31,12 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
             (07) THE SCOPING MODEL &amp; VOLUME MODELER
           </div>
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             Custom-scoped architectures, governed by the{" "}
-            <span className="italic text-[#B8652B]">5x Hurdle Rate.</span>
+            <span className="italic text-[#B88746]">5x Hurdle Rate.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             We do not sell cookie-cutter SaaS plans or generic subscription tiers. Every deployment is precision-engineered to your exact operational bottleneck and validated before contract signing.
@@ -44,8 +44,8 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
         </div>
 
         {/* The 5x Hurdle Rate Guarantee Box */}
-        <div className="rounded-3xl bg-white border-2 border-[#B8652B] p-8 sm:p-12 shadow-md mb-16 relative overflow-hidden">
-          <div className="flex items-center gap-2.5 text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#B8652B] font-bold mb-4">
+        <div className="rounded-3xl bg-white border-2 border-[#B88746] p-8 sm:p-12 shadow-md mb-16 relative overflow-hidden">
+          <div className="flex items-center gap-2.5 text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#B88746] font-bold mb-4">
             <ShieldCheck className="w-5 h-5" />
             <span>OUR INSTITUTIONAL COMMITMENT // THE 5X HURDLE RATE</span>
           </div>
@@ -56,15 +56,15 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-[#E2DDD1]">
             <div className="flex items-center gap-2.5 text-xs text-[#55514B]">
-              <CheckCircle2 className="w-4 h-4 text-[#B8652B] shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-[#B88746] shrink-0" />
               <span>Custom Unit Economics Audit</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-[#55514B]">
-              <CheckCircle2 className="w-4 h-4 text-[#B8652B] shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-[#B88746] shrink-0" />
               <span>Explicit Financial Model in Writing</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-[#55514B]">
-              <CheckCircle2 className="w-4 h-4 text-[#B8652B] shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-[#B88746] shrink-0" />
               <span>Declined if Under 5x Modeled ROI</span>
             </div>
           </div>
@@ -74,7 +74,7 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
         <div className="rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 shadow-sm">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
             <div>
-              <span className="text-xs font-['JetBrains_Mono'] text-[#B8652B] uppercase tracking-wider block mb-1 font-bold">
+              <span className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider block mb-1 font-bold">
                 ESTIMATED MONTHLY VOLUME
               </span>
               <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614]">
@@ -100,7 +100,7 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
             step={1000}
             value={minutes}
             onChange={(e) => setMinutes(Number(e.target.value))}
-            className="w-full h-3 bg-[#EDE8DC] rounded-lg appearance-none cursor-pointer accent-[#B8652B] mb-4"
+            className="w-full h-3 bg-[#EDE8DC] rounded-lg appearance-none cursor-pointer accent-[#B88746] mb-4"
           />
 
           <div className="flex justify-between text-[11px] font-['JetBrains_Mono'] text-[#888277] mb-10">
@@ -139,12 +139,12 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border-2 border-[#B8652B] shadow-sm">
+            <div className="p-6 rounded-2xl bg-white border-2 border-[#B88746] shadow-sm">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-['JetBrains_Mono'] text-[#B8652B] uppercase tracking-wider font-bold">
+                <span className="text-[11px] font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider font-bold">
                   DestiX AI Practice
                 </span>
-                <span className="px-2 py-0.5 rounded bg-[#EDE8DC] text-[10px] font-['JetBrains_Mono'] text-[#B8652B] font-bold">
+                <span className="px-2 py-0.5 rounded bg-[#EDE8DC] text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold">
                   ${destixRate}/min effective
                 </span>
               </div>
@@ -161,7 +161,7 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
           {/* Savings Callout Banner & Action */}
           <div className="p-6 sm:p-8 rounded-2xl bg-[#131210] text-[#F6EFE2] flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <div className="text-xs font-['JetBrains_Mono'] text-[#B8652B] uppercase tracking-wider mb-1 font-semibold">
+              <div className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider mb-1 font-semibold">
                 VERIFIED REAL-TIME SAVINGS
               </div>
               <div className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-bold">
@@ -174,7 +174,7 @@ export function ScopingModel({ onOpenBooking }: ScopingModelProps) {
 
             <button
               onClick={onOpenBooking}
-              className="px-8 py-4 rounded-full bg-[#B8652B] hover:bg-[#D4A373] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md shrink-0 flex items-center gap-2 group"
+              className="px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#D4A373] text-[#131210] font-bold text-sm tracking-tight transition-all duration-300 shadow-md shrink-0 flex items-center gap-2 group"
             >
               <span>Get Your Exact System Scope &amp; ROI Model</span>
               <ArrowUpRight className="w-4 h-4 text-[#131210] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

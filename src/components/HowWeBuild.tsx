@@ -55,12 +55,12 @@ export function HowWeBuild() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
             (02) HOW WE BUILD
           </div>
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             AI that books revenue, not a chatbot that{" "}
-            <span className="italic text-[#B8652B]">annoys</span> your customers.
+            <span className="italic text-[#B88746]">annoys</span> your customers.
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             Most agencies deploy fragile point solutions that irritate high-value callers. DestiX AI engineers a complete, hardened acquisition circuit that converts traffic into booked pipeline.
@@ -74,19 +74,19 @@ export function HowWeBuild() {
             return (
               <div
                 key={item.num}
-                className="group relative p-8 sm:p-9 rounded-2xl bg-white border border-[#E2DDD1] hover:border-[#B8652B]/60 transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
+                className="group relative p-8 sm:p-9 rounded-2xl bg-white border border-[#E2DDD1] hover:border-[#B88746]/60 transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] flex items-center justify-center group-hover:border-[#B8652B]/40 transition-colors">
-                      <IconComp className="w-5 h-5 text-[#B8652B]" />
+                    <div className="w-12 h-12 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] flex items-center justify-center group-hover:border-[#B88746]/40 transition-colors">
+                      <IconComp className="w-5 h-5 text-[#B88746]" />
                     </div>
                     <span className="font-['JetBrains_Mono'] text-xs text-[#888277] font-semibold tracking-wider">
                       {item.num}
                     </span>
                   </div>
 
-                  <h3 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-3 group-hover:text-[#B8652B] transition-colors">
+                  <h3 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-3 group-hover:text-[#B88746] transition-colors">
                     {item.title}
                   </h3>
 
@@ -99,7 +99,7 @@ export function HowWeBuild() {
                   <span className="text-[10px] font-['JetBrains_Mono'] tracking-[0.16em] text-[#888277] uppercase font-semibold">
                     {item.tag}
                   </span>
-                  <ArrowUpRight className="w-4 h-4 text-[#888277] group-hover:text-[#B8652B] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <ArrowUpRight className="w-4 h-4 text-[#888277] group-hover:text-[#B88746] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </div>
               </div>
             );
