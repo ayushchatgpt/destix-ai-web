@@ -53,7 +53,7 @@ export default function FounderDossier({ onOpenBooking }: FounderDossierProps) {
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.8),0_0_25px_rgba(0,245,160,0.15)] mb-6 group">
                 <Image
                   src="/images/ayush-meena-dark.jpg"
-                  alt="Ayush Meena - Founder & CEO of DestiX AI"
+                  alt="Ayush Meena - Founder & Principal Architect of DestiX AI (Desti) — Autonomous AI Voice Agency"
                   fill
                   className="object-cover object-top filter grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
                   priority

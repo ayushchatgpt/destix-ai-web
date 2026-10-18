@@ -107,7 +107,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-3xl overflow-hidden border border-[#E2DDD1] bg-[#181614] shadow-[0_20px_50px_-20px_rgba(24,22,20,0.15)] group">
               <Image
                 src="/images/ayush-meena.jpg"
-                alt="Ayush Meena, Principal & Systems Architect at DestiX AI"
+                alt="Ayush Meena, Founder & Principal Systems Architect at DestiX AI (Desti) — AI Voice Agents & 3D Web Systems"
                 fill
                 priority
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"

@@ -54,7 +54,7 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
               <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border border-[#E2DDD1] shadow-md mb-6 group">
                 <Image
                   src="/images/ayush-meena.jpg"
-                  alt="Ayush Meena - Principal & Systems Architect"
+                  alt="Ayush Meena - Founder & Principal Systems Architect at DestiX AI (Desti) — AI Voice Agency"
                   fill
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   priority

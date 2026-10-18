@@ -10,17 +10,29 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI — Autonomous Conversational Infrastructure & Digital Architecture | Ayush Meena",
+  title: "DestiX AI — AI Voice Agents, 3D Real Estate Websites & AI Agency | Ayush Meena",
   description:
-    "AI does the heavy lifting, you bank the revenue. DestiX AI installs human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that intercept, qualify, and convert high-ticket leads 24/7. Principal: Ayush Meena.",
+    "AI does the heavy lifting, you bank the revenue. DestiX AI (founded by Ayush Meena) installs human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that intercept, qualify, and convert high-ticket leads 24/7.",
   keywords: [
     "Desti",
     "DestiX AI",
     "DestiX",
+    "Destie",
+    "Deste",
+    "Dste",
+    "Desties",
+    "Destex",
     "Desti AI",
     "AI Desti",
+    "Desti agency",
+    "Desti voice agent",
     "Ayush",
     "Ayush Meena",
+    "Ayush AI",
+    "Ayush DestiX",
+    "Ayush Desti",
+    "Ayush Deste",
+    "Ayush Destex",
     "Meena AI",
     "Ayush Meena AI",
     "ayush.company",
@@ -29,10 +41,14 @@ export const metadata: Metadata = {
     "voice agent",
     "ai voice agent",
     "best ai voice agent",
+    "realistic ai agent",
+    "voice realistic ai agent",
     "ai voice agency",
     "voice agency",
     "voice receptionist",
     "ai voice receptionist",
+    "receptionist ai",
+    "ai receptionist",
     "virtual voice receptionist",
     "automated voice agent",
     "ai phone answering service",
@@ -48,6 +64,7 @@ export const metadata: Metadata = {
     "human sounding voice agent",
     "website agency",
     "ai website agency",
+    "3d website",
     "3d website agency",
     "3d website development",
     "three js website agency",
@@ -90,9 +107,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "DestiX AI — Autonomous Conversational Infrastructure & Digital Architecture",
+    title: "DestiX AI — AI Voice Agents, 3D Websites & AI Agency | Ayush Meena",
     description:
-      "Human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that convert high-ticket leads 24/7.",
+      "Human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that convert high-ticket leads 24/7. Principal: Ayush Meena.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -108,7 +125,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI — Autonomous Conversational Infrastructure",
+    title: "DestiX AI — AI Voice Agents & 3D Web Studio | Ayush Meena",
     description: "AI does the heavy lifting, you bank the revenue. Principal: Ayush Meena.",
     images: ["https://ayush.company/og-image.png"],
   },
@@ -153,40 +170,113 @@ export default function RootLayout({
                   "@type": "Organization",
                   "@id": "https://ayush.company/#organization",
                   "name": "DestiX AI",
-                  "alternateName": ["Desti", "DestiX", "DestiXAI", "ayush.company"],
+                  "alternateName": [
+                    "Desti",
+                    "DestiX",
+                    "Desti X",
+                    "DestiX AI",
+                    "Desti XAI",
+                    "DestiAI",
+                    "AI Desti",
+                    "Destie",
+                    "Deste",
+                    "Dste",
+                    "Desties",
+                    "Destex",
+                    "Ayush DestiX",
+                    "Ayush Desti",
+                    "Ayush Deste",
+                    "Ayush Destex",
+                    "Ayush Meena AI",
+                    "Ayush Meena DestiX",
+                    "Meena AI",
+                    "Desti AI Agency",
+                    "Desti Voice Agency",
+                    "Desti Agency",
+                    "ayush.company"
+                  ],
+                  "legalName": "DestiX AI Autonomous Systems Studio",
                   "url": "https://ayush.company",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://ayush.company/icon.svg",
-                    "caption": "DestiX AI Logo",
+                    "url": "https://ayush.company/apple-icon.png",
+                    "caption": "DestiX AI Emblem",
                   },
                   "founder": {
                     "@type": "Person",
                     "@id": "https://ayush.company/#person",
                     "name": "Ayush Meena",
-                    "alternateName": "Ayush",
-                    "jobTitle": "Founder & Principal Systems Architect",
+                    "alternateName": [
+                      "Ayush",
+                      "Ayush Meena AI",
+                      "Ayush DestiX",
+                      "Ayush Desti",
+                      "Ayush Deste",
+                      "Ayush Destex",
+                      "Meena AI",
+                      "Ayush AI"
+                    ],
+                    "jobTitle": "Founder & Principal AI Systems Architect",
                     "url": "https://ayush.company/about",
-                    "sameAs": ["https://www.linkedin.com/in/ayush-meena-065a89380/"],
+                    "sameAs": [
+                      "https://www.linkedin.com/in/ayush-meena-065a89380/",
+                      "https://github.com/ayushchatgpt/destix-ai-web",
+                      "https://ayush.company"
+                    ],
+                    "knowsAbout": [
+                      "AI Voice Agents",
+                      "AI Voice Receptionist",
+                      "Voice Realistic AI Agents",
+                      "3D Websites",
+                      "Luxury Real Estate Websites",
+                      "Autonomous AI Agency",
+                      "AI Operating Systems",
+                      "Three.js WebGL Development",
+                      "DestiX AI",
+                      "Desti",
+                      "Ayush Meena"
+                    ]
                   },
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "email": "ayushmeenadestixai@gmail.com",
-                    "contactType": "sales",
-                    "availableLanguage": ["English", "Hindi"],
-                  },
+                  "contactPoint": [
+                    {
+                      "@type": "ContactPoint",
+                      "email": "ayushmeenadestixai@gmail.com",
+                      "contactType": "sales",
+                      "availableLanguage": ["English", "Hindi"],
+                    },
+                    {
+                      "@type": "ContactPoint",
+                      "email": "ayushmeenadestixai@gmail.com",
+                      "contactType": "customer support",
+                      "availableLanguage": ["English", "Hindi"],
+                    }
+                  ],
                   "sameAs": [
                     "https://www.linkedin.com/in/ayush-meena-065a89380/",
                     "https://github.com/ayushchatgpt/destix-ai-web",
+                    "https://ayush.company"
                   ],
                   "knowsAbout": [
                     "AI Voice Agents",
                     "Autonomous Conversational Infrastructure",
+                    "Voice Receptionist",
+                    "Realistic AI Agent",
                     "3D Websites",
                     "3D Web Development Agency",
                     "Three.js WebGL Architecture",
                     "Real Estate Agency Websites",
                     "Sub-45s Speed to Lead",
+                    "AI Agency",
+                    "Best AI Agency",
+                    "Desti",
+                    "DestiX AI",
+                    "Destie",
+                    "Deste",
+                    "Dste",
+                    "Desties",
+                    "Destex",
+                    "Ayush Meena",
+                    "Meena AI"
                   ],
                 },
                 {
@@ -194,7 +284,14 @@ export default function RootLayout({
                   "@id": "https://ayush.company/#website",
                   "url": "https://ayush.company",
                   "name": "DestiX AI",
-                  "alternateName": "Desti",
+                  "alternateName": [
+                    "Desti",
+                    "DestiX",
+                    "DestiX AI",
+                    "Destie",
+                    "Deste",
+                    "Ayush Meena"
+                  ],
                   "publisher": {
                     "@id": "https://ayush.company/#organization",
                   },
@@ -202,18 +299,210 @@ export default function RootLayout({
                 {
                   "@type": "ProfessionalService",
                   "@id": "https://ayush.company/#service",
-                  "name": "DestiX AI — Autonomous Conversational Infrastructure & 3D Web Studio",
+                  "name": "DestiX AI",
+                  "alternateName": [
+                    "Desti",
+                    "DestiX",
+                    "DestiX AI",
+                    "Destie",
+                    "Deste",
+                    "Dste",
+                    "Desties",
+                    "Destex",
+                    "Ayush DestiX",
+                    "Ayush Meena AI",
+                    "Ayush AI"
+                  ],
+                  "additionalType": [
+                    "Software company",
+                    "Web Designer",
+                    "AI Voice Agent Agency",
+                    "Automation company",
+                    "AI Telephony Agency",
+                    "Real Estate Website Agency",
+                    "3D Web Studio"
+                  ],
                   "url": "https://ayush.company",
+                  "description": "Autonomous AI voice agents, human-sounding voice receptionists, category-defining 3D websites, and unified AI operating systems for luxury real estate and enterprise businesses globally.",
+                  "email": "ayushmeenadestixai@gmail.com",
+                  "priceRange": "$2,000 - $$$$",
+                  "currenciesAccepted": "USD, EUR, GBP, AED, INR, CAD, AUD",
                   "parentOrganization": {
                     "@id": "https://ayush.company/#organization",
                   },
-                  "areaServed": "Global",
-                  "serviceType": [
-                    "AI Voice Agents",
-                    "3D Web Development",
-                    "Luxury Real Estate Agency Websites",
-                    "Telephony Inbound & Outbound Systems",
+                  "areaServed": [
+                    { "@type": "Country", "name": "United States" },
+                    { "@type": "Country", "name": "United Arab Emirates" },
+                    { "@type": "Country", "name": "United Kingdom" },
+                    { "@type": "Country", "name": "India" },
+                    { "@type": "Country", "name": "Canada" },
+                    { "@type": "Country", "name": "Australia" },
+                    { "@type": "Country", "name": "Singapore" },
+                    { "@type": "City", "name": "Dubai" },
+                    { "@type": "City", "name": "London" },
+                    { "@type": "City", "name": "New York" },
+                    { "@type": "City", "name": "Los Angeles" },
+                    { "@type": "City", "name": "Toronto" },
+                    { "@type": "City", "name": "Sydney" },
+                    { "@type": "City", "name": "Delhi NCR" },
+                    { "@type": "City", "name": "Mumbai" },
+                    { "@type": "City", "name": "Bengaluru" }
                   ],
+                  "availableLanguage": ["English", "Hindi"],
+                  "potentialAction": {
+                    "@type": "ReserveAction",
+                    "name": "Book a Consultation",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://ayush.company/#contact",
+                      "inLanguage": "en",
+                      "actionPlatform": [
+                        "http://schema.org/DesktopWebPlatform",
+                        "http://schema.org/MobileWebPlatform"
+                      ]
+                    },
+                    "result": {
+                      "@type": "Reservation",
+                      "name": "Consultation Booking"
+                    }
+                  },
+                  "knowsAbout": [
+                    "Desti",
+                    "DestiX AI",
+                    "DestiX",
+                    "Destie",
+                    "Deste",
+                    "Dste",
+                    "Desties",
+                    "Destex",
+                    "Ayush",
+                    "Ayush Meena",
+                    "Ayush AI",
+                    "Ayush DestiX",
+                    "Ayush Desti",
+                    "Ayush Deste",
+                    "Meena AI",
+                    "AI voice agents",
+                    "voice receptionist",
+                    "ai voice receptionist",
+                    "receptionist ai",
+                    "realistic ai agent",
+                    "voice realistic ai agent",
+                    "ai voice agency",
+                    "voice agency",
+                    "best ai voice agent",
+                    "ai phone answering service",
+                    "3d website",
+                    "3d website agency",
+                    "website agency",
+                    "real estate agency website",
+                    "luxury real estate website",
+                    "ai agency",
+                    "best ai agency",
+                    "autonomous ai agency",
+                    "ai operating system",
+                    "sub-45s speed to lead"
+                  ],
+                  "makesOffer": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@id": "https://ayush.company/ai-voice-receptionist/#service-ai-voice-receptionist"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@id": "https://ayush.company/services/3d-web/#service-3d-website-agency"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@id": "https://ayush.company/services/ai-os/#service-ai-operating-system"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@id": "https://ayush.company/ai-agency/#service-ai-agency"
+                      }
+                    }
+                  ],
+                  "sameAs": [
+                    "https://www.linkedin.com/in/ayush-meena-065a89380/",
+                    "https://github.com/ayushchatgpt/destix-ai-web",
+                    "https://ayush.company"
+                  ]
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Service",
+                  "@id": "https://ayush.company/ai-voice-receptionist/#service-ai-voice-receptionist",
+                  "name": "AI Voice Agents & Autonomous Voice Receptionist",
+                  "alternateName": [
+                    "AI Voice Agent",
+                    "Voice Receptionist",
+                    "AI Voice Receptionist",
+                    "Realistic AI Agent",
+                    "AI Phone Answering Service"
+                  ],
+                  "description": "Human-sounding conversational voice agents engineered by DestiX AI that answer every phone call in under 45 seconds, qualify high-ticket buyers, and book appointments 24/7.",
+                  "url": "https://ayush.company/ai-voice-receptionist",
+                  "provider": {
+                    "@id": "https://ayush.company/#organization"
+                  }
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Service",
+                  "@id": "https://ayush.company/services/3d-web/#service-3d-website-agency",
+                  "name": "3D Websites & Real Estate Agency Digital Architecture",
+                  "alternateName": [
+                    "3D Website Agency",
+                    "3D Real Estate Website",
+                    "Luxury Real Estate Agency Website",
+                    "Three.js WebGL Development"
+                  ],
+                  "description": "Award-grade bespoke 3D WebGL websites and interactive spatial storefronts engineered for high-ticket luxury real estate brokerages and modern agencies.",
+                  "url": "https://ayush.company/services/3d-web",
+                  "provider": {
+                    "@id": "https://ayush.company/#organization"
+                  }
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Service",
+                  "@id": "https://ayush.company/services/ai-os/#service-ai-operating-system",
+                  "name": "AI Operating System & Business Process Automation",
+                  "alternateName": [
+                    "AI OS",
+                    "CRM Telephony Pipeline",
+                    "n8n Workflow Automation",
+                    "WhatsApp Business AI Integration"
+                  ],
+                  "description": "Full-stack operational intelligence connecting voice telephony, WhatsApp API, and enterprise CRM pipelines to eliminate manual follow-up.",
+                  "url": "https://ayush.company/services/ai-os",
+                  "provider": {
+                    "@id": "https://ayush.company/#organization"
+                  }
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Service",
+                  "@id": "https://ayush.company/ai-agency/#service-ai-agency",
+                  "name": "Autonomous AI Agency & Voice Telephony Practice",
+                  "alternateName": [
+                    "AI Agency",
+                    "Best AI Agency",
+                    "AI Voice Agency",
+                    "Desti AI Agency"
+                  ],
+                  "description": "Premier autonomous AI agency founded by Ayush Meena delivering bespoke voice agents, automated workflows, and high-conversion web platforms globally.",
+                  "url": "https://ayush.company/ai-agency",
+                  "provider": {
+                    "@id": "https://ayush.company/#organization"
+                  }
                 },
                 {
                   "@type": "FAQPage",
@@ -221,37 +510,55 @@ export default function RootLayout({
                   "mainEntity": [
                     {
                       "@type": "Question",
-                      "name": "Who is the founder of DestiX AI?",
+                      "name": "What is DestiX AI (also known as Desti, Destie, Deste, or Destex)?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI (also known as Desti) was founded by Ayush Meena, Principal Systems Architect based in Delhi NCR and deploying globally. The practice specializes in autonomous AI voice telephony and bespoke 3D WebGL digital platforms.",
+                        "text": "DestiX AI (frequently searched as Desti, Destie, Deste, Desties, or Destex) is an autonomous AI systems practice founded by Ayush Meena. DestiX AI installs production-grade AI voice agents, autonomous voice receptionists, 3D WebGL luxury real estate websites, and automated AI operating systems that capture, qualify, and convert high-ticket leads 24/7.",
                       },
                     },
                     {
                       "@type": "Question",
-                      "name": "What services does DestiX AI provide?",
+                      "name": "Who is Ayush Meena (Ayush / Meena AI)?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI provides three core enterprise systems: 1) Autonomous Voice Agents with sub-45s speed to lead and sub-500ms voice parity, 2) Bespoke 3D WebGL digital architectures in Next.js and Three.js, and 3) Unified AI Operating Systems synchronizing WhatsApp API, telephony, and enterprise CRM pipelines.",
+                        "text": "Ayush Meena (also searched as Ayush, Meena AI, Ayush DestiX, or Ayush Desti) is the founder and principal systems architect of DestiX AI. Ayush leads the engineering of autonomous voice agents, sub-45-second speed-to-lead pipelines, and bespoke 3D digital storefronts for enterprise and luxury real estate clients globally.",
                       },
                     },
                     {
                       "@type": "Question",
-                      "name": "What is an AI Voice Receptionist?",
+                      "name": "What is an AI Voice Receptionist & Realistic AI Voice Agent?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "An AI Voice Receptionist is an autonomous telephony system that answers inbound business calls in under two rings 24/7. It eliminates hold times, qualifies high-ticket buyer intent, answers tier-1 inquiries, and books appointments directly to executive calendars.",
+                        "text": "An AI Voice Receptionist is an autonomous telephony system that answers inbound phone calls in under two rings 24/7. It speaks with natural conversational nuance, sub-500ms voice parity, eliminates hold times, qualifies high-ticket buyer intent, and books appointments directly to executive calendars.",
                       },
                     },
                     {
                       "@type": "Question",
-                      "name": "How does DestiX AI help luxury real estate agencies?",
+                      "name": "How does DestiX AI build 3D websites for real estate agencies?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI builds category-defining 3D property digital storefronts and pairs them with automated multilingual voice agents that intercept inbound buyer inquiries under 45 seconds, verified in production for Alliance Capital Properties (ACP Dubai).",
+                        "text": "DestiX AI builds category-defining 3D WebGL property storefronts in Next.js and Three.js paired with automated multilingual voice agents that intercept inbound buyer inquiries under 45 seconds, verified in production for Alliance Capital Properties (ACP Dubai).",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Why choose DestiX AI as your AI Agency?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI (Desti) is founder-led and engineered by Ayush Meena. Unlike traditional agencies that sell off-the-shelf wrappers or generic templates, DestiX AI builds custom voice infrastructure, 3D digital architecture, and unified CRM pipelines engineered specifically for high-ticket revenue conversion.",
                       },
                     },
                   ],
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://ayush.company/#webpage",
+                  "url": "https://ayush.company",
+                  "name": "DestiX AI | AI Voice Agents, 3D Real Estate Websites & AI Agency — Ayush Meena",
+                  "speakable": {
+                    "@type": "SpeakableSpecification",
+                    "cssSelector": ["h1", "#faq", "#hero-tagline"],
+                  },
                 },
               ],
             }),

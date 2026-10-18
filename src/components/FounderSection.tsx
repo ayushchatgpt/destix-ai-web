@@ -25,7 +25,7 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto overflow-hidden rounded-3xl border border-white/10 bg-[#0E1017] shadow-espresso">
               <Image
                 src="/images/ayush-meena-dark.jpg"
-                alt="Ayush Meena, Founder & CEO of DestiX AI"
+                alt="Ayush Meena, Founder of DestiX AI (Desti) — AI Voice Agents, Voice Receptionist and 3D Websites"
                 fill
                 priority
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90"

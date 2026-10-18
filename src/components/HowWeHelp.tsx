@@ -95,7 +95,7 @@ export const HowWeHelp: React.FC<HowWeHelpProps> = ({ onOpenBooking }) => {
           <div className="group relative hidden aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-[#0E1017] shadow-espresso lg:block">
             <Image
               src="/images/acoustic-visual.jpg"
-              alt="Futuristic holographic audio waveform laboratory"
+              alt="DestiX AI Autonomous Voice Agent Telephony and Audio Waveform Laboratory"
               fill
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-85"
               sizes="(max-width: 1024px) 100vw, 40vw"
