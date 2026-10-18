@@ -147,6 +147,9 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
 
           {/* Monumental Sculptural Display Headline */}
           <h1 className="font-['Instrument_Serif'] text-5xl sm:text-7xl md:text-8xl lg:text-[96px] leading-[0.93] tracking-tight text-[#181614] mb-6">
+            <span className="block font-['JetBrains_Mono'] font-medium text-[11px] sm:text-xs tracking-[0.22em] uppercase text-[#B88746] mb-3 sm:mb-4">
+              DestiX AI &bull; Autonomous Voice Agents &amp; 3D Digital Architecture
+            </span>
             AI handles the qualification.{" "}
             <span className="italic text-[#B88746] inline-block transition-transform duration-300 hover:scale-[1.02]">
               You bank the revenue.
