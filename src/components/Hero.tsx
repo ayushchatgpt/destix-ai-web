@@ -17,15 +17,15 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
   const transcripts = [
     {
       speaker: "DestiX Agent",
-      text: "Good afternoon. I noticed your inquiry for the 4-bedroom villa at Shade of Green. Are you looking for immediate possession or an investment asset?",
+      text: "Good afternoon. I noticed your private inquiry regarding the Palm Jebel Ali seafront residences with Alliance Capital Properties. Are you exploring this for portfolio capital allocation or a family residence?",
     },
     {
-      speaker: "Prospect (Vikram)",
-      text: "Looking for personal use within the next 3 to 6 months. Budget is around $2.5 million.",
+      speaker: "Prospect (Investor)",
+      text: "Looking for an oceanfront family estate within the next 90 days. Budget is around AED 25 million.",
     },
     {
       speaker: "DestiX Agent",
-      text: "Understood, Vikram. I've sent the private architectural lookbook to your WhatsApp and reserved a priority site walk with our Senior Director for Saturday at 11 AM.",
+      text: "Understood. I have dispatched the confidential Palm Jebel Ali briefing dossier directly to your WhatsApp and scheduled a private briefing with our Senior Managing Advisor for tomorrow at 11 AM.",
     },
   ];
 
@@ -311,10 +311,10 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                       FEATURED ARCHITECTURAL DEPLOYMENT
                     </div>
                     <div className="font-['Instrument_Serif'] text-2xl font-bold mt-1">
-                      Shade of Green &bull; Luxury Villa Estates
+                      Alliance Capital Properties (ACP Dubai) &bull; UAE Advisory
                     </div>
                     <p className="text-xs font-['Plus_Jakarta_Sans'] text-stone-400 mt-1 max-w-md">
-                      Interactive 3D villa estate navigator with procedural lighting, real-time spatial elevation, and sub-second asset streaming.
+                      Bespoke real estate capital allocation platform and autonomous acquisition infrastructure for Dubai waterfront developments and private wealth investors.
                     </p>
                   </div>
 

@@ -83,7 +83,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Interactive Benchmarks
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Shade of Green Bangalore Villas</Link></li>
+              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Alliance Capital Properties (acpdubai.com)</Link></li>
               <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Pranav Jha Editorial Platform</Link></li>
               <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Digiirox 3D Spatial Experience</Link></li>
               <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Voice Parity Audition Console</Link></li>

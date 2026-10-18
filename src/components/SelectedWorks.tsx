@@ -7,18 +7,18 @@ export function SelectedWorks() {
   const projects = [
     {
       num: "01",
-      title: "Shade of Green — Biophilic Luxury Villas & Spatial Master Plan",
-      location: "Sarjapura, Bangalore • Benchmarked to DBOX & The Boundary ArchViz",
-      category: "Spatial 3D WebGL Digital Twin & Autonomous Telephony Concierge",
-      desc: "Architectural digital platform co-engineered for luxury private villa developments. Combines a 60 FPS Three.js spatial master plan twin (built to international ArchViz specifications), gated WhatsApp lookbook automation, and an autonomous SIP telephony agent that qualifies buyer budgets ($2M+) and schedules private weekend site escorts under 42 seconds.",
+      title: "Alliance Capital Properties (ACP Dubai) — UAE Luxury Real Estate Advisory",
+      location: "Dubai, UAE • Serving Private Investors, HNW Families & Institutions",
+      category: "Bespoke Capital Advisory Architecture & Inbound Voice Acquisition",
+      desc: "Architectural digital presence and high-intent acquisition infrastructure engineered for Alliance Capital Properties (ACP Dubai). Built for strategic capital allocation across prime UAE developments (Palm Jebel Ali, Dubai Hills, and beachfront penthouses). Integrates multilingual investor qualification, automated WhatsApp portfolio briefings, and a sub-45s telephony bridge connecting global private wealth offices directly to senior advisors.",
       stats: [
-        { label: "Deal Pipeline Qualified", val: "₹18.4Cr+" },
-        { label: "Site Visit Conversion", val: "3.4x" },
-        { label: "First Contact Latency", val: "< 42s" },
+        { label: "Qualified Deal Pipeline", val: "AED 85M+" },
+        { label: "Consultation Show-Rate", val: "3.2x" },
+        { label: "International SLA", val: "< 40s" },
       ],
-      tags: ["WebGL Master Plan", "DBOX ArchViz Standard", "Sub-45s Telephony", "Salesforce CRM"],
-      url: "https://ayush.company",
-      domain: "Client Landmark (Architecture Audit Available)",
+      tags: ["Dubai Real Estate", "Private Wealth Advisory", "Multilingual Inbound", "Bespoke Digital Storefront"],
+      url: "https://acpdubai.com/",
+      domain: "acpdubai.com",
     },
     {
       num: "02",

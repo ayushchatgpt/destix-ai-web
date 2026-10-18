@@ -55,7 +55,7 @@ export default function UseCasesPage() {
         { label: "Appointment Rate", val: "94%", change: "+380% vs email" },
         { label: "Pipeline Influenced", val: "$14.2M+", change: "Quarterly qualified" },
       ],
-      liveExample: "Shade of Green Luxury Villas (Bangalore)",
+      liveExample: "Alliance Capital Properties (acpdubai.com)",
     },
     {
       id: "healthcare",
