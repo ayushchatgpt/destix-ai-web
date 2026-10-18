@@ -2,9 +2,9 @@
 
 import React from "react";
 
-export const MarqueeTrack: React.FC = () => {
+export function MarqueeTrack() {
   const items = [
-    "Sub-350ms Autonomous Voice Infrastructure",
+    "Sub-380ms Autonomous Voice Infrastructure",
     "Bespoke 3D WebGL Conversion Platforms",
     "45-Second Speed to Lead Outbound",
     "Automated n8n & CRM Integration Pipelines",
@@ -15,41 +15,43 @@ export const MarqueeTrack: React.FC = () => {
   ];
 
   return (
-    <section
+    <div
       aria-label="Track record"
-      className="overflow-hidden border-y border-white/10 bg-[#0A0C12] py-4 sm:py-5"
+      className="overflow-hidden border-y border-white/5 bg-[#08080A] py-4"
     >
       <div className="flex w-max items-center">
         {/* Track duplicate 1 */}
-        <ul className="animate-marquee flex shrink-0 items-center">
+        <div className="animate-marquee flex shrink-0 items-center">
           {items.map((item, idx) => (
-            <li key={`track-1-${idx}`} className="flex items-center">
-              <span className="whitespace-nowrap px-8 font-display text-lg tracking-wide uppercase text-slate-200 md:text-xl font-medium">
+            <div key={`track-1-${idx}`} className="flex items-center">
+              <span className="whitespace-nowrap px-8 font-['Syne'] text-sm sm:text-base tracking-wider uppercase text-[#A1A5B2] font-semibold">
                 {item}
               </span>
               <span
                 aria-hidden="true"
-                className="size-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(6,182,212,0.9)]"
+                className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] shadow-[0_0_8px_rgba(0,245,160,0.8)]"
               />
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
 
         {/* Track duplicate 2 */}
-        <ul aria-hidden="true" className="animate-marquee flex shrink-0 items-center">
+        <div aria-hidden="true" className="animate-marquee flex shrink-0 items-center">
           {items.map((item, idx) => (
-            <li key={`track-2-${idx}`} className="flex items-center">
-              <span className="whitespace-nowrap px-8 font-display text-lg tracking-wide uppercase text-slate-200 md:text-xl font-medium">
+            <div key={`track-2-${idx}`} className="flex items-center">
+              <span className="whitespace-nowrap px-8 font-['Syne'] text-sm sm:text-base tracking-wider uppercase text-[#A1A5B2] font-semibold">
                 {item}
               </span>
               <span
                 aria-hidden="true"
-                className="size-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(6,182,212,0.9)]"
+                className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] shadow-[0_0_8px_rgba(0,245,160,0.8)]"
               />
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
+
+export default MarqueeTrack;

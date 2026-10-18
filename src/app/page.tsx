@@ -1,76 +1,76 @@
 "use client";
 
 import React, { useState } from "react";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { MarqueeTrack } from "@/components/MarqueeTrack";
-import { HowWeHelp } from "@/components/HowWeHelp";
-import { ClientProof } from "@/components/ClientProof";
-import { BuiltToCompound } from "@/components/BuiltToCompound";
-import { FounderSection } from "@/components/FounderSection";
-import { TechStackMarquee } from "@/components/TechStackMarquee";
-import { PlaybooksSection } from "@/components/PlaybooksSection";
-import { CoreServicesTriad } from "@/components/CoreServicesTriad";
-import { LiveVoiceDemo } from "@/components/LiveVoiceDemo";
-import { PricingCalculator } from "@/components/PricingCalculator";
-import { FaqSection } from "@/components/FaqSection";
-import { FinalCtaFooter } from "@/components/FinalCtaFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import MarqueeTrack from "@/components/MarqueeTrack";
+import SpatialNeuralCore from "@/components/SpatialNeuralCore";
+import EngineeringPillars from "@/components/EngineeringPillars";
+import AudioTelemetryConsole from "@/components/AudioTelemetryConsole";
+import ArchitecturalShowcase from "@/components/ArchitecturalShowcase";
+import DeploymentSprints from "@/components/DeploymentSprints";
+import MinutesRoiCalculator from "@/components/MinutesRoiCalculator";
+import FounderDossier from "@/components/FounderDossier";
+import FaqSection from "@/components/FaqSection";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 
-export default function Home() {
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+export default function HomePage() {
+  const [bookingOpen, setBookingOpen] = useState(false);
 
-  const handleOpenBooking = () => setIsBookingOpen(true);
-  const handleCloseBooking = () => setIsBookingOpen(false);
+  const handleOpenBooking = () => setBookingOpen(true);
+  const handleCloseBooking = () => setBookingOpen(false);
+
+  const handleScrollToDemo = () => {
+    const el = document.getElementById("voice");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <div className="relative min-h-screen bg-[#F4F1EA] text-[#181512]">
-      {/* 1. Sticky Glass Header */}
+    <main className="min-h-screen bg-[#08080A] text-[#F4F4F6] relative selection:bg-[#00F5A0]/20 selection:text-[#00F5A0]">
+      {/* Section 1: Floating Glass Navbar */}
       <Header onOpenBooking={handleOpenBooking} />
 
-      <main>
-        {/* 2. High-Converting Hero */}
-        <Hero onOpenBooking={handleOpenBooking} />
+      {/* Section 2: The Command Center Hero */}
+      <Hero
+        onOpenBooking={handleOpenBooking}
+        onScrollToDemo={handleScrollToDemo}
+      />
 
-        {/* 3. Dark Espresso Infinite Marquee */}
-        <MarqueeTrack />
+      {/* Autonomous System Ticker Strip */}
+      <MarqueeTrack />
 
-        {/* 4. (02) How We Help (6-Pillar Border Grid + Vintage Photography) */}
-        <HowWeHelp onOpenBooking={handleOpenBooking} />
+      {/* Section 3: The Interactive 3D Spatial Canvas (DestiX Neural Core in Three.js WebGL) */}
+      <SpatialNeuralCore />
 
-        {/* 5. Client Proof & YouTube Case Studies */}
-        <ClientProof />
+      {/* Section 4: The 6 Core Engineering Pillars */}
+      <EngineeringPillars />
 
-        {/* 6. (03) Built to Compound (Triad of Depth) */}
-        <BuiltToCompound />
+      {/* Section 5: Interactive Audio Telemetry Console */}
+      <AudioTelemetryConsole />
 
-        {/* 7. (04) Founder Authority Section (Ayush Meena, Founder & CEO) */}
-        <FounderSection onOpenBooking={handleOpenBooking} />
+      {/* Section 6: The Signature Work & Architectural Showcase */}
+      <ArchitecturalShowcase />
 
-        {/* 8. Certified AI Tech Stack Marquee */}
-        <TechStackMarquee />
+      {/* Section 7: Transparent Deployment Sprints (Pricing) */}
+      <DeploymentSprints onOpenBooking={handleOpenBooking} />
 
-        {/* 9. (05) Case Studies & Playbooks (The 6 Production Blueprints) */}
-        <PlaybooksSection onOpenBooking={handleOpenBooking} />
+      {/* Section 8: Interactive Minutes & Cost Savings Calculator */}
+      <MinutesRoiCalculator onOpenBooking={handleOpenBooking} />
 
-        {/* 10. (07) Core Services Triad (In Dark Espresso) */}
-        <CoreServicesTriad onOpenBooking={handleOpenBooking} />
+      {/* Section 9: Founder Dossier (Ayush Meena) */}
+      <FounderDossier onOpenBooking={handleOpenBooking} />
 
-        {/* 11. Interactive Live Voice Agent Demo Widget */}
-        <LiveVoiceDemo />
+      {/* Frequently Asked Questions */}
+      <FaqSection />
 
-        {/* 12. (08) Transparent Pricing & Interactive Minute ROI Calculator */}
-        <PricingCalculator onOpenBooking={handleOpenBooking} />
+      {/* Section 10: Final Deployment CTA & Clean Footer */}
+      <FinalDeploymentFooter onOpenBooking={handleOpenBooking} />
 
-        {/* 13. FAQ Accordion */}
-        <FaqSection />
-      </main>
-
-      {/* 14. Final CTA & Footer */}
-      <FinalCtaFooter onOpenBooking={handleOpenBooking} />
-
-      {/* Interactive Consultation Booking Modal */}
-      <BookingModal isOpen={isBookingOpen} onClose={handleCloseBooking} />
-    </div>
+      {/* Interactive Booking & Discovery Modal */}
+      <BookingModal isOpen={bookingOpen} onClose={handleCloseBooking} />
+    </main>
   );
 }

@@ -1,90 +1,83 @@
 "use client";
 
 import React, { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, HelpCircle } from "lucide-react";
 
-export const FaqSection: React.FC = () => {
+export function FaqSection() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   const faqs = [
     {
-      q: "How fast can an agent be deployed into production?",
-      a: "Rapid execution is fundamental to DestiX AI. Most production voice agents go live in 7 to 14 business days once we understand your call flow and objections. We build the prompts, integrate your CRM/telephony webhooks, run synthetic stress tests, and conduct live test calls with you before going live.",
+      q: "How fast can a DestiX voice agent be deployed into production?",
+      a: "Rapid execution is foundational to DestiX AI. Most production voice agents go live in 7 to 14 business days once we understand your call flow and qualification logic. We engineer the prompt state machines, integrate your CRM/telephony webhooks, execute synthetic stress tests, and conduct live test dials with your team before public rollout.",
     },
     {
-      q: "Will our callers know it's an AI?",
-      a: "No. Our voice synthesis latency is sub-350ms—faster than human conversational pause thresholds. DestiX agents are tuned with natural breathing pauses, colloquial intonations, and polite interruption handling. Callers experience the exact cadence and empathy of your top sales representative.",
+      q: "Will callers know it's an AI speaking?",
+      a: "No. Our roundtrip latency is benchmarked under 380ms—faster than average human conversational pause thresholds. DestiX agents are synthesized with micro-breathing pauses, contextual colloquialisms, and sub-200ms interruption handling. Callers experience the natural cadence and poise of your top sales representative.",
     },
     {
-      q: "Can you connect with our existing CRM and WhatsApp?",
-      a: "Yes. We engineer bi-directional webhooks with HubSpot, Salesforce, GoHighLevel, Zoho, Google Sheets, and custom Postgres databases. Furthermore, the agent can trigger an instant WhatsApp confirmation with brochures, PDFs, and calendar links while the caller is still on the line.",
+      q: "Can you connect with our existing CRM, Calendar, and WhatsApp?",
+      a: "Yes. We engineer bi-directional webhooks with HubSpot, Salesforce, GoHighLevel, Zoho, Google Sheets, and custom PostgreSQL databases. Furthermore, the agent can trigger an instant WhatsApp confirmation with brochures, PDFs, and calendar links while the caller is still on the line.",
     },
     {
-      q: "Do you offer white-label development for creative agencies?",
-      a: "Yes. Several top-tier marketing and web agencies partner with DestiX AI as their dedicated AI development arm. We handle telephony orchestration, prompt engineering, and n8n backend pipelines under your agency's brand and invoice structure.",
+      q: "How does your 3D WebGL architecture integrate with voice systems?",
+      a: "We build digital storefronts that aren't static brochures. Our Three.js platforms feature interactive spatial models, real-time voice audition widgets, and direct calendar dispatching. The 3D site captures peak visual intent, while the voice agent instantly follows up on inbound form submissions in under 45 seconds.",
     },
     {
       q: "How does pricing scale with minute volume?",
-      a: "Unlike typical SaaS platforms that charge flat $0.30/min regardless of volume, our effective rate drops from $0.08/min on starter sprints down to $0.045–$0.05/min for scale operations. You never get punished for booking more calls.",
+      a: "Unlike typical SaaS platforms that charge flat $0.30/min regardless of volume, our effective rate drops from $0.08/min on starter sprints down to $0.045–$0.05/min for high-volume operations. You never get penalized for booking more calls.",
     },
     {
-      q: "What happens if a caller asks an unexpected or hostile question?",
-      a: "Every DestiX agent is equipped with deterministic edge-case guardrails. If a caller deviates completely off topic or requests a human manager, the agent responds gracefully and executes an instant live SIP transfer to your staff or triggers an urgent SMS alert with the full call recording.",
+      q: "What happens if a caller asks an unpredictable or hostile objection?",
+      a: "Every DestiX agent is equipped with deterministic edge-case guardrails. If a caller deviates completely off topic or insists on speaking with an executive, the agent responds with composure and executes an instant live SIP transfer to your staff or triggers an urgent SMS alert with the full call recording.",
     },
     {
-      q: "Are you an agency or a product company?",
-      a: "We are founder-led, bootstrapped, and engineering-driven. You work directly with Ayush Meena and principal AI engineers who write production code and tune models daily—not outsourced junior account managers or sales reps with slideware.",
+      q: "Who actually builds the system?",
+      a: "You work directly with founder Ayush Meena and our core engineering team. No junior account managers, no outsourced offshore layers, and no corporate bureaucracy. We write production code and ship live phone systems.",
     },
   ];
 
   return (
-    <section id="faq" className="relative bg-[#08090C] px-6 py-24 md:py-32 border-t border-white/10">
-      <div className="mx-auto max-w-4xl">
-        <div className="text-center">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
-            // Frequently Asked Questions
-          </span>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white">
+    <section id="faq" className="py-24 sm:py-32 bg-[#08080A] relative border-t border-white/5">
+      <div className="max-w-4xl mx-auto px-5 sm:px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111216] border border-white/10 text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#00F5A0] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-pulse" />
+            // FREQUENTLY ASKED QUESTIONS
+          </div>
+          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-5xl text-[#F4F4F6] tracking-tight leading-[1.1] mb-4">
             Everything you might be{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-              wondering.
-            </span>
+            <span className="text-[#00F5A0]">wondering.</span>
           </h2>
-          <p className="mt-4 text-sm text-slate-400 font-light">
+          <p className="text-sm sm:text-base text-[#94A3B8] leading-relaxed max-w-xl mx-auto font-normal">
             Clear, honest answers about our technology, deployment speed, and commercial agreements.
           </p>
         </div>
 
         {/* Accordion List */}
-        <div className="mt-14 divide-y divide-white/10 rounded-2xl border border-white/10 bg-[#0E1017] shadow-espresso overflow-hidden">
+        <div className="space-y-4">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
-              <div key={idx} className="transition-colors hover:bg-white/[0.02]">
+              <div
+                key={idx}
+                className="rounded-2xl bg-[#111216] border border-white/10 overflow-hidden transition-all duration-300"
+              >
                 <button
-                  type="button"
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
-                  className="flex w-full items-center justify-between p-6 text-left"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 group"
                 >
-                  <span className="font-semibold text-base md:text-lg text-white pr-4">
+                  <span className="font-['Syne'] font-bold text-base sm:text-lg text-[#F4F4F6] group-hover:text-white transition-colors">
                     {faq.q}
                   </span>
-                  <span
-                    className={`flex size-8 shrink-0 items-center justify-center rounded-full transition-all ${
-                      isOpen
-                        ? "bg-cyan-500 text-black rotate-180"
-                        : "bg-white/10 text-white hover:bg-cyan-500/20 hover:text-cyan-400"
-                    }`}
-                  >
-                    {isOpen ? <Minus className="size-4" /> : <Plus className="size-4" />}
-                  </span>
+                  <div className="w-8 h-8 rounded-full bg-[#16181F] border border-white/10 flex items-center justify-center shrink-0 text-[#00F5A0]">
+                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                  </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 text-sm leading-relaxed text-slate-400 font-light">
-                    <div className="pt-2 border-t border-white/5">
-                      {faq.a}
-                    </div>
+                  <div className="px-6 pb-6 text-sm sm:text-base text-[#94A3B8] leading-relaxed border-t border-white/5 pt-4">
+                    {faq.a}
                   </div>
                 )}
               </div>
@@ -94,4 +87,6 @@ export const FaqSection: React.FC = () => {
       </div>
     </section>
   );
-};
+}
+
+export default FaqSection;

@@ -1,193 +1,135 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import { ArrowUpRight, ShieldCheck, Sparkles, CheckCircle2, Star, Cpu, Zap, Activity } from "lucide-react";
-import { Interactive3DHero } from "./Interactive3DHero";
+import React from "react";
+import { ArrowUpRight, ShieldCheck, Zap, PhoneCall, Cpu, Activity } from "lucide-react";
 
 interface HeroProps {
   onOpenBooking: () => void;
+  onScrollToDemo: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
-  const rotatingWords = [
-    "answer every high-ticket call",
-    "qualify ad leads in 45 seconds",
-    "automate CRM & WhatsApp workflows",
-    "scale revenue without headcount",
-    "command category authority",
-  ];
-
-  const [currentWordIdx, setCurrentWordIdx] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrentWordIdx((prev) => (prev + 1) % rotatingWords.length);
-        setFade(true);
-      }, 350);
-    }, 2800);
-
-    return () => clearInterval(interval);
-  }, [rotatingWords.length]);
-
+export default function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-[#08090C] bg-cyber-grid px-6 pt-36 pb-20 md:px-10 md:pt-48 md:pb-28">
-      {/* 3D Cyan & Indigo Mathematical Wave Canvas */}
-      <Interactive3DHero />
+    <section className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 overflow-hidden bg-obsidian-grid">
+      {/* Ambient Radial Glow Gradients */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[900px] h-[400px] sm:h-[500px] bg-gradient-to-b from-[#00F5A0]/10 via-[#3B82F6]/5 to-transparent blur-[140px] pointer-events-none -z-10" />
 
-      {/* Cyber Radial Glow Accents */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div
-          className="absolute -left-[15%] -top-[20%] size-[60vw] rounded-full opacity-25 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, rgba(6, 182, 212, 0.4), transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute -bottom-[20%] -right-[15%] size-[55vw] rounded-full opacity-20 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, rgba(99, 102, 241, 0.4), transparent 70%)",
-          }}
-        />
-      </div>
-
-      <div className="relative mx-auto max-w-7xl">
-        {/* Futuristic Status Badge */}
-        <div className="inline-flex items-center gap-2.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-1.5 backdrop-blur-md mb-6 shadow-[0_0_20px_rgba(6,182,212,0.15)]">
-          <span className="flex size-2 rounded-full bg-emerald-400 animate-ping" />
-          <span className="font-mono text-[11px] font-semibold tracking-wider text-cyan-300 uppercase">
-            Kernel v2.5 Telephony Stream
-          </span>
-          <span className="text-white/20">|</span>
-          <span className="text-xs text-slate-300 font-medium">
-            Installed to{" "}
-            <span
-              className={`font-semibold text-cyan-400 transition-opacity duration-300 ${
-                fade ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              {rotatingWords[currentWordIdx]}
-            </span>
-          </span>
-        </div>
-
-        {/* Display Heading - Modern High-Tech Architecture */}
-        <h1
-          id="hero-tagline"
-          className="mt-2 max-w-5xl text-balance font-display text-[clamp(2.5rem,7vw,5.75rem)] font-bold leading-[1.02] tracking-tight text-white"
-        >
-          Engineering autonomous AI phone operations that{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
-            scale revenue.
-          </span>
-        </h1>
-
-        {/* High-Tech Trust Signals */}
-        <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-400">
-          <div className="flex items-center gap-2 font-medium text-white">
-            <div className="flex text-amber-400">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="size-4 fill-current" />
-              ))}
-            </div>
-            <span>4.9/5 verified client outcome score</span>
+      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          {/* Telemetry Eyebrow */}
+          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#111216] border border-white/10 text-[11px] sm:text-xs font-['JetBrains_Mono'] tracking-[0.2em] text-[#A1A5B2] mb-8 shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+            <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-beacon" />
+            <span className="text-[#00F5A0] font-semibold">[ SYSTEM: ONLINE ]</span>
+            <span className="text-white/20">•</span>
+            <span>ROUNDTRIP LATENCY: 380MS</span>
+            <span className="text-white/20 hidden sm:inline">•</span>
+            <span className="hidden sm:inline">24/7 INBOUND & OUTBOUND OPERATIONS</span>
           </div>
 
-          <span className="hidden h-4 w-px bg-white/10 sm:block" aria-hidden="true" />
+          {/* Giant Display Headline */}
+          <h1 className="font-['Syne'] font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-[76px] tracking-[-0.03em] leading-[1.08] text-[#F4F4F6] mb-6 sm:mb-8">
+            Autonomous voice agents{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00F5A0] via-[#52F8BD] to-[#3B82F6]">
+              &amp; category-defining
+            </span>{" "}
+            3D web platforms.
+          </h1>
 
-          <div className="flex items-center gap-1.5 font-medium text-slate-300">
-            <CheckCircle2 className="size-4 text-emerald-400" />
-            <span>100% money-back deployment guarantee</span>
-          </div>
-
-          <span className="hidden h-4 w-px bg-white/10 sm:block" aria-hidden="true" />
-
-          <div className="flex items-center gap-1.5 font-medium text-slate-300">
-            <ShieldCheck className="size-4 text-cyan-400" />
-            <span>Direct engineering under CEO Ayush Meena</span>
-          </div>
-        </div>
-
-        {/* Subparagraph and Action Buttons */}
-        <div className="mt-10 flex flex-col gap-10 border-t border-white/10 pt-8 lg:flex-row lg:items-end lg:justify-between">
-          <p className="max-w-xl text-pretty text-lg leading-relaxed text-slate-300 font-light">
-            AI does the qualification, you book the revenue. DestiX AI installs human-sounding voice agents
-            (<span className="text-cyan-400 font-mono font-medium">&lt;350ms</span> latency), a complete AI operating system,
-            and category-defining 3D interactive web platforms that turn traffic into booked revenue 24/7.
+          {/* Subparagraph */}
+          <p className="text-base sm:text-lg md:text-xl text-[#94A3B8] leading-relaxed max-w-2xl mb-10 font-normal">
+            DestiX AI engineers ultra-low-latency voice agents that answer every call in native human cadence, paired with high-performance 3D digital storefronts that command instant authority.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
-            {/* Primary Action Button */}
+          {/* Dual Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16 sm:mb-20">
+            {/* Primary Emerald Button */}
             <button
               onClick={onOpenBooking}
-              className="btn-primary group inline-flex items-center gap-3 px-8 py-3.5 text-xs font-semibold uppercase tracking-wider"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#00F5A0] hover:bg-[#34F8B3] text-[#08080A] font-bold text-sm tracking-tight transition-all duration-300 shadow-[0_0_35px_-5px_rgba(0,245,160,0.45)] hover:scale-[1.02] active:scale-[0.98]"
             >
-              <span>Schedule Strategy Call</span>
-              <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <span>Schedule an Architecture Session</span>
+              <ArrowUpRight className="w-4 h-4 text-[#08080A] stroke-[2.5]" />
             </button>
 
-            {/* Secondary Action Button with Equalizer Bars */}
-            <a
-              href="#live-demo"
-              className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-950/30 hover:text-cyan-300"
+            {/* Secondary Frosted Obsidian Button with Soundwave Bars */}
+            <button
+              onClick={onScrollToDemo}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-[#111216] hover:bg-[#16181F] border border-white/10 hover:border-[#00F5A0]/40 text-[#F4F4F6] text-sm font-semibold transition-all duration-300 shadow-lg group"
             >
-              <span className="flex items-end gap-0.5 h-4" aria-hidden="true">
-                <span className="w-0.5 rounded-full bg-cyan-400 eq-bar-1" />
-                <span className="w-0.5 rounded-full bg-cyan-400 eq-bar-2" />
-                <span className="w-0.5 rounded-full bg-cyan-400 eq-bar-3" />
-                <span className="w-0.5 rounded-full bg-cyan-400 eq-bar-4" />
-              </span>
-              <span>Test Voice Agent Live</span>
-            </a>
+              <div className="flex items-center gap-0.5 h-4">
+                <span className="w-1 bg-[#00F5A0] rounded-full animate-eq-1" />
+                <span className="w-1 bg-[#00F5A0] rounded-full animate-eq-2" />
+                <span className="w-1 bg-[#00F5A0] rounded-full animate-eq-3" />
+                <span className="w-1 bg-[#00F5A0] rounded-full animate-eq-4" />
+              </div>
+              <span>Test an Agent Live (Audio Console)</span>
+            </button>
+          </div>
+
+          {/* Live Performance Strip (Bordered Grid) */}
+          <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 p-px rounded-2xl overflow-hidden shadow-2xl">
+            <div className="bg-[#111216]/90 backdrop-blur-xl p-5 sm:p-6 text-left group hover:bg-[#16181F] transition-colors">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[11px] font-['JetBrains_Mono'] tracking-widest text-[#7A7D87] uppercase">
+                  Speed to Lead
+                </span>
+                <Zap className="w-4 h-4 text-[#00F5A0]" />
+              </div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-['Syne'] text-[#F4F4F6] mb-1">
+                &lt; 45s
+              </div>
+              <div className="text-xs text-[#7A7D87]">
+                Instant outbound ad-to-call response
+              </div>
+            </div>
+
+            <div className="bg-[#111216]/90 backdrop-blur-xl p-5 sm:p-6 text-left group hover:bg-[#16181F] transition-colors">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[11px] font-['JetBrains_Mono'] tracking-widest text-[#7A7D87] uppercase">
+                  Qualification
+                </span>
+                <ShieldCheck className="w-4 h-4 text-[#00F5A0]" />
+              </div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-['Syne'] text-[#F4F4F6] mb-1">
+                99.2%
+              </div>
+              <div className="text-xs text-[#7A7D87]">
+                Precision lead triage accuracy
+              </div>
+            </div>
+
+            <div className="bg-[#111216]/90 backdrop-blur-xl p-5 sm:p-6 text-left group hover:bg-[#16181F] transition-colors">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[11px] font-['JetBrains_Mono'] tracking-widest text-[#7A7D87] uppercase">
+                  Voice Latency
+                </span>
+                <Activity className="w-4 h-4 text-[#00F5A0]" />
+              </div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-['Syne'] text-[#F4F4F6] mb-1 text-[#00F5A0]">
+                380ms
+              </div>
+              <div className="text-xs text-[#7A7D87]">
+                Ultra-low conversational latency
+              </div>
+            </div>
+
+            <div className="bg-[#111216]/90 backdrop-blur-xl p-5 sm:p-6 text-left group hover:bg-[#16181F] transition-colors">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[11px] font-['JetBrains_Mono'] tracking-widest text-[#7A7D87] uppercase">
+                  Architecture
+                </span>
+                <Cpu className="w-4 h-4 text-[#00F5A0]" />
+              </div>
+              <div className="text-3xl sm:text-4xl font-extrabold font-['Syne'] text-[#F4F4F6] mb-1">
+                0%
+              </div>
+              <div className="text-xs text-[#7A7D87]">
+                Template code • 100% bespoke engineering
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* 4-Stat Metrics Grid (Cyber Glass Panels) */}
-        <dl className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div className="glass-panel glass-panel-hover rounded-2xl p-6 border border-white/10">
-            <dd className="font-display text-4xl text-white font-bold md:text-5xl">
-              10<span className="text-cyan-400">x</span>
-            </dd>
-            <dt className="mt-2 text-xs font-mono uppercase tracking-wider text-slate-400">
-              Revenue potential unlocked
-            </dt>
-          </div>
-
-          <div className="glass-panel glass-panel-hover rounded-2xl p-6 border border-white/10">
-            <dd className="font-display text-4xl text-white font-bold md:text-5xl">
-              90<span className="text-cyan-400">%*</span>
-            </dd>
-            <dt className="mt-2 text-xs font-mono uppercase tracking-wider text-slate-400">
-              Operational lead drop-off eliminated
-            </dt>
-          </div>
-
-          <div className="glass-panel glass-panel-hover rounded-2xl p-6 border border-white/10">
-            <dd className="font-display text-4xl text-white font-bold md:text-5xl">
-              $1M<span className="text-cyan-400">+</span>
-            </dd>
-            <dt className="mt-2 text-xs font-mono uppercase tracking-wider text-slate-400">
-              Pipeline generated by architectures
-            </dt>
-          </div>
-
-          <div className="glass-panel glass-panel-hover rounded-2xl p-6 border border-white/10">
-            <dd className="font-display text-4xl text-white font-bold md:text-5xl">
-              24<span className="text-cyan-400">/7</span>
-            </dd>
-            <dt className="mt-2 text-xs font-mono uppercase tracking-wider text-slate-400">
-              Instant voice & WhatsApp qualification
-            </dt>
-          </div>
-        </dl>
-
-        <p className="mt-4 text-xs font-mono text-slate-500">
-          *Results vary by business model. Metrics based on client audits and production phone deployments.
-        </p>
       </div>
     </section>
   );
-};
+}

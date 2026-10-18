@@ -10,11 +10,11 @@ interface BookingModalProps {
   initialService?: string;
 }
 
-export const BookingModal: React.FC<BookingModalProps> = ({
+export function BookingModal({
   isOpen,
   onClose,
-  initialService = "Autonomous AI Voice Agents",
-}) => {
+  initialService = "Sprint 01: Single Voice Agent Deployment",
+}: BookingModalProps) {
   const [selectedService, setSelectedService] = useState(initialService);
   const [selectedDate, setSelectedDate] = useState("Tomorrow, 4:00 PM IST");
   const [formData, setFormData] = useState({
@@ -38,16 +38,16 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         particleCount: 80,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ["#06B6D4", "#3B82F6", "#10B981", "#F8FAFC"],
+        colors: ["#00F5A0", "#3B82F6", "#10B981", "#F4F4F6"],
       });
-    }, 700);
+    }, 600);
   };
 
   const services = [
-    "Autonomous AI Voice Agents",
-    "Enterprise AI Operating System",
-    "High-Converting 3D WebGL Storefront",
-    "White-Label Agency Partnership",
+    "Sprint 01: Single Voice Agent Deployment ($500/mo)",
+    "Sprint 02: Full 3D Spatial Web Platform ($1,800)",
+    "Sprint 03: Complete DestiX Growth OS ($1,250/mo)",
+    "White-Label Agency Infrastructure Partnership",
   ];
 
   const timeSlots = [
@@ -59,201 +59,188 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   ];
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity"
-        onClick={onClose}
-      />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
+      <div className="relative w-full max-w-xl rounded-3xl bg-[#111216] border border-white/10 p-6 sm:p-10 shadow-[0_25px_60px_rgba(0,0,0,0.9),0_0_35px_rgba(0,245,160,0.2)] max-h-[92vh] overflow-y-auto">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#16181F] text-[#7A7D87] hover:text-[#F4F4F6] border border-white/10 hover:border-[#00F5A0]/40 transition-colors"
+          aria-label="Close Modal"
+        >
+          <X className="w-5 h-5" />
+        </button>
 
-      {/* Modal Card */}
-      <div className="relative w-full max-w-xl overflow-hidden rounded-3xl border border-white/15 bg-[#0E1017] text-white shadow-2xl">
-        {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 px-6 py-5 bg-white/[0.02]">
+        {!isBooked ? (
           <div>
-            <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
-              Private Strategy Session
-            </span>
-            <h3 className="font-display text-2xl font-bold text-white">
-              Schedule 30-min with <span className="text-cyan-400">Ayush Meena</span>
-            </h3>
-          </div>
-          <button
-            onClick={onClose}
-            className="rounded-full p-2 text-slate-400 transition-colors hover:bg-white/10 hover:text-white"
-            aria-label="Close modal"
-          >
-            <X className="size-5" />
-          </button>
-        </div>
-
-        {/* Content */}
-        <div className="p-6 sm:p-8">
-          {isBooked ? (
-            <div className="py-8 text-center">
-              <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
-                <CheckCircle className="size-8" />
-              </div>
-              <h4 className="font-display text-3xl font-bold text-white">
-                Consultation Confirmed
-              </h4>
-              <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-slate-400">
-                A calendar invitation and direct Google Meet link have been prepared for{" "}
-                <strong className="text-white">{formData.email || "your email"}</strong> with founder{" "}
-                <strong className="text-cyan-400">Ayush Meena</strong>.
-              </p>
-
-              <div className="mx-auto mt-6 max-w-md rounded-2xl border border-white/10 bg-[#08090C] p-4 text-left text-xs space-y-2 font-mono">
-                <div className="flex justify-between text-slate-400">
-                  <span>Focus Area</span>
-                  <span className="text-white font-sans font-medium">{selectedService}</span>
-                </div>
-                <div className="flex justify-between text-slate-400">
-                  <span>Selected Time</span>
-                  <span className="text-cyan-300 font-sans font-medium">{selectedDate}</span>
-                </div>
-                <div className="flex justify-between text-slate-400">
-                  <span>Lead Engineer</span>
-                  <span className="text-white font-sans font-medium">Ayush Meena (Founder & CEO)</span>
-                </div>
-              </div>
-
-              <div className="mt-8 flex justify-center gap-3">
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="btn-primary px-8 py-3 text-xs uppercase tracking-wider font-semibold"
-                >
-                  Done
-                </button>
-              </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#16181F] border border-white/10 text-[10px] font-['JetBrains_Mono'] tracking-widest text-[#00F5A0] uppercase mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00F5A0] animate-beacon" />
+              Direct Access to Founder
             </div>
-          ) : (
-            <form onSubmit={handleBook} className="space-y-5">
-              {/* Service Selection */}
+
+            <h3 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-[#F4F4F6] tracking-tight mb-2">
+              Schedule Architecture Session.
+            </h3>
+            <p className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed mb-6">
+              You will meet directly with founder &amp; systems architect <span className="text-[#F4F4F6] font-semibold">Ayush Meena</span>. We will map your call architecture, review conversion metrics, and confirm 5x ROI feasibility.
+            </p>
+
+            <form onSubmit={handleBook} className="space-y-4">
+              {/* Target Sprint Selection */}
               <div>
-                <label className="block text-[11px] font-mono font-semibold uppercase tracking-[0.14em] text-slate-400">
-                  1. Select Strategic Focus
+                <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1.5">
+                  Target Deployment Scope
                 </label>
-                <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {services.map((srv) => (
+                <select
+                  value={selectedService}
+                  onChange={(e) => setSelectedService(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-[#08080A] border border-white/10 text-[#F4F4F6] text-xs sm:text-sm focus:border-[#00F5A0] focus:outline-none transition-colors"
+                >
+                  {services.map((s, idx) => (
+                    <option key={idx} value={s} className="bg-[#111216] text-[#F4F4F6]">
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Slot Picker */}
+              <div>
+                <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1.5">
+                  Select Discovery Window
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {timeSlots.map((slot, idx) => (
                     <button
-                      key={srv}
                       type="button"
-                      onClick={() => setSelectedService(srv)}
-                      className={`text-left px-3.5 py-2.5 rounded-xl border text-xs font-medium transition-all ${
-                        selectedService === srv
-                          ? "border-cyan-400 bg-cyan-950/40 text-cyan-300 font-semibold shadow-[0_0_12px_rgba(6,182,212,0.2)]"
-                          : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-white/20 hover:text-white"
+                      key={idx}
+                      onClick={() => setSelectedDate(slot)}
+                      className={`px-3 py-2.5 rounded-xl text-left text-xs font-['JetBrains_Mono'] border transition-all ${
+                        selectedDate === slot
+                          ? "bg-[#16181F] border-[#00F5A0] text-[#00F5A0] font-semibold shadow-[0_0_15px_rgba(0,245,160,0.15)]"
+                          : "bg-[#08080A] border-white/5 text-[#7A7D87] hover:border-white/20"
                       }`}
                     >
-                      {srv}
+                      {slot}
                     </button>
                   ))}
                 </div>
               </div>
 
-              {/* Time slot picker */}
-              <div>
-                <label className="block text-[11px] font-mono font-semibold uppercase tracking-[0.14em] text-slate-400">
-                  2. Choose Preferred Window
-                </label>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {timeSlots.map((ts) => (
-                    <button
-                      key={ts}
-                      type="button"
-                      onClick={() => setSelectedDate(ts)}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs transition-all ${
-                        selectedDate === ts
-                          ? "border-cyan-400 bg-cyan-500 text-black font-semibold shadow-[0_0_10px_rgba(6,182,212,0.4)]"
-                          : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-white/20 hover:text-white"
-                      }`}
-                    >
-                      <Clock className="size-3" />
-                      {ts}
-                    </button>
-                  ))}
+              {/* Name & Email Fields */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div>
+                  <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. Marcus Vance"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#08080A] border border-white/10 text-[#F4F4F6] text-xs sm:text-sm placeholder:text-[#525560] focus:border-[#00F5A0] focus:outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1">
+                    Work Email
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    placeholder="marcus@company.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#08080A] border border-white/10 text-[#F4F4F6] text-xs sm:text-sm placeholder:text-[#525560] focus:border-[#00F5A0] focus:outline-none"
+                  />
                 </div>
               </div>
 
-              {/* Contact Details */}
-              <div className="space-y-3 pt-2">
-                <label className="block text-[11px] font-mono font-semibold uppercase tracking-[0.14em] text-slate-400">
-                  3. Your Details
-                </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="relative">
-                    <User className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-slate-500" />
-                    <input
-                      required
-                      type="text"
-                      placeholder="Your Full Name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#08090C] py-2.5 pl-10 pr-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-slate-500" />
-                    <input
-                      required
-                      type="email"
-                      placeholder="Work Email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#08090C] py-2.5 pl-10 pr-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                    />
-                  </div>
+              {/* Company & Phone */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1">
+                    Company / Domain
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="company.com"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#08080A] border border-white/10 text-[#F4F4F6] text-xs sm:text-sm placeholder:text-[#525560] focus:border-[#00F5A0] focus:outline-none"
+                  />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="relative">
-                    <Building className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-slate-500" />
-                    <input
-                      required
-                      type="text"
-                      placeholder="Company Name"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#08090C] py-2.5 pl-10 pr-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-slate-500" />
-                    <input
-                      required
-                      type="tel"
-                      placeholder="Phone / WhatsApp"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full rounded-xl border border-white/10 bg-[#08090C] py-2.5 pl-10 pr-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none"
-                    />
-                  </div>
+                <div>
+                  <label className="block text-[11px] font-['JetBrains_Mono'] uppercase tracking-wider text-[#7A7D87] mb-1">
+                    Phone (For Instant Demo Dial)
+                  </label>
+                  <input
+                    type="tel"
+                    required
+                    placeholder="+1 (555) 000-0000"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#08080A] border border-white/10 text-[#F4F4F6] text-xs sm:text-sm placeholder:text-[#525560] focus:border-[#00F5A0] focus:outline-none"
+                  />
                 </div>
               </div>
 
               {/* Submit Button */}
-              <div className="pt-2">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="btn-primary w-full py-4 text-xs font-mono uppercase tracking-wider font-semibold"
-                >
-                  {isSubmitting ? (
-                    <span>Securing Strategy Slot...</span>
-                  ) : (
-                    <span>Lock In Strategy Consultation</span>
-                  )}
-                </button>
-                <p className="mt-2 text-center text-[11px] font-mono text-slate-500">
-                  Zero sales pitch. Strict 5x ROI model audit or we politely decline.
-                </p>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full mt-4 py-4 rounded-full bg-[#00F5A0] hover:bg-[#34F8B3] text-[#08080A] font-bold text-sm tracking-tight flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_0_25px_rgba(0,245,160,0.4)] disabled:opacity-50"
+              >
+                {isSubmitting ? (
+                  <span>Reserving Calendar Slot...</span>
+                ) : (
+                  <>
+                    <span>Confirm Session with Ayush</span>
+                    <ArrowRight className="w-4 h-4 text-[#08080A]" />
+                  </>
+                )}
+              </button>
+
+              <div className="text-center text-[10px] font-['JetBrains_Mono'] text-[#7A7D87] pt-2">
+                DIRECT FOUNDER ACCESS • ZERO OBLIGATION • 100% PRIVATE DISCOVERY
               </div>
             </form>
-          )}
-        </div>
+          </div>
+        ) : (
+          /* Booked Confirmation Screen */
+          <div className="text-center py-8">
+            <div className="w-16 h-16 rounded-full bg-[#00F5A0]/10 border border-[#00F5A0]/30 text-[#00F5A0] flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="w-8 h-8 text-[#00F5A0]" />
+            </div>
+
+            <h3 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-[#F4F4F6] mb-3">
+              Calendar Confirmed.
+            </h3>
+
+            <p className="text-sm text-[#94A3B8] leading-relaxed max-w-md mx-auto mb-6">
+              We&apos;ve reserved <span className="text-[#00F5A0] font-semibold">{selectedDate}</span> for your architecture session with <span className="text-white font-semibold">Ayush Meena</span>. A Google Meet invite and blueprint dossier have been sent to <span className="text-[#00F5A0]">{formData.email}</span>.
+            </p>
+
+            <div className="p-4 rounded-2xl bg-[#08080A] border border-white/5 text-xs text-[#7A7D87] font-['JetBrains_Mono'] max-w-md mx-auto mb-8 space-y-1 text-left">
+              <div>SESSION: {selectedService}</div>
+              <div>DATE: {selectedDate}</div>
+              <div>ORGANIZER: Ayush Meena (ayushmeenadestixai@gmail.com)</div>
+            </div>
+
+            <button
+              onClick={onClose}
+              className="px-8 py-3 rounded-full bg-[#16181F] hover:bg-[#1E222D] border border-white/10 text-xs font-bold text-[#F4F4F6] transition-colors"
+            >
+              Return to Platform
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
-};
+}
+
+export default BookingModal;
