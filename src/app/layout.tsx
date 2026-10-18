@@ -97,11 +97,20 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://ayush.company/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "DestiX AI — Autonomous Conversational Infrastructure & 3D Web Studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "DestiX AI — Autonomous Conversational Infrastructure",
     description: "AI does the heavy lifting, you bank the revenue. Principal: Ayush Meena.",
+    images: ["https://ayush.company/og-image.png"],
   },
   icons: {
     icon: [
@@ -204,6 +213,44 @@ export default function RootLayout({
                     "3D Web Development",
                     "Luxury Real Estate Agency Websites",
                     "Telephony Inbound & Outbound Systems",
+                  ],
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://ayush.company/#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Who is the founder of DestiX AI?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI (also known as Desti) was founded by Ayush Meena, Principal Systems Architect based in Delhi NCR and deploying globally. The practice specializes in autonomous AI voice telephony and bespoke 3D WebGL digital platforms.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What services does DestiX AI provide?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI provides three core enterprise systems: 1) Autonomous Voice Agents with sub-45s speed to lead and sub-500ms voice parity, 2) Bespoke 3D WebGL digital architectures in Next.js and Three.js, and 3) Unified AI Operating Systems synchronizing WhatsApp API, telephony, and enterprise CRM pipelines.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is an AI Voice Receptionist?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "An AI Voice Receptionist is an autonomous telephony system that answers inbound business calls in under two rings 24/7. It eliminates hold times, qualifies high-ticket buyer intent, answers tier-1 inquiries, and books appointments directly to executive calendars.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How does DestiX AI help luxury real estate agencies?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI builds category-defining 3D property digital storefronts and pairs them with automated multilingual voice agents that intercept inbound buyer inquiries under 45 seconds, verified in production for Alliance Capital Properties (ACP Dubai).",
+                      },
+                    },
                   ],
                 },
               ],
