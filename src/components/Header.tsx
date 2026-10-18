@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
@@ -40,8 +41,18 @@ export function Header({ onOpenBooking }: HeaderProps) {
             : "bg-[#FFFFFF]/80 backdrop-blur-md border border-[#E2DDD1]/80"
         }`}
       >
-        {/* Logo: Desti in serif + XAI in italic champagne bronze */}
+        {/* Logo: DestiX AI Emblem + Typography */}
         <Link href="/" className="flex items-center gap-3 group">
+          <div className="w-9 h-9 rounded-xl overflow-hidden shadow-xs border border-[#B88746]/40 flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+            <Image
+              src="/icon.svg"
+              alt="DestiX AI Mark"
+              width={36}
+              height={36}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
           <div className="flex flex-col">
             <div className="flex items-baseline gap-1">
               <span className="font-['Instrument_Serif'] text-2xl font-bold tracking-tight text-[#181614]">
