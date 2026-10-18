@@ -33,13 +33,13 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
             (08) STUDIO LEADERSHIP
           </div>
-          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181512] leading-[1.0] mb-6">
+          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             Principal &amp; systems{" "}
-            <span className="italic text-[#B88746]">architect.</span>
+            <span className="italic text-[#B8652B]">architect.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             DestiX AI operates with the intimacy and precision of a private advisory practice. Direct builder access with zero corporate bloat.
@@ -59,19 +59,19 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
                   className="object-cover object-top filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-500"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#181512] via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#181614] via-transparent to-transparent opacity-60" />
 
                 <div className="absolute bottom-4 inset-x-4 flex items-center justify-between px-3 py-2 rounded-xl bg-white/90 backdrop-blur-md border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono']">
-                  <span className="text-[#B88746] font-bold">● STUDIO PRINCIPAL</span>
-                  <span className="text-[#181512]">AYUSH MEENA</span>
+                  <span className="text-[#B8652B] font-bold">● STUDIO PRINCIPAL</span>
+                  <span className="text-[#181614]">AYUSH MEENA</span>
                 </div>
               </div>
 
               {/* Coordinates */}
               <div className="space-y-1.5 text-xs font-['JetBrains_Mono'] text-[#888277]">
-                <div className="flex items-center justify-center gap-1.5 text-[#181512]">
-                  <MapPin className="w-3.5 h-3.5 text-[#B88746]" />
-                  <span>Delhi NCR, India • Deploying Globally</span>
+                <div className="flex items-center justify-center gap-1.5 text-[#181614]">
+                  <MapPin className="w-3.5 h-3.5 text-[#B8652B]" />
+                  <span>Delhi NCR &amp; Global Remote</span>
                 </div>
                 <div className="flex items-center justify-center gap-1.5">
                   <Globe className="w-3.5 h-3.5 text-[#888277]" />
@@ -82,11 +82,11 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
 
             {/* Right 7 Cols: Narrative */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-[0.18em] text-[#B88746] uppercase mb-4 font-bold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-[0.18em] text-[#B8652B] uppercase mb-4 font-bold">
                 Principal &amp; Systems Architect
               </div>
 
-              <h3 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181512] mb-6">
+              <h3 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mb-6">
                 Ayush Meena
               </h3>
 
@@ -103,8 +103,8 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {credentials.map((c, idx) => (
                   <div key={idx} className="p-4 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
-                    <div className="flex items-center gap-2 text-xs font-bold text-[#181512] mb-1">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B88746] shrink-0" />
+                    <div className="flex items-center gap-2 text-xs font-bold text-[#181614] mb-1">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B8652B] shrink-0" />
                       <span>{c.title}</span>
                     </div>
                     <p className="text-xs text-[#55514B] leading-relaxed">
@@ -118,17 +118,17 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <button
                   onClick={onOpenBooking}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#181512] hover:bg-[#B88746] text-[#F6F4EE] font-semibold text-xs tracking-tight transition-all shadow-sm"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#181614] hover:bg-[#B8652B] text-[#F6F4EE] font-semibold text-xs tracking-tight transition-all shadow-sm"
                 >
-                  <span>Request Private Architecture Discovery</span>
+                  <span>Request Private Diagnostic Call</span>
                   <ArrowUpRight className="w-4 h-4 text-[#F6F4EE]" />
                 </button>
 
                 <a
                   href="mailto:ayushmeenadestixai@gmail.com"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#ECE8DC] border border-[#E2DDD1] text-xs font-['JetBrains_Mono'] text-[#181512] transition-colors"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#EDE8DC] border border-[#E2DDD1] text-xs font-['JetBrains_Mono'] text-[#181614] transition-colors"
                 >
-                  <Mail className="w-3.5 h-3.5 text-[#B88746]" />
+                  <Mail className="w-3.5 h-3.5 text-[#B8652B]" />
                   <span>ayushmeenadestixai@gmail.com</span>
                 </a>
               </div>

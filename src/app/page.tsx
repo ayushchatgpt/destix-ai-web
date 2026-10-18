@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MarqueeTrack from "@/components/MarqueeTrack";
-import OperatingPrinciples from "@/components/OperatingPrinciples";
+import HowWeBuild from "@/components/HowWeBuild";
 import SelectedWorks from "@/components/SelectedWorks";
 import ProductionPlaybooks from "@/components/ProductionPlaybooks";
 import CorePracticeAreas from "@/components/CorePracticeAreas";
 import VoiceDemoConsole from "@/components/VoiceDemoConsole";
-import EngagementModel from "@/components/EngagementModel";
+import ScopingModel from "@/components/ScopingModel";
 import LeadershipDossier from "@/components/LeadershipDossier";
 import FaqSection from "@/components/FaqSection";
 import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
@@ -29,23 +29,23 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#F6F4EE] text-[#181512] relative selection:bg-[#B88746]/20 selection:text-[#181512]">
-      {/* Section 1: The Architectural Floating Header */}
+    <main className="min-h-screen bg-[#F6F4EE] text-[#181614] relative selection:bg-[#B8652B]/20 selection:text-[#181614]">
+      {/* Section 1: Sticky Glass Header (Always Converting) */}
       <Header onOpenBooking={handleOpenBooking} />
 
-      {/* Section 2: The Command Hero */}
+      {/* Section 2: The High-Converting Hero */}
       <Hero
         onOpenBooking={handleOpenBooking}
         onScrollToDemo={handleScrollToDemo}
       />
 
-      {/* Section 3: The Monumental Espresso Marquee */}
+      {/* Section 3: Deep Espresso Marquee (Authority Strip) */}
       <MarqueeTrack />
 
-      {/* Section 4: (02) The DestiX Operating Principles (How We Think) */}
-      <OperatingPrinciples />
+      {/* Section 4: (02) The Conversion Problem & Our Solution (6 Pillars) */}
+      <HowWeBuild />
 
-      {/* Section 5: (03) Selected Works & Architectural Benchmarks */}
+      {/* Section 5: (03) Selected Work & Live Proof */}
       <SelectedWorks />
 
       {/* Section 6: (04) Deployed Production Playbooks (Vertical Blueprints) */}
@@ -57,19 +57,19 @@ export default function HomePage() {
       {/* Section 8: (06) The Live Voice Demonstration Console */}
       <VoiceDemoConsole />
 
-      {/* Section 9: (07) The Engagement Model & Transparent Volume Modeler */}
-      <EngagementModel onOpenBooking={handleOpenBooking} />
+      {/* Section 9: (07) The Scoping Model & Interactive Volume Modeler (NO TIERS) */}
+      <ScopingModel onOpenBooking={handleOpenBooking} />
 
       {/* Section 10: (08) The Studio Leadership Dossier */}
       <LeadershipDossier onOpenBooking={handleOpenBooking} />
 
-      {/* Section 11: Institutional FAQ Accordion */}
+      {/* Section 11: High-Trust FAQ Accordion */}
       <FaqSection />
 
-      {/* Section 12: Final Commissioning Invitation & Footer */}
+      {/* Section 12: Final High-Conversion Invitation & Footer */}
       <FinalDeploymentFooter onOpenBooking={handleOpenBooking} />
 
-      {/* Private Architecture Discovery Modal */}
+      {/* 30-Min Diagnostic Consultation Modal */}
       <BookingModal isOpen={bookingOpen} onClose={handleCloseBooking} />
     </main>
   );

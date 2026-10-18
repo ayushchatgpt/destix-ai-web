@@ -8,24 +8,24 @@ export function FaqSection() {
 
   const faqs = [
     {
-      q: "What is the expected production deployment timeline?",
-      a: "Our standard sprint timeline is 10 to 14 business days from kickoff. During this window, we map your objection state machine, author deterministic guardrails, integrate telephony SIP trunking with your CRM and WhatsApp Business API, and execute comprehensive synthetic stress tests before public caller routing.",
+      q: "How do you scope pricing without generic tiers?",
+      a: "Every enterprise has distinct operational plumbing, call minutes, and database complexities. We do not sell one-size-fits-all packages. During our 30-minute diagnostic session, we audit your average customer deal size, monthly inbound call volume, and lead drop-off rate to build an explicit financial ROI model in writing. If the math does not clear a 5x return on your investment, we politely decline the project.",
     },
     {
-      q: "Will callers detect that they are conversing with an autonomous agent?",
-      a: "No. Our conversational roundtrip latency is rigorously benchmarked under 500ms—faster than human pause perception. DestiX agents are synthesized with subtle breathing pauses, natural phrasing, and sub-200ms interruption handling. Callers experience the poise and composure of your most senior partner.",
+      q: "How fast is full production deployment?",
+      a: "Our standard sprint timeline is 10 to 14 business days from kickoff. During this window, we map your objection state machine, author deterministic prompt guardrails, connect telephony SIP trunking with your CRM and WhatsApp Business API, and execute comprehensive synthetic stress tests before public caller routing.",
     },
     {
-      q: "How does DestiX integrate with our existing enterprise stack?",
-      a: "We engineer bi-directional webhooks with HubSpot, Salesforce, GoHighLevel, Zoho, Practo, Google Calendar, and Cal.com via dedicated n8n pipelines. Furthermore, the agent dispatches instant WhatsApp lookbooks, site passes, and calendar confirmations while the prospect is still on the line.",
+      q: "Will callers know they are speaking with an AI voice agent?",
+      a: "No. Our conversational roundtrip latency is rigorously benchmarked under 500ms—faster than human pause perception. DestiX agents are synthesized with subtle breathing pauses, natural phrasing, and sub-200ms interruption handling. Callers experience the poise and composure of your most senior sales executive.",
     },
     {
-      q: "Do you offer white-label engineering partnerships for elite agencies?",
-      a: "Yes. Select brand, creative, and performance marketing agencies retain DestiX AI as their specialized voice intelligence and 3D WebGL engineering studio. We deploy systems seamlessly under your firm's brand and master service agreement.",
+      q: "Does the system connect natively to WhatsApp and our existing CRM?",
+      a: "Yes. We engineer bi-directional webhooks with HubSpot, Salesforce, GoHighLevel, Zoho, Practo, Google Calendar, and Cal.com via dedicated n8n pipelines. Furthermore, the agent dispatches instant WhatsApp lookbooks, site passes, and calendar confirmations while the prospect is still on the line.",
     },
     {
-      q: "How does the 5x Hurdle Rate guarantee work in practice?",
-      a: "Prior to contract execution, we audit your average deal size, monthly inbound volume, and current qualification drop-off rate. If the modeled conversion lift does not mathematically project a 5x return on our engagement fee, we decline the mandate.",
+      q: "Do you engineer the digital storefronts and websites too?",
+      a: "Yes. We engineer the complete conversion circuit: award-grade 3D WebGL and Next.js digital platforms paired with autonomous voice agents. Your website captures peak visual intent, and your voice agent immediately follows up with the buyer in under 45 seconds.",
     },
     {
       q: "Who actually designs, codes, and tunes the systems?",
@@ -34,19 +34,19 @@ export function FaqSection() {
   ];
 
   return (
-    <section id="inquiries" className="py-24 sm:py-32 bg-[#F6F4EE] relative border-b border-[#E2DDD1]">
+    <section id="faq" className="py-24 sm:py-32 bg-[#F6F4EE] relative border-b border-[#E2DDD1]">
       <div className="max-w-4xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
-            (09) INSTITUTIONAL INQUIRIES &amp; FAQ
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            (09) HIGH-TRUST INQUIRIES &amp; FAQ
           </div>
-          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl text-[#181512] leading-[1.0] mb-4">
+          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl text-[#181614] leading-[1.0] mb-4">
             Everything you need to{" "}
-            <span className="italic text-[#B88746]">know.</span>
+            <span className="italic text-[#B8652B]">know.</span>
           </h2>
           <p className="text-sm sm:text-base text-[#55514B] leading-relaxed max-w-xl mx-auto font-normal">
-            Rigorous, candid answers regarding our architectural standards, deployment speeds, and commercial criteria.
+            Rigorous, candid answers regarding our scoping process, deployment speeds, and commercial criteria.
           </p>
         </div>
 
@@ -63,11 +63,11 @@ export function FaqSection() {
                   onClick={() => setOpenIdx(isOpen ? null : idx)}
                   className="w-full p-6 text-left flex items-center justify-between gap-4 group"
                 >
-                  <span className="font-['Instrument_Serif'] text-2xl text-[#181512] group-hover:text-[#B88746] transition-colors">
+                  <span className="font-['Instrument_Serif'] text-2xl text-[#181614] group-hover:text-[#B8652B] transition-colors">
                     {faq.q}
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-[#F6F4EE] border border-[#E2DDD1] flex items-center justify-center shrink-0 text-[#181512]">
-                    {isOpen ? <Minus className="w-4 h-4 text-[#B88746]" /> : <Plus className="w-4 h-4" />}
+                  <div className="w-8 h-8 rounded-full bg-[#F6F4EE] border border-[#E2DDD1] flex items-center justify-center shrink-0 text-[#181614]">
+                    {isOpen ? <Minus className="w-4 h-4 text-[#B8652B]" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>
 

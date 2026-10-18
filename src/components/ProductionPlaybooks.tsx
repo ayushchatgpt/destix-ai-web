@@ -39,7 +39,7 @@ export function ProductionPlaybooks() {
     },
     {
       id: "advisory",
-      title: "High-Ticket Advisory & Agencies",
+      title: "High-Ticket B2B & Agencies",
       subtitle: "Inbound ACV Pipeline Qualifier & Calendar Router",
       icon: Briefcase,
       trigger: "High-intent pricing inquiry or enterprise contact submission",
@@ -70,17 +70,17 @@ export function ProductionPlaybooks() {
   ];
 
   return (
-    <section id="engagements" className="py-24 sm:py-32 bg-[#F6F4EE] relative border-b border-[#E2DDD1]">
+    <section id="playbooks" className="py-24 sm:py-32 bg-[#F6F4EE] relative border-b border-[#E2DDD1]">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
             (04) DEPLOYED PRODUCTION PLAYBOOKS
           </div>
-          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181512] leading-[1.0] mb-6">
+          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             Hardened blueprints for{" "}
-            <span className="italic text-[#B88746]">high-ticket verticals.</span>
+            <span className="italic text-[#B8652B]">high-ticket verticals.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             These are not theoretical conversation prompts. They are hardened operational state machines with deterministic guardrails, CRM webhooks, and calendar dispatch rules.
@@ -100,20 +100,20 @@ export function ProductionPlaybooks() {
                   onClick={() => setActiveTab(idx)}
                   className={`w-full p-5 rounded-2xl text-left border transition-all duration-300 flex items-center justify-between ${
                     isSelected
-                      ? "bg-white border-[#B88746] shadow-md -translate-x-1"
-                      : "bg-[#ECE8DC]/50 border-[#E2DDD1] hover:bg-white/80 hover:border-[#B88746]/40"
+                      ? "bg-white border-[#B8652B] shadow-md -translate-x-1"
+                      : "bg-[#EDE8DC]/50 border-[#E2DDD1] hover:bg-white/80 hover:border-[#B8652B]/40"
                   }`}
                 >
                   <div className="flex items-center gap-3.5">
                     <div
                       className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                        isSelected ? "bg-[#181512] text-[#F6F4EE]" : "bg-white text-[#55514B]"
+                        isSelected ? "bg-[#181614] text-[#F6F4EE]" : "bg-white text-[#55514B]"
                       }`}
                     >
                       <IconComponent className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="font-['Instrument_Serif'] text-xl font-bold text-[#181512]">
+                      <div className="font-['Instrument_Serif'] text-xl font-bold text-[#181614]">
                         {pb.title}
                       </div>
                       <div className="text-[11px] text-[#888277] font-['JetBrains_Mono']">
@@ -123,7 +123,7 @@ export function ProductionPlaybooks() {
                   </div>
                   <ArrowRight
                     className={`w-4 h-4 transition-transform ${
-                      isSelected ? "text-[#B88746] translate-x-1" : "text-[#888277]"
+                      isSelected ? "text-[#B8652B] translate-x-1" : "text-[#888277]"
                     }`}
                   />
                 </button>
@@ -132,13 +132,13 @@ export function ProductionPlaybooks() {
           </div>
 
           {/* Workflow Deep-Dive Card (Right 8 Cols) */}
-          <div className="lg:col-span-8 rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 shadow-sm">
+          <div className="lg:col-span-8 rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 shadow-xs">
             <div className="flex items-center justify-between pb-6 mb-6 border-b border-[#E2DDD1]">
               <div>
-                <span className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] tracking-[0.2em] uppercase font-bold">
+                <span className="text-[10px] font-['JetBrains_Mono'] text-[#B8652B] tracking-[0.2em] uppercase font-bold">
                   ACTIVE PRODUCTION BLUEPRINT
                 </span>
-                <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181512] mt-1">
+                <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mt-1">
                   {playbooks[activeTab].title}
                 </h3>
               </div>
@@ -149,7 +149,7 @@ export function ProductionPlaybooks() {
 
             {/* Trigger Strip */}
             <div className="p-4 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1] mb-8 flex items-center gap-3">
-              <span className="text-[11px] font-['JetBrains_Mono'] text-[#B88746] uppercase font-bold shrink-0">
+              <span className="text-[11px] font-['JetBrains_Mono'] text-[#B8652B] uppercase font-bold shrink-0">
                 TRIGGER:
               </span>
               <span className="text-xs sm:text-sm text-[#55514B]">
@@ -157,14 +157,14 @@ export function ProductionPlaybooks() {
               </span>
             </div>
 
-            {/* Step-by-Step Workflow Execution */}
+            {/* Step-by-Step Execution */}
             <div className="space-y-4 mb-8">
               <div className="text-xs font-['JetBrains_Mono'] uppercase tracking-wider text-[#888277] font-semibold">
                 EXECUTION STATE MACHINE:
               </div>
               {playbooks[activeTab].workflow.map((step, idx) => (
                 <div key={idx} className="flex items-start gap-3.5">
-                  <div className="w-5 h-5 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold">
+                  <div className="w-5 h-5 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-['JetBrains_Mono'] text-[#B8652B] font-bold">
                     {idx + 1}
                   </div>
                   <span className="text-sm text-[#55514B] leading-relaxed">
@@ -175,10 +175,10 @@ export function ProductionPlaybooks() {
             </div>
 
             {/* Outcome Strip */}
-            <div className="p-4 rounded-xl bg-[#141210] text-[#F6EFE2] flex items-center gap-3 text-xs sm:text-sm font-['Plus_Jakarta_Sans']">
-              <CheckCircle2 className="w-4 h-4 text-[#B88746] shrink-0" />
+            <div className="p-4 rounded-xl bg-[#131210] text-[#F6EFE2] flex items-center gap-3 text-xs sm:text-sm font-['Plus_Jakarta_Sans']">
+              <CheckCircle2 className="w-4 h-4 text-[#B8652B] shrink-0" />
               <span>
-                <strong className="text-[#B88746]">Institutional Outcome:</strong>{" "}
+                <strong className="text-[#B8652B]">Conversion Outcome:</strong>{" "}
                 {playbooks[activeTab].outcome}
               </span>
             </div>

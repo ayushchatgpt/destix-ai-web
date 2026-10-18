@@ -9,28 +9,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI — Systems Architecture & Conversational Intelligence Practice | Ayush Meena",
+  title: "DestiX AI — Autonomous Conversational Infrastructure & Digital Architecture | Ayush Meena",
   description:
-    "Autonomous voice infrastructure paired with category-defining digital architectures for luxury real estate developers, private clinics, and high-ticket advisory practices. Principal & Systems Architect: Ayush Meena.",
+    "AI does the heavy lifting, you bank the revenue. DestiX AI installs human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that intercept, qualify, and convert high-ticket leads 24/7. Principal: Ayush Meena.",
   keywords: [
     "DestiX AI",
     "Ayush Meena",
-    "Systems Architecture",
-    "Conversational Intelligence Practice",
     "Autonomous Voice Infrastructure",
-    "Luxury Digital Architecture",
-    "High-Ticket Conversion Systems",
+    "Digital Architecture Studio",
+    "High-Ticket Lead Interception",
+    "Sub-45s Inbound Triage",
+    "Three.js Agency",
     "ayush.company",
     "Delhi NCR",
   ],
   authors: [{ name: "Ayush Meena", url: "https://ayush.company" }],
   creator: "Ayush Meena",
-  publisher: "DestiX AI Practice",
+  publisher: "DestiX AI Studio",
   metadataBase: new URL("https://ayush.company"),
   openGraph: {
-    title: "DestiX AI — Systems Architecture & Conversational Intelligence Practice",
+    title: "DestiX AI — Autonomous Conversational Infrastructure & Digital Architecture",
     description:
-      "Autonomous voice infrastructure paired with category-defining digital architectures for high-ticket developers, clinics, and advisory practices.",
+      "Human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that convert high-ticket leads 24/7.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI — Systems Architecture Practice",
-    description: "Systems engineered for revenue velocity. Principal: Ayush Meena.",
+    title: "DestiX AI — Autonomous Conversational Infrastructure",
+    description: "AI does the heavy lifting, you bank the revenue. Principal: Ayush Meena.",
   },
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-[#F6F4EE] text-[#181512] scroll-smooth antialiased">
+    <html lang="en" className="bg-[#F6F4EE] text-[#181614] scroll-smooth antialiased">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -58,7 +58,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen bg-[#F6F4EE] text-[#181512] font-sans selection:bg-[#B88746]/20 selection:text-[#181512]">
+      <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B8652B]/20 selection:text-[#181614]">
         {children}
       </body>
     </html>

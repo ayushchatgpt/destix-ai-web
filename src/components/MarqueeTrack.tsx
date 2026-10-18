@@ -6,16 +6,16 @@ export function MarqueeTrack() {
   const items = [
     "Autonomous Telephony Infrastructure",
     "Bespoke 3D Web Architectures",
-    "Sub-45s Lead Triage",
+    "Sub-45s Inbound Routing",
     "High-Net-Worth Real Estate & Clinic Systems",
     "Founder-Led Engineering",
-    "The 5x Hurdle Rate Guarantee",
+    "The 5x Hurdle Rate Commitment",
   ];
 
   return (
     <div
-      aria-label="Practice capabilities track"
-      className="overflow-hidden border-y border-[#25221F] bg-[#141210] py-5 sm:py-6"
+      aria-label="Practice authority track"
+      className="overflow-hidden border-y border-[#25221F] bg-[#131210] py-5 sm:py-6"
     >
       <div className="flex w-max items-center">
         {/* Track duplicate 1 */}
@@ -27,7 +27,7 @@ export function MarqueeTrack() {
               </span>
               <span
                 aria-hidden="true"
-                className="text-[#B88746] text-xs px-2"
+                className="text-[#B8652B] text-xs px-2"
               >
                 ◆
               </span>
@@ -44,7 +44,7 @@ export function MarqueeTrack() {
               </span>
               <span
                 aria-hidden="true"
-                className="text-[#B88746] text-xs px-2"
+                className="text-[#B8652B] text-xs px-2"
               >
                 ◆
               </span>

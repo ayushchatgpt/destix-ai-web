@@ -17,7 +17,7 @@ export function CorePracticeAreas() {
         "Direct calendar reservation and live telephony SIP forwarding",
       ],
       icon: PhoneCall,
-      accent: "#B88746",
+      accent: "#B8652B",
     },
     {
       num: "02",
@@ -45,22 +45,22 @@ export function CorePracticeAreas() {
         "Sub-second Lighthouse scores with zero layout shift",
       ],
       icon: Layers,
-      accent: "#B88746",
+      accent: "#B8652B",
     },
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-[#141210] text-[#F6EFE2] relative border-b border-[#25221F] bg-dark-grid">
+    <section className="py-24 sm:py-32 bg-[#131210] text-[#F6EFE2] relative border-b border-[#25221F] bg-dark-grid">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#201D1A] border border-[#332E29] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B88746] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E1C19] border border-[#332E29] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#B8652B] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
             (05) CORE PRACTICE AREAS
           </div>
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#F6EFE2] leading-[1.0] mb-6">
             The triad of institutional{" "}
-            <span className="italic text-[#B88746]">authority.</span>
+            <span className="italic text-[#B8652B]">authority.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#C5BDB1] leading-relaxed font-normal">
             We do not sell fragmented widgets or hourly consultation retainer bloat. DestiX AI engineers three tightly integrated architectural domains.
@@ -74,11 +74,11 @@ export function CorePracticeAreas() {
             return (
               <div
                 key={practice.num}
-                className="rounded-3xl bg-[#1C1916] border border-[#2D2824] p-8 sm:p-10 flex flex-col justify-between hover:border-[#B88746]/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl"
+                className="rounded-3xl bg-[#1A1815] border border-[#2D2824] p-8 sm:p-10 flex flex-col justify-between hover:border-[#B8652B]/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl"
               >
                 <div>
                   <div className="flex items-center justify-between mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-[#25211D] border border-[#3A332E] flex items-center justify-center text-[#B88746] group-hover:border-[#B88746]/50 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-[#23201C] border border-[#3A332E] flex items-center justify-center text-[#B8652B] group-hover:border-[#B8652B]/50 transition-colors">
                       <IconComponent className="w-5 h-5" />
                     </div>
                     <span className="font-['JetBrains_Mono'] text-xs text-[#888277] font-semibold tracking-wider">
@@ -90,7 +90,7 @@ export function CorePracticeAreas() {
                     {practice.title}
                   </h3>
 
-                  <div className="text-xs font-['Plus_Jakarta_Sans'] font-semibold text-[#B88746] uppercase tracking-wider mb-4">
+                  <div className="text-xs font-['Plus_Jakarta_Sans'] font-semibold text-[#B8652B] uppercase tracking-wider mb-4">
                     {practice.subtitle}
                   </div>
 
@@ -101,8 +101,8 @@ export function CorePracticeAreas() {
                   <div className="space-y-3 pt-6 border-t border-[#2D2824] mb-8">
                     {practice.features.map((feat, idx) => (
                       <div key={idx} className="flex items-start gap-3">
-                        <div className="w-4 h-4 rounded-full bg-[#B88746]/20 flex items-center justify-center shrink-0 mt-0.5">
-                          <Check className="w-2.5 h-2.5 text-[#B88746]" />
+                        <div className="w-4 h-4 rounded-full bg-[#B8652B]/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-2.5 h-2.5 text-[#B8652B]" />
                         </div>
                         <span className="text-xs text-[#A89F93] leading-relaxed">
                           {feat}
@@ -114,7 +114,7 @@ export function CorePracticeAreas() {
 
                 <div className="pt-4 flex items-center justify-between text-xs font-['JetBrains_Mono'] text-[#888277]">
                   <span>DEPLOYED GLOBALLY</span>
-                  <ArrowUpRight className="w-4 h-4 text-[#B88746] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <ArrowUpRight className="w-4 h-4 text-[#B8652B] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </div>
               </div>
             );

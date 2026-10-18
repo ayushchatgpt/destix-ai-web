@@ -4,19 +4,19 @@ import React from "react";
 import { ArrowUpRight, Globe, Sparkles } from "lucide-react";
 
 export function SelectedWorks() {
-  const works = [
+  const projects = [
     {
       num: "01",
       title: "Shade of Green — Japanese-Themed Luxury Villas",
       location: "Sarjapura, Bangalore",
-      category: "Wabi-Sabi Architecture & Autonomous HNI Inbound Booking",
-      desc: "Architectural digital platform engineered for high-value private villas. Features an interactive spatial master-plan viewer, automated WhatsApp brochure dispatch, and an autonomous voice agent that pre-screens buyer budgets and reserves private weekend site escorts.",
+      category: "Wabi-Sabi Digital Architecture & Autonomous Inbound Booking",
+      desc: "Architectural digital platform engineered for high-value private villas. Features an interactive spatial floor plan engine, gated WhatsApp brochure dispatch, and an autonomous voice agent that pre-screens buyer budgets and reserves private weekend site escorts.",
       stats: [
         { label: "Deal Pipeline Handled", val: "₹18Cr+" },
         { label: "Site Visit Conversion", val: "3.4x" },
         { label: "First Contact Latency", val: "< 40s" },
       ],
-      tags: ["Master Plan Viewer", "WhatsApp Automation", "HNI Qualification", "Bespoke Next.js"],
+      tags: ["Floor Plan Engine", "WhatsApp Automation", "HNI Qualification", "Bespoke Next.js"],
       url: "https://ayush.company",
       domain: "Private Client Deployment",
     },
@@ -72,13 +72,13 @@ export function SelectedWorks() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
-            (03) SELECTED WORKS &amp; BENCHMARKS
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] tracking-[0.2em] text-[#55514B] mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#B8652B]" />
+            (03) SELECTED WORK &amp; LIVE PROOF
           </div>
-          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181512] leading-[1.0] mb-6">
+          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] leading-[1.0] mb-6">
             Architectural benchmarks built with{" "}
-            <span className="italic text-[#B88746]">editorial dignity.</span>
+            <span className="italic text-[#B8652B]">editorial dignity.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#55514B] leading-relaxed font-normal">
             We do not exhibit conceptual drafts or superficial agency mockups. These environments are live in production, processing actual traffic, commanding high-ticket authority, and driving verified revenue.
@@ -87,38 +87,38 @@ export function SelectedWorks() {
 
         {/* 4 Selected Work Cards */}
         <div className="space-y-10 sm:space-y-12">
-          {works.map((work) => (
+          {projects.map((project) => (
             <div
-              key={work.num}
-              className="rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 hover:border-[#B88746]/50 transition-all duration-300 shadow-sm hover:shadow-lg"
+              key={project.num}
+              className="rounded-3xl bg-white border border-[#E2DDD1] p-8 sm:p-12 hover:border-[#B8652B]/50 transition-all duration-300 shadow-sm hover:shadow-lg"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Left 7 Columns: Details */}
                 <div className="lg:col-span-7">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="font-['JetBrains_Mono'] text-xs font-bold text-[#B88746] tracking-widest px-2.5 py-1 rounded bg-[#ECE8DC] border border-[#E2DDD1]">
-                      ENGAGEMENT {work.num}
+                    <span className="font-['JetBrains_Mono'] text-xs font-bold text-[#B8652B] tracking-widest px-2.5 py-1 rounded bg-[#EDE8DC] border border-[#E2DDD1]">
+                      PROJECT {project.num}
                     </span>
                     <span className="text-xs font-['JetBrains_Mono'] text-[#888277]">
-                      {work.location}
+                      {project.location}
                     </span>
                   </div>
 
-                  <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181512] mb-3 leading-tight">
-                    {work.title}
+                  <h3 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mb-3 leading-tight">
+                    {project.title}
                   </h3>
 
                   <div className="text-xs font-['Plus_Jakarta_Sans'] font-semibold text-[#888277] uppercase tracking-wider mb-4">
-                    {work.category}
+                    {project.category}
                   </div>
 
                   <p className="text-sm sm:text-base text-[#55514B] leading-relaxed mb-6 font-normal">
-                    {work.desc}
+                    {project.desc}
                   </p>
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-8">
-                    {work.tags.map((tag, idx) => (
+                    {project.tags.map((tag, idx) => (
                       <span
                         key={idx}
                         className="px-3 py-1 rounded-full bg-[#F6F4EE] border border-[#E2DDD1] text-[11px] font-['JetBrains_Mono'] text-[#55514B]"
@@ -130,13 +130,13 @@ export function SelectedWorks() {
 
                   {/* Outbound Link */}
                   <a
-                    href={work.url}
+                    href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#181512] hover:bg-[#B88746] text-[#F6F4EE] text-xs font-semibold tracking-tight transition-all duration-300 shadow-xs group"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#181614] hover:bg-[#B8652B] text-[#F6F4EE] text-xs font-semibold tracking-tight transition-all duration-300 shadow-xs group"
                   >
-                    <Globe className="w-3.5 h-3.5 text-[#B88746] group-hover:text-[#F6F4EE]" />
-                    <span>Inspect Platform: {work.domain}</span>
+                    <Globe className="w-3.5 h-3.5 text-[#B8652B] group-hover:text-[#F6F4EE]" />
+                    <span>Inspect Platform: {project.domain}</span>
                     <ArrowUpRight className="w-3.5 h-3.5 text-[#F6F4EE] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
@@ -146,13 +146,13 @@ export function SelectedWorks() {
                   <div>
                     <div className="text-[11px] font-['JetBrains_Mono'] tracking-widest text-[#888277] uppercase mb-6 flex items-center justify-between pb-3 border-b border-[#E2DDD1]">
                       <span>VERIFIED METRIC RECORD</span>
-                      <Sparkles className="w-3.5 h-3.5 text-[#B88746]" />
+                      <Sparkles className="w-3.5 h-3.5 text-[#B8652B]" />
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                      {work.stats.map((s, idx) => (
+                      {project.stats.map((s, idx) => (
                         <div key={idx} className="space-y-1">
-                          <div className="font-['Instrument_Serif'] text-3xl font-bold text-[#181512]">
+                          <div className="font-['Instrument_Serif'] text-3xl font-bold text-[#181614]">
                             {s.val}
                           </div>
                           <div className="text-[11px] text-[#888277] font-['JetBrains_Mono'] leading-tight">
@@ -165,7 +165,7 @@ export function SelectedWorks() {
 
                   <div className="mt-8 pt-6 border-t border-[#E2DDD1] flex items-center justify-between text-xs text-[#888277] font-['JetBrains_Mono']">
                     <span>STATUS: ACTIVE ARCHITECTURE</span>
-                    <span className="text-[#B88746] font-semibold">100% BESPOKE</span>
+                    <span className="text-[#B8652B] font-semibold">100% BESPOKE</span>
                   </div>
                 </div>
               </div>
