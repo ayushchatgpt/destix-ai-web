@@ -153,47 +153,51 @@ export default function AboutPage() {
               "We don't build software experiments. We engineer cashflow pipelines."
             </h2>
 
-            <p className="text-lg text-[#181614] font-medium leading-relaxed">
-              In 2026, the technology landscape has reached peak noise. Businesses are inundated with low-grade AI wrappers, robotic IVR phone systems that anger callers, and generic agency templates that fail to convert high-ticket demand.
+            <p className="text-base sm:text-lg text-[#181614] font-medium leading-relaxed">
+              When an ultra-high-net-worth client dials your office or inspects a multi-million-dollar development, every second of phone delay and every cookie-cutter web template destroys your authority.
             </p>
 
             <p>
-              I founded DestiX AI with a solitary focus: to serve enterprise operators, luxury estate developers, private clinics, and boutique advisory practices that demand flawless engineering execution. When an ultra-high-net-worth client dials your office, every second of hold time and every robotic stutter damages your brand equity.
+              DestiX AI was founded as an uncompromising private practice. We deploy the complete acquisition circuit: human-sounding autonomous voice agents answering under two seconds, paired with category-defining 3D WebGL storefronts that turn cold traffic into committed revenue.
             </p>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#FFFFFF] border border-[#E2DDD1] shadow-sm my-6">
-              <p className="font-['Instrument_Serif'] italic text-2xl text-[#181614] mb-3 leading-snug">
-                "We remain hands-on, bootstrapped, and fiercely aligned with client cashflow. When you partner with DestiX AI, you get my direct cell phone and complete accountability."
+            <div className="p-6 sm:p-7 rounded-2xl bg-[#FFFFFF] border border-[#E2DDD1] shadow-sm my-4">
+              <p className="font-['Instrument_Serif'] italic text-2xl text-[#181614] mb-2 leading-snug">
+                "We remain hands-on, bootstrapped, and client-aligned. When you partner with DestiX AI, you get my direct phone number and absolute personal accountability."
               </p>
               <div className="text-xs font-['JetBrains_Mono'] tracking-wider text-[#B88746] font-bold uppercase">
-                — Ayush Meena, Principal Architect
+                — Ayush Meena, Principal &amp; Systems Architect
               </div>
             </div>
 
-            <p>
-              Our dual-engine model represents the next standard in conversion architecture:
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              <div className="p-4 rounded-xl bg-[#FFFFFF] border border-[#E2DDD1]">
+                <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase mb-1">
+                  01 // TELEPHONY
+                </div>
+                <div className="text-xs font-semibold text-[#181614]">
+                  Sub-45s outbound speed-to-lead
+                </div>
+              </div>
 
-            <ul className="space-y-3 pt-2">
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#B88746] shrink-0 mt-0.5" />
-                <span>
-                  <strong className="text-[#181614]">Autonomous Voice Infrastructure:</strong> Carrier-grade telephony answering inbound rings in 2 seconds and calling back ad leads under 45 seconds with sub-500ms conversational cadence.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#B88746] shrink-0 mt-0.5" />
-                <span>
-                  <strong className="text-[#181614]">Bespoke 3D Digital Architecture:</strong> Spatial WebGL storefronts built on Next.js and Three.js that elevate your brand authority and command premium fees.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#B88746] shrink-0 mt-0.5" />
-                <span>
-                  <strong className="text-[#181614]">Zero-Leakage Operating System:</strong> Automated n8n workflows connecting WhatsApp lookbooks, HubSpot/Salesforce CRM records, and instant calendar booking.
-                </span>
-              </li>
-            </ul>
+              <div className="p-4 rounded-xl bg-[#FFFFFF] border border-[#E2DDD1]">
+                <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase mb-1">
+                  02 // SPATIAL WEB
+                </div>
+                <div className="text-xs font-semibold text-[#181614]">
+                  60 FPS Three.js architectural twins
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-[#FFFFFF] border border-[#E2DDD1]">
+                <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase mb-1">
+                  03 // PIPELINE
+                </div>
+                <div className="text-xs font-semibold text-[#181614]">
+                  Instant WhatsApp &amp; CRM sync
+                </div>
+              </div>
+            </div>
 
             <div className="pt-6 flex flex-wrap items-center gap-4">
               <button

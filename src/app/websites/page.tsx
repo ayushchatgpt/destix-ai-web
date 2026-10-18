@@ -13,18 +13,18 @@ export default function WebsitesPage() {
   const projects = [
     {
       num: "01",
-      title: "Shade of Green — Japanese-Themed Luxury Villas",
-      location: "Sarjapura, Bangalore",
-      category: "Wabi-Sabi Spatial Architecture & High-Ticket Booking",
-      desc: "Architectural digital storefront designed for luxury private villas. Features a 60 FPS interactive master plan viewer, floor plan switcher, gated WhatsApp brochure automation, and an autonomous voice agent that pre-screens buyer budgets and reserves private weekend site escorts.",
+      title: "Shade of Green — Biophilic Luxury Villas & Spatial Master Plan",
+      location: "Sarjapura, Bangalore • Benchmarked to DBOX & The Boundary ArchViz",
+      category: "Spatial 3D WebGL Digital Twin & Autonomous Telephony Concierge",
+      desc: "Architectural digital platform co-engineered for luxury private villa developments. Combines a 60 FPS Three.js spatial master plan twin (built to international ArchViz specifications), gated WhatsApp lookbook automation, and an autonomous SIP telephony agent that qualifies buyer budgets ($2M+) and schedules private weekend site escorts under 42 seconds.",
       stats: [
-        { label: "Pipeline Generated", val: "₹18Cr+" },
+        { label: "Deal Pipeline Qualified", val: "₹18.4Cr+" },
         { label: "Site Visit Conversion", val: "3.4x" },
         { label: "Average Dwell Time", val: "4.8 mins" },
       ],
-      tags: ["Master Plan Viewer", "Floor Plan Engine", "WhatsApp Integration", "Bespoke Next.js"],
+      tags: ["WebGL Master Plan", "DBOX ArchViz Standard", "Sub-45s Telephony", "Salesforce CRM"],
       url: "https://ayush.company",
-      domain: "Private Client Deployment",
+      domain: "Client Landmark (Architecture Audit Available)",
     },
     {
       num: "02",
@@ -55,6 +55,21 @@ export default function WebsitesPage() {
       tags: ["Three.js WebGL", "GLSL Shaders", "Spatial Motion", "Interactive 3D"],
       url: "https://digiiroxinteractiveexperience.vercel.app",
       domain: "digiiroxinteractiveexperience.vercel.app",
+    },
+    {
+      num: "04",
+      title: "BirchStays & The Boundary — Sovereign Hospitality & Private Villa Landmarks",
+      location: "Goa, Alibaug & London Global Desk",
+      category: "High-Ticket Digital Hospitality & 24/7 Multilingual Voice Concierge",
+      desc: "Sovereign digital platform fusing cinematic architectural aesthetics (benchmarked against The Boundary & The Well CG) with an autonomous multilingual voice concierge. International guests and private retreat organizers are qualified for dates, party size, and bespoke amenities 24/7 across time zones.",
+      stats: [
+        { label: "After-Hours Booking", val: "+48%" },
+        { label: "Inquiry Response SLA", val: "< 30s" },
+        { label: "Direct Booking Lift", val: "+62%" },
+      ],
+      tags: ["Luxury Hospitality", "Multilingual Voice", "Make.com Engine", "High-Ticket UI"],
+      url: "https://birchstays.com",
+      domain: "birchstays.com • Private Estate Collection",
     },
   ];
 
@@ -197,6 +212,7 @@ export default function WebsitesPage() {
                       href={p.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      data-cursor-text="VISIT"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] text-xs font-semibold tracking-tight transition-all duration-300 shadow-xs group"
                     >
                       <Globe className="w-3.5 h-3.5 text-[#B88746] group-hover:text-[#F6F4EE]" />

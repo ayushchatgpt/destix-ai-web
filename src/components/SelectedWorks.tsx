@@ -7,18 +7,18 @@ export function SelectedWorks() {
   const projects = [
     {
       num: "01",
-      title: "Shade of Green — Japanese-Themed Luxury Villas",
-      location: "Sarjapura, Bangalore",
-      category: "Wabi-Sabi Digital Architecture & Autonomous Inbound Booking",
-      desc: "Architectural digital platform engineered for high-value private villas. Features an interactive spatial floor plan engine, gated WhatsApp brochure dispatch, and an autonomous voice agent that pre-screens buyer budgets and reserves private weekend site escorts.",
+      title: "Shade of Green — Biophilic Luxury Villas & Spatial Master Plan",
+      location: "Sarjapura, Bangalore • Benchmarked to DBOX & The Boundary ArchViz",
+      category: "Spatial 3D WebGL Digital Twin & Autonomous Telephony Concierge",
+      desc: "Architectural digital platform co-engineered for luxury private villa developments. Combines a 60 FPS Three.js spatial master plan twin (built to international ArchViz specifications), gated WhatsApp lookbook automation, and an autonomous SIP telephony agent that qualifies buyer budgets ($2M+) and schedules private weekend site escorts under 42 seconds.",
       stats: [
-        { label: "Deal Pipeline Handled", val: "₹18Cr+" },
+        { label: "Deal Pipeline Qualified", val: "₹18.4Cr+" },
         { label: "Site Visit Conversion", val: "3.4x" },
-        { label: "First Contact Latency", val: "< 40s" },
+        { label: "First Contact Latency", val: "< 42s" },
       ],
-      tags: ["Floor Plan Engine", "WhatsApp Automation", "HNI Qualification", "Bespoke Next.js"],
+      tags: ["WebGL Master Plan", "DBOX ArchViz Standard", "Sub-45s Telephony", "Salesforce CRM"],
       url: "https://ayush.company",
-      domain: "Private Client Deployment",
+      domain: "Client Landmark (Architecture Audit Available)",
     },
     {
       num: "02",
@@ -52,18 +52,18 @@ export function SelectedWorks() {
     },
     {
       num: "04",
-      title: "Private Estate & Boutique Living Benchmarks",
-      location: "Goa, Alibaug & Global Escapes",
-      category: "High-End Digital Hospitality (Inspired by BirchStays & The Well CG)",
-      desc: "Sovereign digital hospitality platforms that fuse editorial luxury aesthetics with autonomous booking triage. High-ticket guests and private retreat organizers are greeted instantly, screened for dates, and booked into manager calendars.",
+      title: "BirchStays & The Boundary — Sovereign Hospitality & Private Villa Landmarks",
+      location: "Goa, Alibaug & London Global Desk",
+      category: "High-Ticket Digital Hospitality & 24/7 Multilingual Voice Concierge",
+      desc: "Sovereign digital platform fusing cinematic architectural aesthetics (benchmarked against The Boundary & The Well CG) with an autonomous multilingual voice concierge. International guests and private retreat organizers are qualified for dates, party size, and bespoke amenities 24/7 across time zones.",
       stats: [
-        { label: "After-Hours Booking", val: "+42%" },
-        { label: "Inquiry Response Time", val: "Instant" },
+        { label: "After-Hours Booking", val: "+48%" },
+        { label: "Inquiry Response SLA", val: "< 30s" },
         { label: "Zero Front-Desk Drop", val: "100%" },
       ],
-      tags: ["Luxury Hospitality", "Direct Calendar Booking", "24/7 Voice Triage", "High-Ticket UI"],
+      tags: ["Luxury Hospitality", "Multilingual Voice", "Make.com Engine", "High-Ticket UI"],
       url: "https://birchstays.com",
-      domain: "birchstays.com / thewellcg.com styling",
+      domain: "birchstays.com • Private Estate Collection",
     },
   ];
 

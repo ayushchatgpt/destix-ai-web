@@ -82,42 +82,66 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
 
             {/* Right 7 Cols: Narrative */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-[0.18em] text-[#B88746] uppercase mb-4 font-bold">
-                Principal &amp; Systems Architect
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[10px] font-['JetBrains_Mono'] tracking-[0.18em] text-[#B88746] uppercase mb-3 font-bold">
+                STUDIO PRINCIPAL &amp; SYSTEMS ARCHITECT
               </div>
 
-              <h3 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mb-6">
+              <h3 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mb-3">
                 Ayush Meena
               </h3>
 
-              <div className="space-y-4 text-sm sm:text-base text-[#55514B] leading-relaxed mb-8 font-normal">
-                <p>
-                  &ldquo;DestiX AI operates as a high-density, founder-led practice. We do not employ junior account managers or delegate core engineering to subcontractors. When you commission a system, you collaborate directly with the architect who designs, codes, and tunes the deployment.&rdquo;
-                </p>
-                <p>
-                  &ldquo;Our focus is narrow and uncompromising: luxury developers, private medical practices, and advisory firms where a single missed call or substandard website destroys multi-crore transactions. We engineer hardened systems that print revenue without excuse.&rdquo;
-                </p>
-              </div>
+              <blockquote className="font-['Instrument_Serif'] italic text-2xl sm:text-3xl text-[#181614] leading-snug mb-4">
+                &ldquo;We don&apos;t build software experiments. We engineer cashflow pipelines.&rdquo;
+              </blockquote>
 
-              {/* 4 Badges */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {credentials.map((c, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
-                    <div className="flex items-center gap-2 text-xs font-bold text-[#181614] mb-1">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B88746] shrink-0" />
-                      <span>{c.title}</span>
-                    </div>
-                    <p className="text-xs text-[#55514B] leading-relaxed">
-                      {c.desc}
-                    </p>
+              <p className="text-sm sm:text-base text-[#55514B] leading-relaxed mb-6 font-normal">
+                DestiX AI operates as a sovereign, founder-led systems practice. You interface directly with the architect who designs, codes, and tunes your deployment. Zero junior account managers, zero template code, and an uncompromising 5x ROI threshold.
+              </p>
+
+              {/* 4 Sleek Credential Badges */}
+              <div className="grid grid-cols-2 gap-3 mb-8">
+                <div className="p-3.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
+                  <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase tracking-wider mb-0.5">
+                    01 // DIRECT ACCESS
                   </div>
-                ))}
+                  <div className="text-xs font-semibold text-[#181614]">
+                    Zero junior account hand-offs
+                  </div>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
+                  <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase tracking-wider mb-0.5">
+                    02 // 5X HURDLE RATE
+                  </div>
+                  <div className="text-xs font-semibold text-[#181614]">
+                    Mandatory ROI or we decline
+                  </div>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
+                  <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase tracking-wider mb-0.5">
+                    03 // LATENCY SLA
+                  </div>
+                  <div className="text-xs font-semibold text-[#181614]">
+                    Sub-500ms acoustic breath parity
+                  </div>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-[#F6F4EE] border border-[#E2DDD1]">
+                  <div className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase tracking-wider mb-0.5">
+                    04 // SPATIAL ARCHITECTURE
+                  </div>
+                  <div className="text-xs font-semibold text-[#181614]">
+                    60 FPS Three.js WebGL canvases
+                  </div>
+                </div>
               </div>
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <button
                   onClick={onOpenBooking}
+                  data-cursor-text="BOOK"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-semibold text-xs tracking-tight transition-all shadow-sm"
                 >
                   <span>Request Private Diagnostic Call</span>
@@ -126,6 +150,7 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
 
                 <a
                   href="mailto:ayushmeenadestixai@gmail.com"
+                  data-cursor-text="EMAIL"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#EDE8DC] border border-[#E2DDD1] text-xs font-['JetBrains_Mono'] text-[#181614] transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#B88746]" />
