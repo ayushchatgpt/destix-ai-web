@@ -10,9 +10,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
+  title: "DestiX AI — AI Voice Agents & 3D Websites",
   description:
-    "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7. Founder: Ayush Meena.",
+    "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7.",
   keywords: [
     "Desti",
     "DestiX AI",
@@ -90,9 +90,9 @@ export const metadata: Metadata = {
     "ai appointment booking agent",
     "alliance capital properties dubai",
   ],
-  authors: [{ name: "Ayush Meena", url: "https://ayush.company" }],
-  creator: "Ayush Meena",
-  publisher: "DestiX AI Studio",
+  authors: [{ name: "DestiX AI", url: "https://ayush.company" }],
+  creator: "DestiX AI",
+  publisher: "DestiX AI",
   metadataBase: new URL("https://ayush.company"),
   alternates: {
     canonical: "https://ayush.company",
@@ -107,9 +107,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
+    title: "DestiX AI — AI Voice Agents & 3D Websites",
     description:
-      "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7. Founder: Ayush Meena.",
+      "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -125,8 +125,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
-    description: "AI does the heavy lifting, you bank the revenue. Founder: Ayush Meena.",
+    title: "DestiX AI — AI Voice Agents & 3D Websites",
+    description: "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds.",
     images: ["https://ayush.company/og-image.png"],
   },
   icons: {
@@ -554,7 +554,7 @@ export default function RootLayout({
                   "@type": "WebPage",
                   "@id": "https://ayush.company/#webpage",
                   "url": "https://ayush.company",
-                  "name": "DestiX AI | AI Voice Agents, 3D Real Estate Websites & AI Agency — Ayush Meena",
+                  "name": "DestiX AI — AI Voice Agents & 3D Websites",
                   "speakable": {
                     "@type": "SpeakableSpecification",
                     "cssSelector": ["h1", "#faq", "#hero-tagline"],
