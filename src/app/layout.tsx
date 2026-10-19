@@ -10,9 +10,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI — AI Voice Agents, 3D Real Estate Websites & AI Agency | Ayush Meena",
+  title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
   description:
-    "AI does the heavy lifting, you bank the revenue. DestiX AI (founded by Ayush Meena) installs human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that intercept, qualify, and convert high-ticket leads 24/7.",
+    "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7. Founder: Ayush Meena.",
   keywords: [
     "Desti",
     "DestiX AI",
@@ -107,9 +107,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "DestiX AI — AI Voice Agents, 3D Websites & AI Agency | Ayush Meena",
+    title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
     description:
-      "Human-sounding autonomous voice agents, automated CRM pipelines, and category-defining 3D digital storefronts that convert high-ticket leads 24/7. Principal: Ayush Meena.",
+      "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7. Founder: Ayush Meena.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -125,8 +125,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI — AI Voice Agents & 3D Web Studio | Ayush Meena",
-    description: "AI does the heavy lifting, you bank the revenue. Principal: Ayush Meena.",
+    title: "DestiX AI — Autonomous Voice Agents & 3D Web Systems",
+    description: "AI does the heavy lifting, you bank the revenue. Founder: Ayush Meena.",
     images: ["https://ayush.company/og-image.png"],
   },
   icons: {
