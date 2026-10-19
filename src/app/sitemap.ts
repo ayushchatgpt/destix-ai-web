@@ -77,6 +77,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/locations`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/locations/dubai/real-estate-ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/locations/mumbai/ai-voice-receptionist`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
   ];
 
   return routes;
