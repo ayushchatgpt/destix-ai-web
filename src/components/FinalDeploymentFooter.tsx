@@ -118,6 +118,51 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
           </div>
         </div>
 
+        {/* Regional Jurisdictions & Voice Telephony Sitelinks */}
+        <div className="pt-8 pb-14 border-b border-[#25221F] text-xs">
+          <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-5">
+            Regional Jurisdictions &amp; Telephony Hubs
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-[#A89F93]">
+            <div>
+              <Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                AI Voice Services in Delhi NCR
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Gurugram &amp; Noida Telephony</span>
+            </div>
+            <div>
+              <Link href="/locations/delhi-ncr/hindi-ai-voice-agent" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                Hindi AI Voice Agent for Delhi
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Bilingual Code-Switching</span>
+            </div>
+            <div>
+              <Link href="/locations/delhi-ncr/ai-voice-agents-for-clinics" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                AI Voice Agents for Clinics
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">24/7 Patient Scheduling</span>
+            </div>
+            <div>
+              <Link href="/locations/delhi-ncr/ai-voice-agents-for-real-estate" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                AI Voice Agents for Real Estate
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Delhi NCR Speed to Lead</span>
+            </div>
+            <div>
+              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                Dubai Real Estate Voice Agents
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Luxury Broker Qualification</span>
+            </div>
+            <div>
+              <Link href="/locations" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                AI Voice Agent Service Areas
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Global Remote Deployment</span>
+            </div>
+          </div>
+        </div>
+
         {/* Massive Architectural Base Brandmark */}
         <div className="py-14 sm:py-20 text-center select-none overflow-hidden">
           <div className="font-['Instrument_Serif'] text-6xl sm:text-9xl md:text-[140px] tracking-[0.18em] text-[#1E1C19] hover:text-[#282420] transition-colors uppercase whitespace-nowrap">

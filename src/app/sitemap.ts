@@ -101,6 +101,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.92,
     },
+    {
+      url: `${baseUrl}/locations/delhi-ncr/hindi-ai-voice-agent`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents-for-clinics`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents-for-real-estate`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
   ];
 
   return routes;
