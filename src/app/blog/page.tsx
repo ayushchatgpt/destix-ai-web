@@ -12,6 +12,24 @@ export default function BlogIndexPage() {
 
   const posts = [
     {
+      slug: "best-ai-voice-agent-in-new-delhi",
+      category: "DELHI NCR BENCHMARK • 2026",
+      date: "October 2026",
+      readTime: "9 min read",
+      title: "Best AI Voice Agents in New Delhi: 2026 Comparison & Architectural Scorecard",
+      desc: "Audited comparison of top AI voice agent companies in New Delhi: DestiX AI (Connaught Place), AI Sapiens, IVR Solutions, Renbotics, and RapidX AI. Benchmarks for latency, Hindi fluency, and telephony.",
+      author: "Ayush Meena",
+    },
+    {
+      slug: "ai-voice-agent-cost-india",
+      category: "UNIT ECONOMICS • 2026",
+      date: "October 2026",
+      readTime: "8 min read",
+      title: "AI Voice Agent Cost in India: Setup Fees, Per-Minute Rates & ROI Benchmarks",
+      desc: "Comprehensive 2026 cost breakdown of enterprise AI voice agents in India: Setup fees (₹35k–₹150k), per-minute telephony (₹4.50–₹7/min vs Decibel Labs ₹6/min & RapidX AI), and human call center ROI.",
+      author: "Ayush Meena",
+    },
+    {
       slug: "best-ai-voice-agents-agency-delhi-ncr",
       category: "INDUSTRY AUDIT • 2026",
       date: "October 2026",

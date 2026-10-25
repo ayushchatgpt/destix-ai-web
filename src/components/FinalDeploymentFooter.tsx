@@ -75,7 +75,10 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <li><Link href="/operating-system" className="hover:text-[#F6EFE2] transition-colors">AI Operating System &amp; n8n</Link></li>
               <li><Link href="/use-cases" className="hover:text-[#F6EFE2] transition-colors">Industry Production Playbooks</Link></li>
               <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder Dossier &amp; Philosophy</Link></li>
-              <li><Link href="/blog/best-ai-voice-agents-agency-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">Best AI Voice Agency (Delhi Audit)</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-in-new-delhi" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Best AI Voice Agents New Delhi (2026 Audit) →</Link></li>
+              <li><Link href="/blog/ai-voice-agent-cost-india" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">AI Voice Agent Cost in India (Pricing Guide)</Link></li>
+              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">WhatsApp Automation &amp; CRM Sync</Link></li>
+              <li><Link href="/blog/best-ai-voice-agents-agency-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#A89F93]">Delhi NCR Agency Rankings &amp; Matrix</Link></li>
             </ul>
           </div>
 

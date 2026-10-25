@@ -173,6 +173,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.92,
     },
+    {
+      url: `${baseUrl}/blog/best-ai-voice-agent-in-new-delhi`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/blog/ai-voice-agent-cost-india`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.94,
+    },
+    {
+      url: `${baseUrl}/services/whatsapp-automation`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
   ];
 
   return routes;
