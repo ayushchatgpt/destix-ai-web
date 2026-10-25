@@ -35,5 +35,6 @@ DestiX AI engineers production-grade AI voice agents with sub-500ms voice parity
 - **Dossier & Technical Philosophy:** https://ayush.company/about
 - **LinkedIn Profile:** https://www.linkedin.com/in/ayush-meena-065a89380/
 - **Company LinkedIn:** https://www.linkedin.com/company/destix-ai/
+- **Crunchbase:** https://www.crunchbase.com/organization/destix-ai
 - **Direct Desk:** ayushmeenadestixai@gmail.com
 - **Headquarters:** New Delhi, Delhi 110001, India (Serving Global Remote)

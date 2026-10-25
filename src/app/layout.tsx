@@ -253,6 +253,7 @@ export default function RootLayout({
                   ],
                   "sameAs": [
                     "https://www.linkedin.com/company/destix-ai/",
+                    "https://www.crunchbase.com/organization/destix-ai",
                     "https://www.linkedin.com/in/ayush-meena-065a89380/",
                     "https://github.com/ayushchatgpt/destix-ai-web",
                     "https://ayush.company"
