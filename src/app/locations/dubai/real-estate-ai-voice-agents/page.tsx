@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
 import { BookingModal } from "@/components/BookingModal";
+import VoiceDemoConsole from "@/components/VoiceDemoConsole";
 import {
   Building2,
   MapPin,
@@ -76,12 +77,15 @@ export default function DubaiRealEstateVoicePage() {
               <span>Schedule Dubai Architectural Consultation</span>
               <ArrowUpRight className="size-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
-            <Link
-              href="/#voice-console"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white border border-[#E2DDD1] hover:border-[#181614] text-[#181614] font-semibold text-sm transition-all duration-300 text-center"
+            <button
+              onClick={() => {
+                const el = document.getElementById("voice-console");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-white border border-[#E2DDD1] hover:border-[#181614] text-[#181614] font-semibold text-sm transition-all duration-300 text-center cursor-pointer"
             >
-              Test Telephony Simulator
-            </Link>
+              Audition Live Voice Agent
+            </button>
           </div>
         </div>
       </section>
@@ -108,6 +112,9 @@ export default function DubaiRealEstateVoicePage() {
           </Link>
         </div>
       </section>
+
+      {/* Real Live Voice Telemetry Console */}
+      <VoiceDemoConsole />
 
       {/* Pillars Grid */}
       <section className="py-20 bg-white border-b border-[#E2DDD1]">

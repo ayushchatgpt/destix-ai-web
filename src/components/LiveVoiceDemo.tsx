@@ -1,18 +1,30 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Play,
   Square,
-  Volume2,
-  VolumeX,
   Building2,
   Stethoscope,
   Briefcase,
   Utensils,
   Radio,
+  Mic,
+  PhoneOff,
+  Loader2,
+  AlertCircle,
+  Sparkles,
+  Check,
+  Copy,
+  Globe,
+  Flame,
   Zap,
+  Clock,
+  MessageSquare,
+  Calendar,
 } from "lucide-react";
+import { useDograhVoice } from "@/hooks/useDograhVoice";
+import { LeadSummary, VoiceLanguage } from "@/types/dograh";
 
 interface AgentDemo {
   id: string;
@@ -22,51 +34,65 @@ interface AgentDemo {
   voiceStyle: string;
   language: string;
   latency: string;
+  isLive?: boolean;
   icon: any;
   lines: { speaker: "Agent" | "Caller"; text: string; time: string }[];
 }
 
 export const LiveVoiceDemo: React.FC = () => {
   const [selectedAgentIdx, setSelectedAgentIdx] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentLineIdx, setCurrentLineIdx] = useState(0);
-  const [isMuted, setIsMuted] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const {
+    status,
+    error,
+    callDuration,
+    lastRunId,
+    leadSummary,
+    isLoadingSummary,
+    language,
+    setLanguage,
+    startCall,
+    endCall,
+    retry,
+    clearSummary,
+  } = useDograhVoice("auto");
+
+  const isConnected = status === "connected";
+  const isConnecting = status === "connecting";
+  const isArabic =
+    language === "ar" ||
+    (language === "auto" &&
+      typeof navigator !== "undefined" &&
+      navigator.language?.toLowerCase().startsWith("ar"));
 
   const agents: AgentDemo[] = [
     {
       id: "real-estate",
-      name: "Real Estate Specialist",
-      subtitle: "Buyer qualification & villa tour scheduling",
-      role: "Luxury Property Broker",
-      voiceStyle: "Warm, authoritative, conversational",
-      language: "English & Hindi (Fluent code-switch)",
-      latency: "340ms",
+      name: isArabic ? "مستشار عقارات دبي (إماراتي)" : "Dubai Property Specialist",
+      subtitle: isArabic
+        ? "تأهيل المستثمر والمشتري الصوتي بالكامل"
+        : "Autonomous buyer qualification & villa tour triage",
+      role: isArabic ? "مستشار عقاري فخم" : "Luxury Property Broker",
+      voiceStyle: isArabic ? "لهجة إماراتية طبيعية ومهذبة" : "Warm, authoritative, conversational",
+      language: isArabic ? "العربية — اللهجة الإماراتية" : "Conversational English",
+      latency: "279ms",
+      isLive: true,
       icon: Building2,
       lines: [
         {
           speaker: "Agent",
-          text: "Hello! This is DestiX from Meridian Luxury Estates. I noticed your interest in the Seafront Signature Villas in Mumbai. May I confirm if you're exploring this as a personal residence or an investment asset?",
+          text: isArabic
+            ? "مرحبا الساع! حياك الله في ديستكس للعقارات. أقدر أساعدك تحدد العقار المناسب في دبي، سواء في نخلة جميرا أو تلال دبي. تفضل، تدور على شقة ولا فيلا؟"
+            : "Hi there! I'm Sarah from DestiX AI. I'd love to help you find the right property in Dubai. Are you looking for an apartment or a villa?",
           time: "0:02",
         },
         {
           speaker: "Caller",
-          text: "Hi, yes. We're looking for a private 4-bedroom villa for my family, but we need sea-facing views and private parking.",
+          text: isArabic
+            ? "حياك الله، أدور على فيلا 4 غرف نوم في نخلة جميرا لعائلتي، مع إطلالة بحرية ومسبح خاص."
+            : "Hi Sarah, we're looking for a private 4-bedroom villa in Palm Jumeirah or Dubai Hills with sea views.",
           time: "0:08",
-        },
-        {
-          speaker: "Agent",
-          text: "Understood. The Horizon Villa collection specifically features 4 oceanfront suites with a dedicated three-car private courtyard. Our managing partner has preview slots available this Saturday at 11 AM or 3 PM. Which time suits your schedule best?",
-          time: "0:16",
-        },
-        {
-          speaker: "Caller",
-          text: "Saturday at 11 AM works perfectly for us.",
-          time: "0:22",
-        },
-        {
-          speaker: "Agent",
-          text: "Wonderful, Mr. Singhania. I've reserved the 11 AM private escort for you. I'm dispatching the gate pass and architectural brochure to your WhatsApp right now. We look forward to welcoming you.",
-          time: "0:29",
         },
       ],
     },
@@ -78,6 +104,7 @@ export const LiveVoiceDemo: React.FC = () => {
       voiceStyle: "Empathetic, calm, reassuring",
       language: "English & Hindi",
       latency: "360ms",
+      isLive: false,
       icon: Stethoscope,
       lines: [
         {
@@ -90,21 +117,6 @@ export const LiveVoiceDemo: React.FC = () => {
           text: "Hello, I wanted to inquire about downtime for fractional laser resurfacing. I have an event next week.",
           time: "0:08",
         },
-        {
-          speaker: "Agent",
-          text: "Great question! Most of our patients experience mild redness that subsides within 48 to 72 hours. For an event next week, Dr. Verma recommends our gentle hydra-glow protocol instead. We have an open slot today at 4:30 PM. Would you like me to book that for you?",
-          time: "0:17",
-        },
-        {
-          speaker: "Caller",
-          text: "Yes, 4:30 PM today would be great.",
-          time: "0:23",
-        },
-        {
-          speaker: "Agent",
-          text: "You are confirmed for 4:30 PM with Dr. Verma. Please arrive 10 minutes prior for digital registration. I've sent the clinic location pin to your phone.",
-          time: "0:30",
-        },
       ],
     },
     {
@@ -115,32 +127,18 @@ export const LiveVoiceDemo: React.FC = () => {
       voiceStyle: "Sharp, consultative, punchy",
       language: "English",
       latency: "320ms",
+      isLive: false,
       icon: Briefcase,
       lines: [
         {
           speaker: "Agent",
-          text: "Hi David! DestiX AI calling from ScaleOps Cloud. I saw you just reviewed our enterprise pricing tier for Kubernetes cluster management. Are you currently running over 50 production nodes?",
-          time: "0:02",
+          text: "Good morning! David from Nexus Cloud Solutions following up on your Kubernetes integration request. Does your engineering team manage this on AWS or bare-metal?",
+          time: "0:03",
         },
         {
           speaker: "Caller",
           text: "Hey David, yes—we manage around 180 nodes on AWS, and our multi-cloud deployment is becoming really messy.",
           time: "0:09",
-        },
-        {
-          speaker: "Agent",
-          text: "That is precisely what our Series-C customers face. Our principal cloud architect specializes in 100+ node multi-region architectures. I have his live calendar open—can we do a 20-minute technical deep dive tomorrow at 2 PM EST?",
-          time: "0:18",
-        },
-        {
-          speaker: "Caller",
-          text: "Sure, let's do 2 PM EST tomorrow.",
-          time: "0:24",
-        },
-        {
-          speaker: "Agent",
-          text: "Confirmed. The calendar invite and technical benchmark deck are already in your inbox. Looking forward to speaking then!",
-          time: "0:31",
         },
       ],
     },
@@ -152,6 +150,7 @@ export const LiveVoiceDemo: React.FC = () => {
       voiceStyle: "Polite, gracious, discreet",
       language: "English, Hindi & Global Nuances",
       latency: "350ms",
+      isLive: false,
       icon: Utensils,
       lines: [
         {
@@ -164,81 +163,37 @@ export const LiveVoiceDemo: React.FC = () => {
           text: "Hi, I'm checking if you have a private candlelit table by the terrace for an anniversary dinner tonight for two people?",
           time: "0:08",
         },
-        {
-          speaker: "Agent",
-          text: "Happy anniversary! We do have our signature North Terrace table available at 8:30 PM, complete with personalized menus and champagne pairing. May I reserve this under your name?",
-          time: "0:17",
-        },
-        {
-          speaker: "Caller",
-          text: "Yes please, under Rahul Mehra.",
-          time: "0:23",
-        },
-        {
-          speaker: "Agent",
-          text: "It is my pleasure, Mr. Mehra. Your table is reserved for 8:30 PM. Our sommelier will have your welcome flutes prepared upon arrival.",
-          time: "0:30",
-        },
       ],
     },
   ];
 
   const activeAgent = agents[selectedAgentIdx];
 
-  // Speech synthesis / Audio playback effect
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (isPlaying) {
-      if (typeof window !== "undefined" && "speechSynthesis" in window && !isMuted) {
-        window.speechSynthesis.cancel();
-        const currentLine = activeAgent.lines[currentLineIdx];
-        if (currentLine) {
-          const utterance = new SpeechSynthesisUtterance(currentLine.text);
-          utterance.rate = 1.05;
-          utterance.pitch = currentLine.speaker === "Agent" ? 1.0 : 0.95;
-          window.speechSynthesis.speak(utterance);
-        }
-      }
-
-      timer = setTimeout(() => {
-        if (currentLineIdx < activeAgent.lines.length - 1) {
-          setCurrentLineIdx((prev) => prev + 1);
-        } else {
-          setIsPlaying(false);
-          setCurrentLineIdx(0);
-        }
-      }, 5500);
-    } else {
-      if (typeof window !== "undefined" && "speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
-    }
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [isPlaying, currentLineIdx, selectedAgentIdx, isMuted, activeAgent.lines]);
-
-  const handleTogglePlay = () => {
-    if (isPlaying) {
-      setIsPlaying(false);
-      setCurrentLineIdx(0);
-      if (typeof window !== "undefined" && "speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
-    } else {
-      setIsPlaying(true);
-      setCurrentLineIdx(0);
-    }
+  const formatDuration = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   };
 
-  const handleSelectAgent = (idx: number) => {
-    setIsPlaying(false);
-    setCurrentLineIdx(0);
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
-    setSelectedAgentIdx(idx);
+  const handleCopySummary = (summary: LeadSummary) => {
+    const text = isArabic
+      ? [
+          "ديستكس للذكاء الاصطناعي — ملف تأهيل المشتري",
+          `نوع العقار: ${summary.property_type || "لم يُحدد"}`,
+          `الموقع: ${Array.isArray(summary.preferred_locations) ? summary.preferred_locations.join("، ") : summary.preferred_locations || "لم يُحدد"}`,
+          `الميزانية: ${summary.budget || "لم تُحدد"}`,
+          `الإطار الزمني: ${summary.buying_timeline || "لم يُحدد"}`,
+          `الهدف: ${summary.purchase_intent || "لم يُحدد"}`,
+          `الغرف: ${summary.bedrooms || "لم يُحدد"}`,
+          `طريقة الدفع: ${summary.financing_preference || "لم يُحدد"}`,
+          `الخطوة التالية: ${summary.preferred_next_step || "لم يُحدد"}`,
+          `متطلبات إضافية: ${summary.other_requirements || "لا يوجد"}`,
+        ].join("\n")
+      : JSON.stringify(summary, null, 2);
+
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
   };
 
   return (
@@ -248,194 +203,354 @@ export const LiveVoiceDemo: React.FC = () => {
     >
       <div className="relative mx-auto max-w-6xl">
         {/* Section Header */}
-        <div className="max-w-2xl">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
-            // Mission Control Audio Station
-          </span>
-          <h2 className="mt-3 font-display text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.05]">
-            Experience live voice synthesis,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-              in real-time.
-            </span>
+        <div className="mb-16 md:mb-20 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-widest text-[#B88746] mb-4">
+            <Radio className="size-3.5 animate-pulse text-[#B88746]" />
+            Real-Time Two-Way Telephony
+          </div>
+          <h2 className="font-['Instrument_Serif'] text-4xl md:text-6xl text-white tracking-tight">
+            Live Voice Agent <span className="italic text-[#B88746]">Showcase</span>
           </h2>
-          <p className="mt-4 text-base text-slate-400 font-light leading-relaxed">
-            Select an agent persona below and experience low-latency conversational telephony.
-            This is the exact production voice stack we deploy for our clients.
-            Zero canned recordings, sub-350ms turn-taking latency.
+          <p className="mt-4 text-sm md:text-base text-white/60 max-w-2xl mx-auto font-['Plus_Jakarta_Sans']">
+            Experience sub-second voice AI in action. Speak directly to our Dubai Real Estate agent via live WebRTC in English or Emirati Arabic.
           </p>
         </div>
 
-        {/* 4 Agent Selectable Tabs */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Agent Selector Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
           {agents.map((agent, idx) => {
             const Icon = agent.icon;
             const isSelected = selectedAgentIdx === idx;
             return (
               <button
                 key={agent.id}
-                type="button"
-                onClick={() => handleSelectAgent(idx)}
-                className={`group flex items-center justify-between rounded-2xl border p-4 text-left transition-all ${
+                onClick={() => {
+                  if (isConnected) endCall();
+                  setSelectedAgentIdx(idx);
+                }}
+                className={`p-4 md:p-5 rounded-2xl border text-left transition-all duration-300 relative ${
                   isSelected
-                    ? "border-cyan-400 bg-cyan-950/40 shadow-[0_0_20px_rgba(6,182,212,0.2)]"
-                    : "border-white/10 bg-white/[0.02] hover:border-white/20 hover:bg-white/[0.05]"
+                    ? "bg-white/10 border-[#B88746] shadow-lg shadow-[#B88746]/10"
+                    : "bg-white/5 border-white/10 hover:border-white/20 text-white/60"
                 }`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-between mb-3">
                   <div
-                    className={`flex size-10 items-center justify-center rounded-xl transition-colors ${
+                    className={`p-2.5 rounded-xl border ${
                       isSelected
-                        ? "bg-cyan-400 text-black font-bold shadow-[0_0_12px_rgba(6,182,212,0.6)]"
-                        : "bg-white/10 text-white group-hover:bg-cyan-500/20 group-hover:text-cyan-400"
+                        ? "bg-[#B88746]/20 border-[#B88746]/40 text-[#B88746]"
+                        : "bg-white/5 border-white/10 text-white/40"
                     }`}
                   >
                     <Icon className="size-5" />
                   </div>
-                  <div>
-                    <span className="block text-xs font-semibold text-white">
-                      {agent.name}
+                  {agent.isLive && (
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[9px] font-mono border border-emerald-500/30">
+                      LIVE
                     </span>
-                    <span className="block text-[11px] font-mono text-slate-400">
-                      {agent.role}
-                    </span>
-                  </div>
+                  )}
                 </div>
-
-                <div
-                  className={`size-2 rounded-full ${
-                    isSelected ? "bg-cyan-400 shadow-[0_0_8px_rgba(6,182,212,0.9)]" : "bg-white/20"
-                  }`}
-                />
+                <div className="font-semibold text-sm text-white mb-1 font-['Plus_Jakarta_Sans']">
+                  {agent.name}
+                </div>
+                <div className="text-xs text-white/40 font-mono">{agent.latency} latency</div>
               </button>
             );
           })}
         </div>
 
-        {/* Cyber Audio Console Station */}
-        <div className="mt-8 rounded-3xl border border-white/10 bg-[#08090C] p-6 md:p-10 shadow-espresso backdrop-blur-xl">
-          {/* Top Console Bar */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 border-b border-white/10">
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="size-2 rounded-full bg-emerald-400 animate-ping" />
-                <span className="font-mono text-xs uppercase tracking-wider text-emerald-400">
-                  Realtime Telephony Stream Active
-                </span>
+        {/* Live Interface Box */}
+        <div
+          dir={isArabic && activeAgent.isLive ? "rtl" : "ltr"}
+          className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-12 backdrop-blur-xl"
+        >
+          {activeAgent.isLive ? (
+            <div className="flex flex-col items-center justify-center text-center space-y-6">
+              {/* Language Switcher */}
+              <div className="flex flex-col items-center gap-1.5 mb-2">
+                <div className="flex items-center gap-2 p-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono">
+                  <Globe className="w-3.5 h-3.5 text-[#B88746] ml-2" />
+                  <button
+                    onClick={() => setLanguage("auto")}
+                    disabled={isConnected || isConnecting}
+                    className={`px-3 py-1 rounded-full transition-colors ${
+                      language === "auto"
+                        ? "bg-[#B88746] text-[#131210] font-bold"
+                        : "text-white/60 hover:text-white"
+                    } disabled:opacity-50`}
+                  >
+                    {isArabic ? "تلقائي (ثنائي اللغة)" : "Automatic (Bilingual)"}
+                  </button>
+                  <button
+                    onClick={() => setLanguage("en")}
+                    disabled={isConnected || isConnecting}
+                    className={`px-3 py-1 rounded-full transition-colors ${
+                      language === "en"
+                        ? "bg-[#B88746] text-[#131210] font-bold"
+                        : "text-white/60 hover:text-white"
+                    } disabled:opacity-50`}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => setLanguage("ar")}
+                    disabled={isConnected || isConnecting}
+                    className={`px-3 py-1 rounded-full transition-colors ${
+                      language === "ar"
+                        ? "bg-[#B88746] text-[#131210] font-bold"
+                        : "text-white/60 hover:text-white"
+                    } disabled:opacity-50`}
+                  >
+                    العربية
+                  </button>
+                  <button
+                    onClick={() => setLanguage("hi")}
+                    disabled={isConnected || isConnecting}
+                    className={`px-3 py-1 rounded-full transition-colors ${
+                      language === "hi"
+                        ? "bg-[#B88746] text-[#131210] font-bold"
+                        : "text-white/60 hover:text-white"
+                    } disabled:opacity-50`}
+                  >
+                    हिन्दी
+                  </button>
+                </div>
+                <div className="text-[11px] font-mono text-[#B88746]/80 flex items-center gap-1">
+                  <Sparkles className="size-3" />
+                  {language === "auto"
+                    ? isArabic
+                      ? "كشف تلقائي مباشر: تحدث بالإنجليزية أو العربية أو اطلب التحويل أثناء المكالمة"
+                      : "Live Auto-Detect: Speak in English, Arabic, or ask Sarah to switch mid-call"
+                    : language === "ar"
+                    ? "يبدأ بالترحيب الإماراتي ويدعم التبديل المباشر للإنجليزية إذا طلبت"
+                    : language === "hi"
+                    ? "Starts with polite Hindi greeting and dynamically adapts to code-switching"
+                    : "Starts with English greeting and dynamically adapts to Arabic or mixed speech"}
+                </div>
               </div>
-              <h3 className="mt-1 font-display text-2xl font-bold text-white">
-                {activeAgent.name} • <span className="text-cyan-400">{activeAgent.subtitle}</span>
-              </h3>
-            </div>
 
-            <div className="flex items-center gap-3">
-              <span className="rounded-full border border-cyan-500/30 bg-cyan-950/60 px-3.5 py-1 font-mono text-xs text-cyan-300">
-                Turn Latency: <strong className="text-emerald-400">{activeAgent.latency}</strong>
-              </span>
-              <button
-                onClick={() => setIsMuted(!isMuted)}
-                className="flex size-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-400 hover:text-white"
-                title={isMuted ? "Unmute audio" : "Mute audio"}
-              >
-                {isMuted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
-              </button>
-            </div>
-          </div>
-
-          {/* Soundwave Visualizer & Play Button */}
-          <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-center gap-6">
-              <button
-                onClick={handleTogglePlay}
-                className={`group flex size-20 items-center justify-center rounded-full transition-all duration-300 shadow-2xl ${
-                  isPlaying
-                    ? "bg-red-500 text-white hover:scale-105 shadow-[0_0_25px_rgba(239,68,68,0.5)]"
-                    : "bg-gradient-to-r from-cyan-400 to-indigo-500 text-black font-bold hover:scale-105 shadow-[0_0_25px_rgba(6,182,212,0.5)]"
-                }`}
-                aria-label={isPlaying ? "Stop conversation" : "Start conversation"}
-              >
-                {isPlaying ? (
-                  <Square className="size-7 fill-current" />
+              <div className="size-20 rounded-full border border-white/15 bg-white/5 flex items-center justify-center relative">
+                {isConnected ? (
+                  <>
+                    <span className="absolute inset-0 rounded-full bg-emerald-500/20 animate-ping" />
+                    <Mic className="size-8 text-emerald-400" />
+                  </>
+                ) : isConnecting ? (
+                  <Loader2 className="size-8 text-[#B88746] animate-spin" />
                 ) : (
-                  <Play className="size-8 fill-current pl-1 text-black" />
+                  <Mic className="size-8 text-white/40" />
                 )}
-              </button>
+              </div>
 
               <div>
-                <div className="font-display text-xl font-bold text-white">
-                  {isPlaying ? "Simulating Live Production Call..." : "Tap to Start Call Simulation"}
-                </div>
-                <div className="text-xs text-slate-400 mt-0.5 font-light">
-                  Natural breathing pauses, intelligent interruption detection, instant CRM trigger.
-                </div>
+                <h3 className="font-['Instrument_Serif'] text-3xl text-white mb-2">
+                  {activeAgent.name}
+                </h3>
+                <p className="text-sm text-white/60 max-w-md">
+                  {isConnected
+                    ? isArabic
+                      ? `المكالمة متصلة الآن (${formatDuration(callDuration)}) — تحدث بحرية لتأهيل طلبك العقاري`
+                      : `Live Call Connected (${formatDuration(callDuration)}) — Speak to qualify your requirements`
+                    : isConnecting
+                    ? isArabic
+                      ? "جاري إنشاء اتصال WebRTC الصوتي المباشر..."
+                      : "Establishing WebRTC connection with local Dograh runtime..."
+                    : isArabic
+                    ? "تحدث مع المستشار العقاري بالصوت عبر الميكروفون بلهجة إماراتية طبيعية"
+                    : "Connect your microphone to experience real-time two-way voice buyer qualification"}
+                </p>
               </div>
-            </div>
 
-            {/* Dynamic Soundwave Bars */}
-            <div className="flex items-end gap-1.5 h-16 w-full max-w-xs">
-              {[15, 30, 60, 90, 45, 80, 100, 75, 40, 85, 95, 50, 70, 35, 65, 90, 45, 20].map(
-                (height, i) => (
-                  <div
-                    key={i}
-                    className={`flex-1 rounded-full transition-all duration-200 ${
-                      isPlaying
-                        ? "bg-gradient-to-t from-cyan-400 to-indigo-400 shadow-[0_0_8px_rgba(6,182,212,0.8)]"
-                        : "bg-white/10"
-                    }`}
-                    style={{
-                      height: isPlaying ? `${Math.max(15, (height * (currentLineIdx + 1)) % 100)}%` : "12%",
-                      animation: isPlaying
-                        ? `eq-bounce-${(i % 4) + 1} ${0.6 + (i % 3) * 0.2}s ease-in-out infinite alternate`
-                        : "none",
-                    }}
-                  />
-                )
+              {error && (
+                <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs font-mono flex items-center gap-2">
+                  <AlertCircle className="size-4 shrink-0" />
+                  <span>{error}</span>
+                  <button onClick={retry} className="underline ml-2">
+                    Retry
+                  </button>
+                </div>
               )}
-            </div>
-          </div>
 
-          {/* Live Transcript Dialog Box */}
-          <div className="rounded-2xl border border-white/10 bg-[#0E1017] p-5 space-y-3">
-            <div className="flex items-center justify-between text-[11px] font-mono text-cyan-400 pb-2 border-b border-white/5">
-              <span>REAL-TIME CALL TRANSCRIPT</span>
-              <span>Turn {currentLineIdx + 1} of {activeAgent.lines.length}</span>
-            </div>
-
-            <div className="space-y-3 max-h-48 overflow-y-auto pr-2">
-              {activeAgent.lines.map((line, idx) => {
-                const isCurrent = idx === currentLineIdx && isPlaying;
-                return (
-                  <div
-                    key={idx}
-                    className={`flex items-start gap-3 rounded-xl p-3 text-xs transition-all ${
-                      line.speaker === "Agent"
-                        ? "bg-white/[0.03] border border-white/10"
-                        : "bg-cyan-950/40 border border-cyan-500/30"
-                    } ${isCurrent ? "ring-1 ring-cyan-400" : ""}`}
+              <div className="flex items-center gap-4">
+                {!isConnected ? (
+                  <button
+                    onClick={startCall}
+                    disabled={isConnecting}
+                    className="px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#D4A373] disabled:opacity-50 text-[#131210] font-bold text-sm flex items-center gap-2 shadow-xl transition-all hover:scale-105"
                   >
-                    <span
-                      className={`font-mono font-semibold px-2 py-0.5 rounded text-[10px] shrink-0 ${
-                        line.speaker === "Agent"
-                          ? "bg-white/10 text-white"
-                          : "bg-cyan-500 text-black font-bold"
-                      }`}
-                    >
-                      {line.speaker}
+                    {isConnecting ? (
+                      <>
+                        <Loader2 className="size-4 animate-spin" />
+                        <span>{isArabic ? "جاري الاتصال..." : "Connecting..."}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="size-4 fill-current" />
+                        <span>{isArabic ? "بدء المحادثة الصوتية" : "Start Voice Session"}</span>
+                      </>
+                    )}
+                  </button>
+                ) : (
+                  <button
+                    onClick={endCall}
+                    className="px-8 py-4 rounded-full bg-red-600 hover:bg-red-500 text-white font-bold text-sm flex items-center gap-2 shadow-xl transition-all hover:scale-105"
+                  >
+                    <PhoneOff className="size-4" />
+                    <span>
+                      {isArabic ? "إنهاء المكالمة" : "End Call"} ({formatDuration(callDuration)})
                     </span>
+                  </button>
+                )}
+              </div>
 
-                    <p className={`flex-1 leading-relaxed ${isCurrent ? "text-white font-medium" : "text-slate-400"}`}>
-                      {line.text}
-                    </p>
-
-                    <span className="font-mono text-[10px] text-slate-500 shrink-0">
-                      {line.time}
+              {/* Lead Dossier */}
+              {leadSummary && (
+                <div className="w-full mt-8 p-6 rounded-2xl bg-white/5 border border-[#B88746]/30 text-left">
+                  <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/10">
+                    <span className="text-xs font-mono text-[#B88746] uppercase flex items-center gap-1.5">
+                      <Sparkles className="size-4" />{" "}
+                      {isArabic ? "ملف تأهيل المشتري المستخرج" : "Extracted Qualification Data"}
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                      {isArabic
+                        ? "نموذج تجريبي — لم يتم حجز موعد فعلي"
+                        : "Sample Handoff — No Appointment Booked"}
                     </span>
                   </div>
-                );
-              })}
+
+                  {/* Lead Category Badge if available */}
+                  {leadSummary.lead_category && (
+                    <div className="mb-4 p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        {String(leadSummary.lead_category).toUpperCase().includes("HOT") ? (
+                          <Flame className="size-4 text-red-400 animate-pulse" />
+                        ) : String(leadSummary.lead_category).toUpperCase().includes("WARM") ? (
+                          <Zap className="size-4 text-amber-400" />
+                        ) : (
+                          <Clock className="size-4 text-blue-400" />
+                        )}
+                        <span className="text-xs font-mono font-bold uppercase text-white">
+                          {String(leadSummary.lead_category)}
+                        </span>
+                      </div>
+                      {leadSummary.booking_status && (
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#B88746]/20 text-[#E4C590] border border-[#B88746]/30">
+                          {String(leadSummary.booking_status)}
+                        </span>
+                      )}
+                    </div>
+                  )}
+
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs font-mono">
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "نوع العقار" : "Property Type"}
+                      </span>
+                      <span className="text-white font-medium">
+                        {leadSummary.property_type || (isArabic ? "لم يُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "الموقع المفضل" : "Locations"}
+                      </span>
+                      <span className="text-white font-medium">
+                        {Array.isArray(leadSummary.preferred_locations)
+                          ? leadSummary.preferred_locations.join(isArabic ? "، " : ", ")
+                          : leadSummary.preferred_locations || (isArabic ? "لم يُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "الميزانية" : "Budget"}
+                      </span>
+                      <span className="text-[#B88746] font-medium">
+                        {leadSummary.budget || (isArabic ? "لم تُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "الإطار الزمني" : "Timeline"}
+                      </span>
+                      <span className="text-white font-medium">
+                        {leadSummary.buying_timeline || (isArabic ? "لم يُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "الهدف من الشراء" : "Purchase Intent"}
+                      </span>
+                      <span className="text-white font-medium">
+                        {leadSummary.purchase_intent || (isArabic ? "لم يُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-white/40 block">
+                        {isArabic ? "عدد الغرف" : "Bedrooms"}
+                      </span>
+                      <span className="text-white font-medium">
+                        {leadSummary.bedrooms || (isArabic ? "لم يُحدد" : "Unknown")}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+                    <span className="text-[10px] text-white/40 font-mono">
+                      Run ID: {lastRunId} • Verified
+                    </span>
+                    <button
+                      onClick={() => handleCopySummary(leadSummary)}
+                      className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 text-xs font-mono text-white flex items-center gap-1.5 transition-colors"
+                    >
+                      {copied ? (
+                        <>
+                          <Check className="size-3.5 text-emerald-400" />
+                          <span className="text-emerald-400">
+                            {isArabic ? "تم النسخ" : "Copied"}
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="size-3.5" />
+                          <span>{isArabic ? "نسخ الملف" : "Copy Data"}</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
+          ) : (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-white/10 text-xs font-mono text-white/40">
+                <span>SIMULATED TRANSCRIPT</span>
+                <span>{activeAgent.voiceStyle}</span>
+              </div>
+              <div className="space-y-3 max-h-[350px] overflow-y-auto pr-2">
+                {activeAgent.lines.map((line, idx) => (
+                  <div key={idx} className="p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                    <div className="flex items-center justify-between mb-1">
+                      <span
+                        className={`text-xs font-bold font-mono ${
+                          line.speaker === "Agent" ? "text-[#B88746]" : "text-white/60"
+                        }`}
+                      >
+                        {line.speaker}
+                      </span>
+                      <span className="text-[10px] font-mono text-white/40">{line.time}</span>
+                    </div>
+                    <p className="text-sm text-white/80 leading-relaxed font-['Plus_Jakarta_Sans']">
+                      {line.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
   );
 };
+
+export default LiveVoiceDemo;

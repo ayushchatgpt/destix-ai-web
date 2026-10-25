@@ -119,6 +119,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.92,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/blog/best-ai-voice-agents-agency-delhi-ncr`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
   ];
 
   return routes;

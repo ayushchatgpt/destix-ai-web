@@ -42,3 +42,13 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# local agents and tests
+.agents/
+tests/
+__pycache__/
+*.pyc
+
+run_e2e_stress_suite.py
+test_results_summary.json
+TEST_READY.md

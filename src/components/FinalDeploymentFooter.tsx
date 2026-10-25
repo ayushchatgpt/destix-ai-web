@@ -75,6 +75,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <li><Link href="/operating-system" className="hover:text-[#F6EFE2] transition-colors">AI Operating System &amp; n8n</Link></li>
               <li><Link href="/use-cases" className="hover:text-[#F6EFE2] transition-colors">Industry Production Playbooks</Link></li>
               <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder Dossier &amp; Philosophy</Link></li>
+              <li><Link href="/blog/best-ai-voice-agents-agency-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">Best AI Voice Agency (Delhi Audit)</Link></li>
             </ul>
           </div>
 
