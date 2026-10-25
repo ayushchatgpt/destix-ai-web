@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { CustomCursor } from "@/components/CustomCursor";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -679,6 +680,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B88746]/20 selection:text-[#181614]">
         <CustomCursor />
+        <ScrollReveal />
         {children}
       </body>
     </html>

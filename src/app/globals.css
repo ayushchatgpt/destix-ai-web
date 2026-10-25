@@ -187,3 +187,72 @@ body {
   animation: shimmer-sweep 2.5s infinite;
 }
 
+/* =========================================================================
+   Luxury Editorial Micro-Interactions & Scroll Reveal Engine
+   (Native IntersectionObserver, Zero Framer-Motion Overhead, 60fps)
+   ========================================================================= */
+
+/* Only hide elements when JS is armed to avoid flash of invisible content (FOIC) */
+body.rvl-armed .reveal,
+body.rvl-armed [data-reveal],
+body.rvl-armed .reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+body.rvl-armed .reveal.is-revealed,
+body.rvl-armed [data-reveal].is-revealed,
+body.rvl-armed .reveal-stagger > *.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+body.rvl-armed [data-delay="100"],
+body.rvl-armed .reveal-stagger > *:nth-child(1) { transition-delay: 50ms; }
+
+body.rvl-armed [data-delay="200"],
+body.rvl-armed .reveal-stagger > *:nth-child(2) { transition-delay: 120ms; }
+
+body.rvl-armed [data-delay="300"],
+body.rvl-armed .reveal-stagger > *:nth-child(3) { transition-delay: 190ms; }
+
+body.rvl-armed [data-delay="400"],
+body.rvl-armed .reveal-stagger > *:nth-child(4) { transition-delay: 260ms; }
+
+body.rvl-armed [data-delay="500"],
+body.rvl-armed .reveal-stagger > *:nth-child(5) { transition-delay: 330ms; }
+
+/* Micro-Interaction: Champagne Bronze Text Underline Sweep */
+.hover-bronze-line {
+  position: relative;
+  display: inline-block;
+}
+.hover-bronze-line::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #B88746;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-bronze-line:hover::after {
+  width: 100%;
+}
+
+/* Micro-Interaction: Editorial Card Elevation */
+.luxury-card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.luxury-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -10px rgba(24, 22, 20, 0.08);
+  border-color: rgba(184, 135, 70, 0.5);
+}
