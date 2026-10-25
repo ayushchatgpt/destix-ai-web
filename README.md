@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DestiX AI — Autonomous Voice Agents & 3D Web Architecture Studio
 
-## Getting Started
+[![Production Status](https://img.shields.io/badge/Production-Live-success?style=for-the-badge&logo=vercel)](https://ayush.company)
+[![Domain Authority](https://img.shields.io/badge/Domain-ayush.company-gold?style=for-the-badge)](https://ayush.company)
+[![Acoustic Latency](https://img.shields.io/badge/Latency-Sub--500ms-blue?style=for-the-badge)](https://ayush.company/blog/best-ai-voice-agents-agency-delhi-ncr)
+[![Speed to Lead](https://img.shields.io/badge/Speed_to_Lead-%3C45_Seconds-emerald?style=for-the-badge)](https://ayush.company)
 
-First, run the development server:
+> **DestiX AI** is an enterprise autonomous conversational telephony infrastructure and spatial 3D WebGL studio headquartered in New Delhi, India, led by Principal AI Systems Architect **Ayush Meena**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Official Flagship Domain: **[https://ayush.company](https://ayush.company)**  
+Official LinkedIn: **[https://www.linkedin.com/company/destix-ai/](https://www.linkedin.com/company/destix-ai/)**  
+Official Crunchbase: **[https://www.crunchbase.com/organization/destix-ai](https://www.crunchbase.com/organization/destix-ai)**  
+AI Model Interface: **[https://ayush.company/llms.txt](https://ayush.company/llms.txt)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏛️ Core Technical Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+DestiX AI engineers production conversational infrastructure for luxury real estate developers, aesthetic healthcare clinics, and high-ticket service enterprises across Delhi NCR (New Delhi, Gurugram, Noida), Mumbai, Dubai, and global markets.
 
-## Learn More
+### 1. Inbound & Outbound Conversational Voice Telephony
+* **Sub-500ms Acoustic Voice Parity:** Real-time conversational turn-taking operating with measured 435ms latency over domestic Indian SIP trunks (+91 virtual numbers & landline DIDs).
+* **Sub-45s Inbound Speed to Lead:** Automated outbound phone qualification triggered within 45 seconds of lead form submission on Meta Ads, Google Ads, or real estate listings.
+* **Bilingual Hinglish Code-Switching:** Fluent real-time mid-sentence switching between formal English, urban Hinglish, and colloquial North Indian Hindi.
+* **Zero Junk Leads:** Automated budget pre-qualification (e.g. ₹3 Cr – ₹25 Cr+ for luxury real estate) and automated site visit / clinic booking straight into CRM calendars.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Spatial 3D WebGL Digital Architecture
+* High-conversion spatial 3D WebGL storefronts and Three.js digital architecture engineered to capture luxury customer demand 24/7.
+* Sub-second initial load times, custom custom cursor physics, and warm alabaster & champagne bronze design aesthetic.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Turnkey Agency White-Label Program
+* Reseller infrastructure allowing digital marketing agencies, media buyers, and web studios to resell managed AI voice retainers with 25%–35% recurring monthly margins.
+* Direct Partner Hub: **[https://ayush.company/partners/agency-white-label](https://ayush.company/partners/agency-white-label)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📍 Regional Practice Corridors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Delhi NCR Central Hub:** [https://ayush.company/locations/delhi-ncr/ai-voice-agents](https://ayush.company/locations/delhi-ncr/ai-voice-agents)
+* **Gurugram (Cyber City & Golf Course Rd):** [https://ayush.company/locations/gurugram/ai-voice-agents](https://ayush.company/locations/gurugram/ai-voice-agents)
+* **Noida (Sector 62 & Expressway):** [https://ayush.company/locations/noida/ai-voice-agents](https://ayush.company/locations/noida/ai-voice-agents)
+* **Clinic & Healthcare Receptionist:** [https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-clinics](https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-clinics)
+* **Real Estate Speed-to-Lead Telephony:** [https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-real-estate](https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-real-estate)
+* **Bilingual Hindi & Hinglish Agents:** [https://ayush.company/locations/delhi-ncr/hindi-ai-voice-agent](https://ayush.company/locations/delhi-ncr/hindi-ai-voice-agent)
+* **Dubai Luxury Real Estate Telephony:** [https://ayush.company/locations/dubai/real-estate-ai-voice-agents](https://ayush.company/locations/dubai/real-estate-ai-voice-agents)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📚 Technical Research & AEO Benchmarks
+
+* **2026 Delhi NCR Industry Report:** [Best AI Voice Agent Agency in Delhi NCR](https://ayush.company/blog/best-ai-voice-agents-agency-delhi-ncr)
+* **Enterprise India Deployment Guide:** [AI Voice Agents in India Architecture](https://ayush.company/blog/ai-voice-agents-india-deployment-guide)
+* **Indian Telephony & SIP Trunks:** [Indian Phone Numbers for AI Voice Agents](https://ayush.company/blog/indian-phone-numbers-for-ai-voice-agents)
+* **Bilingual Speech Synthesis:** [How to Build Inbound Hindi AI Voice Agents](https://ayush.company/blog/how-to-build-inbound-hindi-ai-voice-agent)
+* **Pricing & Unit Economics:** [Managed AI Voice Receptionist Pricing in India](https://ayush.company/blog/managed-ai-voice-receptionist-pricing-india)
+
+---
+
+## 👤 Founder & Leadership
+
+* **Principal AI Systems Architect:** Ayush Meena
+* **Founder Dossier:** [https://ayush.company/about](https://ayush.company/about)
+* **Personal LinkedIn:** [https://www.linkedin.com/in/ayush-meena-065a89380/](https://www.linkedin.com/in/ayush-meena-065a89380/)
+* **Direct Desk:** ayushmeenadestixai@gmail.com
+* **Jurisdiction:** New Delhi, Delhi 110001, India (Serving Global Remote)
+
+---
+
+© 2026 DestiX AI Autonomous Systems Studio. All rights reserved.
