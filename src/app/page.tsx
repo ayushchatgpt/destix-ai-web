@@ -43,44 +43,28 @@ export default function HomePage() {
       <MarqueeTrack />
 
       {/* Section 4: (02) The Conversion Problem & Our Solution (6 Pillars) */}
-      <div className="reveal">
-        <HowWeBuild />
-      </div>
+      <HowWeBuild />
 
       {/* Section 5: (03) Selected Work & Live Proof */}
-      <div className="reveal">
-        <SelectedWorks />
-      </div>
+      <SelectedWorks />
 
       {/* Section 6: (04) Deployed Production Playbooks (Vertical Blueprints) */}
-      <div className="reveal">
-        <ProductionPlaybooks />
-      </div>
+      <ProductionPlaybooks />
 
       {/* Section 7: (05) The Core Practice Areas (Deep Espresso Section) */}
-      <div className="reveal">
-        <CorePracticeAreas />
-      </div>
+      <CorePracticeAreas />
 
       {/* Section 8: (06) The Live Voice Demonstration Console */}
-      <div className="reveal">
-        <VoiceDemoConsole />
-      </div>
+      <VoiceDemoConsole />
 
       {/* Section 9: (07) The Scoping Model & Interactive Volume Modeler (NO TIERS) */}
-      <div className="reveal">
-        <ScopingModel onOpenBooking={handleOpenBooking} />
-      </div>
+      <ScopingModel onOpenBooking={handleOpenBooking} />
 
       {/* Section 10: (08) The Studio Leadership Dossier */}
-      <div className="reveal">
-        <LeadershipDossier onOpenBooking={handleOpenBooking} />
-      </div>
+      <LeadershipDossier onOpenBooking={handleOpenBooking} />
 
       {/* Section 11: High-Trust FAQ Accordion */}
-      <div className="reveal">
-        <FaqSection />
-      </div>
+      <FaqSection />
 
       {/* Section 12: Final High-Conversion Invitation & Footer */}
       <FinalDeploymentFooter onOpenBooking={handleOpenBooking} />
