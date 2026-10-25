@@ -256,18 +256,3 @@ body.rvl-armed .reveal-stagger > *:nth-child(5) { transition-delay: 330ms; }
   box-shadow: 0 16px 36px -10px rgba(24, 22, 20, 0.08);
   border-color: rgba(184, 135, 70, 0.5);
 }
-
-
-/* Architectural Sensor Scanline */
-@keyframes scanline-sweep {
-  0% {
-    top: -5%;
-  }
-  100% {
-    top: 105%;
-  }
-}
-
-.animate-scanline {
-  animation: scanline-sweep 2.4s linear infinite;
-}

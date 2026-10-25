@@ -2,7 +2,6 @@
 
 import React from "react";
 import { PhoneCall, Cpu, Layers, ArrowUpRight, Check } from "lucide-react";
-import { SearchlightCard } from "@/components/SearchlightCard";
 
 export function CorePracticeAreas() {
   const practices = [
@@ -11,7 +10,6 @@ export function CorePracticeAreas() {
       title: "Autonomous Voice Infrastructure",
       subtitle: "Enterprise Telephony & Sub-500ms Human Parity",
       desc: "Human-grade conversational agents deployed across dedicated carrier lines. Answering every inbound call in 2 rings and executing outbound speed-to-lead dials in 45 seconds.",
-      coords: "TELEPHONY // +91 SIP TRUNK",
       features: [
         "Sub-500ms roundtrip conversational latency",
         "Natural pauses, micro-breaths, and polite interruption handling",
@@ -26,7 +24,6 @@ export function CorePracticeAreas() {
       title: "The Enterprise AI Operating System",
       subtitle: "Multi-Node n8n Workflows & Instant CRM Dispatch",
       desc: "The central nervous system uniting telephony, CRM, and customer messaging. Every spoken word is transcribed, analyzed for purchase intent, and routed instantaneously.",
-      coords: "INTEGRATION // MULTI-NODE",
       features: [
         "Custom n8n and Make.com multi-step orchestrations",
         "Bi-directional synchronization with HubSpot, Salesforce, and GHL",
@@ -41,9 +38,8 @@ export function CorePracticeAreas() {
       title: "Category-Defining Digital Architecture",
       subtitle: "Bespoke Next.js & Three.js Spatial Storefronts",
       desc: "Architectural digital storefronts designed to command monumental authority. Built on Next.js App Router and Three.js for sub-second load speeds and 5x conversion lift.",
-      coords: "SPATIAL WEB // THREE.JS",
       features: [
-        "Zero template code — 100% custom-engineered Next.js architecture",
+        "Zero template code • 100% custom-engineered Next.js architecture",
         "Three.js WebGL spatial models, shaders, and micro-interactions",
         "Swiss editorial typography and psychological direct-response copywriting",
         "Sub-second Lighthouse scores with zero layout shift",
@@ -71,22 +67,14 @@ export function CorePracticeAreas() {
           </p>
         </div>
 
-        {/* 3 Large Practice Cards with Searchlight Focus */}
+        {/* 3 Large Practice Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {practices.map((practice) => {
             const IconComponent = practice.icon;
             return (
-              <SearchlightCard
+              <div
                 key={practice.num}
-                theme="dark"
-                showBlueprint={true}
-                spec={practice.num}
-                coords={practice.coords}
-                status="ACTIVE PRACTICE"
-                dimensions="3-COL // DESK"
-                withScanline={false}
-                dataCursorText="EXPLORE"
-                className="p-8 sm:p-10 flex flex-col justify-between"
+                className="rounded-3xl bg-[#1A1815] border border-[#2D2824] p-8 sm:p-10 flex flex-col justify-between hover:border-[#B88746]/50 transition-all duration-300 group hover:-translate-y-1 shadow-xl"
               >
                 <div>
                   <div className="flex items-center justify-between mb-8">
@@ -125,13 +113,10 @@ export function CorePracticeAreas() {
                 </div>
 
                 <div className="pt-4 flex items-center justify-between text-xs font-['JetBrains_Mono'] text-[#888277]">
-                  <span className="flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#B88746] animate-beacon" />
-                    DEPLOYED GLOBALLY
-                  </span>
+                  <span>DEPLOYED GLOBALLY</span>
                   <ArrowUpRight className="w-4 h-4 text-[#B88746] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </div>
-              </SearchlightCard>
+              </div>
             );
           })}
         </div>

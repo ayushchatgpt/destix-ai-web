@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { ScrambleText } from "@/components/ScrambleText";
 import { ArrowUpRight, Mic, Volume2, Globe, Sparkles, CheckCircle2, Play, Pause } from "lucide-react";
 
 interface HeroProps {
@@ -125,7 +124,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
       <div className="hidden xl:block absolute top-40 left-12 animate-float-slow pointer-events-none z-10">
         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FFFFFF]/90 backdrop-blur-md border border-[#E2DDD1] shadow-[0_8px_25px_-8px_rgba(24,22,20,0.08)] text-[11px] font-['JetBrains_Mono'] text-[#181614]">
           <span className="w-2 h-2 rounded-full bg-[#B88746] animate-beacon" />
-          <span className="font-semibold text-[#B88746]"><ScrambleText text="SLA <45s" /></span>
+          <span className="font-semibold text-[#B88746]">SLA &lt;45s</span>
           <span className="text-[#888277]">Speed to Lead</span>
         </div>
       </div>
@@ -133,7 +132,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
       <div className="hidden xl:block absolute top-48 right-12 animate-float-delayed pointer-events-none z-10">
         <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FFFFFF]/90 backdrop-blur-md border border-[#E2DDD1] shadow-[0_8px_25px_-8px_rgba(24,22,20,0.08)] text-[11px] font-['JetBrains_Mono'] text-[#181614]">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="font-semibold text-[#181614]"><ScrambleText text="Sub-500ms" /></span>
+          <span className="font-semibold text-[#181614]">Sub-500ms</span>
           <span className="text-[#888277]">Acoustic Parity</span>
         </div>
       </div>
@@ -355,7 +354,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                 Speed to Lead
               </div>
               <div className="text-3xl sm:text-4xl font-bold font-['Instrument_Serif'] text-[#B88746] mb-1">
-                <ScrambleText text="< 45s" />
+                &lt; 45s
               </div>
               <div className="text-xs text-[#55514B] font-['Plus_Jakarta_Sans']">
                 Outbound voice qualification
@@ -367,7 +366,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                 Voice Latency
               </div>
               <div className="text-3xl sm:text-4xl font-bold font-['Instrument_Serif'] text-[#181614] mb-1">
-                <ScrambleText text="< 500ms" />
+                &lt; 500ms
               </div>
               <div className="text-xs text-[#55514B] font-['Plus_Jakarta_Sans']">
                 Natural conversational flow
@@ -379,7 +378,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                 Inbound Capture
               </div>
               <div className="text-3xl sm:text-4xl font-bold font-['Instrument_Serif'] text-[#181614] mb-1">
-                <ScrambleText text="100%" />
+                100%
               </div>
               <div className="text-xs text-[#55514B] font-['Plus_Jakarta_Sans']">
                 Zero missed calls 24/7
@@ -391,7 +390,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                 Mandatory Hurdle
               </div>
               <div className="text-3xl sm:text-4xl font-bold font-['Instrument_Serif'] text-[#B88746] mb-1">
-                <ScrambleText text="5x ROI" />
+                5x ROI
               </div>
               <div className="text-xs text-[#55514B] font-['Plus_Jakarta_Sans']">
                 Strict scoping threshold
