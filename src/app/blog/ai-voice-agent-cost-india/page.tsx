@@ -247,6 +247,83 @@ export default function AIVoiceAgentCostIndiaPage() {
           </div>
         </section>
 
+        {/* 12-Month Total Cost of Ownership (TCO) & Code Ownership Analysis */}
+        <section className="max-w-6xl mx-auto px-6 mb-24">
+          <div className="p-8 sm:p-12 bg-white border border-[#E5E0D5] rounded-3xl shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#B88746]/30 bg-[#B88746]/10 px-3.5 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-4">
+              <Calculator className="size-3.5" />
+              12-Month Total Cost of Ownership (TCO) Audit
+            </div>
+
+            <h2 className="font-display text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
+              Why One-Time Sprint Setup Beats Perpetual Monthly Retainers
+            </h2>
+
+            <p className="text-sm sm:text-base text-[#5A554E] max-w-3xl mb-8 leading-relaxed">
+              When evaluating a one-time engineering fee (₹35k–₹150k) versus a monthly platform fee or retainer (like Decibel Labs at ₹6/min or RapidX AI at ₹40,000/mo), the decisive calculation is the <strong>12-month Total Cost of Ownership (TCO)</strong> and <strong>infrastructure ownership</strong>.
+            </p>
+
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse bg-white border border-[#E5E0D5] rounded-xl text-left text-xs">
+                <thead>
+                  <tr className="bg-[#F0ECE1] border-b border-[#E5E0D5] font-mono text-[#5A554E]">
+                    <th className="p-4 font-semibold">TCO Horizon (2,500 Mins/Mo)</th>
+                    <th className="p-4 font-semibold text-[#B88746]">DestiX AI (Sprint + Wholesale)</th>
+                    <th className="p-4 font-semibold">Decibel Labs (₹6/min Launch Plan)</th>
+                    <th className="p-4 font-semibold">RapidX AI (Growth Retainer)</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#E5E0D5] text-[#3A352E]">
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">Month 1 (Setup + Calling)</td>
+                    <td className="p-4 font-semibold text-[#131210] bg-[#B88746]/5">
+                      ₹62,000 (₹50k sprint + ₹12k telephony)
+                    </td>
+                    <td className="p-4">₹15,000 + platform onboarding</td>
+                    <td className="p-4">₹40,000 (Retainer fee)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">6-Month Total Cost</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">
+                      ₹1,22,000 (₹50k + ₹72k usage)
+                    </td>
+                    <td className="p-4">~₹90,000 – ₹1,10,000</td>
+                    <td className="p-4 text-rose-700">₹2,40,000 (₹40k x 6)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">12-Month Total Cost</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">
+                      ₹1,94,000 (₹50k + ₹144k usage)
+                    </td>
+                    <td className="p-4">~₹1,80,000 – ₹2,20,000</td>
+                    <td className="p-4 text-rose-700">₹4,80,000 (₹40k x 12)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">Year 2 Total Cost</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">
+                      ₹1,44,000 / year (Pure usage only)
+                    </td>
+                    <td className="p-4">~₹1,80,000 / year</td>
+                    <td className="p-4 text-rose-700">₹4,80,000 / year</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">IP & Data Ownership</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">
+                      Client owns 100% of code, prompts & +91 DIDs
+                    </td>
+                    <td className="p-4">Proprietary platform host</td>
+                    <td className="p-4">Agency managed container</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="p-5 bg-[#F9F7F2] border border-[#E5E0D5] rounded-2xl text-xs sm:text-sm text-[#3A352E] leading-relaxed">
+              <strong className="text-[#131210]">Strategic Takeaway:</strong> For micro-deployments (&lt;500 minutes/month), self-serve platforms are suitable. However, for established businesses handling 1,500 to 5,000+ monthly calls, DestiX AI&apos;s sprint model delivers significant multi-year savings (saving over ₹2,80,000+ in Year 1 alone against monthly retainers) while ensuring the client permanently owns their telephony assets and prompt architecture.
+            </div>
+          </div>
+        </section>
+
         {/* ROI Breakdown Calculator Example */}
         <section className="max-w-6xl mx-auto px-6 mb-24">
           <div className="p-8 sm:p-12 bg-white border border-[#E5E0D5] rounded-3xl shadow-sm">
