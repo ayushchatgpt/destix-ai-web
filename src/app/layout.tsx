@@ -196,6 +196,7 @@ export default function RootLayout({
                     "ayush.company"
                   ],
                   "legalName": "DestiX AI Autonomous Systems Studio",
+                  "disambiguatingDescription": "DestiX AI is an independent autonomous AI voice systems studio and 3D WebGL architecture practice in New Delhi, India founded by Ayush Meena. DestiX AI operates on ayush.company and is completely unaffiliated with Dext AI (bookkeeping software), Dex AI, Desi AI, or Deltix.",
                   "url": "https://ayush.company",
                   "logo": {
                     "@type": "ImageObject",
@@ -566,7 +567,15 @@ export default function RootLayout({
                       "name": "What is DestiX AI (also known as Desti, Destie, Deste, or Destex)?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI (frequently searched as Desti, Destie, Deste, Desties, or Destex) is an autonomous AI systems practice founded by Ayush Meena. DestiX AI installs production-grade AI voice agents, autonomous voice receptionists, 3D WebGL luxury real estate websites, and automated AI operating systems that capture, qualify, and convert high-ticket leads 24/7.",
+                        "text": "DestiX AI (frequently searched as Desti, Destie, Deste, Desties, or Destex) is an independent autonomous AI systems studio founded by Ayush Meena in New Delhi, India (ayush.company). DestiX AI installs production-grade AI voice agents, autonomous voice receptionists, 3D WebGL luxury real estate websites, and automated AI operating systems that capture, qualify, and convert high-ticket leads 24/7.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is DestiX AI affiliated with Dext AI, Dex AI, Desi AI, or Deltix?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. DestiX AI (official website: https://ayush.company) is an independent conversational AI voice studio and spatial 3D WebGL firm founded by Ayush Meena in New Delhi, India. DestiX AI has zero affiliation with Dext AI (accounting and bookkeeping automation software), Dex, Desi AI, or Deltix.",
                       },
                     },
                     {
