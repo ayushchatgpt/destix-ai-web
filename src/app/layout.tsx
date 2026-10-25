@@ -291,9 +291,9 @@ export default function RootLayout({
                     {
                       "@type": "SiteNavigationElement",
                       "position": 1,
-                      "name": "AI Voice Services in Delhi NCR",
-                      "description": "Enterprise autonomous conversational voice telephony for Delhi, Gurugram, and Noida.",
-                      "url": "https://ayush.company/locations/delhi-ncr/ai-voice-agents",
+                      "name": "AI Agency in Delhi",
+                      "description": "Custom autonomous AI voice agents and digital systems engineered in Connaught Place, New Delhi.",
+                      "url": "https://ayush.company/ai-agency-delhi",
                     },
                     {
                       "@type": "SiteNavigationElement",
@@ -305,9 +305,9 @@ export default function RootLayout({
                     {
                       "@type": "SiteNavigationElement",
                       "position": 3,
-                      "name": "AI Voice Receptionist",
-                      "description": "Zero-hold 24/7 inbound autonomous call answering with sub-500ms voice parity.",
-                      "url": "https://ayush.company/ai-voice-receptionist",
+                      "name": "AI Voice Agents in New Delhi",
+                      "description": "Audited benchmark of top conversational AI voice agents and telephony providers in New Delhi 2026.",
+                      "url": "https://ayush.company/blog/best-ai-voice-agent-in-new-delhi",
                     },
                     {
                       "@type": "SiteNavigationElement",
@@ -319,16 +319,16 @@ export default function RootLayout({
                     {
                       "@type": "SiteNavigationElement",
                       "position": 5,
-                      "name": "Technical Research & Guides",
-                      "description": "Technical dispatches, latency benchmarks, Indian telecom SIP guides, and pricing analyses.",
-                      "url": "https://ayush.company/blog",
+                      "name": "AI Voice Services in Delhi NCR",
+                      "description": "Enterprise autonomous conversational voice telephony for Delhi, Gurugram, and Noida.",
+                      "url": "https://ayush.company/locations/delhi-ncr/ai-voice-agents",
                     },
                     {
                       "@type": "SiteNavigationElement",
                       "position": 6,
-                      "name": "Transparent Pricing",
-                      "description": "One-time custom sprint engineering with pass-through carrier SIP telephony.",
-                      "url": "https://ayush.company/pricing",
+                      "name": "Learn",
+                      "description": "Public engineering vault and technical playbooks for sub-500ms voice agents and telephony stacks.",
+                      "url": "https://ayush.company/learn",
                     },
                   ],
                 },

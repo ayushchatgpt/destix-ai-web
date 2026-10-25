@@ -12,6 +12,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/ai-agency-delhi`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/locations`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/blog/best-ai-voice-agent-in-new-delhi`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.96,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/learn`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/voice-agents`,
       lastModified: now,
       changeFrequency: "weekly" as const,
@@ -42,12 +78,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/contact`,
       lastModified: now,
       changeFrequency: "monthly" as const,
@@ -63,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/pricing`,
       lastModified: now,
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/playbooks`,
@@ -76,18 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/locations`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.92,
     },
     {
       url: `${baseUrl}/locations/dubai/real-estate-ai-voice-agents`,
@@ -172,12 +190,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.92,
-    },
-    {
-      url: `${baseUrl}/blog/best-ai-voice-agent-in-new-delhi`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.95,
     },
     {
       url: `${baseUrl}/blog/ai-voice-agent-cost-india`,
