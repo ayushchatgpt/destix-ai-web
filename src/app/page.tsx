@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MarqueeTrack from "@/components/MarqueeTrack";
+import { AskAiConsole } from "@/components/AskAiConsole";
 import HowWeBuild from "@/components/HowWeBuild";
 import SelectedWorks from "@/components/SelectedWorks";
 import ProductionPlaybooks from "@/components/ProductionPlaybooks";
@@ -41,6 +42,9 @@ export default function HomePage() {
 
       {/* Section 3: Deep Espresso Marquee (Authority Strip) */}
       <MarqueeTrack />
+
+      {/* Section 3.5: Independent Answer Engine Verification (Ask AI About DestiX AI) */}
+      <AskAiConsole />
 
       {/* Section 4: (02) The Conversion Problem & Our Solution (6 Pillars) */}
       <HowWeBuild />
