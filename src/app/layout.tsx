@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { CustomCursor } from "@/components/CustomCursor";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { AmbientAtmosphere } from "@/components/AmbientAtmosphere";
+import { InteractiveConcierge } from "@/components/InteractiveConcierge";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -664,6 +667,43 @@ export default function RootLayout({
                   ],
                 },
                 {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://ayush.company/#breadcrumbs",
+                  "name": "DestiX AI Primary Navigation Breadcrumbs",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://ayush.company"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "AI Voice Agents",
+                      "item": "https://ayush.company/voice-agents"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "AI Agency in Delhi",
+                      "item": "https://ayush.company/ai-agency-delhi"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 4,
+                      "name": "Best AI Voice Agents in New Delhi (2026 Audit)",
+                      "item": "https://ayush.company/blog/best-ai-voice-agent-in-new-delhi"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 5,
+                      "name": "Public Engineering Archive",
+                      "item": "https://ayush.company/learn"
+                    }
+                  ]
+                },
+                {
                   "@type": "WebPage",
                   "@id": "https://ayush.company/#webpage",
                   "url": "https://ayush.company",
@@ -679,9 +719,12 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B88746]/20 selection:text-[#181614]">
+        <AmbientAtmosphere />
         <CustomCursor />
+        <SmoothScroll />
         <ScrollReveal />
         {children}
+        <InteractiveConcierge />
       </body>
     </html>
   );

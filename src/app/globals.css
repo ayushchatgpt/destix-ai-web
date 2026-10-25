@@ -256,3 +256,49 @@ body.rvl-armed .reveal-stagger > *:nth-child(5) { transition-delay: 330ms; }
   box-shadow: 0 16px 36px -10px rgba(24, 22, 20, 0.08);
   border-color: rgba(184, 135, 70, 0.5);
 }
+
+/* =========================================================================
+   Official Lenis Smooth Scrolling Engine
+   ========================================================================= */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+
+
+/* =========================================================================
+   Continuous Flowing Marquee Engine
+   ========================================================================= */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
