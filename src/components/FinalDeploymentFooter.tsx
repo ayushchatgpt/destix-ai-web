@@ -162,6 +162,26 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <span className="text-[10px] text-[#6E675E] block mt-1">Global Remote Deployment</span>
             </div>
           </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 mt-6 border-t border-[#25221F]/60 text-[#A89F93]">
+            <div>
+              <Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                AI Voice Agents Gurugram (Gurgaon) →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road Luxury Telephony</span>
+            </div>
+            <div>
+              <Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                AI Voice Agents Noida &amp; Greater Noida →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Speed-to-Lead</span>
+            </div>
+            <div>
+              <Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors block font-medium text-[#B88746]">
+                Agency White-Label / Ghost Partner Program →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Resell AI Voice Retainers under Your Brand</span>
+            </div>
+          </div>
         </div>
 
         {/* Massive Architectural Base Brandmark */}

@@ -131,6 +131,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/locations/gurugram/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/locations/noida/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/partners/agency-white-label`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
   ];
 
   return routes;
