@@ -113,7 +113,8 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <div>Principal: <span className="text-[#F6EFE2]">Ayush Meena</span></div>
               <div>Domain: <span className="text-[#B88746]">ayush.company</span></div>
               <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B88746]">ayushmeenadestixai@gmail.com</a></div>
-              <div>Network: <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="text-[#F6EFE2] hover:text-[#B88746]">LinkedIn Profile ↗</a></div>
+              <div>Network: <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="text-[#F6EFE2] hover:text-[#B88746]">Founder LinkedIn ↗</a></div>
+              <div>Company: <a href="https://www.linkedin.com/company/destix-ai/" target="_blank" rel="noopener noreferrer" className="text-[#B88746] hover:underline">DestiX AI LinkedIn ↗</a></div>
               <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>
             </div>
           </div>
