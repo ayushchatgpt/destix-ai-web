@@ -327,6 +327,57 @@ export default function RootLayout({
                   "email": "ayushmeenadestixai@gmail.com",
                   "priceRange": "$2,000 - $$$$",
                   "currenciesAccepted": "USD, EUR, GBP, AED, INR, CAD, AUD",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Connaught Place, Central Delhi",
+                    "addressLocality": "New Delhi",
+                    "addressRegion": "Delhi",
+                    "postalCode": "110001",
+                    "addressCountry": "IN"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "28.6304",
+                    "longitude": "77.2177"
+                  },
+                  "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "DestiX AI Enterprise Telephony & Web Catalog",
+                    "itemListElement": [
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Autonomous AI Voice Receptionist",
+                          "description": "24/7 zero-hold front-desk qualification operating with sub-500ms voice parity and automated WhatsApp confirmation pass."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Sub-45s Inbound Speed-to-Lead Telephony Engine",
+                          "description": "Automated callback infrastructure qualifying high-ticket real estate and clinic ad leads within 45 seconds."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Spatial 3D WebGL Digital Storefronts",
+                          "description": "Bespoke Three.js and WebGL digital architecture engineered for luxury property developers and enterprise brands."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "White-Label AI Voice Agency Partner Program",
+                          "description": "Turnkey conversational telephony execution for digital marketing agencies with recurring monthly margins."
+                        }
+                      }
+                    ]
+                  },
                   "parentOrganization": {
                     "@id": "https://ayush.company/#organization",
                   },

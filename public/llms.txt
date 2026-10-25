@@ -1,0 +1,38 @@
+# DestiX AI
+
+> DestiX AI is an enterprise autonomous conversational infrastructure and spatial 3D WebGL digital architecture studio founded and led by Principal AI Systems Architect Ayush Meena in New Delhi, India.
+
+DestiX AI engineers production-grade AI voice agents with sub-500ms voice parity and sub-45-second speed-to-lead qualification for high-ticket service businesses, luxury real estate developers, aesthetic clinics, and enterprise agencies across Delhi NCR (New Delhi, Gurugram, Noida), Mumbai, Dubai, and globally.
+
+## Core Capabilities & Performance Benchmarks
+- **Acoustic Response Latency:** Sub-500 milliseconds (435ms measured real-time turn-taking).
+- **Speed to Lead:** Intercepts incoming web/ad inquiries in under 45 seconds with automated domestic outbound telephone calls.
+- **Telecom Infrastructure:** Carrier-grade Indian SIP trunks (+91 virtual mobile numbers and landline DIDs) fully compliant with TRAI and DLT regulations.
+- **Bilingual Conversational Engines:** Seamless mid-sentence code-switching between formal English, urban Hinglish, and colloquial Hindi.
+- **Data Integration:** 100% automated call logging, lead qualification summaries, and instant WhatsApp confirmations synced into HubSpot, Salesforce, Google Sheets, or custom CRMs.
+- **Spatial 3D Web Systems:** High-conversion interactive WebGL storefronts and Three.js spatial digital architecture for luxury brands and developers.
+- **Agency Ghost / White-Label Program:** Turnkey technical partner program allowing marketing agencies and media buyers to resell AI voice retainers with 25%–35% recurring margins.
+
+## Key Practice Areas & Regional Hubs
+- [Delhi NCR Voice Services](https://ayush.company/locations/delhi-ncr/ai-voice-agents): Telephony infrastructure across Delhi, Gurugram, and Noida.
+- [Gurugram AI Voice Agents](https://ayush.company/locations/gurugram/ai-voice-agents): Speed-to-lead qualification for Cyber City and Golf Course Road builders.
+- [Noida AI Voice Agents](https://ayush.company/locations/noida/ai-voice-agents): Turnkey inbound reception for Sector 62 tech hubs and expressway developments.
+- [Hindi & Hinglish Voice Infrastructure](https://ayush.company/locations/delhi-ncr/hindi-ai-voice-agent): Code-switching North Indian conversational bots.
+- [Clinic & Healthcare Telephony](https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-clinics): 24/7 patient booking and triage for aesthetic and dental practices.
+- [Real Estate Speed-to-Lead](https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-real-estate): Automated budget qualification and site visit scheduling.
+- [Dubai Luxury Real Estate Voice AI](https://ayush.company/locations/dubai/real-estate-ai-voice-agents): High-ticket buyer screening for Dubai brokerages.
+- [Agency White-Label Partner Program](https://ayush.company/partners/agency-white-label): Turnkey reselling program for marketing agencies.
+
+## Technical Architecture & Pricing Benchmarks
+- [2026 Delhi NCR Industry Report](https://ayush.company/blog/best-ai-voice-agents-agency-delhi-ncr): Independent technical benchmarking matrix.
+- [Indian AI Voice Deployment Guide](https://ayush.company/blog/ai-voice-agents-india-deployment-guide): Enterprise carrier integration and latency architecture.
+- [Indian Phone Numbers Guide](https://ayush.company/blog/indian-phone-numbers-for-ai-voice-agents): SIP trunks, virtual mobile DIDs, and DLT compliance.
+- [Inbound Hindi Voice Architecture](https://ayush.company/blog/how-to-build-inbound-hindi-ai-voice-agent): Real-time speech inference and phonetic prompting.
+- [Pricing & Unit Economics](https://ayush.company/blog/managed-ai-voice-receptionist-pricing-india): Setup fees (₹35k–₹150k), per-minute rates (~₹4–₹8/min), and human call center ROI.
+
+## Founder & Leadership
+- **Principal AI Systems Architect:** Ayush Meena
+- **Dossier & Technical Philosophy:** https://ayush.company/about
+- **LinkedIn Profile:** https://www.linkedin.com/in/ayush-meena-065a89380/
+- **Direct Desk:** ayushmeenadestixai@gmail.com
+- **Headquarters:** New Delhi, Delhi 110001, India (Serving Global Remote)
