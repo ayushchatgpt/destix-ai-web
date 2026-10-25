@@ -55,6 +55,35 @@ export default function RealEstateVoiceAgentLayout({
           }),
         }}
       />
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ayush.company"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Delhi NCR",
+                "item": "https://ayush.company/locations/delhi-ncr/ai-voice-agents"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "AI Voice Agents for Real Estate",
+                "item": "https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-real-estate"
+              }
+            ]
+          }),
+        }}
+      />
       {children}
     </>
   );

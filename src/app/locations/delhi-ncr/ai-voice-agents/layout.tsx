@@ -57,6 +57,35 @@ export default function DelhiLocationLayout({
           }),
         }}
       />
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ayush.company"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://ayush.company/locations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "AI Voice Services in Delhi NCR",
+                "item": "https://ayush.company/locations/delhi-ncr/ai-voice-agents"
+              }
+            ]
+          }),
+        }}
+      />
       {children}
     </>
   );
