@@ -149,6 +149,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.92,
     },
+    {
+      url: `${baseUrl}/blog/ai-voice-agents-india-deployment-guide`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/blog/indian-phone-numbers-for-ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-build-inbound-hindi-ai-voice-agent`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/blog/managed-ai-voice-receptionist-pricing-india`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.92,
+    },
   ];
 
   return routes;
