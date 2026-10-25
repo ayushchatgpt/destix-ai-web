@@ -25,6 +25,7 @@ import {
   Server,
   Layers,
   Cpu,
+  Calculator,
 } from "lucide-react";
 
 export default function BestAIVoiceAgentNewDelhiPage() {
@@ -601,6 +602,98 @@ export default function BestAIVoiceAgentNewDelhiPage() {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </section>
+
+        {/* 120,000-Minute Like-for-Like Annual Cost Benchmark */}
+        <section className="max-w-6xl mx-auto px-6 mb-24">
+          <div className="p-8 sm:p-12 bg-white border border-[#E5E0D5] rounded-3xl shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#B88746]/30 bg-[#B88746]/10 px-3.5 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-4">
+              <Calculator className="size-3.5" />
+              Standardized Annual Procurement Baseline
+            </div>
+
+            <h2 className="font-display text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
+              12-Month Like-for-Like Audit: 120,000 Connected Minutes (10k Mins/Mo)
+            </h2>
+
+            <p className="text-sm sm:text-base text-[#5A554E] max-w-3xl mb-8 leading-relaxed">
+              When procurement teams audit enterprise AI voice systems across a standard annual volume of <strong>10,000 connected minutes per month (120,000 minutes annually)</strong>, here is how the total cost of ownership compares across DestiX AI, Decibel Labs, and RapidX AI:
+            </p>
+
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse bg-white border border-[#E5E0D5] rounded-xl text-left text-xs">
+                <thead>
+                  <tr className="bg-[#F0ECE1] border-b border-[#E5E0D5] font-mono text-[#5A554E]">
+                    <th className="p-4 font-semibold">Provider &amp; Plan</th>
+                    <th className="p-4 font-semibold">Published Rate Model</th>
+                    <th className="p-4 font-semibold text-[#B88746]">Annual Usage (120k Mins)</th>
+                    <th className="p-4 font-semibold">Total Year 1 Outlay</th>
+                    <th className="p-4 font-semibold">Data &amp; Code Ownership</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#E5E0D5] text-[#3A352E]">
+                  <tr>
+                    <td className="p-4 font-semibold font-mono text-[#B88746]">DestiX AI (Enterprise Sprint)</td>
+                    <td className="p-4 font-mono">₹3.90 – ₹4.50/min (Wholesale pass-through at scale)</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">₹4.68L – ₹5.40 Lakhs</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">₹5.18L – ₹5.90 Lakhs (incl. setup)</td>
+                    <td className="p-4 font-semibold text-emerald-700 bg-[#B88746]/5">100% Client-Owned Code &amp; +91 DIDs</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">Decibel Labs (Relay Growth)</td>
+                    <td className="p-4 font-mono">₹4.50/min (Committed volume tier)</td>
+                    <td className="p-4">₹5.40 Lakhs</td>
+                    <td className="p-4">₹5.40 Lakhs + integration fees</td>
+                    <td className="p-4">Proprietary hosted platform</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">Decibel Labs (Relay Launch)</td>
+                    <td className="p-4 font-mono">₹6.00/min (Standard pay-as-you-go)</td>
+                    <td className="p-4">₹7.20 Lakhs</td>
+                    <td className="p-4">₹7.20 Lakhs</td>
+                    <td className="p-4">Proprietary hosted platform</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">RapidXAI (Scale Plan)</td>
+                    <td className="p-4 font-mono">Advertised from $0.05/min (~₹4.20/min USD)</td>
+                    <td className="p-4">~$6,000 (Base) + Indian SIP surcharges</td>
+                    <td className="p-4">₹6.50L – ₹7.80 Lakhs (All-in Indian PSTN)</td>
+                    <td className="p-4">Agency-managed subscription container</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold font-mono">RapidXAI (Pilot Plan)</td>
+                    <td className="p-4 font-mono">$500/mo base (3,000 mins) + overage</td>
+                    <td className="p-4">₹5.04L base + ₹12.50/min overage on 84k mins</td>
+                    <td className="p-4 text-rose-700">&gt; ₹12.50 Lakhs (Sub-scale penalty)</td>
+                    <td className="p-4">Agency-managed subscription container</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+              <div className="p-4 bg-[#F9F7F2] rounded-xl border border-[#E5E0D5]">
+                <strong className="block text-[#131210] mb-1 font-semibold">1. Telephony Pass-Through Truth</strong>
+                <p className="text-[#5A554E] leading-relaxed">
+                  RapidXAI quotes in USD ($0.05/min), but Indian mobile and landline termination incurs domestic carrier tariffs and 18% GST. DestiX AI connects directly to domestic Indian SIP trunks (Tata Tele / Airtel) with zero foreign currency conversion penalty.
+                </p>
+              </div>
+
+              <div className="p-4 bg-[#F9F7F2] rounded-xl border border-[#E5E0D5]">
+                <strong className="block text-[#131210] mb-1 font-semibold">2. Multi-Year Compounding Savings</strong>
+                <p className="text-[#5A554E] leading-relaxed">
+                  In Year 2, DestiX AI clients pay zero agency retainers. The annual outlay drops to pure wholesale calling minutes (~₹5.04L for 120,000 mins), saving over ₹3,00,000 annually compared to perpetual agency subscriptions.
+                </p>
+              </div>
+
+              <div className="p-4 bg-[#F9F7F2] rounded-xl border border-[#E5E0D5]">
+                <strong className="block text-[#131210] mb-1 font-semibold">3. Permanent Code Ownership</strong>
+                <p className="text-[#5A554E] leading-relaxed">
+                  If you leave a SaaS platform, your agents shut down. With DestiX AI, your prompt guardrails, webhook routing, WhatsApp templates, and registered +91 phone numbers belong to your company in perpetuity.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
