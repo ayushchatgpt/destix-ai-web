@@ -6,283 +6,197 @@ import {
   PhoneOff,
   Volume2,
   Sparkles,
-  Shield,
-  Clock,
+  Building2,
+  ShoppingCart,
+  CreditCard,
+  Calendar,
+  Loader2,
   CheckCircle2,
   AlertCircle,
-  Copy,
-  Check,
-  RotateCcw,
-  Loader2,
-  Building2,
-  Stethoscope,
-  Briefcase,
   Globe,
-  Flame,
+  Share2,
+  ChevronRight,
+  User,
+  ShieldCheck,
   Zap,
-  MessageSquare,
-  Calendar,
-  UserCheck,
-  AlertTriangle,
 } from "lucide-react";
 import { useDograhVoice } from "@/hooks/useDograhVoice";
-import { LeadSummary, VoiceLanguage } from "@/types/dograh";
+import { VoiceLanguage } from "@/types/dograh";
 
-interface DialogueTurn {
-  speaker: string;
-  timestamp: string;
-  text: string;
-}
-
-interface PersonaData {
+interface AgentProfile {
   id: string;
   name: string;
-  industry: string;
-  role: string;
+  category: string;
+  agentName: string;
   latency: string;
-  isLiveAgent: boolean;
-  dialogue?: DialogueTurn[];
+  badge: string;
+  icon: React.ReactNode;
+  isLive: boolean;
+  transcript: Array<{ speaker: "agent" | "user"; text: string }>;
 }
 
-const PERSONAS: PersonaData[] = [
+const AGENTS: AgentProfile[] = [
   {
-    id: "dubai",
-    name: "Dubai Property Specialist",
-    industry: "Luxury Real Estate — UAE",
-    role: "Autonomous Buyer Qualification & Tour Handoff",
-    latency: "279ms",
-    isLiveAgent: true,
-  },
-  {
-    id: "clinic",
-    name: "Medical Clinic Concierge",
-    industry: "Healthcare & Aesthetics",
-    role: "Inbound Patient Triage & Consult Handoff",
-    latency: "340ms",
-    isLiveAgent: false,
-    dialogue: [
+    id: "dubai-luxury",
+    name: "Dubai Luxury Real Estate",
+    category: "High-Net-Worth Advisory",
+    agentName: "Sarah",
+    latency: "382ms TTFA",
+    badge: "Live Interactive Agent",
+    icon: <Building2 className="w-5 h-5 text-[#B88746]" />,
+    isLive: true,
+    transcript: [
       {
-        speaker: "DestiX Agent",
-        timestamp: "00:01",
-        text: "Good afternoon. Thank you for calling Dr. Kapoor's Plastic Surgery & Aesthetics. How may I assist with your consultation today?",
+        speaker: "agent",
+        text: "Hi there! I'm Sarah from DestiX AI. I'm so glad you called — are you exploring an investment in Dubai, or looking for your own dream home?",
       },
       {
-        speaker: "Caller",
-        timestamp: "00:05",
-        text: "Hi, I wanted to inquire about recovery timelines for deep-plane facelift surgery and whether consultations are in-person.",
+        speaker: "user",
+        text: "I'm looking for a beachfront penthouse on Palm Jumeirah with high ROI.",
       },
       {
-        speaker: "DestiX Agent",
-        timestamp: "00:10",
-        text: "Most patients plan for 10 to 14 days of social downtime before public appearances. Dr. Kapoor conducts all initial anatomical evaluations in our Mayfair clinic. Would Thursday at 4:30 PM suit your calendar?",
-      },
-      {
-        speaker: "Caller",
-        timestamp: "00:15",
-        text: "Thursday at 4:30 PM works perfectly.",
-      },
-      {
-        speaker: "DestiX Agent",
-        timestamp: "00:19",
-        text: "You are confirmed for 4:30 PM with Dr. Kapoor. I have dispatched the clinic location coordinates and preparation checklist straight to your phone. Have a wonderful day.",
+        speaker: "agent",
+        text: "Oh, Palm Jumeirah is absolutely magnificent! If you love waterfront living, the private fronds on Billionaires' Row are breathtaking — private beaches, skyline views, and 7 to 9 percent net rental yields. What kind of vibe are you leaning toward?",
       },
     ],
   },
   {
-    id: "growth",
-    name: "B2B Growth Qualifier",
-    industry: "Enterprise Advisory & Tech",
-    role: "Speed-to-Lead Outbound Interception",
-    latency: "365ms",
-    isLiveAgent: false,
-    dialogue: [
+    id: "palm-penthouse",
+    name: "Palm Jumeirah Penthouse VIP",
+    category: "Ultra-HNW Off-Market",
+    agentName: "Sarah",
+    latency: "380ms TTFA",
+    badge: "Live Interactive Agent",
+    icon: <Sparkles className="w-5 h-5 text-[#B88746]" />,
+    isLive: true,
+    transcript: [
       {
-        speaker: "DestiX Agent",
-        timestamp: "00:01",
-        text: "Good morning Alex, this is DestiX from CloudScale AI. I noticed you just submitted an inquiry regarding enterprise ingestion pipelines. Do you have 30 seconds to confirm if this is for your AWS or Azure infrastructure?",
+        speaker: "agent",
+        text: "Welcome to DestiX Private Wealth. We currently have three confidential off-market sky penthouses facing the Dubai Marina skyline and Burj Al Arab. Are you exploring for personal residency or portfolio diversification?",
       },
       {
-        speaker: "Caller",
-        timestamp: "00:07",
-        text: "Hello! Wow, that was an exceptionally fast callback. Yes, our engineering team is migrating 40TB of PostgreSQL databases on AWS this quarter.",
+        speaker: "user",
+        text: "Does a 25 million Dirham purchase qualify me for the 10-year Golden Visa?",
       },
       {
-        speaker: "DestiX Agent",
-        timestamp: "00:13",
-        text: "That is precisely what our high-concurrency ingestion tier is architected for. Our principal cloud architect, Marcus, can walk you through our benchmark latency audit tomorrow at 10:00 AM EST. Does that align with your schedule?",
+        speaker: "agent",
+        text: "Oh absolutely! Purchases above 2 million AED automatically qualify you and your entire immediate family for the 10-year UAE Golden Visa with zero personal tax.",
+      },
+    ],
+  },
+  {
+    id: "cart-recovery",
+    name: "Cart Recovery & Retention Nudge",
+    category: "E-Commerce Speed-to-Lead",
+    agentName: "Simran",
+    latency: "340ms TTFA",
+    badge: "Interactive Prototype",
+    icon: <ShoppingCart className="w-5 h-5 text-emerald-500" />,
+    isLive: false,
+    transcript: [
+      {
+        speaker: "agent",
+        text: "Hi, I noticed you left a few items in your cart. Would you like help completing the order?",
       },
       {
-        speaker: "Caller",
-        timestamp: "00:17",
-        text: "Tomorrow at 10:00 AM EST works. Please send over the invitation.",
+        speaker: "user",
+        text: "Yes, but I need delivery by Friday.",
       },
       {
-        speaker: "DestiX Agent",
-        timestamp: "00:20",
-        text: "The calendar invitation and architecture whitepaper have been dispatched to your inbox. Thank you Alex, speak tomorrow.",
+        speaker: "agent",
+        text: "I can check the available delivery window before you continue.",
+      },
+    ],
+  },
+  {
+    id: "emi-reminder",
+    name: "EMI & Payment Concierge",
+    category: "Fintech & Banking",
+    agentName: "Aarav",
+    latency: "360ms TTFA",
+    badge: "Interactive Prototype",
+    icon: <CreditCard className="w-5 h-5 text-amber-500" />,
+    isLive: false,
+    transcript: [
+      {
+        speaker: "agent",
+        text: "Hello, this is Aarav regarding your upcoming vehicle installment due this Friday. Would you like to authorize automated debit today?",
+      },
+      {
+        speaker: "user",
+        text: "Can you send the payment link on my WhatsApp?",
+      },
+      {
+        speaker: "agent",
+        text: "I have dispatched the secure instant payment link via SMS and WhatsApp. You will receive zero penalty charges once paid.",
+      },
+    ],
+  },
+  {
+    id: "clinic-booking",
+    name: "Private Clinic Consultation",
+    category: "Healthcare & Aesthetics",
+    agentName: "Dr. Elena's Assistant",
+    latency: "350ms TTFA",
+    badge: "Interactive Prototype",
+    icon: <Calendar className="w-5 h-5 text-sky-500" />,
+    isLive: false,
+    transcript: [
+      {
+        speaker: "agent",
+        text: "Good afternoon. Thank you for calling Mayfair Wellness Clinic. How may I assist with your doctor consultation today?",
+      },
+      {
+        speaker: "user",
+        text: "I wanted to check recovery timelines for surgical aesthetics and see if consultations are in-person.",
+      },
+      {
+        speaker: "agent",
+        text: "Dr. Elena conducts all initial evaluations in our Mayfair clinic with complete privacy. Would this Thursday at 4:30 PM suit your calendar?",
       },
     ],
   },
 ];
 
-const UI_STRINGS = {
-  en: {
-    badge: "(06) REAL-TIME VOICE TELEMETRY CONSOLE",
-    headerTitle: "Audition the conversational parity",
-    headerAccent: "in real-time.",
-    headerDesc:
-      "Click below to start a genuine two-way voice call with our Dubai Property Assistant. Speak into your microphone naturally, test buyer qualification questions, and review your structured lead dossier afterward.",
-    langLabel: "Conversation Language:",
-    langAuto: "Automatic",
-    langEn: "English",
-    langAr: "العربية",
-    langHi: "हिन्दी",
-    pipelineBadge: "Live Two-Way Audio Stream (Deepgram Nova-3 + Groq Qwen-27B + Aura-2 / Edge Fatima)",
-    webrtcChannel: "WebRTC Audio Telemetry Channel",
-    startVoiceBtn: "Start Voice Conversation",
-    connectingBtn: "Connecting Audio...",
-    endVoiceBtn: "End Conversation",
-    hintListening: "LISTENING • SPEAK INTO YOUR MICROPHONE FREELY",
-    hintConnecting: "GRANT MICROPHONE PERMISSION WHEN PROMPTED",
-    hintIdle: "CLICK BUTTON TO INITIATE LIVE SPOKEN BUYER QUALIFICATION",
-    dossierTitle: "Structured Buyer Qualification Dossier",
-    dossierSubtitle: "Extracted in real-time from conversational speech context",
-    sampleHandoffTag: "Sample Handoff — No Appointment Booked",
-    extractingMsg: "Extracting structured conversation variables from Dograh runtime...",
-    runIdLabel: "Run ID:",
-    verifiedSchemaTag: "Verified against Dograh Extraction Schema",
-    copyBtn: "Copy Lead Dossier",
-    copiedBtn: "Dossier Copied!",
-    disclaimerText:
-      "This conversation is an interactive technical audition demonstrating real-time voice intelligence. No external calendar invitations, broker dispatches, or CRM records were created.",
-    statusReady: "AGENT READY FOR LIVE CALL",
-    statusConnecting: "ESTABLISHING WEBRTC...",
-    statusConnected: "LIVE CALL ACTIVE",
-    statusEnded: "CALL COMPLETED & QUALIFIED",
-    resetSession: "Reset Session",
-    fields: {
-      property_type: "Property Type",
-      preferred_locations: "Target Geography / Sector",
-      budget: "Purchasing Budget & Currency",
-      buying_timeline: "Target Acquisition Timeline",
-      purchase_intent: "Primary Use Intent",
-      bedrooms: "Bedrooms & Layout",
-      financing_preference: "Financing Preference",
-      preferred_next_step: "Preferred Next Action",
-      other_requirements: "Bespoke Lifestyle Criteria",
-    },
-    leadPriorityTitle: "Lead Priority Assessment",
-    leadRationaleTitle: "Qualification Rationale",
-    leadHotTag: "HOT LEAD • HIGH CONVERSION READINESS",
-    leadWarmTag: "WARM LEAD • ACTIVE EVALUATION",
-    leadNurtureTag: "NURTURE LEAD • EARLY RESEARCH",
-    whatsappShortlistTitle: "Shortlist Request — WhatsApp Follow-Up Pending",
-    whatsappShortlistDesc: "Curated shortlist requested for 3-4 verified properties with floor plans. Queued for licensed advisor dispatch.",
-    viewingTitle: "Appointment Request — Confirmation Pending",
-    viewingDesc: "Private walkthrough or advisory consultation requested. A licensed DestiX advisor will confirm the schedule.",
-    contactDetailsTitle: "Contact & Booking Details",
-    missingCriteriaTitle: "Pending Criteria for Full Qualification",
-    notSpecified: "Not specified",
-    noneNoted: "None noted",
-    footerPipeline: "PIPELINE: DEEPGRAM NOVA-3 STT → GROQ QWEN-27B → DEEPGRAM AURA TTS",
-    footerRuntime: "DOGRAH HOSTED WEBRTC RUNTIME",
-  },
-  ar: {
-    badge: "(06) لوحة القياس الصوتي في الوقت الفعلي",
-    headerTitle: "استمع إلى المحادثة الصوتية الطبيعية",
-    headerAccent: "باللهجة الإماراتية.",
-    headerDesc:
-      "اضغط أدناه لبدء محادثة صوتية تفاعلية حقيقية مع مستشار عقارات دبي الذكي بلهجة إماراتية خليجية طبيعية. تحدث عبر الميكروفون بحرية، اسأل عن فلل نخلة جميرا وشقق تلال دبي، واستعرض ملف التأهيل الفوري بعدها.",
-    langLabel: "لغة المحادثة الصوتية:",
-    langAuto: "تلقائي",
-    langEn: "English",
-    langAr: "العربية",
-    langHi: "हिन्दी",
-    pipelineBadge: "بث صوتي عصبي ثنائي الاتجاه (ديبغرام Nova-3 + جروك كوين + صوت فاطمة العصبي)",
-    webrtcChannel: "قناة الاتصال الصوتي عبر بروتوكول WebRTC المباشر",
-    startVoiceBtn: "بدء المحادثة الصوتية",
-    connectingBtn: "جاري الاتصال الصوتي...",
-    endVoiceBtn: "إنهاء المحادثة",
-    hintListening: "المستشار يستمع إليك الآن • تحدث بحرية عبر الميكروفون",
-    hintConnecting: "يرجى منح إذن استخدام الميكروفون في المتصفح",
-    hintIdle: "اضغط على الزر لبدء محادثة تأهيل المشتري الصوتية الحقيقية",
-    dossierTitle: "ملف تأهيل المشتري والمستثمر العقاري",
-    dossierSubtitle: "تم استخراج البيانات آلياً من سياق المحادثة الصوتية الفعلية",
-    sampleHandoffTag: "نموذج تسليم تجريبي — لم يتم حجز موعد فعلي",
-    extractingMsg: "جاري استخراج متغيرات المحادثة من خادم Dograh...",
-    runIdLabel: "رقم الجلسة:",
-    verifiedSchemaTag: "مُحقق وفق نموذج استخراج البيانات في منصة Dograh",
-    copyBtn: "نسخ ملف التأهيل العقاري",
-    copiedBtn: "تم النسخ للحافظة بنجاح!",
-    disclaimerText:
-      "هذه المحادثة هي تجربة تقنية تفاعلية لإثبات قدرات الذكاء الاصطناعي الصوتي في قطاع العقارات. لم يتم جدولة موعد خارجي أو تسجيل بياناتك في نظام خارجي.",
-    statusReady: "المستشار جاهز للمحادثة الصوتية",
-    statusConnecting: "جاري إنشاء الاتصال المباشر...",
-    statusConnected: "مكالمة صوتية نشطة ومباشرة",
-    statusEnded: "تم إنهاء المكالمة وتأهيل المتطلبات بنجاح",
-    resetSession: "إعادة ضبط الجلسة",
-    fields: {
-      property_type: "نوع العقار المطلوب",
-      preferred_locations: "المنطقة / الموقع المفضل في دبي",
-      budget: "الميزانية المخصصة للشراء والعملة",
-      buying_timeline: "الإطار الزمني المستهدف للشراء",
-      purchase_intent: "الهدف من الشراء (سكن / استثمار)",
-      bedrooms: "عدد غرف النوم والمساحة",
-      financing_preference: "طريقة السداد والتمويل",
-      preferred_next_step: "الخطوة التالية المفضلة",
-      other_requirements: "المتطلبات والمواصفات الخاصة",
-    },
-    leadPriorityTitle: "تقييم أولوية المشتري والتأهيل",
-    leadRationaleTitle: "مبرر تصنيف العميل",
-    leadHotTag: "أولوية قصوى (HOT) • جاهزية شراء مؤكدة",
-    leadWarmTag: "عميل نشط (WARM) • تقييم واختيار العقارات",
-    leadNurtureTag: "عميل متابعة (NURTURE) • استكشاف وبحث أولي",
-    whatsappShortlistTitle: "طلب قائمة عقارات مختارة — متابعة واتساب قيد الإعداد",
-    whatsappShortlistDesc: "طلب العميل قائمة 3-4 عقارات مع المخططات عبر الواتساب. تم تحويل الطلب لمراجعة المستشار المرخص.",
-    viewingTitle: "طلب حجز موعد معاينة — بانتظار التأكيد",
-    viewingDesc: "تم تسجيل موعد المعاينة أو الاستشارة المقترحة. سيتواصل المستشار العقاري لتأكيد الموعد النهائي.",
-    contactDetailsTitle: "بيانات التواصل والموعد",
-    missingCriteriaTitle: "البيانات المتبقية لاكتمال التأهيل",
-    notSpecified: "لم يُحدد بعد",
-    noneNoted: "لا توجد متطلبات إضافية",
-    footerPipeline: "البنية: ديبغرام NOVA-3 (عربي) ← جروك QWEN-27B ← صوت إماراتي عصبي",
-    footerRuntime: "خادم DOGRAH المستضاف محلياً عبر WEBRTC",
-  },
-};
+interface VoiceDemoConsoleProps {
+  onOpenBooking?: () => void;
+}
 
-export function VoiceDemoConsole() {
-  const [selectedPersona, setSelectedPersona] = useState<PersonaData>(PERSONAS[0]);
-  const [copied, setCopied] = useState(false);
+export function VoiceDemoConsole({ onOpenBooking }: VoiceDemoConsoleProps) {
+  const [selectedAgent, setSelectedAgent] = useState<AgentProfile>(AGENTS[0]);
+  const [activeTab, setActiveTab] = useState<string>("voice-agents");
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Hook into Dograh Live Voice Engine with bilingual capability
+  // Hook into Dograh Live Voice Engine
   const {
     status,
     isReady,
     error,
     callDuration,
-    lastRunId,
-    leadSummary,
-    isLoadingSummary,
     language,
     setLanguage,
     startCall,
     endCall,
     retry,
-    clearSummary,
-  } = useDograhVoice("auto");
+  } = useDograhVoice("en");
 
-  const isLive = selectedPersona.isLiveAgent;
   const isConnected = status === "connected";
   const isConnecting = status === "connecting";
-  const isArabic =
-    language === "ar" ||
-    (language === "auto" &&
-      typeof navigator !== "undefined" &&
-      navigator.language?.toLowerCase().startsWith("ar"));
-  const t = isArabic ? UI_STRINGS.ar : UI_STRINGS.en;
 
-  // Audio spectrum visualizer
+  // Pulsing animation scale for the central orb
+  const [pulseScale, setPulseScale] = useState(1);
+  useEffect(() => {
+    if (!isConnected) {
+      setPulseScale(1);
+      return;
+    }
+    const interval = setInterval(() => {
+      setPulseScale(1 + Math.random() * 0.14);
+    }, 240);
+    return () => clearInterval(interval);
+  }, [isConnected]);
+
+  // Audio spectrum visualizer animation
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -294,11 +208,11 @@ export function VoiceDemoConsole() {
 
     const render = () => {
       animId = requestAnimationFrame(render);
-      phase += isConnected ? 0.12 : 0.02;
+      phase += isConnected ? 0.14 : 0.03;
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      const barCount = 38;
+      const barCount = 36;
       const barWidth = 3;
       const gap = (canvas.width - barCount * barWidth) / (barCount - 1);
 
@@ -306,10 +220,10 @@ export function VoiceDemoConsole() {
         let height = 4;
         if (isConnected) {
           const sinVal = Math.sin(phase + i * 0.35);
-          const cosVal = Math.cos(phase * 1.5 + i * 0.2);
-          height = Math.max(4, Math.abs(sinVal * cosVal) * 44 + 6);
+          const cosVal = Math.cos(phase * 1.6 + i * 0.2);
+          height = Math.max(4, Math.abs(sinVal * cosVal) * 40 + 6);
         } else if (isConnecting) {
-          height = Math.max(4, (Math.sin(phase * 3 + i * 0.2) + 1) * 12 + 4);
+          height = Math.max(4, (Math.sin(phase * 3 + i * 0.25) + 1) * 12 + 4);
         }
 
         const x = i * (barWidth + gap);
@@ -319,641 +233,399 @@ export function VoiceDemoConsole() {
         gradient.addColorStop(0, "#B88746");
         gradient.addColorStop(1, "#D4A373");
 
-        ctx.fillStyle = isConnected || isConnecting ? gradient : "rgba(246, 239, 226, 0.2)";
+        ctx.fillStyle = isConnected || isConnecting ? gradient : "rgba(184, 135, 70, 0.25)";
         ctx.fillRect(x, y, barWidth, height);
       }
     };
 
     render();
-
     return () => cancelAnimationFrame(animId);
   }, [isConnected, isConnecting]);
 
-  const formatDuration = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
-  };
-
-  const generateHandoffText = (summary: LeadSummary, lang: VoiceLanguage) => {
-    if (lang === "ar") {
-      return [
-        "ديستكس للذكاء الاصطناعي — ملف تأهيل المشتري والمستثمر (عقارات دبي)",
-        "=======================================================",
-        `تصنيف المشتري:         ${summary.lead_category || "قيد التقييم"}`,
-        `مبرر التصنيف:          ${summary.lead_category_rationale || "غير متوفر"}`,
-        `نوع العقار:           ${summary.property_type || "لم يُحدد"}`,
-        `الموقع المفضل:       ${Array.isArray(summary.preferred_locations) ? summary.preferred_locations.join("، ") : (summary.preferred_locations || "لم يُحدد")}`,
-        `الميزانية والعملة:    ${summary.budget || "لم تُحدد"}`,
-        `الإطار الزمني للشراء:  ${summary.buying_timeline || "لم يُحدد"}`,
-        `الهدف من الشراء:      ${summary.purchase_intent || "لم يُحدد"}`,
-        `عدد الغرف / المساحة:  ${summary.bedrooms || "لم يُحدد"}`,
-        `طريقة الدفع / التمويل: ${summary.financing_preference || "لم تُحدد"}`,
-        `الخطوة التالية المفضلة: ${summary.preferred_next_step || "لم تُحدد"}`,
-        `حالة المتابعة / الحجز: ${summary.booking_status || "طلب استشارة"}`,
-        `اسم المشتري:          ${summary.contact_name || "لم يُذكر"}`,
-        `رقم التواصل / واتساب: ${summary.contact_phone || "لم يُذكر"}`,
-        `تفاصيل الموعد المطلوب: ${summary.requested_appointment_details || "لا يوجد"}`,
-        `متطلبات خاصة:        ${summary.other_requirements || "لا يوجد"}`,
-        `البيانات المعلقة:      ${summary.missing_fields || "مكتمل التأهيل"}`,
-        "=======================================================",
-        "الحالة: نموذج تسليم استشاري — بانتظار مراجعة وتأكيد المستشار العقاري",
-      ].join("\n");
-    }
-    return [
-      "DESTIX AI — DUBAI BUYER QUALIFICATION & CONSULTING DOSSIER",
-      "===========================================================",
-      `Lead Category:        ${summary.lead_category || "Under Evaluation"}`,
-      `Category Rationale:   ${summary.lead_category_rationale || "N/A"}`,
-      `Property Type:        ${summary.property_type || "Not specified"}`,
-      `Preferred Location:   ${Array.isArray(summary.preferred_locations) ? summary.preferred_locations.join(", ") : (summary.preferred_locations || "Not specified")}`,
-      `Budget & Currency:    ${summary.budget || "Not specified"}`,
-      `Buying Timeline:      ${summary.buying_timeline || "Not specified"}`,
-      `Purchase Intent:      ${summary.purchase_intent || "Not specified"}`,
-      `Bedrooms / Size:      ${summary.bedrooms || "Not specified"}`,
-      `Financing Preference: ${summary.financing_preference || "Not specified"}`,
-      `Next Step Preferred:  ${summary.preferred_next_step || "Not specified"}`,
-      `Handoff / Booking:    ${summary.booking_status || "Consultation Request"}`,
-      `Contact Name:         ${summary.contact_name || "Not provided"}`,
-      `Contact Phone:        ${summary.contact_phone || "Not provided"}`,
-      `Appointment Details:  ${summary.requested_appointment_details || "None"}`,
-      `Other Requirements:   ${summary.other_requirements || "None noted"}`,
-      `Pending Details:      ${summary.missing_fields || "None - fully qualified"}`,
-      "===========================================================",
-      "STATUS: Qualification Complete — Pending Licensed Advisor Review",
-    ].join("\n");
-  };
-
-  const handleCopySummary = (summary: LeadSummary) => {
-    const text = generateHandoffText(summary, language);
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
+  const formatTime = (secs: number) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
   };
 
   return (
-    <section id="voice-console" className="py-24 sm:py-32 bg-[#131210] text-[#F6EFE2] relative border-b border-[#25221F]">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+    <section
+      id="voice-console"
+      className="bg-[#0C0A09] text-[#F6EFE2] py-24 px-4 sm:px-6 lg:px-8 border-y border-[#2D2824] relative overflow-hidden selection:bg-[#B88746]/20"
+    >
+      {/* Background Luxury Ambient Glows */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-b from-[#B88746]/10 via-[#B88746]/5 to-transparent rounded-full blur-[140px] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E1C19] border border-[#332E29] text-[11px] font-mono tracking-[0.2em] text-[#B88746] mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#B88746]" />
-            {t.badge}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1C1917] border border-[#B88746]/30 text-[#B88746] text-xs font-mono tracking-wider uppercase mb-4">
+            <span className="w-2 h-2 rounded-full bg-[#B88746] animate-pulse" />
+            <span>(06) AUTONOMOUS VOICE AGENT STUDIO</span>
           </div>
-          <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#F6EFE2] leading-[1.0] mb-6">
-            {t.headerTitle}{" "}
-            <span className="italic text-[#B88746]">{t.headerAccent}</span>
+
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#F6EFE2] tracking-tight mb-4">
+            Test Production Voice Agents In Real Time
           </h2>
-          <p className="text-base sm:text-lg text-[#C5BDB1] leading-relaxed font-normal">
-            {t.headerDesc}
+
+          <p className="text-sm sm:text-base text-[#A8A29E] leading-relaxed">
+            Experience sub-1.5s human conversational intelligence with genuine vocal emotion and natural inflections. Powered by Deepgram Aura-2, Groq LPUs, and WebRTC streaming.
           </p>
         </div>
 
-        {/* 3 Industry Preset Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-          {PERSONAS.map((persona) => {
-            const isSelected = selectedPersona.id === persona.id;
-            return (
-              <button
-                key={persona.id}
-                onClick={() => {
-                  if (isConnected) endCall();
-                  setSelectedPersona(persona);
-                }}
-                className={`p-5 rounded-2xl text-left border transition-all duration-300 relative ${
-                  isSelected
-                    ? "bg-[#201D1A] border-[#B88746] shadow-lg"
-                    : "bg-[#181614] border-[#2D2824] hover:border-[#3D3732] text-[#888277]"
-                }`}
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-1.5">
-                    {persona.id === "dubai" ? (
-                      <Building2 className="w-4 h-4 text-[#B88746]" />
-                    ) : persona.id === "clinic" ? (
-                      <Stethoscope className="w-4 h-4 text-[#888277]" />
-                    ) : (
-                      <Briefcase className="w-4 h-4 text-[#888277]" />
-                    )}
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#888277]">
-                      {persona.industry}
-                    </span>
-                  </div>
-                  {persona.isLiveAgent && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Live Voice
-                    </span>
-                  )}
-                </div>
-                <div className="font-semibold text-base text-[#F6EFE2] mb-1">
-                  {persona.name}
-                </div>
-                <div className="text-xs text-[#888277] line-clamp-1">{persona.role}</div>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Active Console Card */}
-        <div
-          dir={isArabic && isLive ? "rtl" : "ltr"}
-          className="bg-[#181614] border border-[#2D2824] rounded-3xl p-6 sm:p-10 relative overflow-hidden transition-all duration-300"
-        >
-          {/* Top Telemetry Header */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-[#2D2824] gap-4">
-            <div className="flex items-center gap-3">
-              <div
-                className={`w-3 h-3 rounded-full ${
-                  isConnected
-                    ? "bg-emerald-400 animate-pulse"
-                    : isConnecting
-                    ? "bg-amber-400 animate-ping"
-                    : "bg-[#888277]"
-                }`}
-              />
-              <span className="font-mono text-xs uppercase tracking-widest text-[#F6EFE2] font-semibold">
-                {isConnected
-                  ? `${t.statusConnected} (${formatDuration(callDuration)})`
-                  : isConnecting
-                  ? t.statusConnecting
-                  : status === "ended"
-                  ? t.statusEnded
-                  : t.statusReady}
-              </span>
-            </div>
-
-            {/* Language Switcher for Live Dubai Agent */}
-            {isLive ? (
-              <div className="flex items-center gap-3">
-                <span className="text-xs font-mono text-[#888277] flex items-center gap-1.5">
-                  <Globe className="w-3.5 h-3.5 text-[#B88746]" />
-                  <span>{t.langLabel}</span>
-                </span>
-                <div className="inline-flex rounded-full bg-[#131210] p-1 border border-[#2D2824]">
-                  <button
-                    onClick={() => setLanguage("auto")}
-                    disabled={isConnected || isConnecting}
-                    className={`px-3 py-1 rounded-full text-xs font-mono transition-all ${
-                      language === "auto"
-                        ? "bg-[#B88746] text-[#131210] font-bold shadow-xs"
-                        : "text-[#888277] hover:text-[#F6EFE2]"
-                    } disabled:opacity-50`}
-                  >
-                    {t.langAuto}
-                  </button>
-                  <button
-                    onClick={() => setLanguage("en")}
-                    disabled={isConnected || isConnecting}
-                    className={`px-3 py-1 rounded-full text-xs font-mono transition-all ${
-                      language === "en"
-                        ? "bg-[#B88746] text-[#131210] font-bold shadow-xs"
-                        : "text-[#888277] hover:text-[#F6EFE2]"
-                    } disabled:opacity-50`}
-                  >
-                    {t.langEn}
-                  </button>
-                  <button
-                    onClick={() => setLanguage("ar")}
-                    disabled={isConnected || isConnecting}
-                    className={`px-3 py-1 rounded-full text-xs font-mono transition-all ${
-                      language === "ar"
-                        ? "bg-[#B88746] text-[#131210] font-bold shadow-xs"
-                        : "text-[#888277] hover:text-[#F6EFE2]"
-                    } disabled:opacity-50`}
-                  >
-                    {t.langAr}
-                  </button>
-                  <button
-                    onClick={() => setLanguage("hi")}
-                    disabled={isConnected || isConnecting}
-                    className={`px-3 py-1 rounded-full text-xs font-mono transition-all ${
-                      language === "hi"
-                        ? "bg-[#B88746] text-[#131210] font-bold shadow-xs"
-                        : "text-[#888277] hover:text-[#F6EFE2]"
-                    } disabled:opacity-50`}
-                  >
-                    {t.langHi}
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div className="text-xs font-mono text-[#888277]">
-                <span>PRESET INTERACTIVE TRANSCRIPT</span>
-              </div>
-            )}
+        {/* Tab Navigation Strip matching uploaded screenshot in dark luxury */}
+        <div className="flex items-center justify-between border-b border-[#2D2824] pb-4 mb-8">
+          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar">
+            <button
+              onClick={() => setActiveTab("voice-agents")}
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
+                activeTab === "voice-agents"
+                  ? "bg-[#1C1917] text-[#B88746] border border-[#B88746]/40 shadow-xs"
+                  : "text-[#888277] hover:text-[#F6EFE2]"
+              }`}
+            >
+              <span className="text-base font-serif">अ</span>
+              <span>Voice Agents (Live)</span>
+            </button>
+            <button
+              onClick={() => setActiveTab("enterprise")}
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                activeTab === "enterprise"
+                  ? "bg-[#1C1917] text-[#B88746] border border-[#B88746]/40"
+                  : "text-[#888277] hover:text-[#F6EFE2]"
+              }`}
+            >
+              Enterprise Hub
+            </button>
+            <button
+              onClick={() => setActiveTab("tts")}
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                activeTab === "tts"
+                  ? "bg-[#1C1917] text-[#B88746] border border-[#B88746]/40"
+                  : "text-[#888277] hover:text-[#F6EFE2]"
+              }`}
+            >
+              Text to Speech
+            </button>
+            <button
+              onClick={() => setActiveTab("stt")}
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                activeTab === "stt"
+                  ? "bg-[#1C1917] text-[#B88746] border border-[#B88746]/40"
+                  : "text-[#888277] hover:text-[#F6EFE2]"
+              }`}
+            >
+              Speech to Text
+            </button>
           </div>
 
-          {/* Error Banner */}
-          {error && isLive && (
-            <div className="mb-6 p-4 rounded-xl bg-red-950/40 border border-red-500/30 text-red-200 text-xs font-mono flex items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
-                <span>{error}</span>
+          <div className="hidden lg:flex items-center gap-2 text-xs font-mono text-[#888277]">
+            <ShieldCheck className="w-4 h-4 text-emerald-500" />
+            <span>Sub-1.5s Guaranteed Ceiling</span>
+          </div>
+        </div>
+
+        {/* 3-Column Studio Console */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#131210] border border-[#2D2824] rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl relative">
+          {/* Column 1: Choose an Agent (3 cols) */}
+          <div className="lg:col-span-3 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#2D2824] pb-6 lg:pb-0 lg:pr-6">
+            <div>
+              <div className="text-xs font-mono text-[#888277] uppercase tracking-wider mb-4 flex items-center justify-between">
+                <span>Choose an agent</span>
+                <span className="text-[10px] text-[#B88746] bg-[#B88746]/10 px-2 py-0.5 rounded-full font-bold">
+                  {AGENTS.length} Profiles
+                </span>
               </div>
-              <button
-                onClick={retry}
-                className="px-3 py-1 rounded bg-red-500/20 hover:bg-red-500/30 border border-red-500/40 text-white transition-colors"
-              >
-                Retry
-              </button>
+
+              <div className="space-y-2">
+                {AGENTS.map((agent) => {
+                  const isSelected = selectedAgent.id === agent.id;
+                  return (
+                    <button
+                      key={agent.id}
+                      onClick={() => {
+                        if (isConnected || isConnecting) {
+                          endCall();
+                        }
+                        setSelectedAgent(agent);
+                      }}
+                      className={`w-full text-left p-3.5 rounded-2xl flex items-start gap-3 transition-all cursor-pointer ${
+                        isSelected
+                          ? "bg-[#1C1917] border border-[#B88746] text-[#F6EFE2] shadow-lg shadow-[#B88746]/5"
+                          : "bg-transparent hover:bg-[#1C1917]/50 text-[#A8A29E] hover:text-[#F6EFE2] border border-transparent"
+                      }`}
+                    >
+                      <div
+                        className={`p-2 rounded-xl shrink-0 mt-0.5 ${
+                          isSelected
+                            ? "bg-[#B88746]/15 text-[#B88746]"
+                            : "bg-[#1C1917] text-[#888277]"
+                        }`}
+                      >
+                        {agent.icon}
+                      </div>
+
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between gap-1 mb-0.5">
+                          <span className="text-xs sm:text-sm font-semibold truncate text-[#F6EFE2]">
+                            {agent.name}
+                          </span>
+                          {agent.isLive && (
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 animate-pulse" />
+                          )}
+                        </div>
+                        <div className="text-[11px] text-[#888277] truncate">
+                          {agent.category}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-          )}
 
-          {/* Central Workspace: Live Controls or Static Script */}
-          {isLive ? (
-            <div className="space-y-8">
-              {/* Audio Visualizer & Call Trigger */}
-              <div className="bg-[#131210] border border-[#2D2824] rounded-2xl p-6 sm:p-8 flex flex-col items-center justify-center text-center">
-                <div className="text-[10px] font-mono tracking-widest text-[#888277] uppercase mb-4">
-                  {isConnected ? t.pipelineBadge : t.webrtcChannel}
-                </div>
+            {/* Language Selector Pill */}
+            <div className="mt-6 pt-4 border-t border-[#2D2824]">
+              <div className="text-[10px] font-mono text-[#888277] uppercase tracking-wider mb-2">
+                Language Model Mode
+              </div>
+              <div className="grid grid-cols-3 gap-1.5 p-1 bg-[#1C1917] rounded-xl border border-[#2D2824]">
+                <button
+                  onClick={() => setLanguage("en")}
+                  disabled={isConnected || isConnecting}
+                  className={`py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
+                    language === "en"
+                      ? "bg-[#B88746] text-[#0C0A09] font-bold shadow-xs"
+                      : "text-[#888277] hover:text-[#F6EFE2]"
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  onClick={() => setLanguage("ar")}
+                  disabled={isConnected || isConnecting}
+                  className={`py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
+                    language === "ar"
+                      ? "bg-[#B88746] text-[#0C0A09] font-bold shadow-xs"
+                      : "text-[#888277] hover:text-[#F6EFE2]"
+                  }`}
+                >
+                  العربية
+                </button>
+                <button
+                  onClick={() => setLanguage("hi")}
+                  disabled={isConnected || isConnecting}
+                  className={`py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
+                    language === "hi"
+                      ? "bg-[#B88746] text-[#0C0A09] font-bold shadow-xs"
+                      : "text-[#888277] hover:text-[#F6EFE2]"
+                  }`}
+                >
+                  हिन्दी
+                </button>
+              </div>
+            </div>
+          </div>
 
-                {/* Spectrum Canvas */}
-                <canvas
-                  ref={canvasRef}
-                  width={340}
-                  height={64}
-                  className="w-full max-w-[320px] h-16 mb-6"
-                />
+          {/* Column 2: Central Studio Canvas with Glowing Voice Sphere (5 cols) */}
+          <div className="lg:col-span-5 flex flex-col items-center justify-center p-4 sm:p-6 text-center relative overflow-hidden border-b lg:border-b-0 lg:border-r border-[#2D2824]">
+            {/* Subtle Gold Dots Pattern */}
+            <div
+              className="absolute inset-0 opacity-[0.15] pointer-events-none"
+              style={{
+                backgroundImage: "radial-gradient(#B88746 1px, transparent 1px)",
+                backgroundSize: "22px 22px",
+              }}
+            />
 
-                {/* Primary Call Controls */}
-                <div className="flex flex-col sm:flex-row items-center gap-4">
-                  {!isConnected ? (
-                    <button
-                      onClick={startCall}
-                      disabled={isConnecting}
-                      className="px-8 py-4 rounded-full bg-[#B88746] hover:bg-[#D4A373] disabled:opacity-50 text-[#131210] font-bold text-sm flex items-center justify-center gap-3 shadow-xl transition-all hover:scale-105"
-                    >
-                      {isConnecting ? (
-                        <>
-                          <Loader2 className="w-5 h-5 animate-spin" />
-                          <span>{t.connectingBtn}</span>
-                        </>
-                      ) : (
-                        <>
-                          <Mic className="w-5 h-5" />
-                          <span>{t.startVoiceBtn}</span>
-                        </>
-                      )}
-                    </button>
-                  ) : (
-                    <button
-                      onClick={endCall}
-                      className="px-8 py-4 rounded-full bg-red-600 hover:bg-red-500 text-white font-bold text-sm flex items-center justify-center gap-3 shadow-xl transition-all hover:scale-105"
-                    >
-                      <PhoneOff className="w-5 h-5" />
-                      <span>
-                        {t.endVoiceBtn} ({formatDuration(callDuration)})
-                      </span>
-                    </button>
-                  )}
-
-                  {status === "ended" && (
-                    <button
-                      onClick={clearSummary}
-                      className="p-3 rounded-full bg-[#1E1C19] hover:bg-[#2A2622] border border-[#3A332E] text-[#888277] hover:text-[#F6EFE2] transition-colors"
-                      title={t.resetSession}
-                    >
-                      <RotateCcw className="w-4 h-4" />
-                    </button>
-                  )}
-                </div>
-
-                <div className="text-xs text-[#888277] mt-4 font-mono">
-                  {isConnected ? t.hintListening : isConnecting ? t.hintConnecting : t.hintIdle}
-                </div>
+            <div className="relative z-10 flex flex-col items-center w-full max-w-sm">
+              {/* Agent Title Header */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1C1917] border border-[#2D2824] text-[11px] font-mono text-[#B88746] mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{selectedAgent.badge}</span>
+                <span className="text-[#888277]">•</span>
+                <span>{selectedAgent.latency}</span>
               </div>
 
-              {/* Lead Qualification Summary Panel */}
-              {(leadSummary || isLoadingSummary) && (
-                <div className="rounded-2xl bg-[#141311] border border-[#B88746]/40 p-6 sm:p-8 space-y-6">
-                  {/* Panel Header */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-[#2D2824] gap-3">
-                    <div className="flex items-center gap-2 text-[#B88746]">
-                      <Sparkles className="w-5 h-5" />
-                      <div>
-                        <h4 className="font-['Instrument_Serif'] text-2xl text-[#F6EFE2]">
-                          {t.dossierTitle}
-                        </h4>
-                        <p className="text-xs text-[#888277] font-mono mt-0.5">
-                          {t.dossierSubtitle}
-                        </p>
-                      </div>
-                    </div>
-                    <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 uppercase tracking-widest">
-                      {t.sampleHandoffTag}
-                    </span>
-                  </div>
+              <h3 className="text-xl sm:text-2xl font-serif text-[#F6EFE2] mb-1">
+                {selectedAgent.name}
+              </h3>
+              <p className="text-xs text-[#888277] mb-8">
+                Autonomous voice consultant with natural emotional human inflection.
+              </p>
 
-                  {isLoadingSummary ? (
-                    <div className="py-8 flex flex-col items-center justify-center text-center gap-3 text-xs font-mono text-[#888277]">
-                      <Loader2 className="w-6 h-6 animate-spin text-[#B88746]" />
-                      <span>{t.extractingMsg}</span>
-                    </div>
-                  ) : leadSummary ? (
-                    <>
-                      {/* Lead Priority Score Card */}
-                      {leadSummary.lead_category && (
-                        <div
-                          className={`p-4 sm:p-5 rounded-xl border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 ${
-                            String(leadSummary.lead_category).toUpperCase().includes("HOT")
-                              ? "bg-red-500/10 border-red-500/40 text-red-200"
-                              : String(leadSummary.lead_category).toUpperCase().includes("WARM")
-                              ? "bg-amber-500/10 border-amber-500/40 text-amber-200"
-                              : "bg-blue-500/10 border-blue-500/40 text-blue-200"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3">
-                            <div
-                              className={`p-2.5 rounded-lg ${
-                                String(leadSummary.lead_category).toUpperCase().includes("HOT")
-                                  ? "bg-red-500/20 text-red-400"
-                                  : String(leadSummary.lead_category).toUpperCase().includes("WARM")
-                                  ? "bg-amber-500/20 text-amber-400"
-                                  : "bg-blue-500/20 text-blue-400"
-                              }`}
-                            >
-                              {String(leadSummary.lead_category).toUpperCase().includes("HOT") ? (
-                                <Flame className="w-5 h-5 animate-pulse" />
-                              ) : String(leadSummary.lead_category).toUpperCase().includes("WARM") ? (
-                                <Zap className="w-5 h-5" />
-                              ) : (
-                                <Clock className="w-5 h-5" />
-                              )}
-                            </div>
-                            <div>
-                              <div className="flex items-center gap-2">
-                                <span className="font-mono text-xs font-bold uppercase tracking-wider">
-                                  {String(leadSummary.lead_category).toUpperCase().includes("HOT")
-                                    ? t.leadHotTag
-                                    : String(leadSummary.lead_category).toUpperCase().includes("WARM")
-                                    ? t.leadWarmTag
-                                    : t.leadNurtureTag}
-                                </span>
-                              </div>
-                              {leadSummary.lead_category_rationale && (
-                                <p className="text-xs text-[#C5BDB1] font-mono mt-1 leading-relaxed">
-                                  {leadSummary.lead_category_rationale}
-                                </p>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Action Handoff: WhatsApp Shortlist or Viewing */}
-                      {(leadSummary.whatsapp_shortlist_requested === "true" ||
-                        leadSummary.whatsapp_shortlist_requested === true ||
-                        leadSummary.requested_appointment_details ||
-                        leadSummary.booking_status) && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {(leadSummary.whatsapp_shortlist_requested === "true" ||
-                            leadSummary.whatsapp_shortlist_requested === true ||
-                            (leadSummary.booking_status &&
-                              String(leadSummary.booking_status).includes("WhatsApp"))) && (
-                            <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-200">
-                              <div className="flex items-center gap-2 mb-1.5 text-emerald-400 font-semibold text-xs font-mono">
-                                <MessageSquare className="w-4 h-4" />
-                                <span>{t.whatsappShortlistTitle}</span>
-                              </div>
-                              <p className="text-[11px] text-[#A3B899] font-mono leading-relaxed mb-2">
-                                {t.whatsappShortlistDesc}
-                              </p>
-                              {(leadSummary.contact_name || leadSummary.contact_phone) && (
-                                <div className="text-xs font-mono text-emerald-300 bg-emerald-950/40 p-2 rounded-lg border border-emerald-500/20">
-                                  <span className="text-[#888277]">Target: </span>
-                                  <span className="font-bold text-white">
-                                    {leadSummary.contact_name || "Buyer"}
-                                  </span>{" "}
-                                  • {leadSummary.contact_phone || "Phone pending"}
-                                </div>
-                              )}
-                            </div>
-                          )}
-
-                          {((leadSummary.requested_appointment_details &&
-                            leadSummary.requested_appointment_details !== "None") ||
-                            (leadSummary.booking_status &&
-                              String(leadSummary.booking_status).includes("Appointment"))) && (
-                            <div className="p-4 rounded-xl bg-[#B88746]/10 border border-[#B88746]/30 text-[#F6EFE2]">
-                              <div className="flex items-center gap-2 mb-1.5 text-[#B88746] font-semibold text-xs font-mono">
-                                <Calendar className="w-4 h-4" />
-                                <span>{t.viewingTitle}</span>
-                              </div>
-                              <p className="text-[11px] text-[#C5BDB1] font-mono leading-relaxed mb-2">
-                                {t.viewingDesc}
-                              </p>
-                              <div className="text-xs font-mono text-[#E4C590] bg-[#1E1C19] p-2 rounded-lg border border-[#B88746]/20">
-                                <span className="text-[#888277]">Schedule: </span>
-                                <span className="font-semibold text-white">
-                                  {leadSummary.requested_appointment_details ||
-                                    "Consultant Callback (Dubai GST)"}
-                                </span>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Missing Criteria Warning if any */}
-                      {leadSummary.missing_fields &&
-                        leadSummary.missing_fields !== "None" &&
-                        leadSummary.missing_fields !== "None - fully qualified" &&
-                        leadSummary.missing_fields !== "مكتمل التأهيل" && (
-                          <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center gap-2 text-xs font-mono text-amber-300">
-                            <AlertTriangle className="w-4 h-4 flex-shrink-0 text-amber-400" />
-                            <span>
-                              <strong className="text-amber-200">{t.missingCriteriaTitle}: </strong>
-                              {leadSummary.missing_fields}
-                            </span>
-                          </div>
-                        )}
-
-                      {/* 9 Extraction Variables Grid */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.property_type}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.property_type || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.preferred_locations}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {Array.isArray(leadSummary.preferred_locations)
-                              ? leadSummary.preferred_locations.join(isArabic ? "، " : ", ")
-                              : leadSummary.preferred_locations || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.budget}
-                          </span>
-                          <span className="text-sm font-semibold text-[#B88746]">
-                            {leadSummary.budget || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.buying_timeline}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.buying_timeline || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.purchase_intent}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.purchase_intent || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.bedrooms}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.bedrooms || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.financing_preference}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.financing_preference || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.preferred_next_step}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2]">
-                            {leadSummary.preferred_next_step || t.notSpecified}
-                          </span>
-                        </div>
-
-                        <div className="p-3.5 rounded-xl bg-[#1D1B18] border border-[#2D2824]">
-                          <span className="text-[10px] font-mono text-[#888277] uppercase block mb-1">
-                            {t.fields.other_requirements}
-                          </span>
-                          <span className="text-sm font-semibold text-[#F6EFE2] truncate block">
-                            {leadSummary.other_requirements || t.noneNoted}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Action Handoff Bar */}
-                      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                        <span className="text-xs text-[#888277] font-mono">
-                          {t.runIdLabel} {lastRunId} • {t.verifiedSchemaTag}
-                        </span>
+              {/* The Glowing Luxury Voice Sphere */}
+              <div className="relative flex items-center justify-center my-4">
+                {/* Outer Breathing Gold/Emerald Aura */}
+                <div
+                  className={`w-56 h-56 sm:w-64 sm:h-64 rounded-full transition-transform duration-300 ease-out flex items-center justify-center ${
+                    isConnected
+                      ? "bg-gradient-to-br from-[#B88746]/40 via-emerald-500/25 to-teal-500/10 shadow-[0_0_90px_rgba(184,135,70,0.35)]"
+                      : isConnecting
+                      ? "bg-gradient-to-br from-[#B88746]/20 via-[#B88746]/10 to-transparent animate-pulse shadow-[0_0_60px_rgba(184,135,70,0.2)]"
+                      : "bg-gradient-to-br from-[#B88746]/15 via-[#1C1917] to-transparent shadow-[0_0_50px_rgba(184,135,70,0.1)] hover:shadow-[0_0_70px_rgba(184,135,70,0.25)]"
+                  }`}
+                  style={{
+                    transform: `scale(${pulseScale})`,
+                  }}
+                >
+                  {/* Secondary Inner Ripple Ring */}
+                  <div className="w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-[#131210]/90 border border-[#B88746]/30 flex items-center justify-center backdrop-blur-md">
+                    {/* Interactive Central Pill Button */}
+                    {selectedAgent.isLive ? (
+                      !isConnected ? (
                         <button
-                          onClick={() => handleCopySummary(leadSummary)}
-                          className="px-5 py-2.5 rounded-full bg-[#1E1C19] hover:bg-[#2A2622] border border-[#3A332E] text-xs font-mono text-[#F6EFE2] flex items-center gap-2 transition-colors"
+                          onClick={startCall}
+                          disabled={isConnecting}
+                          className="px-6 py-3.5 rounded-full bg-gradient-to-r from-[#B88746] to-[#D4A373] text-[#0C0A09] font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer disabled:opacity-60"
                         >
-                          {copied ? (
+                          {isConnecting ? (
                             <>
-                              <Check className="w-3.5 h-3.5 text-emerald-400" />
-                              <span className="text-emerald-400">{t.copiedBtn}</span>
+                              <Loader2 className="w-4 h-4 animate-spin text-[#0C0A09]" />
+                              <span>Connecting...</span>
                             </>
                           ) : (
                             <>
-                              <Copy className="w-3.5 h-3.5" />
-                              <span>{t.copyBtn}</span>
+                              <Mic className="w-4 h-4 text-[#0C0A09]" />
+                              <span>Start Speaking</span>
                             </>
                           )}
                         </button>
-                      </div>
+                      ) : (
+                        <button
+                          onClick={endCall}
+                          className="px-6 py-3.5 rounded-full bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs sm:text-sm shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
+                        >
+                          <PhoneOff className="w-4 h-4" />
+                          <span>End Call ({formatTime(callDuration)})</span>
+                        </button>
+                      )
+                    ) : (
+                      <button
+                        onClick={() => setSelectedAgent(AGENTS[0])}
+                        className="px-6 py-3 rounded-full bg-[#1C1917] hover:bg-[#25221E] text-[#B88746] border border-[#B88746]/40 font-semibold text-xs transition-all hover:scale-105 flex items-center gap-2 cursor-pointer"
+                      >
+                        <Sparkles className="w-4 h-4 text-[#B88746]" />
+                        <span>Switch to Live Sarah</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
 
-                      {/* Disclaimer banner */}
-                      <div className="p-3 rounded-xl bg-[#12110F] border border-[#262320] text-[11px] font-mono text-[#888277] leading-relaxed">
-                        <span className="text-amber-400 font-bold block mb-0.5">
-                          {t.sampleHandoffTag}
-                        </span>
-                        {t.disclaimerText}
-                      </div>
-                    </>
-                  ) : null}
+              {/* Real-Time Audio Spectrum Canvas */}
+              <canvas
+                ref={canvasRef}
+                width={280}
+                height={48}
+                className="w-full max-w-[260px] h-12 my-2"
+              />
+
+              {/* Live Status Caption */}
+              <p className="text-xs text-[#888277] max-w-xs mt-2">
+                {isConnected
+                  ? "Sarah is listening — speak naturally with full emotion in English."
+                  : isConnecting
+                  ? "Initializing zero-deadlock WebRTC pipeline (<1.5s)..."
+                  : `Press Start Speaking to call ${selectedAgent.agentName}.`}
+              </p>
+
+              {/* Error Banner */}
+              {error && (
+                <div className="mt-4 px-4 py-2 rounded-xl bg-rose-950/40 border border-rose-500/40 text-rose-300 text-xs flex items-center gap-2">
+                  <AlertCircle className="w-4 h-4 shrink-0 text-rose-400" />
+                  <span>{error}</span>
+                  <button onClick={retry} className="underline font-bold ml-1">
+                    Retry
+                  </button>
                 </div>
               )}
             </div>
-          ) : (
-            /* Reference Preset Script for Clinic & B2B */
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
-              <div className="lg:col-span-5 bg-[#131210] border border-[#2D2824] rounded-2xl p-6 flex flex-col items-center justify-center text-center">
-                <div className="text-[10px] font-mono tracking-widest text-[#888277] uppercase mb-4">
-                  Reference Conversational Flow
+          </div>
+
+          {/* Column 3: Illustrative & Live Transcript (4 cols) */}
+          <div className="lg:col-span-4 flex flex-col justify-between pl-0 lg:pl-4">
+            <div>
+              {/* Header */}
+              <div className="flex items-center justify-between pb-4 border-b border-[#2D2824] mb-6">
+                <div>
+                  <h4 className="text-sm font-semibold text-[#F6EFE2]">
+                    Illustrative transcript
+                  </h4>
+                  <p className="text-[11px] text-[#888277]">
+                    Conversational dialogue preview
+                  </p>
                 </div>
-
-                <canvas
-                  ref={canvasRef}
-                  width={300}
-                  height={64}
-                  className="w-full max-w-[260px] h-16 mb-6"
-                />
-
-                <div className="text-xs text-[#888277] font-mono">
-                  STEP-BY-STEP DIALOGUE FLOW
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#1C1917] border border-[#2D2824] text-xs text-[#B88746]">
+                  <User className="w-3.5 h-3.5 text-[#B88746]" />
+                  <span>{selectedAgent.agentName}</span>
                 </div>
               </div>
 
-              <div className="lg:col-span-7 space-y-3">
-                <div className="flex items-center justify-between text-xs font-mono text-[#888277] pb-2 border-b border-[#2D2824]">
-                  <span>CONVERSATIONAL TRANSCRIPT</span>
-                  <span>PRESET SCRIPT</span>
-                </div>
-
-                <div className="space-y-3 max-h-[300px] overflow-y-auto pr-2">
-                  {selectedPersona.dialogue?.map((turn, idx) => (
+              {/* Chat Speech Bubbles */}
+              <div className="space-y-4">
+                {selectedAgent.transcript.map((turn, i) => (
+                  <div
+                    key={i}
+                    className={`flex flex-col ${
+                      turn.speaker === "user" ? "items-end" : "items-start"
+                    }`}
+                  >
                     <div
-                      key={idx}
-                      className="p-4 rounded-xl border bg-[#131210]/60 border-[#2D2824]"
+                      className={`max-w-[90%] p-3.5 text-xs leading-relaxed ${
+                        turn.speaker === "agent"
+                          ? "bg-[#1C1917] text-[#F6EFE2] rounded-2xl rounded-tl-sm border border-[#2D2824] shadow-md"
+                          : "bg-[#B88746]/15 text-[#F6EFE2] rounded-2xl rounded-tr-sm border border-[#B88746]/40 shadow-md"
+                      }`}
                     >
-                      <div className="flex items-center justify-between mb-1.5">
-                        <span
-                          className={`text-xs font-bold font-mono ${
-                            turn.speaker === "DestiX Agent" ? "text-[#B88746]" : "text-[#D4A373]"
-                          }`}
-                        >
-                          {turn.speaker}
-                        </span>
-                        <span className="text-[10px] font-mono text-[#888277]">
-                          {turn.timestamp}
-                        </span>
+                      <div className="text-[10px] font-mono text-[#888277] mb-1">
+                        {turn.speaker === "agent" ? selectedAgent.agentName : "Caller"}
                       </div>
-                      <p className="text-sm text-[#A89F93] leading-relaxed">
-                        {turn.text}
-                      </p>
+                      {turn.text}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
+
+                {isConnected && (
+                  <div className="p-3 rounded-2xl bg-emerald-950/30 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                    <span>Live WebRTC Audio Channel Active • Listening</span>
+                  </div>
+                )}
               </div>
             </div>
-          )}
 
-          {/* Outcome Footer */}
-          <div className="mt-8 bg-[#131210] rounded-xl p-4 border border-[#2D2824] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
-            <div className="flex items-center gap-2 text-[#B88746]">
-              <CheckCircle2 className="w-4 h-4 shrink-0" />
-              <span>{isLive ? t.footerPipeline : "SIMULATED REFERENCE PRESET"}</span>
+            {/* Bottom CTA Button */}
+            <div className="mt-8 pt-4 border-t border-[#2D2824]">
+              <button
+                onClick={() => onOpenBooking?.()}
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#B88746] to-[#D4A373] text-[#0C0A09] font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-102 active:scale-98 transition-all cursor-pointer"
+              >
+                <span>Build & Deploy Your Own Agent</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
             </div>
-            <div className="text-[#888277]">
-              {isLive ? t.footerRuntime : "PRESET SCRIPT"}
-            </div>
+          </div>
+        </div>
+
+        {/* Client Access Notice & Remote Mobile Testing Banner */}
+        <div className="mt-8 p-4 rounded-2xl bg-[#131210] border border-[#2D2824] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#888277]">
+          <div className="flex items-center gap-3">
+            <Globe className="w-4 h-4 text-[#B88746] shrink-0" />
+            <span>
+              Share live demo with clients anywhere:{" "}
+              <strong className="text-[#F6EFE2]">
+                npx cloudflared tunnel --url http://localhost:3000
+              </strong>
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4 text-[11px]">
+            <span>Deepgram Aura-2 + Nova-3</span>
+            <span>•</span>
+            <span>Groq LPU 120B</span>
+            <span>•</span>
+            <span className="text-emerald-400">sub-1.5s latency</span>
           </div>
         </div>
       </div>

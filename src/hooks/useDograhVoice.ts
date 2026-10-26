@@ -19,7 +19,7 @@ interface UseDograhVoiceReturn {
   clearSummary: () => void;
 }
 
-export function useDograhVoice(defaultLanguage: VoiceLanguage = "auto"): UseDograhVoiceReturn {
+export function useDograhVoice(defaultLanguage: VoiceLanguage = "en"): UseDograhVoiceReturn {
   const [status, setStatus] = useState<DograhVoiceStatus>("uninitialized");
   const [isReady, setIsReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -120,8 +120,7 @@ export function useDograhVoice(defaultLanguage: VoiceLanguage = "auto"): UseDogr
       const hiToken = process.env.NEXT_PUBLIC_DOGRAH_EMBED_TOKEN_HI || enToken;
       activeToken = hiToken;
     } else if (language === "auto") {
-      const isArabicBrowser = typeof navigator !== "undefined" && navigator.language?.toLowerCase().startsWith("ar");
-      activeToken = isArabicBrowser ? arToken : enToken;
+      activeToken = enToken;
     }
 
     const apiUrl = process.env.NEXT_PUBLIC_DOGRAH_API_URL || "http://localhost:8000";

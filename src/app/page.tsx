@@ -59,7 +59,7 @@ export default function HomePage() {
       <CorePracticeAreas />
 
       {/* Section 8: (06) The Live Voice Demonstration Console */}
-      <VoiceDemoConsole />
+      <VoiceDemoConsole onOpenBooking={handleOpenBooking} />
 
       {/* Section 9: (07) The Scoping Model & Interactive Volume Modeler (NO TIERS) */}
       <ScopingModel onOpenBooking={handleOpenBooking} />

@@ -56,7 +56,7 @@ export const LiveVoiceDemo: React.FC = () => {
     endCall,
     retry,
     clearSummary,
-  } = useDograhVoice("auto");
+  } = useDograhVoice("en");
 
   const isConnected = status === "connected";
   const isConnecting = status === "connecting";
