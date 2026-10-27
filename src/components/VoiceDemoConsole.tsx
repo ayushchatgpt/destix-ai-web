@@ -37,50 +37,50 @@ interface AgentProfile {
 
 const AGENTS: AgentProfile[] = [
   {
-    id: "dubai-luxury",
-    name: "Dubai Luxury Real Estate",
+    id: "south-delhi-luxury",
+    name: "South Delhi Luxury Real Estate",
     category: "High-Net-Worth Advisory",
-    agentName: "Sarah",
-    latency: "382ms TTFA",
+    agentName: "Sarah (Sarvam AI)",
+    latency: "Sub-2s Real-Time",
     badge: "Live Interactive Agent",
     icon: <Building2 className="w-5 h-5 text-[#B88746]" />,
     isLive: true,
     transcript: [
       {
         speaker: "agent",
-        text: "Hi there! I'm Sarah from DestiX AI. I'm so glad you called — are you exploring an investment in Dubai, or looking for your own dream home?",
+        text: "Hi, welcome to DestiX AI. I'm Sarah, your AI real-estate assistant for South Delhi. Are you looking to buy a property, explore options, or arrange a visit?",
       },
       {
         speaker: "user",
-        text: "I'm looking for a beachfront penthouse on Palm Jumeirah with high ROI.",
+        text: "I'm looking for a 3 BHK builder floor around 2.5 Crore in Greater Kailash.",
       },
       {
         speaker: "agent",
-        text: "Oh, Palm Jumeirah is absolutely magnificent! If you love waterfront living, the private fronds on Billionaires' Row are breathtaking — private beaches, skyline views, and 7 to 9 percent net rental yields. What kind of vibe are you leaning toward?",
+        text: "Greater Kailash offers fantastic builder floors in that price range with clear freehold titles, lift access, and stilt parking. Would you prefer a ready-to-move unit or are you open to near-completion projects?",
       },
     ],
   },
   {
-    id: "palm-penthouse",
-    name: "Palm Jumeirah Penthouse VIP",
-    category: "Ultra-HNW Off-Market",
-    agentName: "Sarah",
-    latency: "380ms TTFA",
+    id: "delhi-ncr-investor",
+    name: "Delhi NCR Private Client Advisory",
+    category: "Ultra-HNW Wealth & Yield",
+    agentName: "Sarah (Sarvam AI)",
+    latency: "Sub-2s Real-Time",
     badge: "Live Interactive Agent",
     icon: <Sparkles className="w-5 h-5 text-[#B88746]" />,
     isLive: true,
     transcript: [
       {
         speaker: "agent",
-        text: "Welcome to DestiX Private Wealth. We currently have three confidential off-market sky penthouses facing the Dubai Marina skyline and Burj Al Arab. Are you exploring for personal residency or portfolio diversification?",
+        text: "Welcome to DestiX Private Client Advisory. We advise on prime residential builder floors in South Delhi and Grade-A commercial corridors across Delhi NCR. What kind of asset are you evaluating?",
       },
       {
         speaker: "user",
-        text: "Does a 25 million Dirham purchase qualify me for the 10-year Golden Visa?",
+        text: "I have 30 years of investing experience and want to understand rental yields and capital appreciation.",
       },
       {
         speaker: "agent",
-        text: "Oh absolutely! Purchases above 2 million AED automatically qualify you and your entire immediate family for the 10-year UAE Golden Visa with zero personal tax.",
+        text: "For long-term capital preservation, established South Delhi colonies yield 2.5 to 3.5 percent with exceptional land value growth. If you are targeting higher immediate cash flows of 7 to 9 percent, Grade-A commercial assets in Gurgaon offer structured institutional leases.",
       },
     ],
   },

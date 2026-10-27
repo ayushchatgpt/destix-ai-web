@@ -69,14 +69,14 @@ export const LiveVoiceDemo: React.FC = () => {
   const agents: AgentDemo[] = [
     {
       id: "real-estate",
-      name: isArabic ? "مستشار عقارات دبي (إماراتي)" : "Dubai Property Specialist",
+      name: isArabic ? "مستشار عقارات دبي (إماراتي)" : "South Delhi Property Specialist",
       subtitle: isArabic
         ? "تأهيل المستثمر والمشتري الصوتي بالكامل"
-        : "Autonomous buyer qualification & villa tour triage",
-      role: isArabic ? "مستشار عقاري فخم" : "Luxury Property Broker",
-      voiceStyle: isArabic ? "لهجة إماراتية طبيعية ومهذبة" : "Warm, authoritative, conversational",
-      language: isArabic ? "العربية — اللهجة الإماراتية" : "Conversational English",
-      latency: "279ms",
+        : "Autonomous buyer qualification & builder floor triage",
+      role: isArabic ? "مستشار عقاري فخم" : "Luxury Property Consultant",
+      voiceStyle: isArabic ? "لهجة إماراتية طبيعية ومهذبة" : "Natural Indian English • Sarvam AI",
+      language: isArabic ? "العربية — اللهجة الإماراتية" : "Sarvam AI Indian English",
+      latency: "Sub-2s",
       isLive: true,
       icon: Building2,
       lines: [
@@ -84,14 +84,14 @@ export const LiveVoiceDemo: React.FC = () => {
           speaker: "Agent",
           text: isArabic
             ? "مرحبا الساع! حياك الله في ديستكس للعقارات. أقدر أساعدك تحدد العقار المناسب في دبي، سواء في نخلة جميرا أو تلال دبي. تفضل، تدور على شقة ولا فيلا؟"
-            : "Hi there! I'm Sarah from DestiX AI. I'd love to help you find the right property in Dubai. Are you looking for an apartment or a villa?",
+            : "Hi, welcome to DestiX AI. I'm Sarah, your AI real-estate assistant for South Delhi. Are you looking to buy a property, explore options, or arrange a visit?",
           time: "0:02",
         },
         {
           speaker: "Caller",
           text: isArabic
             ? "حياك الله، أدور على فيلا 4 غرف نوم في نخلة جميرا لعائلتي، مع إطلالة بحرية ومسبح خاص."
-            : "Hi Sarah, we're looking for a private 4-bedroom villa in Palm Jumeirah or Dubai Hills with sea views.",
+            : "Hi Sarah, I'm looking for a 3 BHK builder floor in Greater Kailash or Saket around 2.5 Crore.",
           time: "0:08",
         },
       ],
@@ -212,7 +212,7 @@ export const LiveVoiceDemo: React.FC = () => {
             Live Voice Agent <span className="italic text-[#B88746]">Showcase</span>
           </h2>
           <p className="mt-4 text-sm md:text-base text-white/60 max-w-2xl mx-auto font-['Plus_Jakarta_Sans']">
-            Experience sub-second voice AI in action. Speak directly to our Dubai Real Estate agent via live WebRTC in English or Emirati Arabic.
+            Experience sub-second voice AI in action. Speak directly to our South Delhi Real Estate consultant via live WebRTC powered by Sarvam AI in English or Emirati Arabic.
           </p>
         </div>
 
