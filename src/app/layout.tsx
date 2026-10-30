@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { AmbientAtmosphere } from "@/components/AmbientAtmosphere";
 import { InteractiveConcierge } from "@/components/InteractiveConcierge";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -841,6 +842,7 @@ export default function RootLayout({
         <ScrollReveal />
         {children}
         <InteractiveConcierge />
+        <Analytics />
       </body>
     </html>
   );
