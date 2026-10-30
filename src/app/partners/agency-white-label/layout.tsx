@@ -21,6 +21,14 @@ export const metadata: Metadata = {
       "Turnkey white-label AI voice telephony for performance marketing agencies, media buyers, and web studios.",
     url: "https://ayush.company/partners/agency-white-label",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Agency%20White-Label%20AI%20Voice%20Partner%20Program&category=Agency%20Partner&badge=White-Label%20Studio",
+        width: 1200,
+        height: 630,
+        alt: "Agency White-Label AI Voice Partner Program",
+      },
+    ],
   },
 };
 

@@ -22,6 +22,14 @@ export const metadata: Metadata = {
       "Enterprise autonomous voice telephony for developers, healthcare centers, and D2C brands across Noida, Greater Noida, and the Expressway.",
     url: "https://ayush.company/locations/noida/ai-voice-agents",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20in%20Noida%20%26%20Greater%20Noida&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Agents in Noida & Greater Noida",
+      },
+    ],
   },
 };
 

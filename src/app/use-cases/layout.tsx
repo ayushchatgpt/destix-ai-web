@@ -25,6 +25,14 @@ export const metadata: Metadata = {
       "Turn passive luxury property traffic into qualified investor pipeline 24/7.",
     url: "https://ayush.company/use-cases",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Luxury%20Real%20Estate%20Agency%20Websites%20%26%20Advisory%20Systems&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "Luxury Real Estate Agency Websites & Advisory Systems",
+      },
+    ],
   },
 };
 

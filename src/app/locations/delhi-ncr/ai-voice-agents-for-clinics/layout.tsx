@@ -21,6 +21,14 @@ export const metadata: Metadata = {
       "24/7 patient booking, consultation screening, and autonomous telephony for aesthetic, dental, and medical clinics across Delhi NCR.",
     url: "https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-clinics",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20for%20Clinics%20in%20Delhi%20NCR&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Agents for Clinics in Delhi NCR",
+      },
+    ],
   },
 };
 

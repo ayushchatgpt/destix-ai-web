@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     description: "Direct advisory desk and consultation booking for DestiX AI.",
     url: "https://ayush.company/contact",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Book%20a%20Consultation%20with%20Ayush%20Meena&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "Book a Consultation with Ayush Meena",
+      },
+    ],
   },
 };
 

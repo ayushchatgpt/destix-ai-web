@@ -22,6 +22,14 @@ export const metadata: Metadata = {
       "Enterprise autonomous voice telephony for luxury real estate builders and corporate practices across Gurugram, Cyber City, and Golf Course Road.",
     url: "https://ayush.company/locations/gurugram/ai-voice-agents",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20in%20Gurugram%20%28Gurgaon%29&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Agents in Gurugram (Gurgaon)",
+      },
+    ],
   },
 };
 

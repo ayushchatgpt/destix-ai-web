@@ -64,40 +64,32 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
         </div>
 
         {/* Directory Navigation */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-[#25221F] text-xs">
+        <nav aria-label="Footer Navigation" className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-[#25221F] text-xs">
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Core Ecosystem
+              Core Solutions
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR (Pillar) ★</Link></li>
-              <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate (Pillar) ★</Link></li>
-              <li><Link href="/solutions/real-estate-ai-calling-gurgaon-noida" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Gurgaon &amp; Noida AI Calling System</Link></li>
-              <li><Link href="/blog/cost-of-ai-voice-agent-vs-telecallers-india" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Cost: AI Voice vs Human Telecallers</Link></li>
-              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">100+ AI Solutions Directory</Link></li>
-              <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Real Estate Automation Suite ★</Link></li>
-              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Agents</Link></li>
-              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">3D WebGL &amp; Digital Architecture</Link></li>
-              <li><Link href="/operating-system" className="hover:text-[#F6EFE2] transition-colors">AI Operating System &amp; n8n</Link></li>
-              <li><Link href="/use-cases" className="hover:text-[#F6EFE2] transition-colors">Industry Production Playbooks</Link></li>
-              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder Dossier &amp; Philosophy</Link></li>
-              <li><Link href="/blog/best-ai-voice-agent-in-new-delhi" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Best AI Voice Agents New Delhi (2026 Audit) →</Link></li>
-              <li><Link href="/blog/ai-voice-agent-cost-india" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">AI Voice Agent Cost in India (Pricing Guide)</Link></li>
-              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">WhatsApp Automation &amp; CRM Sync</Link></li>
-              <li><Link href="/blog/best-ai-voice-agents-agency-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#A89F93]">Delhi NCR Agency Rankings &amp; Matrix</Link></li>
+              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
+              <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Real Estate Automation Suite</Link></li>
+              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</Link></li>
+              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Solutions Master Index</Link></li>
+              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; Unit Economics</Link></li>
+              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder &amp; Engineering Dossier</Link></li>
             </ul>
           </div>
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Interactive Benchmarks
+              Research &amp; Intel
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Alliance Capital Properties (acpdubai.com)</Link></li>
-              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Pranav Jha Editorial Platform</Link></li>
-              <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">Digiirox 3D Spatial Experience</Link></li>
-              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Voice Parity Audition Console</Link></li>
-              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
+              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">2026 Delhi NCR Real Estate Guide →</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-in-new-delhi" className="hover:text-[#F6EFE2] transition-colors">Best AI Voice Agents New Delhi</Link></li>
+              <li><Link href="/blog/cost-of-ai-voice-agent-vs-telecallers-india" className="hover:text-[#F6EFE2] transition-colors">AI Voice vs Human Telecallers</Link></li>
+              <li><Link href="/blog/ai-voice-agent-cost-india" className="hover:text-[#F6EFE2] transition-colors">Voice Agent Cost in India</Link></li>
+              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors">WhatsApp &amp; CRM Sync Plumbing</Link></li>
             </ul>
           </div>
 
@@ -109,8 +101,8 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">The 5x Hurdle Rate Mandate</a></li>
               <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">Interactive Volume Modeler</a></li>
               <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">No SaaS Tiers Policy</a></li>
-              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Custom Unit Economics Audit</Link></li>
-              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">White-Label Studio Retainers</Link></li>
+              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
+              <li><Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors font-medium">Agency White-Label Program</Link></li>
             </ul>
           </div>
 
@@ -127,78 +119,40 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>
             </div>
           </div>
-        </div>
+        </nav>
 
         {/* Regional Jurisdictions & Voice Telephony Sitelinks */}
-        <div className="pt-8 pb-14 border-b border-[#25221F] text-xs">
+        <nav aria-label="Regional Telephony Hubs" className="pt-8 pb-14 border-b border-[#25221F] text-xs">
           <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-5">
-            Regional Jurisdictions &amp; Telephony Hubs
+            Regional Telephony Hubs &amp; Jurisdictions
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-[#A89F93]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-[#A89F93]">
             <div>
-              <Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                AI Voice Services in Delhi NCR
+              <Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Delhi NCR Enterprise Hub →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Gurugram &amp; Noida Telephony</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place &amp; Central Telephony</span>
             </div>
-            <div>
-              <Link href="/locations/delhi-ncr/hindi-ai-voice-agent" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                Hindi AI Voice Agent for Delhi
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Bilingual Code-Switching</span>
-            </div>
-            <div>
-              <Link href="/locations/delhi-ncr/ai-voice-agents-for-clinics" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                AI Voice Agents for Clinics
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">24/7 Patient Scheduling</span>
-            </div>
-            <div>
-              <Link href="/locations/delhi-ncr/ai-voice-agents-for-real-estate" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                AI Voice Agents for Real Estate
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Delhi NCR Speed to Lead</span>
-            </div>
-            <div>
-              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
-                Dubai AI Studio &bull; Real Estate Telephony ★
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
-            </div>
-            <div>
-              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                AI Voice Agents for Dubai Real Estate
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">ACP Dubai &bull; Off-Plan Screening</span>
-            </div>
-            <div>
-              <Link href="/locations" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                AI Voice Agent Service Areas
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Global Remote Deployment</span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 mt-6 border-t border-[#25221F]/60 text-[#A89F93]">
             <div>
               <Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                AI Voice Agents Gurugram (Gurgaon) →
+                Gurugram (Gurgaon) Hub →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road Luxury Telephony</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road</span>
             </div>
             <div>
               <Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                AI Voice Agents Noida &amp; Greater Noida →
+                Noida &amp; Greater Noida Hub →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Speed-to-Lead</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Corridor</span>
             </div>
             <div>
-              <Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors block font-medium text-[#B88746]">
-                Agency White-Label / Ghost Partner Program →
+              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Dubai Studio &amp; Real Estate ★
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Resell AI Voice Retainers under Your Brand</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
             </div>
           </div>
-        </div>
+        </nav>
 
         {/* Massive Architectural Base Brandmark */}
         <div className="py-14 sm:py-20 text-center select-none overflow-hidden">

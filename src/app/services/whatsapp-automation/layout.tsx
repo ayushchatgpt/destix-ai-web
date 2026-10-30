@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     type: "website",
     locale: "en_IN",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=WhatsApp%20Automation%20%26%20CRM%20AI%20Integration&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "WhatsApp Automation & CRM AI Integration",
+      },
+    ],
   },
 };
 

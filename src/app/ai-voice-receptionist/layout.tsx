@@ -29,6 +29,14 @@ export const metadata: Metadata = {
       "Zero-hold inbound call answering with human cadence, instant lead qualification, and CRM appointment booking 24/7.",
     url: "https://ayush.company/ai-voice-receptionist",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Receptionist%20%26%20Autonomous%20Phone%20Answering&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Receptionist & Autonomous Phone Answering",
+      },
+    ],
   },
 };
 

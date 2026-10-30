@@ -30,12 +30,21 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     type: "article",
     locale: "en_IN",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20New%20Delhi%20%282026%20Comparison%29&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        width: 1200,
+        height: 630,
+        alt: "Best AI Voice Agents in New Delhi (2026 Comparison)",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best AI Voice Agents in New Delhi (2026 Comparison) | DestiX AI",
     description:
       "Detailed evaluation of AI voice agent providers in New Delhi across speed-to-lead, latency, Hindi fluency, and cost.",
+      images: ["https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20New%20Delhi%20%282026%20Comparison%29&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ"],
   },
 };
 

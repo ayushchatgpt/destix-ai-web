@@ -21,6 +21,14 @@ export const metadata: Metadata = {
       "Bilingual Hindi & Hinglish conversational AI voice agents for high-ticket businesses across Delhi, Gurugram, and Noida.",
     url: "https://ayush.company/locations/delhi-ncr/hindi-ai-voice-agent",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Hindi%20AI%20Voice%20Agent%20for%20Delhi%20NCR&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        width: 1200,
+        height: 630,
+        alt: "Hindi AI Voice Agent for Delhi NCR",
+      },
+    ],
   },
 };
 

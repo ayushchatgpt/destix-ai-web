@@ -27,12 +27,21 @@ export const metadata: Metadata = {
     siteName: "Ayush.company",
     locale: "en_US",
     type: "website",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=White%20Label%20AI%20Voice%20Agent%20Partner&category=Agency%20Partner&badge=White-Label%20Studio",
+        width: 1200,
+        height: 630,
+        alt: "White Label AI Voice Agent Partner",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "White Label AI Voice Agent Partner | Ayush.company",
     description:
       "Fractional AI voice and frontend engineering for design, marketing, and enterprise consultancies.",
+      images: ["https://ayush.company/api/og?title=White%20Label%20AI%20Voice%20Agent%20Partner&category=Agency%20Partner&badge=White-Label%20Studio"],
   },
 };
 

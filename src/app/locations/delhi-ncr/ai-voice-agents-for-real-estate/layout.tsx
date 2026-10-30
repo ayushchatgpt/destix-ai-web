@@ -21,6 +21,14 @@ export const metadata: Metadata = {
       "Instant lead capture, budget qualification, and automated site visit scheduling for luxury real estate developers and brokers across Delhi, Gurugram, and Noida.",
     url: "https://ayush.company/locations/delhi-ncr/ai-voice-agents-for-real-estate",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20for%20Real%20Estate%20in%20Delhi%20NCR&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Agents for Real Estate in Delhi NCR",
+      },
+    ],
   },
 };
 

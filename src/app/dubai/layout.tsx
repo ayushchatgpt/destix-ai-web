@@ -30,12 +30,21 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     locale: "en_AE",
     type: "website",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Dubai%20AI%20Studio%20%26%20AI%20Voice%20Agents%20for%20Real%20Estate&category=Dubai%20Telephony&badge=UAE%20Off-Plan%20AI",
+        width: 1200,
+        height: 630,
+        alt: "Dubai AI Studio & AI Voice Agents for Real Estate",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dubai AI Studio & AI Voice Agents for Real Estate | DestiX AI",
     description:
       "Autonomous voice infrastructure and 3D WebGL digital storefronts for Dubai real estate developers and HNW wealth desks.",
+      images: ["https://ayush.company/api/og?title=Dubai%20AI%20Studio%20%26%20AI%20Voice%20Agents%20for%20Real%20Estate&category=Dubai%20Telephony&badge=UAE%20Off-Plan%20AI"],
   },
 };
 

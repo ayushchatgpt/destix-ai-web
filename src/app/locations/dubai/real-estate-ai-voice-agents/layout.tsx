@@ -22,6 +22,14 @@ export const metadata: Metadata = {
       "Enterprise voice agents and bespoke 3D WebGL property storefronts for prime Dubai brokerages and developers.",
     url: "https://ayush.company/locations/dubai/real-estate-ai-voice-agents",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Dubai%20Real%20Estate%20AI%20Voice%20Agents%20%26%203D%20Web%20Systems&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "Dubai Real Estate AI Voice Agents & 3D Web Systems",
+      },
+    ],
   },
 };
 

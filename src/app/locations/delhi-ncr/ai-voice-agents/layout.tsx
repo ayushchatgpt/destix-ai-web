@@ -29,12 +29,21 @@ export const metadata: Metadata = {
       "Enterprise autonomous AI voice telephony for service companies and high-ticket brokerages across Delhi, Gurugram, and Noida. Sub-500ms voice parity and sub-45s speed to lead.",
     url: "https://ayush.company/locations/delhi-ncr/ai-voice-agents",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Gurugram%2C%20Noida%2C%20...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        width: 1200,
+        height: 630,
+        alt: "Best AI Voice Agents in Delhi NCR (Gurugram, Noida, ...",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best AI Voice Agents in Delhi NCR | DestiX AI",
     description:
       "Ranked #1 AI voice agent studio in Delhi NCR. Sub-500ms voice latency, domestic +91 SIP trunks, and Hindi/Hinglish fluency.",
+      images: ["https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Gurugram%2C%20Noida%2C%20...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ"],
   },
 };
 

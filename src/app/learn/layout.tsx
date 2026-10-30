@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     locale: "en_IN",
     type: "website",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Learn%20AI%20Voice%20Agents%20%26%20Autonomous%20Systems%20Architecture&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "Learn AI Voice Agents & Autonomous Systems Architecture",
+      },
+    ],
   },
 };
 

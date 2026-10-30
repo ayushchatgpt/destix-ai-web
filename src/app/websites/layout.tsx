@@ -28,6 +28,14 @@ export const metadata: Metadata = {
       "Bespoke 3D spatial web architectures engineered to command high-ticket client authority and eliminate price resistance.",
     url: "https://ayush.company/websites",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=3D%20Websites%20%26%20WebGL%20Digital%20Architecture&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "3D Websites & WebGL Digital Architecture",
+      },
+    ],
   },
 };
 

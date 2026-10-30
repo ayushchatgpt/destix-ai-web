@@ -28,6 +28,14 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
     type: "website",
     locale: "en_IN",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Agency%20in%20Delhi%20%26%20Best%20AI%20Voice%20Agents%20in%20Delhi%20NCR&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        width: 1200,
+        height: 630,
+        alt: "AI Agency in Delhi & Best AI Voice Agents in Delhi NCR",
+      },
+    ],
   },
 };
 

@@ -32,12 +32,21 @@ export const metadata: Metadata = {
     siteName: "Ayush.company",
     locale: "en_IN",
     type: "website",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Agent%20for%20Real%20Estate%3A%20Qualify%20Portal%20Leads...&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Agent for Real Estate: Qualify Portal Leads...",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Voice Agent for Real Estate | Ayush.company",
     description:
       "Autonomous speed-to-lead voice qualification for real estate developers and brokers.",
+      images: ["https://ayush.company/api/og?title=AI%20Voice%20Agent%20for%20Real%20Estate%3A%20Qualify%20Portal%20Leads...&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity"],
   },
 };
 

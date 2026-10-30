@@ -30,6 +30,14 @@ export const metadata: Metadata = {
       "We don't build standard chatbots. DestiX AI engineers autonomous telephony circuits and 3D spatial platforms for market leaders.",
     url: "https://ayush.company/ai-agency",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Agency%20%26%20Autonomous%20Systems%20Practice&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Agency & Autonomous Systems Practice",
+      },
+    ],
   },
 };
 

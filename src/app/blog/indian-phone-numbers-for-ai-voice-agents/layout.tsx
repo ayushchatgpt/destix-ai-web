@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     url: "https://ayush.company/blog/indian-phone-numbers-for-ai-voice-agents",
     siteName: "DestiX AI",
     type: "article",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=Indian%20Phone%20Numbers%20for%20AI%20Voice%20Agents%20%28%2B91%20SIP%20Tr...&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        width: 1200,
+        height: 630,
+        alt: "Indian Phone Numbers for AI Voice Agents (+91 SIP Tr...",
+      },
+    ],
   },
 };
 

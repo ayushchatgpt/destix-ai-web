@@ -22,6 +22,14 @@ export const metadata: Metadata = {
       "24/7 autonomous telephony screening and appointment scheduling for private healthcare and premium practices in Mumbai.",
     url: "https://ayush.company/locations/mumbai/ai-voice-receptionist",
     siteName: "DestiX AI",
+      images: [
+      {
+        url: "https://ayush.company/api/og?title=AI%20Voice%20Receptionist%20%26%20Clinic%20Phone%20Automation%20Mumbai&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        width: 1200,
+        height: 630,
+        alt: "AI Voice Receptionist & Clinic Phone Automation Mumbai",
+      },
+    ],
   },
 };
 
