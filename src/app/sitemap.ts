@@ -84,6 +84,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.96,
     },
     {
+      url: `${baseUrl}/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.97,
+    },
+    {
       url: `${baseUrl}/about`,
       lastModified: now,
       changeFrequency: "monthly" as const,
