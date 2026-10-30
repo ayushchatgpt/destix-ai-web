@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20in%20Gurugram%20%28Gurgaon%29&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        url: "https://ayush.company/og-delhi-ncr.png",
         width: 1200,
         height: 630,
         alt: "AI Voice Agents in Gurugram (Gurgaon)",

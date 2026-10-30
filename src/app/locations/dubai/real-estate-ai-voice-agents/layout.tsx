@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Dubai%20Real%20Estate%20AI%20Voice%20Agents%20%26%203D%20Web%20Systems&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        url: "https://ayush.company/og-real-estate.png",
         width: 1200,
         height: 630,
         alt: "Dubai Real Estate AI Voice Agents & 3D Web Systems",

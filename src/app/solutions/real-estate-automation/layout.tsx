@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Real%20Estate%20Automation%20%26%20AI%20Voice%20Telephony&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        url: "https://ayush.company/og-real-estate.png",
         width: 1200,
         height: 630,
         alt: "Real Estate Automation & AI Voice Telephony",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Real Estate Automation & AI Voice Telephony | DestiX AI",
     description:
       "Autonomous real estate voice agents and lead automation engine engineered by Ayush Meena.",
-      images: ["https://ayush.company/api/og?title=Real%20Estate%20Automation%20%26%20AI%20Voice%20Telephony&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity"],
+      images: ["https://ayush.company/og-real-estate.png"],
   },
 };
 

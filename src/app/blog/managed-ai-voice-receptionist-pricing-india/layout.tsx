@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Managed%20AI%20Voice%20Receptionist%20Pricing%20in%20India%20%282026...&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-pricing.png",
         width: 1200,
         height: 630,
         alt: "Managed AI Voice Receptionist Pricing in India (2026...",

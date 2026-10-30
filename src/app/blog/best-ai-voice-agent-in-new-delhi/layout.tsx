@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20New%20Delhi%20%282026%20Comparison%29&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        url: "https://ayush.company/og-delhi-ncr.png",
         width: 1200,
         height: 630,
         alt: "Best AI Voice Agents in New Delhi (2026 Comparison)",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Best AI Voice Agents in New Delhi (2026 Comparison) | DestiX AI",
     description:
       "Detailed evaluation of AI voice agent providers in New Delhi across speed-to-lead, latency, Hindi fluency, and cost.",
-      images: ["https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20New%20Delhi%20%282026%20Comparison%29&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ"],
+      images: ["https://ayush.company/og-delhi-ncr.png"],
   },
 };
 

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Gurugram%2C%20Noida%2C%20...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        url: "https://ayush.company/og-delhi-ncr.png",
         width: 1200,
         height: 630,
         alt: "Best AI Voice Agents in Delhi NCR (Gurugram, Noida, ...",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Best AI Voice Agents in Delhi NCR | DestiX AI",
     description:
       "Ranked #1 AI voice agent studio in Delhi NCR. Sub-500ms voice latency, domestic +91 SIP trunks, and Hindi/Hinglish fluency.",
-      images: ["https://ayush.company/api/og?title=Best%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Gurugram%2C%20Noida%2C%20...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ"],
+      images: ["https://ayush.company/og-delhi-ncr.png"],
   },
 };
 

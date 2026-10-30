@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
       images: [
       {
-        url: "https://ayush.company/api/og?title=AI%20Voice%20Agent%20Cost%20in%20India%20%282026%20Pricing%20Guide%29&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-pricing.png",
         width: 1200,
         height: 630,
         alt: "AI Voice Agent Cost in India (2026 Pricing Guide)",

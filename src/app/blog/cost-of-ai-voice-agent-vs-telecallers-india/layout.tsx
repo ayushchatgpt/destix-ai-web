@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Cost%20of%20AI%20Voice%20Agent%20vs%20Human%20Telecallers%20in%20India...&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-pricing.png",
         width: 1200,
         height: 630,
         alt: "Cost of AI Voice Agent vs Human Telecallers in India...",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
       "Cost of AI Voice Agent vs Human Telecallers in India | DestiX AI",
     description:
       "Detailed 2026 ROI breakdown comparing human call center costs against autonomous AI voice agents in India.",
-      images: ["https://ayush.company/api/og?title=Cost%20of%20AI%20Voice%20Agent%20vs%20Human%20Telecallers%20in%20India...&category=Intel%20%26%20Strategy&badge=2026%20Verified"],
+      images: ["https://ayush.company/og-pricing.png"],
   },
 };
 

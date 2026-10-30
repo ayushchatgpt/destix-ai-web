@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Transparent%20Scoping%20%26%20Unit%20Economics&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        url: "https://ayush.company/og-pricing.png",
         width: 1200,
         height: 630,
         alt: "Transparent Scoping & Unit Economics",

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
       images: [
       {
-        url: "https://ayush.company/api/og?title=AI%20Solutions%20%26%20Keyword%20Directory%20%28100%2B%20Enterprise%20Ca...&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        url: "https://ayush.company/og-intel.png",
         width: 1200,
         height: 630,
         alt: "AI Solutions & Keyword Directory (100+ Enterprise Ca...",

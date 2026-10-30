@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=AI%20Voice%20Agents%20in%20India%3A%20Enterprise%20Deployment%20Guid...&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-intel.png",
         width: 1200,
         height: 630,
         alt: "AI Voice Agents in India: Enterprise Deployment Guid...",

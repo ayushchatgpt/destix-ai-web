@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=3D%20Websites%20%26%20WebGL%20Digital%20Architecture&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        url: "https://ayush.company/og-image.png",
         width: 1200,
         height: 630,
         alt: "3D Websites & WebGL Digital Architecture",

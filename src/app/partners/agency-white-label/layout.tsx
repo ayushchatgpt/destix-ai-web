@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Agency%20White-Label%20AI%20Voice%20Partner%20Program&category=Agency%20Partner&badge=White-Label%20Studio",
+        url: "https://ayush.company/og-white-label.png",
         width: 1200,
         height: 630,
         alt: "Agency White-Label AI Voice Partner Program",

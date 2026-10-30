@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Indian%20Phone%20Numbers%20for%20AI%20Voice%20Agents%20%28%2B91%20SIP%20Tr...&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-intel.png",
         width: 1200,
         height: 630,
         alt: "Indian Phone Numbers for AI Voice Agents (+91 SIP Tr...",

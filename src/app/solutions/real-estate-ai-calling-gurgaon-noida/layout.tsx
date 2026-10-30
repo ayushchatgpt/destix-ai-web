@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Real%20Estate%20AI%20Calling%20System%20for%20Builders%20in%20Gurgao...&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity",
+        url: "https://ayush.company/og-real-estate.png",
         width: 1200,
         height: 630,
         alt: "Real Estate AI Calling System for Builders in Gurgao...",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Real Estate AI Calling System for Builders in Gurgaon & Noida | DestiX AI",
     description:
       "Autonomous AI telecallers for Gurgaon and Noida builders. Instant 99acres and Meta ad callbacks.",
-      images: ["https://ayush.company/api/og?title=Real%20Estate%20AI%20Calling%20System%20for%20Builders%20in%20Gurgao...&category=Real%20Estate%20AI&badge=Sub-435ms%20Parity"],
+      images: ["https://ayush.company/og-real-estate.png"],
   },
 };
 

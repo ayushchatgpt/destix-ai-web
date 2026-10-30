@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "DestiX AI",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Book%20a%20Consultation%20with%20Ayush%20Meena&category=Autonomous%20Voice&badge=Enterprise%20Parity",
+        url: "https://ayush.company/og-image.png",
         width: 1200,
         height: 630,
         alt: "Book a Consultation with Ayush Meena",

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=How%20to%20Build%20an%20Inbound%20Hindi%20AI%20Voice%20Agent%20%282026%29&category=Intel%20%26%20Strategy&badge=2026%20Verified",
+        url: "https://ayush.company/og-intel.png",
         width: 1200,
         height: 630,
         alt: "How to Build an Inbound Hindi AI Voice Agent (2026)",

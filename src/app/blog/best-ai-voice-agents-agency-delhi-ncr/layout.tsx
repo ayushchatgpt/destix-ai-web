@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "article",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Best%20AI%20Voice%20Agent%20Agency%20in%20Delhi%20NCR%20%282026%20Guide%29&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        url: "https://ayush.company/og-delhi-ncr.png",
         width: 1200,
         height: 630,
         alt: "Best AI Voice Agent Agency in Delhi NCR (2026 Guide)",

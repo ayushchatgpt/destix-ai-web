@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
       images: [
       {
-        url: "https://ayush.company/api/og?title=Custom%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Fluent%20in%20Engli...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ",
+        url: "https://ayush.company/og-delhi-ncr.png",
         width: 1200,
         height: 630,
         alt: "Custom AI Voice Agents in Delhi NCR (Fluent in Engli...",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Custom AI Voice Agents in Delhi NCR | DestiX AI",
     description:
       "Enterprise autonomous voice agents engineered by Ayush Meena in New Delhi. Fluent English & Hinglish code-switching.",
-      images: ["https://ayush.company/api/og?title=Custom%20AI%20Voice%20Agents%20in%20Delhi%20NCR%20%28Fluent%20in%20Engli...&category=Delhi%20NCR%20AI&badge=Connaught%20Place%20HQ"],
+      images: ["https://ayush.company/og-delhi-ncr.png"],
   },
 };
 
