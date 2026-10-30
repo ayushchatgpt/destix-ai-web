@@ -70,6 +70,8 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Core Ecosystem
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
+              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">100+ AI Solutions Directory ★</Link></li>
+              <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Real Estate Automation Suite ★</Link></li>
               <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Agents</Link></li>
               <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">3D WebGL &amp; Digital Architecture</Link></li>
               <li><Link href="/operating-system" className="hover:text-[#F6EFE2] transition-colors">AI Operating System &amp; n8n</Link></li>
