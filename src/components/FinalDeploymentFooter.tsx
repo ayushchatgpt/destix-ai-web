@@ -202,9 +202,9 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
 
         {/* Massive Architectural Base Brandmark */}
         <div className="py-14 sm:py-20 text-center select-none overflow-hidden">
-          <div className="font-['Instrument_Serif'] text-6xl sm:text-9xl md:text-[140px] tracking-[0.18em] text-[#1E1C19] hover:text-[#282420] transition-colors uppercase whitespace-nowrap">
+          <h2 className="font-['Instrument_Serif'] text-6xl sm:text-9xl md:text-[140px] tracking-[0.18em] text-[#1E1C19] hover:text-[#282420] transition-colors uppercase whitespace-nowrap">
             DestiX AI
-          </div>
+          </h2>
         </div>
 
         {/* Status Strip */}

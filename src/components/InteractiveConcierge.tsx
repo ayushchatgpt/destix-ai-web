@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import {
   Sparkles,
   MessageSquare,
@@ -26,6 +27,11 @@ interface Message {
 }
 
 export function InteractiveConcierge() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/call") || pathname === "/connect") {
+    return null;
+  }
+
   const [isOpen, setIsOpen] = useState(false);
   const [hasPrompted, setHasPrompted] = useState(false);
   const [voiceMuted, setVoiceMuted] = useState(true);

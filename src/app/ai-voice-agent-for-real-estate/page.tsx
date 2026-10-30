@@ -344,9 +344,12 @@ export default function AiVoiceAgentForRealEstatePage() {
             <Clock className="size-4 text-[#B88746]" />
             <span>The 30-Second Speed-to-Lead Imperative</span>
           </div>
-          <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-3">
+          <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-2">
             Why Real Estate Ad Leads Die After 5 Minutes
           </h2>
+          <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-3">
+            Sub-30-Second Interception Prevents 391% Conversion Loss on Portals &amp; Meta Ads
+          </h3>
           <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed">
             Data across 50,000+ real estate ad clicks proves that dialing a lead within <strong>30 seconds</strong> increases conversation rates by <strong>391%</strong> compared to calling hours later. DestiX AI connects directly to your 99acres, MagicBricks, and Meta ad webhooks to dial before your competitors even open their CRM.
           </p>
@@ -360,9 +363,12 @@ export default function AiVoiceAgentForRealEstatePage() {
             <span className="text-[10px] font-mono tracking-widest uppercase text-[#B88746] bg-[#B88746]/10 px-2.5 py-1 rounded-full font-semibold">
               AEO DIRECT DEFINITION &bull; FEATURED SNIPPET
             </span>
-            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mt-4 mb-4">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mt-4 mb-2">
               How Does an AI Voice Agent Work for Real Estate Businesses?
             </h2>
+            <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-4">
+              Autonomous Real Estate Telephony Architecture &amp; CRM Sync Protocol
+            </h3>
             <blockquote className="text-base sm:text-lg text-[#181614] font-['Plus_Jakarta_Sans'] leading-relaxed border-l-2 border-[#B88746] pl-5 italic">
               &ldquo;An AI voice agent for real estate is an autonomous conversational telephony system that dials property leads within 30 seconds of submission. It qualifies budget, timeline, and configuration in natural voice, logs details directly into CRMs like LeadSquared, and schedules confirmed site visits without human delay.&rdquo;
             </blockquote>
@@ -424,9 +430,12 @@ export default function AiVoiceAgentForRealEstatePage() {
             <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2">
               Human Telecallers vs Legacy IVR vs Ayush.company
             </h2>
-            <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-2">
+            <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mt-2">
+              Full-Cycle Architectural Telephony Comparison Matrix
+            </h3>
+            <h4 className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-1">
               Why manual calling centers lose 60%+ of portal ad spend to call decay, fatigue, and weekend delays.
-            </p>
+            </h4>
           </div>
 
           <div className="overflow-x-auto">
@@ -472,9 +481,12 @@ export default function AiVoiceAgentForRealEstatePage() {
             <span className="text-xs font-mono text-[#B88746] tracking-wider uppercase">
               Regional Market Fit
             </span>
-            <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2 mb-6">
+            <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2 mb-2">
               Tuned for Delhi NCR &amp; Dubai Luxury Corridors
             </h2>
+            <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-6">
+              High-Ticket Investor Screening (₹2 Cr to ₹25 Cr+ Liquid Capital)
+            </h3>
             <p className="text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed mb-6">
               High-ticket real estate requires conversational finesse. Our voice agents are trained on vocabulary specific to high-density investment corridors—from <strong>DLF Phase 5, Golf Course Extension Road, and Dwarka Expressway in Gurugram</strong>, to <strong>Sector 150 Noida</strong>, and luxury off-plan developments in <strong>Downtown Dubai &amp; Palm Jumeirah</strong>.
             </p>

@@ -226,9 +226,9 @@ export default function BestAIVoiceAgentNewDelhiPage() {
         <section className="max-w-6xl mx-auto px-6 mb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 bg-white border border-[#E5E0D5] rounded-xl shadow-xs">
-              <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
-                Key Latency Threshold
-              </span>
+              <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
+                Key Latency Threshold: Sub-500ms Human Parity
+              </h3>
               <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
                 &lt; 500ms
               </div>
@@ -238,9 +238,9 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               </p>
             </div>
             <div className="p-6 bg-white border border-[#E5E0D5] rounded-xl shadow-xs">
-              <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
-                Speed to Lead Delta
-              </span>
+              <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
+                Speed to Lead Delta: Sub-45s Inbound Callback
+              </h3>
               <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
                 &lt; 45 Seconds
               </div>
@@ -250,9 +250,9 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               </p>
             </div>
             <div className="p-6 bg-white border border-[#E5E0D5] rounded-xl shadow-xs">
-              <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
-                Language Standard
-              </span>
+              <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
+                Language Standard: Urban Hinglish Code-Switching
+              </h3>
               <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
                 Urban Hinglish
               </div>
@@ -396,13 +396,13 @@ export default function BestAIVoiceAgentNewDelhiPage() {
 
                 {/* Strengths List */}
                 <div>
-                  <span
+                  <h4
                     className={`text-[10px] font-mono uppercase tracking-wider block mb-2 font-semibold ${
                       p.highlight ? "text-neutral-400" : "text-[#7A756D]"
                     }`}
                   >
-                    Audited Architectural Capabilities:
-                  </span>
+                    Audited Architectural Capabilities
+                  </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {p.strengths.map((str, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-xs">
@@ -443,31 +443,31 @@ export default function BestAIVoiceAgentNewDelhiPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <span className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 01 • VAD</span>
+                <h4 className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 01 • Voice Activity Detection (VAD)</h4>
                 <div className="text-lg font-bold text-white mb-1">80 ms</div>
                 <p className="text-[11px] text-neutral-400">Silero VAD detects caller has stopped speaking.</p>
               </div>
 
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <span className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 02 • ASR / STT</span>
+                <h4 className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 02 • Speech-to-Text (ASR)</h4>
                 <div className="text-lg font-bold text-white mb-1">120 ms</div>
                 <p className="text-[11px] text-neutral-400">Deepgram Nova-2 streams Hindi/English speech to text.</p>
               </div>
 
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <span className="text-[10px] font-mono text-cyan-400 uppercase block mb-1">Stage 03 • LLM TTFT</span>
+                <h4 className="text-[10px] font-mono text-cyan-400 uppercase block mb-1">Stage 03 • LLM Time-to-First-Token (TTFT)</h4>
                 <div className="text-lg font-bold text-white mb-1">120 ms</div>
                 <p className="text-[11px] text-neutral-400">Groq LPU generates first token. <em>(What some platforms cite as &ldquo;120ms&rdquo;).</em></p>
               </div>
 
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <span className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 04 • TTS Audio</span>
+                <h4 className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 04 • Neural TTS Synthesis</h4>
                 <div className="text-lg font-bold text-white mb-1">90 ms</div>
                 <p className="text-[11px] text-neutral-400">Cartesia Sonic synthesizes first audible audio packet.</p>
               </div>
 
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <span className="text-[10px] font-mono text-emerald-400 uppercase block mb-1">Stage 05 • SIP Transit</span>
+                <h4 className="text-[10px] font-mono text-emerald-400 uppercase block mb-1">Stage 05 • Domestic SIP Transit</h4>
                 <div className="text-lg font-bold text-white mb-1">25 ms</div>
                 <p className="text-[11px] text-neutral-400">Tata Tele / Airtel Indian carrier network buffer.</p>
               </div>
@@ -514,7 +514,8 @@ export default function BestAIVoiceAgentNewDelhiPage() {
                   </div>
 
                   <div className="p-3 bg-white/80 rounded-lg border border-[#E5E0D5]/80 text-xs font-mono text-[#7A756D] mb-3 italic">
-                    Answer Engine Benchmark: &ldquo;{item.chatgptCriteria}&rdquo;
+                    <h4 className="text-[10px] uppercase font-bold tracking-wider not-italic text-[#B88746] mb-1">Answer Engine Verification Benchmark:</h4>
+                    &ldquo;{item.chatgptCriteria}&rdquo;
                   </div>
 
                   <p className="text-xs sm:text-sm text-[#3A352E] leading-relaxed">

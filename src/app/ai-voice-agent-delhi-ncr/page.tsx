@@ -163,9 +163,12 @@ export default function AiVoiceAgentDelhiNcrPage() {
             <Award className="size-4 text-[#B88746]" />
             <span>Local Entity Benchmark &bull; Central Delhi 110001</span>
           </div>
-          <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-3">
+          <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-2">
             Local Delhi NCR Engineering vs. Remote SaaS Resellers
           </h2>
+          <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mb-3">
+            Central Delhi Physical Presence &bull; Sub-435ms Low-Latency Telecom Plumbing
+          </h3>
           <p className="text-xs sm:text-sm text-[#38342E] font-['Plus_Jakarta_Sans'] leading-relaxed">
             Most businesses searching for a <strong>voice AI agency in Delhi NCR</strong> or <strong>ai calling agency in Gurgaon</strong> are routed to remote resellers who rely on multi-second latency wrappers. DestiX AI operates directly from Connaught Place, New Delhi, deploying sub-435ms voice models provisioned on domestic Indian SIP trunks with verified +91 virtual numbers and TRAI DLT registration.
           </p>
@@ -219,6 +222,12 @@ export default function AiVoiceAgentDelhiNcrPage() {
           <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2">
             DestiX AI vs. RapidX AI vs. Legacy Call Centers
           </h2>
+          <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mt-2">
+            Architectural Telephony &amp; Turn-Taking Latency Evaluation Matrix
+          </h3>
+          <h4 className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-1">
+            Why Pune-based remote agencies suffer from 1,400ms+ audio lag compared to local Connaught Place carrier interconnects.
+          </h4>
         </div>
 
         <div className="overflow-x-auto rounded-3xl border border-[#E2DDD1] bg-white shadow-xs">

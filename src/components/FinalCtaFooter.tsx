@@ -182,9 +182,9 @@ export const FinalCtaFooter: React.FC<FinalCtaFooterProps> = ({ onOpenBooking })
 
         {/* Base Giant Typography */}
         <div className="mt-20 border-t border-white/10 pt-12 pb-6 text-center select-none overflow-hidden">
-          <div className="font-display text-[clamp(2.5rem,11.5vw,9.5rem)] font-bold tracking-[0.2em] text-white/[0.04] uppercase whitespace-nowrap leading-none transition-colors hover:text-cyan-400/[0.08]">
+          <h2 className="font-display text-[clamp(2.5rem,11.5vw,9.5rem)] font-bold tracking-[0.2em] text-white/[0.04] uppercase whitespace-nowrap leading-none transition-colors hover:text-cyan-400/[0.08]">
             D e s t i X A I
-          </div>
+          </h2>
         </div>
 
         {/* Bottom copyright row */}

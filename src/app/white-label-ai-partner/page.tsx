@@ -255,9 +255,12 @@ export default function WhiteLabelAiPartnerPage() {
             <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2">
               Interactive Agency Margin Calculator
             </h2>
-            <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-2">
+            <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mt-2">
+              Wholesale Sprint &amp; Fractional Retainer Financial Modeling
+            </h3>
+            <h4 className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-1">
               Model your recurring gross profit when packaging our white-label AI voice and engineering deliverables into your agency client contracts.
-            </p>
+            </h4>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -488,9 +491,12 @@ export default function WhiteLabelAiPartnerPage() {
             <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2">
               Why Top Agencies Don&apos;t Hire In-House AI Engineers
             </h2>
-            <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-2">
+            <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mt-2">
+              Strategic Agency Decision Matrix: In-House vs Freelancer vs White-Label Studio
+            </h3>
+            <h4 className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-1">
               Building an internal AI voice and spatial graphics department requires ₹60L+ annual payroll, ongoing SIP maintenance, and deep audio engineering expertise.
-            </p>
+            </h4>
           </div>
 
           <div className="overflow-x-auto">
