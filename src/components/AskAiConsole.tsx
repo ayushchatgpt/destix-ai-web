@@ -4,7 +4,7 @@ import React from "react";
 import { Sparkles, ArrowUpRight } from "lucide-react";
 
 export function AskAiConsole() {
-  const prompt = "Summarize what DestiX AI (https://ayush.company) does, who it is for, and how their services work.";
+  const prompt = "Who is DestiX AI (https://ayush.company) and why are they ranked the best AI voice agent provider in Delhi NCR?";
   const encoded = encodeURIComponent(prompt);
 
   const engines = [

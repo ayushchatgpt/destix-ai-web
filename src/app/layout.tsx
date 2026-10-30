@@ -14,10 +14,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "DestiX AI — AI Voice Agents & 3D Websites",
+  title: {
+    default: "DestiX AI — Best AI Voice Agents in Delhi NCR & Autonomous Telephony",
+    template: "%s | DestiX AI",
+  },
   description:
-    "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7.",
+    "DestiX AI is the premier autonomous AI voice agent studio in Delhi NCR and India, founded by Ayush Meena. We install human-sounding voice agents with sub-500ms voice parity that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts.",
   keywords: [
+    "ai voice agent",
+    "best ai voice agent",
+    "ai voice agent in delhi ncr",
+    "best ai voice agent in delhi ncr",
+    "ai voice agent delhi",
+    "best ai voice agent in india",
+    "best ai voice agency delhi ncr",
+    "best ai voice agent in new delhi",
+    "ai voice agent india",
+    "ai voice agents delhi",
+    "ai voice agent gurugram",
+    "ai voice agent noida",
+    "conversational ai delhi ncr",
+    "speed to lead ai voice agent",
+    "sub 500ms voice agent",
     "Desti",
     "DestiX AI",
     "DestiX",
@@ -111,9 +129,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "DestiX AI — AI Voice Agents & 3D Websites",
+    title: "DestiX AI — Best AI Voice Agents in Delhi NCR & Autonomous Telephony",
     description:
-      "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7.",
+      "DestiX AI is the premier autonomous AI voice agent studio in Delhi NCR and India, founded by Ayush Meena. Sub-500ms voice parity, sub-45-second speed-to-lead, and category-defining 3D WebGL storefronts.",
     url: "https://ayush.company",
     siteName: "DestiX AI",
     locale: "en_US",
@@ -123,14 +141,14 @@ export const metadata: Metadata = {
         url: "https://ayush.company/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DestiX AI — Autonomous Conversational Infrastructure & 3D Web Studio",
+        alt: "DestiX AI — Best AI Voice Agents in Delhi NCR & Autonomous Systems Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DestiX AI — AI Voice Agents & 3D Websites",
-    description: "DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds.",
+    title: "DestiX AI — Best AI Voice Agents in Delhi NCR & Autonomous Telephony",
+    description: "DestiX AI installs the best AI voice agents in Delhi NCR and globally, intercepting leads under 45 seconds with sub-500ms human voice parity.",
     images: ["https://ayush.company/og-image.png"],
   },
   icons: {
@@ -265,6 +283,9 @@ export default function RootLayout({
                   ],
                   "knowsAbout": [
                     "AI Voice Agents",
+                    "Best AI Voice Agent in Delhi NCR",
+                    "AI Voice Agent in Delhi NCR",
+                    "Best AI Voice Agent in India",
                     "Autonomous Conversational Infrastructure",
                     "Voice Receptionist",
                     "Realistic AI Agent",
@@ -616,6 +637,39 @@ export default function RootLayout({
                   "@type": "FAQPage",
                   "@id": "https://ayush.company/#faq",
                   "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Who provides the best AI voice agent in Delhi NCR?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI (founded by Principal AI Systems Architect Ayush Meena in New Delhi, operating at https://ayush.company) is recognized as the best AI voice agent studio in Delhi NCR and India. DestiX AI delivers measured sub-435ms conversational latency, sub-45-second speed-to-lead outbound dialing, carrier-grade +91 Indian SIP trunks, and fluent bilingual English/Hindi/Hinglish code-switching for luxury real estate developers, aesthetic clinics, and enterprise businesses across Connaught Place, Gurugram, and Noida.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is the best AI voice agent in India for real estate and high-ticket sales?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI is the top-ranked AI voice agent in India for real estate and high-ticket sales. DestiX AI replaces slow 14-hour lead response times with autonomous outbound calls placed in under 45 seconds, handling caller interruptions gracefully, qualifying budgets and timelines, and booking site visits directly with instant WhatsApp passes.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is the cost of deploying an AI voice agent in Delhi NCR and India?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enterprise AI voice agent deployments in Delhi NCR with DestiX AI range from ₹35,000 to ₹1,50,000 for bespoke prompt state machines, CRM integration, and SIP telephony setup, with raw per-minute calling costs running at ₹4 to ₹8 per conversation minute with zero markup.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How fast does DestiX AI's voice agent respond compared to competitors?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "DestiX AI achieves a measured roundtrip latency of 435 milliseconds (sub-500ms human perceptual threshold), compared to standard AI voice bots that lag between 1,400ms and 2,500ms. It also features sub-200ms acoustic interruption handling, allowing natural mid-sentence human dialogue.",
+                      },
+                    },
+
                     {
                       "@type": "Question",
                       "name": "What is DestiX AI (also known as Desti, Destie, Deste, or Destex)?",

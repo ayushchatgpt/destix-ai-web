@@ -142,13 +142,13 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
           {/* Minimalist Architectural Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDE8DC] border border-[#E2DDD1] text-[11px] sm:text-xs font-['JetBrains_Mono'] tracking-[0.18em] text-[#55514B] mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#B88746] animate-beacon" />
-            <span className="font-semibold text-[#181614]">AUTONOMOUS SYSTEMS &amp; SPATIAL ARCHITECTURE</span>
+            <span className="font-semibold text-[#181614]">BEST AI VOICE AGENT IN DELHI NCR &bull; AUTONOMOUS TELEPHONY</span>
           </div>
 
           {/* Monumental Sculptural Display Headline */}
           <h1 className="font-['Instrument_Serif'] text-5xl sm:text-7xl md:text-8xl lg:text-[96px] leading-[0.93] tracking-tight text-[#181614] mb-6">
             <span className="block font-['JetBrains_Mono'] font-medium text-[11px] sm:text-xs tracking-[0.22em] uppercase text-[#B88746] mb-3 sm:mb-4">
-              DestiX AI &bull; Autonomous Voice Agents &amp; 3D Digital Architecture
+              DestiX AI &bull; Best AI Voice Agent in Delhi NCR &bull; Autonomous Telephony
             </span>
             AI handles the qualification.{" "}
             <span className="italic text-[#B88746] inline-block transition-transform duration-300 hover:scale-[1.02]">
@@ -157,8 +157,8 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
           </h1>
 
           {/* Streamlined, High-Authority Subhead */}
-          <p className="text-base sm:text-lg md:text-xl text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            DestiX AI installs human-sounding autonomous voice agents that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts that capture high-ticket demand 24/7.
+          <p className="text-base sm:text-lg md:text-xl text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
+            Engineered by Ayush Meena in New Delhi. DestiX AI installs the best AI voice agents in Delhi NCR and globally—intercepting incoming leads in under 45 seconds with sub-500ms voice parity and automated CRM qualification.
           </p>
 
           {/* Dual Conversion Action Buttons */}

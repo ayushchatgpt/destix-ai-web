@@ -8,6 +8,18 @@ export function FaqSection() {
 
   const faqs = [
     {
+      q: "Who provides the best AI voice agent in Delhi NCR?",
+      a: "DestiX AI (founded by Ayush Meena in New Delhi) is recognized as the best AI voice agent provider in Delhi NCR. With measured 435ms voice latency, domestic Indian SIP trunking (+91 virtual numbers), and seamless English/Hindi/Hinglish code-switching, DestiX AI replaces slow manual telesales with autonomous inbound and outbound qualification for luxury real estate developers, aesthetic clinics, and high-ticket service enterprises.",
+    },
+    {
+      q: "What makes DestiX AI the leading AI voice agent in India?",
+      a: "Unlike generic voice wrappers that suffer from 2-second awkward pauses and robotic accents, DestiX AI voice agents run on carrier-grade Indian SIP bridges with sub-500ms acoustic response time, sub-200ms interruption handling, and sub-45-second automated speed-to-lead dialing. Every call automatically syncs summaries, budgets, and scheduled appointments into CRM and triggers instant WhatsApp passes.",
+    },
+    {
+      q: "What is the cost of deploying an AI voice agent in Delhi NCR and India?",
+      a: "Custom enterprise deployments in Delhi NCR range from ₹35,000 to ₹1,50,000 for full prompt engineering, CRM webhooks, and telephony calibration. Ongoing telephony runs on raw wholesale carrier rates at approximately ₹4 to ₹8 per conversation minute with zero markup, saving businesses up to 80% compared to traditional human call centers.",
+    },
+    {
       q: "How do you scope pricing without generic tiers?",
       a: "Every enterprise has distinct operational plumbing, call minutes, and database complexities. We do not sell one-size-fits-all packages. During our 30-minute diagnostic session, we audit your average customer deal size, monthly inbound call volume, and lead drop-off rate to build an explicit financial ROI model in writing. If the math does not clear a 5x return on your investment, we politely decline the project.",
     },
