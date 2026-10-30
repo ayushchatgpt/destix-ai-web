@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.99,
     },
     {
+      url: `${baseUrl}/white-label-ai-partner`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/solutions/real-estate-ai-calling-gurgaon-noida`,
       lastModified: now,
       changeFrequency: "weekly" as const,

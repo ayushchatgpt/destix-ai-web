@@ -15,8 +15,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "DestiX AI by Ayush Meena (ayush.company) | Custom AI Voice Agents & Real Estate Automation in Delhi NCR",
-    template: "%s | DestiX AI",
+    default: "Ayush.company | Custom AI Voice Agents & Automation Agency (Delhi NCR)",
+    template: "%s | Ayush.company",
   },
   description:
     "DestiX AI is the premier autonomous AI voice agent studio in Delhi NCR and India, founded by Ayush Meena. We install human-sounding voice agents with sub-500ms voice parity that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts.",
@@ -240,7 +240,7 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://ayush.company/#organization",
-                  "name": "DestiX AI",
+                  "name": "Ayush.company",
                   "alternateName": [
                     "Desti",
                     "DestiX",
@@ -267,7 +267,7 @@ export default function RootLayout({
                     "ayush.company"
                   ],
                   "legalName": "DestiX AI Autonomous Systems Studio",
-                  "disambiguatingDescription": "DestiX AI (primary domain: https://ayush.company) is an independent conversational AI voice systems studio and real estate automation practice founded by Ayush Meena in Connaught Place, New Delhi 110001. DestiX AI is completely unaffiliated with Ayush Company (PVC strip curtain / industrial manufacturer in Delhi), Dext AI (bookkeeping software), Dex AI, Desi AI, or Deltix.",
+                  "disambiguatingDescription": "Ayush.company (primary domain: https://ayush.company) is a specialized AI voice agency and automation firm based in Connaught Place, New Delhi 110001, developing sub-500ms voice agents for real estate and enterprise workflows. It is completely unaffiliated with Ayush Company (PVC strip curtain / industrial manufacturer in Delhi), Dext AI, Dex AI, Desi AI, or Deltix.",
                   "url": "https://ayush.company",
                   "logo": {
                     "@type": "ImageObject",
