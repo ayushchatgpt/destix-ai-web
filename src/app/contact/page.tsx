@@ -31,15 +31,43 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    confetti({
-      particleCount: 70,
-      spread: 60,
-      origin: { y: 0.6 },
-      colors: ["#B88746", "#C5A059", "#181614", "#F6F4EE"],
-    });
+    setIsSubmitting(true);
+
+    try {
+      await fetch("/api/diagnostic-booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: "Via Contact Form",
+          selectedService: formData.service,
+          selectedWindow: formData.volume,
+          notes: formData.message,
+          telemetry: {
+            currentSection: "/contact",
+            referrer: typeof document !== "undefined" ? document.referrer || "Direct" : "Direct",
+            userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Unknown",
+          },
+        }),
+      });
+    } catch (err) {
+      console.error("Contact intake dispatch error:", err);
+    } finally {
+      setIsSubmitting(false);
+      setSubmitted(true);
+      confetti({
+        particleCount: 75,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ["#B88746", "#C5A059", "#181614", "#F6F4EE"],
+      });
+    }
   };
 
   return (
@@ -101,10 +129,29 @@ export default function ContactPage() {
                 <p className="text-sm font-['Plus_Jakarta_Sans'] text-[#55514B] max-w-md mx-auto leading-relaxed mb-6">
                   Thank you, <strong className="text-[#181614]">{formData.name}</strong>. Ayush Meena will personally analyze your operational profile and respond to <strong className="text-[#B88746]">{formData.email}</strong> within 4 business hours.
                 </p>
+                <div className="space-y-3 max-w-sm mx-auto mb-6">
+                  <a
+                    href={`mailto:ayushmeenadestixai@gmail.com?subject=${encodeURIComponent(`[Operational Dossier] ${formData.name} - ${formData.company}`)}&body=${encodeURIComponent(`Hi Ayush,\n\nI submitted an inquiry via ayush.company:\n\nName: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nService: ${formData.service}\nVolume: ${formData.volume}\nNotes: ${formData.message}`)}`}
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#181614] hover:bg-[#B88746] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
+                  >
+                    <Mail className="size-3.5" />
+                    <span>Send Email Notification to Ayush</span>
+                  </a>
+
+                  <a
+                    href={`https://wa.me/?text=${encodeURIComponent(`Hi Ayush, I just submitted an inquiry on ayush.company:\n\n• Name: ${formData.name}\n• Company: ${formData.company}\n• Service: ${formData.service}\n• Message: ${formData.message}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5C] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
+                  >
+                    <span>Ping Ayush on WhatsApp for Rapid Response</span>
+                  </a>
+                </div>
+
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <button
                     onClick={() => setIsBookingOpen(true)}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#B88746] text-[#F6F4EE] text-xs font-semibold"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#B88746] text-[#F6F4EE] text-xs font-semibold hover:bg-[#A37438]"
                   >
                     <span>Add 30-min Call to Calendar</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

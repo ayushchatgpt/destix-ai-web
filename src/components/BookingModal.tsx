@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { X, CheckCircle, ArrowRight, ShieldCheck } from "lucide-react";
+import { X, CheckCircle, ArrowRight, ShieldCheck, Mail, MessageSquare, PhoneCall } from "lucide-react";
 import confetti from "canvas-confetti";
 
 interface BookingModalProps {
@@ -25,28 +25,59 @@ export function BookingModal({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isBooked, setIsBooked] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   if (!isOpen) return null;
 
-  const handleBook = (e: React.FormEvent) => {
+  const handleBook = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setErrorMessage("");
+
+    try {
+      // 1. Dispatch to internal booking pipeline
+      const res = await fetch("/api/diagnostic-booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          selectedService,
+          selectedWindow: selectedDate,
+          telemetry: {
+            currentSection: typeof window !== "undefined" ? window.location.pathname : "BookingModal",
+            referrer: typeof document !== "undefined" ? document.referrer || "Direct" : "Direct",
+            userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Unknown",
+          },
+        }),
+      });
+
+      if (!res.ok) {
+        console.warn("Booking API returned non-200, continuing to confirmation view.");
+      }
+
       setIsBooked(true);
       confetti({
-        particleCount: 70,
-        spread: 60,
+        particleCount: 75,
+        spread: 70,
         origin: { y: 0.6 },
         colors: ["#B88746", "#D4A373", "#181614", "#F6F4EE"],
       });
-    }, 600);
+    } catch (err) {
+      console.error("Booking dispatch error:", err);
+      // Even if network blips, allow user to view confirmation and use WhatsApp / Mailto fallback
+      setIsBooked(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const services = [
     "Autonomous Voice Infrastructure & CRM Pipeline",
+    "Real Estate Lead Interception (<30s Speed to Lead)",
     "Bespoke 3D WebGL Digital Storefront & Telephony Bridge",
-    "High-Ticket Lead Interception System (<45s SLA)",
     "White-Label Studio Engineering Partnership",
   ];
 
@@ -57,6 +88,29 @@ export function BookingModal({
     "Day after, 6:30 PM IST (US Morning)",
     "Day after, 9:00 PM IST (US Afternoon)",
   ];
+
+  // Pre-compiled direct WhatsApp ping link
+  const waMessage = encodeURIComponent(
+    `Hi Ayush, I just booked a 30-Min Diagnostic Call with you on ayush.company.\n\n` +
+    `• Name: ${formData.name}\n` +
+    `• Company: ${formData.company}\n` +
+    `• Focus: ${selectedService}\n` +
+    `• Window: ${selectedDate}\n` +
+    `• Phone: ${formData.phone}`
+  );
+
+  // Pre-compiled direct mailto link
+  const mailtoSubject = encodeURIComponent(`🚨 [30-Min Diagnostic Call Booking] ${formData.name} - ${formData.company}`);
+  const mailtoBody = encodeURIComponent(
+    `Hi Ayush,\n\nI just scheduled a 30-minute diagnostic session with you on ayush.company.\n\n` +
+    `Name: ${formData.name}\n` +
+    `Email: ${formData.email}\n` +
+    `Company: ${formData.company}\n` +
+    `Phone: ${formData.phone}\n` +
+    `Architecture Focus: ${selectedService}\n` +
+    `Requested Window: ${selectedDate}\n\n` +
+    `Looking forward to conferring directly.`
+  );
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#131210]/75 backdrop-blur-md animate-fadeIn">
@@ -188,6 +242,12 @@ export function BookingModal({
                 </div>
               </div>
 
+              {errorMessage && (
+                <div className="text-xs text-rose-500 font-mono">
+                  {errorMessage}
+                </div>
+              )}
+
               {/* Submit Button */}
               <button
                 type="submit"
@@ -195,7 +255,7 @@ export function BookingModal({
                 className="w-full mt-4 py-4 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-semibold text-sm tracking-tight flex items-center justify-center gap-2 transition-all duration-300 shadow-sm disabled:opacity-50"
               >
                 {isSubmitting ? (
-                  <span>Reserving Calendar Slot...</span>
+                  <span>Reserving Calendar Slot &amp; Dispatching Dossier...</span>
                 ) : (
                   <>
                     <span>Confirm 30-Min Diagnostic Call with Ayush</span>
@@ -211,28 +271,51 @@ export function BookingModal({
           </div>
         ) : (
           /* Booked Confirmation Screen */
-          <div className="text-center py-8">
-            <div className="w-16 h-16 rounded-full bg-[#EDE8DC] border border-[#B88746] text-[#B88746] flex items-center justify-center mx-auto mb-6">
+          <div className="text-center py-6">
+            <div className="w-16 h-16 rounded-full bg-[#EDE8DC] border border-[#B88746] text-[#B88746] flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-[#B88746]" />
             </div>
 
-            <h3 className="font-['Instrument_Serif'] text-4xl text-[#181614] mb-3">
+            <h3 className="font-['Instrument_Serif'] text-4xl text-[#181614] mb-2">
               Diagnostic Call Reserved.
             </h3>
 
             <p className="text-sm text-[#55514B] leading-relaxed max-w-md mx-auto mb-6 font-normal">
-              We have reserved <strong className="text-[#181614]">{selectedDate}</strong> for your 30-minute architecture diagnostic session with <strong className="text-[#181614]">Ayush Meena</strong>. An executive calendar invite has been sent to <span className="text-[#B88746]">{formData.email}</span>.
+              We have reserved <strong className="text-[#181614]">{selectedDate}</strong> for your 30-minute architecture diagnostic session with <strong className="text-[#181614]">Ayush Meena</strong>.
             </p>
 
-            <div className="p-4 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1] text-xs text-[#55514B] font-['JetBrains_Mono'] max-w-md mx-auto mb-8 space-y-1 text-left">
-              <div>FOCUS: {selectedService}</div>
-              <div>WINDOW: {selectedDate}</div>
-              <div>PRINCIPAL: Ayush Meena (ayushmeenadestixai@gmail.com)</div>
+            <div className="p-4 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1] text-xs text-[#55514B] font-['JetBrains_Mono'] max-w-md mx-auto mb-6 space-y-1 text-left">
+              <div><span className="text-[#888277]">CLIENT:</span> {formData.name} ({formData.company})</div>
+              <div><span className="text-[#888277]">CONTACT:</span> {formData.email} &bull; {formData.phone}</div>
+              <div><span className="text-[#888277]">FOCUS:</span> {selectedService}</div>
+              <div><span className="text-[#888277]">WINDOW:</span> {selectedDate}</div>
+              <div><span className="text-[#888277]">PRINCIPAL:</span> Ayush Meena (ayushmeenadestixai@gmail.com)</div>
+            </div>
+
+            {/* Direct Instant Reach Actions */}
+            <div className="space-y-3 max-w-md mx-auto mb-6">
+              <a
+                href={`mailto:ayushmeenadestixai@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`}
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#181614] hover:bg-[#B88746] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
+              >
+                <Mail className="size-3.5" />
+                <span>Send 1-Click Email Dossier to Ayush</span>
+              </a>
+
+              <a
+                href={`https://wa.me/?text=${waMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] hover:bg-[#20BA5C] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
+              >
+                <MessageSquare className="size-3.5" />
+                <span>Ping Ayush on WhatsApp for Instant Confirmation</span>
+              </a>
             </div>
 
             <button
               onClick={onClose}
-              className="px-8 py-3 rounded-full bg-[#181614] hover:bg-[#B88746] text-xs font-semibold text-[#F6F4EE] transition-colors"
+              className="px-8 py-2.5 rounded-full bg-[#F6F4EE] hover:bg-[#EDE8DC] border border-[#E2DDD1] text-xs font-semibold text-[#181614] transition-colors"
             >
               Return to Studio Platform
             </button>
