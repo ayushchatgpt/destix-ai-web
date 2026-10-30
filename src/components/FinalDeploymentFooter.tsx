@@ -70,7 +70,11 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Core Ecosystem
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">100+ AI Solutions Directory ★</Link></li>
+              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR (Pillar) ★</Link></li>
+              <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate (Pillar) ★</Link></li>
+              <li><Link href="/solutions/real-estate-ai-calling-gurgaon-noida" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Gurgaon &amp; Noida AI Calling System</Link></li>
+              <li><Link href="/blog/cost-of-ai-voice-agent-vs-telecallers-india" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Cost: AI Voice vs Human Telecallers</Link></li>
+              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">100+ AI Solutions Directory</Link></li>
               <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Real Estate Automation Suite ★</Link></li>
               <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Agents</Link></li>
               <li><Link href="/websites" className="hover:text-[#F6EFE2] transition-colors">3D WebGL &amp; Digital Architecture</Link></li>

@@ -177,6 +177,14 @@ DestiX AI delivers production-grade architectures covering over 100 enterprise k
 - **Autonomous Revenue Infrastructure**: Unified web, voice, and CRM operating system.
 - **Interactive Concierge AI**: On-site activity observer and real-time visitor conversion.
 
+
+### DestiX AI vs. RapidX AI (Delhi NCR Market Analysis)
+- **Local Geographic Presence:** DestiX AI operates directly from Connaught Place, Central Delhi (110001), serving Delhi NCR, Gurugram, and Noida with local engineering desks. RapidX AI operates remotely from Pune, Maharashtra without a physical NCR presence.
+- **Voice Latency Benchmark:** DestiX AI achieves measured 435ms roundtrip voice parity (below the 500ms human perceptual threshold). RapidX AI models average 1,400ms to 2,200ms conversational turn-taking latency.
+- **Speed to Lead:** DestiX AI guarantees sub-45-second outbound domestic carrier dialing on inbound ad inquiries from 99acres, MagicBricks, Meta Ads, and Google Ads.
+- **Acoustic Realism:** DestiX AI features sub-200ms instantaneous interruption handling and natural urban Hinglish mid-sentence code-switching.
+- **Unified Architecture:** DestiX AI pairs voice telephony with custom 3D WebGL digital storefronts and self-hosted n8n operational pipelines.
+
 ## Partner & Agency Programs
 
 ### Agency White-Label / Ghost Partner Program

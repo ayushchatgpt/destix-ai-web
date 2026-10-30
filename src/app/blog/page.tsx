@@ -12,6 +12,15 @@ export default function BlogIndexPage() {
 
   const posts = [
     {
+      slug: "cost-of-ai-voice-agent-vs-telecallers-india",
+      category: "FINANCIAL ROI • 2026",
+      date: "October 2026",
+      readTime: "7 min read",
+      title: "Cost of AI Voice Agent vs. Human Telecallers in India (2026 Financial Model)",
+      desc: "Mathematical breakdown: How 1 AI voice agent replaces 5 human telecallers at 83% lower cost (₹35k vs ₹2.15L/mo) with sub-45s speed to lead and zero turnover.",
+      author: "Ayush Meena",
+    },
+    {
       slug: "best-ai-voice-agent-in-new-delhi",
       category: "DELHI NCR BENCHMARK • 2026",
       date: "October 2026",

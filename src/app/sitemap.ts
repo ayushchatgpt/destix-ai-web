@@ -30,6 +30,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.98,
     },
     {
+      url: `${baseUrl}/ai-voice-agent-delhi-ncr`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/ai-voice-agent-for-real-estate`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/solutions/real-estate-ai-calling-gurgaon-noida`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.97,
+    },
+    {
+      url: `${baseUrl}/blog/cost-of-ai-voice-agent-vs-telecallers-india`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.96,
+    },
+    {
       url: `${baseUrl}/ai-agency-delhi`,
       lastModified: now,
       changeFrequency: "weekly" as const,
