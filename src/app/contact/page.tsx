@@ -38,7 +38,23 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      await fetch("/api/diagnostic-booking", {
+      const p1 = fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "309b2462-e5a9-417a-b2e0-6f7402aab022",
+          subject: `🚨 [CONTACT DOSSIER] ${formData.name} (${formData.company})`,
+          from_name: "Ayush.company Contact Form",
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          service: formData.service,
+          volume: formData.volume,
+          message: formData.message,
+        }),
+      }).catch((e) => console.warn("Contact Web3Forms warning:", e));
+
+      const p2 = fetch("/api/diagnostic-booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -55,7 +71,9 @@ export default function ContactPage() {
             userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Unknown",
           },
         }),
-      });
+      }).catch((e) => console.warn("Contact API warning:", e));
+
+      await Promise.allSettled([p1, p2]);
     } catch (err) {
       console.error("Contact intake dispatch error:", err);
     } finally {

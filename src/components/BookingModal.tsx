@@ -35,8 +35,26 @@ export function BookingModal({
     setErrorMessage("");
 
     try {
-      // 1. Dispatch to internal booking pipeline
-      const res = await fetch("/api/diagnostic-booking", {
+      // 1. Direct browser dispatch to Web3Forms (instant inbox delivery)
+      const web3Promise = fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "309b2462-e5a9-417a-b2e0-6f7402aab022",
+          subject: `🚨 [NEW 30-MIN DIAGNOSTIC] ${formData.name} (${formData.company})`,
+          from_name: "Ayush.company Concierge",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: selectedService,
+          window: selectedDate,
+          message: `Client ${formData.name} (${formData.company}) booked a 30-minute diagnostic session for ${selectedDate}. Contact: ${formData.phone} / ${formData.email}. Focus: ${selectedService}.`,
+        }),
+      }).catch((e) => console.warn("Client Web3Forms warning:", e));
+
+      // 2. Dispatch to internal serverless API route
+      const apiPromise = fetch("/api/diagnostic-booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -52,11 +70,10 @@ export function BookingModal({
             userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Unknown",
           },
         }),
-      });
+      }).catch((e) => console.warn("Server API warning:", e));
 
-      if (!res.ok) {
-        console.warn("Booking API returned non-200, continuing to confirmation view.");
-      }
+      // Await both dispatches
+      await Promise.allSettled([web3Promise, apiPromise]);
 
       setIsBooked(true);
       confetti({

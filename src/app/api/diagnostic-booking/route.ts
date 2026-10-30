@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       },
     };
 
-    // 1. Prominent Console Alert in Vercel Logs
+    // 1. Prominent Console Alert in Vercel Production Logs
     console.log("=================================================");
     console.log("🚨 [NEW 30-MIN DIAGNOSTIC CALL BOOKING FOR AYUSH MEENA]");
     console.log(`👤 Name:     ${bookingReport.lead.name}`);
@@ -42,7 +42,58 @@ export async function POST(request: Request) {
 
     const promises: Promise<unknown>[] = [];
 
-    // 2. Generic Webhook (n8n, Make, Custom Webhook)
+    // 2. Direct Web3Forms Inbox Email Dispatch to ayushmeenadestixai@gmail.com
+    const web3AccessKey = process.env.WEB3FORMS_ACCESS_KEY || "309b2462-e5a9-417a-b2e0-6f7402aab022";
+    if (web3AccessKey) {
+      const emailContent = `
+🚨 NEW 30-MIN ARCHITECTURE DIAGNOSTIC CALL BOOKED
+
+• Client Name: ${bookingReport.lead.name}
+• Direct Phone: ${bookingReport.lead.phone}
+• Work Email: ${bookingReport.lead.email}
+• Company / Domain: ${bookingReport.lead.company}
+• Selected Service: ${bookingReport.lead.service}
+• Requested Window: ${bookingReport.lead.selectedWindow}
+• Notes / Profile: ${bookingReport.lead.notes || "None"}
+
+Booking Time (IST): ${bookingReport.istTime}
+Source Page: ${bookingReport.telemetry.currentSection}
+Referrer: ${bookingReport.telemetry.referrer}
+
+---
+Action: Call or WhatsApp them within 45 seconds to prove speed-to-lead parity!
+      `.trim();
+
+      promises.push(
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36",
+            Origin: "https://ayush.company",
+            Referer: "https://ayush.company/",
+          },
+          body: JSON.stringify({
+            access_key: web3AccessKey,
+            subject: `🚨 [NEW 30-MIN DIAGNOSTIC] ${bookingReport.lead.name} (${bookingReport.lead.company})`,
+            from_name: "Ayush.company Concierge",
+            name: bookingReport.lead.name,
+            email: bookingReport.lead.email,
+            phone: bookingReport.lead.phone,
+            company: bookingReport.lead.company,
+            service: bookingReport.lead.service,
+            window: bookingReport.lead.selectedWindow,
+            message: emailContent,
+          }),
+        })
+          .then((r) => r.json())
+          .then((data) => console.log("Web3Forms Email Dispatch Status:", data))
+          .catch((err) => console.error("Error dispatching to Web3Forms:", err))
+      );
+    }
+
+    // 3. Generic Webhook (n8n, Make, Custom Webhook)
     const webhookUrl = process.env.LEAD_WEBHOOK_URL || process.env.N8N_LEAD_WEBHOOK_URL;
     if (webhookUrl) {
       promises.push(
@@ -54,7 +105,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Discord Webhook
+    // 4. Discord Webhook
     const discordWebhook = process.env.DISCORD_WEBHOOK_URL;
     if (discordWebhook) {
       const discordPayload = {
@@ -88,23 +139,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // 4. Slack Webhook
-    const slackWebhook = process.env.SLACK_WEBHOOK_URL;
-    if (slackWebhook) {
-      const slackPayload = {
-        text: `🚨 *New 30-Min Diagnostic Booking with Ayush Meena!*\n*Name:* ${bookingReport.lead.name}\n*Email:* ${bookingReport.lead.email}\n*Phone:* ${bookingReport.lead.phone}\n*Company:* ${bookingReport.lead.company}\n*Window:* ${bookingReport.lead.selectedWindow}\n*Service:* ${bookingReport.lead.service}\n*Time:* ${bookingReport.istTime}`,
-      };
-
-      promises.push(
-        fetch(slackWebhook, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(slackPayload),
-        }).catch((err) => console.error("Error dispatching to SLACK_WEBHOOK_URL:", err))
-      );
-    }
-
-    // 5. Telegram Bot (if configured)
+    // 5. Telegram Bot
     const tgToken = process.env.TELEGRAM_BOT_TOKEN;
     const tgChatId = process.env.TELEGRAM_CHAT_ID;
     if (tgToken && tgChatId) {
@@ -151,17 +186,17 @@ export async function POST(request: Request) {
       );
     }
 
-    // Wait for all non-blocking integrations with 2.5s timeout safety
+    // Await all dispatches with safety timeout
     if (promises.length > 0) {
       await Promise.race([
         Promise.allSettled(promises),
-        new Promise((resolve) => setTimeout(resolve, 2500)),
+        new Promise((resolve) => setTimeout(resolve, 3000)),
       ]);
     }
 
     return NextResponse.json({
       success: true,
-      message: "Diagnostic booking confirmed and dispatched to principal.",
+      message: "Diagnostic booking confirmed and dispatched directly to Ayush Meena inbox.",
       booking: bookingReport,
     });
   } catch (error: unknown) {
