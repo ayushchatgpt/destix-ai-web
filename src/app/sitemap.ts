@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.98,
     },
     {
+      url: `${baseUrl}/dubai`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/ai-agency-delhi`,
       lastModified: now,
       changeFrequency: "weekly" as const,

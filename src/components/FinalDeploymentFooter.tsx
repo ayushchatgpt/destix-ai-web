@@ -156,10 +156,16 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <span className="text-[10px] text-[#6E675E] block mt-1">Delhi NCR Speed to Lead</span>
             </div>
             <div>
-              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
-                Dubai Real Estate Voice Agents
+              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Dubai AI Studio &bull; Real Estate Telephony ★
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Luxury Broker Qualification</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
+            </div>
+            <div>
+              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium">
+                AI Voice Agents for Dubai Real Estate
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">ACP Dubai &bull; Off-Plan Screening</span>
             </div>
             <div>
               <Link href="/locations" className="hover:text-[#F6EFE2] transition-colors block font-medium">
