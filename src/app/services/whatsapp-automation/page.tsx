@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   MessageSquare,
   PhoneCall,
@@ -78,7 +78,7 @@ export default function WhatsAppAutomationPage() {
             Official Meta WhatsApp Business Cloud API Integration
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
             Voice AI + WhatsApp Automation:{" "}
             <span className="italic font-normal text-[#7A756D]">
               Sub-5-Second Post-Call Conversion Pipelines
@@ -116,7 +116,7 @@ export default function WhatsAppAutomationPage() {
             <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
               Unified Conversion Plumbing
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
               How the Voice-to-WhatsApp Funnel Converts at 38%
             </h2>
             <p className="text-sm text-[#5A554E] max-w-2xl">
@@ -141,7 +141,7 @@ export default function WhatsAppAutomationPage() {
                       <Icon className="size-4 text-[#B88746]" />
                     </div>
                   </div>
-                  <h3 className="font-display text-xl font-medium text-[#131210] mb-2">
+                  <h3 className="font-['Instrument_Serif'] text-xl font-medium text-[#131210] mb-2">
                     {w.title}
                   </h3>
                   <p className="text-xs text-[#5A554E] leading-relaxed">{w.desc}</p>
@@ -154,7 +154,7 @@ export default function WhatsAppAutomationPage() {
         {/* Technical Capabilities Matrix */}
         <section className="max-w-6xl mx-auto px-6 mb-24">
           <div className="p-8 sm:p-12 bg-white border border-[#E5E0D5] rounded-3xl shadow-sm">
-            <h2 className="font-display text-2xl sm:text-3xl font-medium text-[#131210] mb-6">
+            <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl font-medium text-[#131210] mb-6">
               Official WhatsApp API Infrastructure Highlights
             </h2>
 
@@ -203,7 +203,7 @@ export default function WhatsAppAutomationPage() {
                 Turnkey Voice + Messaging Integration
               </span>
 
-              <h2 className="mt-4 font-display text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
+              <h2 className="mt-4 font-['Instrument_Serif'] text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
                 Connect Voice AI with WhatsApp Automation
               </h2>
 

@@ -133,10 +133,10 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
               // Deployed Blueprints
             </span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white">
+            <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-5xl font-bold tracking-tight text-white">
               Voice agents engineered for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
                 real phone operations.
@@ -157,7 +157,7 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
                 className={`rounded-full px-4 py-2 text-xs font-mono uppercase tracking-wider transition-all ${
                   activeCategory === c.id
                     ? "bg-cyan-500 text-black font-bold shadow-[0_0_15px_rgba(6,182,212,0.4)]"
-                    : "border border-white/10 bg-white/5 text-slate-300 hover:border-cyan-500/40 hover:text-white"
+                    : "border border-white/10 bg-white/5 text-[#55514B] hover:border-[#B88746]/40 hover:text-white"
                 }`}
               >
                 {c.label}
@@ -177,15 +177,15 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <div className="flex size-11 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                    <div className="flex size-11 items-center justify-center rounded-xl bg-cyan-500/10 border border-[#B88746]/20 text-[#B88746]">
                       <Icon className="size-5" />
                     </div>
-                    <span className="rounded-full bg-cyan-950/60 border border-cyan-500/30 px-3 py-1 font-mono text-[10px] font-semibold tracking-wider uppercase text-cyan-300">
+                    <span className="rounded-full bg-[#EDE8DC]/60 border border-[#B88746]/30 px-3 py-1 font-mono text-[10px] font-semibold tracking-wider uppercase text-[#B88746]">
                       {item.badge}
                     </span>
                   </div>
 
-                  <h3 className="mt-6 font-display text-2xl font-bold text-white">
+                  <h3 className="mt-6 font-['Instrument_Serif'] text-2xl font-bold text-white">
                     {item.title}
                   </h3>
                   <div className="mt-1 text-xs text-slate-400 font-light">
@@ -193,7 +193,7 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
                   </div>
 
                   <div className="mt-5 rounded-xl bg-[#08090C] p-4 border border-white/5">
-                    <div className="font-display text-2xl text-cyan-400 font-bold">
+                    <div className="font-['Instrument_Serif'] text-2xl text-[#B88746] font-bold">
                       {item.metric}
                     </div>
                     <div className="text-[11px] font-mono text-slate-400 mt-0.5">
@@ -203,21 +203,21 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
 
                   <div className="mt-6 space-y-3 text-xs">
                     <div>
-                      <span className="font-mono text-[10px] uppercase tracking-wider text-cyan-400 block">
+                      <span className="font-mono text-[10px] uppercase tracking-wider text-[#B88746] block">
                         Trigger:
                       </span>
-                      <p className="text-slate-300 mt-0.5 font-light">{item.trigger}</p>
+                      <p className="text-[#55514B] mt-0.5 font-light">{item.trigger}</p>
                     </div>
 
-                    <div className="rounded-xl border border-white/10 bg-white/[0.02] p-3 font-mono text-[11px] leading-relaxed text-slate-300 italic">
+                    <div className="rounded-xl border border-white/10 bg-white/[0.02] p-3 font-mono text-[11px] leading-relaxed text-[#55514B] italic">
                       {item.dialogue}
                     </div>
 
                     <div>
-                      <span className="font-mono text-[10px] uppercase tracking-wider text-cyan-400 block">
+                      <span className="font-mono text-[10px] uppercase tracking-wider text-[#B88746] block">
                         Autonomous Action:
                       </span>
-                      <p className="text-slate-300 mt-0.5 font-light">{item.outcomeAction}</p>
+                      <p className="text-[#55514B] mt-0.5 font-light">{item.outcomeAction}</p>
                     </div>
                   </div>
                 </div>
@@ -225,12 +225,12 @@ export const PlaybooksSection: React.FC<PlaybooksSectionProps> = ({ onOpenBookin
                 <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between">
                   <button
                     onClick={onOpenBooking}
-                    className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-[#B88746] hover:text-[#B88746] transition-colors"
                   >
                     <span>Deploy Blueprint</span>
                     <ArrowRight className="size-3.5" />
                   </button>
-                  <span className="text-[10px] font-mono text-slate-500">7-14 Days Live</span>
+                  <span className="text-[10px] font-mono text-[#888277]">7-14 Days Live</span>
                 </div>
               </div>
             );

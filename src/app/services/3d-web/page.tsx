@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalCtaFooter } from "@/components/FinalCtaFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   MonitorSmartphone,
   Sparkles,
@@ -12,6 +12,13 @@ import {
   ArrowUpRight,
   CheckCircle2,
   TrendingUp,
+  ChevronRight,
+  Layers,
+  Globe,
+  Gauge,
+  ShieldCheck,
+  Check,
+  X,
 } from "lucide-react";
 
 export default function ThreeDWebPage() {
@@ -34,7 +41,7 @@ export default function ThreeDWebPage() {
     },
     {
       title: "Direct-Response Conversion Funnels",
-      desc: "We don't build useless art projects. Every scroll depth trigger, CTA placement, and typography choice is engineered to book calls and capture revenue.",
+      desc: "We do not build useless art projects. Every scroll depth trigger, CTA placement, and typography choice is engineered to capture qualified leads.",
       metric: "$1M+",
       metricLabel: "Attributed Client Sales",
       icon: TrendingUp,
@@ -46,135 +53,207 @@ export default function ThreeDWebPage() {
     { feature: "3D Rendering", generic: "Heavy video loops or none", destix: "Custom 60FPS Three.js WebGL" },
     { feature: "Page Speed", generic: "3.5s - 6s loading lag", destix: "Sub-400ms Edge TTFB" },
     { feature: "AI Voice & CRM Integration", generic: "Disjointed 3rd party chat widget", destix: "Native Realtime Voice & n8n APIs" },
-    { feature: "Ownership", generic: "Subscription lock-in", destix: "100% Owned Source Code" },
+    { feature: "Ownership", generic: "Subscription vendor lock-in", destix: "100% Client-Owned Source Code" },
+  ];
+
+  const works = [
+    {
+      title: "Alliance Capital Properties (ACP Dubai)",
+      desc: "Architectural web storefront and investor acquisition portal for Dubai luxury real estate advisory.",
+      url: "https://acpdubai.com/",
+      domain: "acpdubai.com",
+    },
+    {
+      title: "DigiiRox Spatial 3D Experience",
+      desc: "Real-time 60 FPS Three.js WebGL spatial product launch and interactive shader architecture.",
+      url: "https://digiirox.vercel.app",
+      domain: "digiirox.vercel.app",
+    },
+    {
+      title: "Pranav Jha Architectural Studio",
+      desc: "Swiss editorial typography and authority portfolio built with 99/100 Lighthouse performance.",
+      url: "https://pranav-jha-portfolio.vercel.app",
+      domain: "pranav-jha-portfolio.vercel.app",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-[#08090C] bg-cyber-grid text-white">
+    <div className="min-h-screen bg-[#F6F4EE] text-[#181614] selection:bg-[#B88746]/20 selection:text-[#181614] font-sans antialiased">
       <Header onOpenBooking={() => setIsBookingOpen(true)} />
 
-      <main className="pt-32 pb-24">
-        {/* Header */}
-        <section className="px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
-            <Link href="/" className="hover:text-cyan-400">Home</Link>
-            <span>/</span>
-            <span className="text-cyan-400">Capabilities</span>
-            <span>/</span>
-            <span>Websites That Convert & 3D WebGL</span>
+      <main className="relative pt-36 sm:pt-44 pb-24 max-w-6xl mx-auto px-5 sm:px-6">
+        {/* Breadcrumb Strip */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono text-[#888277] mb-8">
+          <Link href="/" className="hover:text-[#181614] transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-[#B88746]" />
+          <Link href="/websites" className="hover:text-[#181614] transition-colors">Websites &amp; 3D</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-[#B88746]" />
+          <span className="text-[#181614] font-semibold">3D WebGL &amp; Performance Web</span>
+        </nav>
+
+        {/* Hero Section */}
+        <header className="mb-14 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E2DDD1] text-[10px] font-mono tracking-widest text-[#B88746] font-bold uppercase mb-4 shadow-2xs">
+            <MonitorSmartphone className="w-3 h-3 text-[#B88746]" />
+            <span>DIGITAL ARCHITECTURE &amp; 3D WEBGL // DESTIX AI</span>
           </div>
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] tracking-tight leading-[1.08] mb-6">
+            Digital architecture that commands authority. <br />
+            <span className="italic text-[#B88746]">Zero lag. Uncompromising speed.</span>
+          </h1>
+          <p className="text-[#55514B] font-['Plus_Jakarta_Sans'] text-base sm:text-lg max-w-3xl leading-relaxed">
+            Most corporate websites are slow, template-ridden brochures that leak high-value prospects. We engineer high-performance web applications with sub-second page transitions, kinetic Swiss typography, and interactive 3D WebGL experiences.
+          </p>
+        </header>
 
-          <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-950/40 px-3.5 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-violet-300">
-              <MonitorSmartphone className="size-3.5" />
-              Digital Architecture & 3D WebGL
-            </span>
-
-            <h1 className="mt-6 font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight text-white">
-              Category-defining 3D storefronts that{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-                convert traffic into equity.
-              </span>
-            </h1>
-
-            <p className="mt-6 text-xl text-slate-300 leading-relaxed max-w-3xl font-light">
-              Generic corporate templates destroy trust for high-ticket businesses.
-              DestiX AI designs award-grade digital platforms combining 60FPS WebGL interactive models,
-              edge Next.js performance, and ruthlessly tuned direct-response funnels.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <button
-                onClick={() => setIsBookingOpen(true)}
-                className="btn-primary inline-flex items-center gap-3 px-8 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider"
+        {/* 3 Core Pillars */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {pillars.map((pillar, idx) => {
+            const Icon = pillar.icon;
+            return (
+              <div
+                key={idx}
+                className="rounded-3xl bg-white border border-[#E2DDD1] p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#B88746]/50 transition-all duration-300"
               >
-                <span>Commission 3D Platform</span>
-                <ArrowUpRight className="size-4" />
-              </button>
-              <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider text-white hover:border-cyan-400 hover:text-cyan-300"
-              >
-                <span>Review Pricing (From $1,000)</span>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* 3 Conversion Pillars */}
-        <section className="mt-24 px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {pillars.map((p, idx) => {
-              const Icon = p.icon;
-              return (
-                <div
-                  key={idx}
-                  className="glass-panel glass-panel-hover rounded-2xl p-8 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center justify-between">
-                      <div className="flex size-12 items-center justify-center rounded-2xl bg-violet-500/10 border border-violet-500/20 text-violet-400">
-                        <Icon className="size-6" />
-                      </div>
-                      <span className="font-display text-3xl font-bold text-white">
-                        {p.metric}
-                      </span>
-                    </div>
-
-                    <div className="text-[11px] font-mono uppercase tracking-wider text-cyan-400 mt-2 text-right">
-                      {p.metricLabel}
-                    </div>
-
-                    <h3 className="mt-6 font-display text-2xl font-bold text-white">{p.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-400 font-light">{p.desc}</p>
+                <div>
+                  <div className="w-10 h-10 rounded-2xl bg-[#EDE8DC] flex items-center justify-center mb-6">
+                    <Icon className="w-5 h-5 text-[#B88746]" />
                   </div>
-
-                  <div className="mt-8 pt-4 border-t border-white/10 text-xs font-mono text-cyan-400 flex items-center justify-between">
-                    <span>Engineering Standards</span>
-                    <ArrowUpRight className="size-4" />
+                  <h2 className="font-['Instrument_Serif'] text-2xl text-[#181614] mb-3">
+                    {pillar.title}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed">
+                    {pillar.desc}
+                  </p>
+                </div>
+                <div className="mt-8 pt-4 border-t border-[#E2DDD1]/60">
+                  <div className="font-['Instrument_Serif'] text-3xl font-bold text-[#181614]">
+                    {pillar.metric}
+                  </div>
+                  <div className="text-[10px] font-['JetBrains_Mono'] text-[#888277] uppercase tracking-wider font-semibold">
+                    {pillar.metricLabel}
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            );
+          })}
+        </section>
+
+        {/* Comparison Table */}
+        <section className="rounded-3xl bg-white border border-[#E2DDD1] p-6 sm:p-10 shadow-xs mb-16">
+          <div className="mb-6">
+            <span className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider block mb-1 font-bold">
+              // ARCHITECTURAL BENCHMARK
+            </span>
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614]">
+              DestiX AI vs. Legacy Agency Stacks
+            </h2>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse text-xs sm:text-sm font-['Plus_Jakarta_Sans']">
+              <thead>
+                <tr className="border-b border-[#E2DDD1] bg-[#F6F4EE]/80">
+                  <th className="p-4 font-semibold text-[#181614]">Feature / Parameter</th>
+                  <th className="p-4 font-bold text-[#B88746]">DestiX AI Private Practice</th>
+                  <th className="p-4 font-semibold text-[#888277]">Generic Agency (WordPress / Webflow)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#E2DDD1]">
+                {comparison.map((row, idx) => (
+                  <tr key={idx} className="hover:bg-[#F6F4EE]/40 transition-colors">
+                    <td className="p-4 font-semibold text-[#181614]">{row.feature}</td>
+                    <td className="p-4 text-[#181614] font-medium flex items-center gap-2">
+                      <Check className="w-4 h-4 text-[#B88746] shrink-0" />
+                      <span>{row.destix}</span>
+                    </td>
+                    <td className="p-4 text-[#888277] flex items-center gap-2">
+                      <X className="w-4 h-4 text-rose-500 shrink-0" />
+                      <span>{row.generic}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
 
-        {/* Technical Comparison Table */}
-        <section className="mt-28 px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="rounded-3xl border border-white/10 bg-[#0E1017] p-8 md:p-12 shadow-espresso">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-8">
-              Why DestiX 3D architectures outperform generic templates.
+        {/* Featured Live Deliverables */}
+        <section className="mb-16">
+          <div className="mb-8">
+            <span className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider block mb-1 font-bold">
+              // VERIFIED PORTFOLIO
+            </span>
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614]">
+              Live Client Storefronts &amp; 3D Launches
             </h2>
+          </div>
 
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm font-light">
-                <thead>
-                  <tr className="border-b border-white/10 text-xs font-mono uppercase tracking-wider text-slate-400">
-                    <th className="pb-4">Dimension</th>
-                    <th className="pb-4">Typical Agency Build</th>
-                    <th className="pb-4 text-cyan-400 font-semibold">DestiX AI Architecture</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  {comparison.map((c, i) => (
-                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-4 font-medium text-white">{c.feature}</td>
-                      <td className="py-4 text-slate-400">{c.generic}</td>
-                      <td className="py-4 text-white flex items-center gap-2 font-medium">
-                        <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
-                        <span>{c.destix}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {works.map((work, idx) => (
+              <div
+                key={idx}
+                className="rounded-3xl bg-white border border-[#E2DDD1] p-6 sm:p-7 shadow-xs flex flex-col justify-between hover:border-[#B88746]/50 transition-all duration-300"
+              >
+                <div>
+                  <span className="text-[10px] font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider block mb-2 font-bold">
+                    STOREFRONT 0{idx + 1}
+                  </span>
+                  <h3 className="font-['Instrument_Serif'] text-2xl text-[#181614] mb-3">
+                    {work.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed mb-6">
+                    {work.desc}
+                  </p>
+                </div>
+                <a
+                  href={work.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-mono font-semibold text-[#B88746] hover:text-[#181614] transition-colors"
+                >
+                  <span>Visit {work.domain}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Final CTA Banner */}
+        <section className="p-8 sm:p-12 rounded-3xl bg-white border-2 border-[#B88746] text-center shadow-md">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase mb-4">
+            BESPOKE WEB ENGINEERING SPRINT
+          </div>
+          <h2 className="font-['Instrument_Serif'] text-3xl sm:text-5xl text-[#181614] mb-4">
+            Build a Category-Defining Digital Flagship
+          </h2>
+          <p className="text-sm sm:text-base text-[#55514B] font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto mb-8 leading-relaxed">
+            Eliminate price shopping and elevate your inbound deal size. We build custom Next.js web applications, 3D spatial models, and high-converting acquisition funnels in 14-day sprints.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <button
+              onClick={() => setIsBookingOpen(true)}
+              className="px-8 py-4 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-bold text-sm tracking-tight transition-all duration-300 shadow-sm"
+            >
+              Book 30-Min Diagnostic Call
+            </button>
+            <Link
+              href="/websites"
+              className="px-8 py-4 rounded-full bg-white border border-[#E2DDD1] hover:border-[#181614] text-[#181614] font-semibold text-sm transition-all duration-300"
+            >
+              Explore Websites Portfolio
+            </Link>
           </div>
         </section>
       </main>
 
-      <FinalCtaFooter onOpenBooking={() => setIsBookingOpen(true)} />
-      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} initialService="High-Converting 3D WebGL Storefront" />
+      <FinalDeploymentFooter onOpenBooking={() => setIsBookingOpen(true)} />
+      <BookingModal
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+        initialService="3D WebGL & Performance Web Development"
+      />
     </div>
   );
 }

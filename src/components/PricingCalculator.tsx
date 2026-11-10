@@ -29,10 +29,10 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="max-w-2xl">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
             // Transparent Unit Economics
           </span>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-5xl font-bold tracking-tight text-white">
             Only pay for{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
               what works.
@@ -50,8 +50,8 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
           <div className="glass-panel glass-panel-hover flex flex-col justify-between rounded-2xl p-8">
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-display text-2xl font-bold text-white">Pilot Deployment</span>
-                <span className="rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-slate-300 uppercase tracking-wider">
+                <span className="font-['Instrument_Serif'] text-2xl font-bold text-white">Pilot Deployment</span>
+                <span className="rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-[#55514B] uppercase tracking-wider">
                   14-Day Delivery
                 </span>
               </div>
@@ -60,11 +60,11 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               </p>
 
               <div className="mt-6 flex items-baseline gap-1 border-b border-white/10 pb-6">
-                <span className="font-display text-4xl font-bold text-white">$500</span>
+                <span className="font-['Instrument_Serif'] text-4xl font-bold text-white">$500</span>
                 <span className="text-xs text-slate-400 font-mono">/month (no setup fee)</span>
               </div>
 
-              <ul className="mt-6 space-y-3 text-xs text-slate-300">
+              <ul className="mt-6 space-y-3 text-xs text-[#55514B]">
                 <li className="flex items-start gap-2">
                   <Check className="size-4 shrink-0 text-emerald-400 mt-0.5" />
                   <span><strong>3,000+ call minutes</strong> included monthly</span>
@@ -91,7 +91,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
             <div className="mt-8 pt-4">
               <button
                 onClick={onOpenBooking}
-                className="w-full rounded-full border border-white/20 bg-white/5 py-3 text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors hover:border-cyan-400 hover:text-cyan-300 hover:bg-cyan-950/30"
+                className="w-full rounded-full border border-white/20 bg-white/5 py-3 text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors hover:border-cyan-400 hover:text-[#B88746] hover:bg-[#EDE8DC]/30"
               >
                 Start a pilot
               </button>
@@ -106,8 +106,8 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
 
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-display text-2xl font-bold text-white">Scale Plan</span>
-                <span className="rounded-full bg-cyan-950/80 border border-cyan-500/40 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-cyan-300 uppercase tracking-wider">
+                <span className="font-['Instrument_Serif'] text-2xl font-bold text-white">Scale Plan</span>
+                <span className="rounded-full bg-[#EDE8DC]/80 border border-[#B88746]/40 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-[#B88746] uppercase tracking-wider">
                   Volume Operations
                 </span>
               </div>
@@ -116,29 +116,29 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               </p>
 
               <div className="mt-6 flex items-baseline gap-1 border-b border-white/10 pb-6">
-                <span className="font-display text-4xl font-bold text-cyan-400">From $0.05</span>
+                <span className="font-['Instrument_Serif'] text-4xl font-bold text-[#B88746]">From $0.05</span>
                 <span className="text-xs text-slate-400 font-mono">/min all-in</span>
               </div>
 
-              <ul className="mt-6 space-y-3 text-xs text-slate-300">
+              <ul className="mt-6 space-y-3 text-xs text-[#55514B]">
                 <li className="flex items-start gap-2">
-                  <Check className="size-4 shrink-0 text-cyan-400 mt-0.5" />
+                  <Check className="size-4 shrink-0 text-[#B88746] mt-0.5" />
                   <span><strong>Multiple agents</strong> across inbound & outbound campaigns</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="size-4 shrink-0 text-cyan-400 mt-0.5" />
+                  <Check className="size-4 shrink-0 text-[#B88746] mt-0.5" />
                   <span>Up to <strong>100 concurrent calls</strong> simultaneously</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="size-4 shrink-0 text-cyan-400 mt-0.5" />
+                  <Check className="size-4 shrink-0 text-[#B88746] mt-0.5" />
                   <span>Full CRM, WhatsApp and calendar automated workflows</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="size-4 shrink-0 text-cyan-400 mt-0.5" />
+                  <Check className="size-4 shrink-0 text-[#B88746] mt-0.5" />
                   <span>Weekly revenue + hours saved reporting</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="size-4 shrink-0 text-cyan-400 mt-0.5" />
+                  <Check className="size-4 shrink-0 text-[#B88746] mt-0.5" />
                   <span>Dedicated prompt engineer & bi-weekly script updates</span>
                 </li>
               </ul>
@@ -159,8 +159,8 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
           <div className="glass-panel glass-panel-hover flex flex-col justify-between rounded-2xl p-8">
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-display text-2xl font-bold text-white">Enterprise</span>
-                <span className="rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-slate-300 uppercase tracking-wider">
+                <span className="font-['Instrument_Serif'] text-2xl font-bold text-white">Enterprise</span>
+                <span className="rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-[#55514B] uppercase tracking-wider">
                   Agencies & Portfolios
                 </span>
               </div>
@@ -169,11 +169,11 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               </p>
 
               <div className="mt-6 flex items-baseline gap-1 border-b border-white/10 pb-6">
-                <span className="font-display text-4xl font-bold text-white">Custom</span>
+                <span className="font-['Instrument_Serif'] text-4xl font-bold text-white">Custom</span>
                 <span className="text-xs text-slate-400 font-mono">committed volume</span>
               </div>
 
-              <ul className="mt-6 space-y-3 text-xs text-slate-300">
+              <ul className="mt-6 space-y-3 text-xs text-[#55514B]">
                 <li className="flex items-start gap-2">
                   <Check className="size-4 shrink-0 text-emerald-400 mt-0.5" />
                   <span><strong>Unlimited concurrent calls</strong> with zero rate limits</span>
@@ -200,7 +200,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
             <div className="mt-8 pt-4">
               <button
                 onClick={onOpenBooking}
-                className="w-full rounded-full border border-white/20 bg-white/5 py-3 text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors hover:border-cyan-400 hover:text-cyan-300 hover:bg-cyan-950/30"
+                className="w-full rounded-full border border-white/20 bg-white/5 py-3 text-xs font-mono font-semibold uppercase tracking-wider text-white transition-colors hover:border-cyan-400 hover:text-[#B88746] hover:bg-[#EDE8DC]/30"
               >
                 Talk to the founder
               </button>
@@ -212,11 +212,11 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
         <div className="mt-16 rounded-3xl border border-white/10 bg-[#0E1017] p-8 md:p-12 shadow-espresso">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
-              <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-[#B88746] font-mono text-xs uppercase tracking-wider">
                 <Calculator className="size-4" />
                 <span>Volume-Based ROI Engine</span>
               </div>
-              <h3 className="mt-2 font-display text-3xl font-bold text-white">
+              <h3 className="mt-2 font-['Instrument_Serif'] text-3xl font-bold text-white">
                 Drag to calculate monthly minutes & net savings.
               </h3>
               <p className="mt-2 text-sm text-slate-400 max-w-xl font-light">
@@ -226,7 +226,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
             </div>
 
             <div className="text-right">
-              <div className="font-display text-3xl md:text-4xl font-bold text-white">
+              <div className="font-['Instrument_Serif'] text-3xl md:text-4xl font-bold text-white">
                 ${effectiveRate.toFixed(3)}{" "}
                 <span className="text-sm font-mono text-slate-400">/ min all-in</span>
               </div>
@@ -240,7 +240,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
           <div className="mt-10">
             <div className="flex items-center justify-between text-xs font-mono text-slate-400 mb-2">
               <span>Selected Monthly Call Volume</span>
-              <span className="text-base font-bold text-cyan-400">
+              <span className="text-base font-bold text-[#B88746]">
                 {minutes.toLocaleString()} minutes / month
               </span>
             </div>
@@ -255,7 +255,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               className="w-full"
             />
 
-            <div className="mt-3 flex justify-between text-[11px] font-mono text-slate-500">
+            <div className="mt-3 flex justify-between text-[11px] font-mono text-[#888277]">
               <span>1K min</span>
               <span>25K min</span>
               <span>50K min</span>
@@ -270,16 +270,16 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
                 Minutes / Month
               </span>
-              <div className="mt-2 font-display text-2xl font-bold text-white">
+              <div className="mt-2 font-['Instrument_Serif'] text-2xl font-bold text-white">
                 {minutes.toLocaleString()}
               </div>
             </div>
 
-            <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/30 p-5">
-              <span className="text-xs font-mono uppercase tracking-wider text-cyan-300">
+            <div className="rounded-2xl border border-[#B88746]/30 bg-[#EDE8DC]/30 p-5">
+              <span className="text-xs font-mono uppercase tracking-wider text-[#B88746]">
                 DestiX Effective Cost
               </span>
-              <div className="mt-2 font-display text-2xl font-bold text-cyan-400">
+              <div className="mt-2 font-['Instrument_Serif'] text-2xl font-bold text-[#B88746]">
                 ${yourCost.toLocaleString()}
               </div>
             </div>
@@ -288,7 +288,7 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
                 Traditional SaaS Cost
               </span>
-              <div className="mt-2 font-display text-2xl font-bold text-slate-500 line-through">
+              <div className="mt-2 font-['Instrument_Serif'] text-2xl font-bold text-[#888277] line-through">
                 ${platformCost.toLocaleString()}
               </div>
             </div>
@@ -297,13 +297,13 @@ export const PricingCalculator: React.FC<PricingCalculatorProps> = ({ onOpenBook
               <span className="text-xs font-mono uppercase tracking-wider text-emerald-300">
                 Net Margin You Keep
               </span>
-              <div className="mt-2 font-display text-2xl font-bold text-emerald-400">
+              <div className="mt-2 font-['Instrument_Serif'] text-2xl font-bold text-emerald-400">
                 ${savings.toLocaleString()}
               </div>
             </div>
           </div>
 
-          <p className="mt-6 text-center text-xs font-mono text-slate-500">
+          <p className="mt-6 text-center text-xs font-mono text-[#888277]">
             Website builds from $1,000 one-time. WhatsApp and revenue automation scoped per build, always with the ROI math attached.
           </p>
         </div>

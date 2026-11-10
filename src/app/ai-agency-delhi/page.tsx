@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   Sparkles,
   ArrowUpRight,
@@ -98,7 +98,7 @@ export default function AiAgencyDelhiPage() {
             Headquarters: New Delhi 110001 • Founder-Led Engineering
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
             AI Agency in Delhi:{" "}
             <span className="italic font-normal text-[#7A756D]">
               Autonomous Telephony &amp; Spatial 3D Web Studio
@@ -136,7 +136,7 @@ export default function AiAgencyDelhiPage() {
             <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
               Production Capabilities
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
               What We Build for Delhi NCR Enterprises
             </h2>
             <p className="text-sm text-[#5A554E] max-w-2xl">
@@ -162,7 +162,7 @@ export default function AiAgencyDelhiPage() {
                         <Icon className="size-4 text-[#B88746]" />
                       </div>
                     </div>
-                    <h3 className="font-display text-xl font-medium text-[#131210] mb-2">
+                    <h3 className="font-['Instrument_Serif'] text-xl font-medium text-[#131210] mb-2">
                       {p.title}
                     </h3>
                     <p className="text-xs text-[#5A554E] leading-relaxed mb-6">
@@ -190,7 +190,7 @@ export default function AiAgencyDelhiPage() {
               <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
                 Local Presence
               </span>
-              <h2 className="font-display text-2xl sm:text-3xl font-medium text-[#131210] mt-2 mb-3">
+              <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl font-medium text-[#131210] mt-2 mb-3">
                 Serving Key Enterprise Corridors Across Delhi NCR
               </h2>
               <p className="text-xs sm:text-sm text-[#5A554E] max-w-2xl leading-relaxed">
@@ -206,7 +206,7 @@ export default function AiAgencyDelhiPage() {
                   key={d.area}
                   className="p-5 bg-[#F9F7F2] border border-[#E5E0D5] rounded-xl"
                 >
-                  <div className="flex items-center gap-2 mb-2 font-display text-base font-semibold text-[#131210]">
+                  <div className="flex items-center gap-2 mb-2 font-['Instrument_Serif'] text-base font-semibold text-[#131210]">
                     <MapPin className="size-4 text-[#B88746]" />
                     <span>{d.area}</span>
                   </div>
@@ -225,7 +225,7 @@ export default function AiAgencyDelhiPage() {
                 Founder-Led Architecture • Central Delhi
               </span>
 
-              <h2 className="mt-4 font-display text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
+              <h2 className="mt-4 font-['Instrument_Serif'] text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
                 Work Directly with Principal Architect Ayush Meena
               </h2>
 

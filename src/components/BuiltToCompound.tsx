@@ -47,10 +47,10 @@ export const BuiltToCompound: React.FC = () => {
     <section className="relative bg-[#08090C] px-6 py-24 md:px-10 md:py-32 border-t border-white/10">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
             // Self-Compounding Architecture
           </span>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-5xl font-bold tracking-tight text-white">
             Systems that get{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
               sharper every single day.
@@ -72,16 +72,16 @@ export const BuiltToCompound: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <div className="flex size-12 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                    <div className="flex size-12 items-center justify-center rounded-xl bg-cyan-500/10 border border-[#B88746]/20 text-[#B88746]">
                       <Icon className="size-6" />
                     </div>
-                    <span className="font-mono text-xs text-slate-500 font-semibold">{card.num}</span>
+                    <span className="font-mono text-xs text-[#888277] font-semibold">{card.num}</span>
                   </div>
 
-                  <h3 className="mt-6 font-display text-2xl font-bold text-white">
+                  <h3 className="mt-6 font-['Instrument_Serif'] text-2xl font-bold text-white">
                     {card.title}
                   </h3>
-                  <p className="mt-1 font-mono text-xs text-cyan-400">
+                  <p className="mt-1 font-mono text-xs text-[#B88746]">
                     {card.subtitle}
                   </p>
 
@@ -91,7 +91,7 @@ export const BuiltToCompound: React.FC = () => {
 
                   <div className="mt-6 space-y-2.5 border-t border-white/10 pt-5">
                     {card.bullets.map((b, idx) => (
-                      <div key={idx} className="flex items-start gap-2 text-xs text-slate-300">
+                      <div key={idx} className="flex items-start gap-2 text-xs text-[#55514B]">
                         <Check className="size-3.5 shrink-0 text-emerald-400 mt-0.5" />
                         <span>{b}</span>
                       </div>
@@ -101,7 +101,7 @@ export const BuiltToCompound: React.FC = () => {
 
                 <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
                   <span>Architecture Spec</span>
-                  <ArrowUpRight className="size-3.5 text-cyan-400" />
+                  <ArrowUpRight className="size-3.5 text-[#B88746]" />
                 </div>
               </div>
             );

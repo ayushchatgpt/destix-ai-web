@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
-import { BookingModal } from "@/components/BookingModal";
-import { VoiceDemoConsole } from "@/components/VoiceDemoConsole";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
+import VoiceDemoConsole from "@/components/VoiceDemoConsole";
 import {
   PhoneCall,
   Zap,

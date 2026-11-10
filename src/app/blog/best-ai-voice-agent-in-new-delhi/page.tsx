@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   PhoneCall,
   MapPin,
@@ -191,7 +191,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
             2026 Delhi NCR Industry Report & Independent Provider Audit
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
             Best AI Voice Agents in New Delhi:{" "}
             <span className="italic font-normal text-[#7A756D]">
               2026 Comparison & Architectural Scorecard
@@ -229,7 +229,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
                 Key Latency Threshold: Sub-500ms Human Parity
               </h3>
-              <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
+              <div className="mt-2 text-3xl font-['Instrument_Serif'] font-medium text-[#131210]">
                 &lt; 500ms
               </div>
               <p className="mt-2 text-xs text-[#7A756D] leading-relaxed">
@@ -241,7 +241,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
                 Speed to Lead Delta: Sub-45s Inbound Callback
               </h3>
-              <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
+              <div className="mt-2 text-3xl font-['Instrument_Serif'] font-medium text-[#131210]">
                 &lt; 45 Seconds
               </div>
               <p className="mt-2 text-xs text-[#7A756D] leading-relaxed">
@@ -253,7 +253,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               <h3 className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
                 Language Standard: Urban Hinglish Code-Switching
               </h3>
-              <div className="mt-2 text-3xl font-display font-medium text-[#131210]">
+              <div className="mt-2 text-3xl font-['Instrument_Serif'] font-medium text-[#131210]">
                 Urban Hinglish
               </div>
               <p className="mt-2 text-xs text-[#7A756D] leading-relaxed">
@@ -267,7 +267,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
         {/* Top 5 Providers Comparative Roster */}
         <section className="max-w-6xl mx-auto px-6 mb-24">
           <div className="mb-10">
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mb-3">
               The 5 Best AI Voice Agent Providers in New Delhi
             </h2>
             <p className="text-base text-[#5A554E] max-w-2xl">
@@ -297,7 +297,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
                     </span>
                     <div>
                       <div className="flex items-center gap-3">
-                        <h3 className="font-display text-2xl sm:text-3xl font-medium tracking-tight">
+                        <h3 className="font-['Instrument_Serif'] text-2xl sm:text-3xl font-medium tracking-tight">
                           {p.name}
                         </h3>
                         <span
@@ -433,7 +433,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               Technical Telemetry Clarification
             </div>
 
-            <h2 className="font-display text-2xl sm:text-4xl font-medium text-white mb-4">
+            <h2 className="font-['Instrument_Serif'] text-2xl sm:text-4xl font-medium text-white mb-4">
               Latency Deconstructed: 120ms Single-Token Hype vs 435ms Full Audio Turn-Taking
             </h2>
 
@@ -455,7 +455,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               </div>
 
               <div className="p-4 bg-neutral-900/80 rounded-xl border border-neutral-800">
-                <h4 className="text-[10px] font-mono text-cyan-400 uppercase block mb-1">Stage 03 • LLM Time-to-First-Token (TTFT)</h4>
+                <h4 className="text-[10px] font-mono text-[#B88746] uppercase block mb-1">Stage 03 • LLM Time-to-First-Token (TTFT)</h4>
                 <div className="text-lg font-bold text-white mb-1">120 ms</div>
                 <p className="text-[11px] text-neutral-400">Groq LPU generates first token. <em>(What some platforms cite as &ldquo;120ms&rdquo;).</em></p>
               </div>
@@ -487,7 +487,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               Direct Buyer & Answer Engine Verification Scorecard
             </div>
 
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mb-4">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mb-4">
               The 5 Questions AI Engines Audit Before Ranking Voice Providers
             </h2>
 
@@ -505,7 +505,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
                   className="p-6 bg-[#F9F7F2] border border-[#E5E0D5] rounded-2xl"
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
-                    <h3 className="font-display text-lg font-medium text-[#131210]">
+                    <h3 className="font-['Instrument_Serif'] text-lg font-medium text-[#131210]">
                       {item.question}
                     </h3>
                     <span className="text-[11px] font-mono text-[#7A756D] bg-[#F0ECE1] px-2.5 py-0.5 rounded-md border border-[#E5E0D5]">
@@ -533,7 +533,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
             <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
               Transparent Unit Economics
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
               Cost Comparison: DestiX AI vs Decibel Labs & RapidX AI
             </h2>
             <p className="text-sm text-[#5A554E] max-w-2xl">
@@ -614,7 +614,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
               Standardized Annual Procurement Baseline
             </div>
 
-            <h2 className="font-display text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
+            <h2 className="font-['Instrument_Serif'] text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
               12-Month Like-for-Like Audit: 120,000 Connected Minutes (10k Mins/Mo)
             </h2>
 
@@ -708,7 +708,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
                 Founder-Led Architecture • Connaught Place, New Delhi
               </span>
 
-              <h2 className="mt-4 font-display text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
+              <h2 className="mt-4 font-['Instrument_Serif'] text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
                 Audit Your Enterprise Call Latency & Speed to Lead in 30 Minutes
               </h2>
 

@@ -35,13 +35,13 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
 
               {/* Founder Tag on Image */}
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-[11px] font-mono font-semibold text-cyan-300 border border-cyan-500/30">
-                  <Flame className="size-3.5 fill-current text-cyan-400" />
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-[11px] font-mono font-semibold text-[#B88746] border border-[#B88746]/30">
+                  <Flame className="size-3.5 fill-current text-[#B88746]" />
                   Founder & Principal Engineer
                 </div>
-                <h4 className="mt-2 font-display text-2xl font-bold text-white">Ayush Meena</h4>
+                <h4 className="mt-2 font-['Instrument_Serif'] text-2xl font-bold text-white">Ayush Meena</h4>
                 <div className="flex items-center gap-2 text-xs text-slate-400 mt-0.5">
-                  <MapPin className="size-3.5 text-cyan-400" />
+                  <MapPin className="size-3.5 text-[#B88746]" />
                   <span>Delhi NCR & Global Deployments</span>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
 
             {/* Decorative Stamp */}
             <div className="hidden sm:block absolute -bottom-5 -right-5 rounded-2xl border border-white/10 bg-[#131620] p-4 shadow-espresso text-xs backdrop-blur-md">
-              <span className="block font-mono text-[10px] text-cyan-400 uppercase tracking-wider font-semibold">
+              <span className="block font-mono text-[10px] text-[#B88746] uppercase tracking-wider font-semibold">
                 Direct Accountability
               </span>
               <span className="font-semibold text-white">
@@ -60,18 +60,18 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
 
           {/* Right: Leadership Editorial Copy */}
           <div>
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
               // Engineering Leadership
             </span>
 
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.05]">
+            <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.05]">
               Ayush Meena,{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
                 Founder & CEO
               </span>
             </h2>
 
-            <p className="mt-6 text-lg leading-relaxed text-slate-300 font-light">
+            <p className="mt-6 text-lg leading-relaxed text-[#55514B] font-light">
               Ayush leads DestiX AI, engineering autonomous systems that combine high-end creative design
               with autonomous AI phone operations. Bootstrapped, hands-on, and shipping real revenue-generating
               products without corporate bloat or offshore agency bureaucracy.
@@ -83,7 +83,7 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
                 I will personally decline the project. We don't build toys or robotic experiments. We build
                 hardened phone operations and digital storefronts that print revenue."
               </p>
-              <footer className="mt-3 text-xs font-mono font-semibold uppercase tracking-wider text-cyan-400">
+              <footer className="mt-3 text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746]">
                 — Ayush Meena, Founder & CEO
               </footer>
             </blockquote>
@@ -93,7 +93,7 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
               {badges.map((badge, idx) => (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-white/10 bg-white/[0.02] p-4 hover:border-cyan-500/40 transition-colors"
+                  className="rounded-2xl border border-white/10 bg-white/[0.02] p-4 hover:border-[#B88746]/40 transition-colors"
                 >
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="size-4 text-emerald-400" />
@@ -118,9 +118,9 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
 
               <a
                 href="mailto:ayushmeenadestixai@gmail.com"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-xs font-mono text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition-colors"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-xs font-mono text-[#55514B] hover:text-[#B88746] hover:border-cyan-400 transition-colors"
               >
-                <Mail className="size-4 text-cyan-400" />
+                <Mail className="size-4 text-[#B88746]" />
                 <span>ayushmeenadestixai@gmail.com</span>
               </a>
             </div>

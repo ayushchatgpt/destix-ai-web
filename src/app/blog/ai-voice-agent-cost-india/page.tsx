@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalDeploymentFooter } from "@/components/FinalDeploymentFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   Calculator,
   Coins,
@@ -78,7 +78,7 @@ export default function AIVoiceAgentCostIndiaPage() {
             2026 Enterprise Telephony Economics & Pricing Scorecard
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl font-medium tracking-tight leading-[1.08] text-[#131210] max-w-5xl mb-6">
             AI Voice Agent Cost in India:{" "}
             <span className="italic font-normal text-[#7A756D]">
               Setup Fees, Per-Minute Rates & ROI Benchmarks
@@ -114,7 +114,7 @@ export default function AIVoiceAgentCostIndiaPage() {
             <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
               The Real Cost Stack
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
               Where Does the Money Go? The 4 Per-Minute Infrastructure Layers
             </h2>
             <p className="text-sm text-[#5A554E] max-w-2xl">
@@ -137,7 +137,7 @@ export default function AIVoiceAgentCostIndiaPage() {
                     {c.rate}
                   </span>
                 </div>
-                <h3 className="font-display text-lg font-medium text-[#131210] mb-2">
+                <h3 className="font-['Instrument_Serif'] text-lg font-medium text-[#131210] mb-2">
                   {c.tech}
                 </h3>
                 <p className="text-xs text-[#5A554E] leading-relaxed">{c.note}</p>
@@ -150,7 +150,7 @@ export default function AIVoiceAgentCostIndiaPage() {
               <span className="text-xs font-mono text-[#B88746] uppercase tracking-wider block">
                 Total Marginal Infrastructure Cost
               </span>
-              <div className="text-2xl sm:text-3xl font-display font-medium text-white mt-1">
+              <div className="text-2xl sm:text-3xl font-['Instrument_Serif'] font-medium text-white mt-1">
                 ₹3.40 – ₹5.90 per connected minute
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function AIVoiceAgentCostIndiaPage() {
             <span className="text-xs font-mono font-semibold text-[#B88746] uppercase tracking-wider">
               Comparative Analysis
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl font-medium text-[#131210] mt-2 mb-3">
               India Pricing Matrix: DestiX AI vs Decibel Labs vs RapidX AI vs Human Staff
             </h2>
             <p className="text-sm text-[#5A554E] max-w-2xl">
@@ -255,7 +255,7 @@ export default function AIVoiceAgentCostIndiaPage() {
               12-Month Total Cost of Ownership (TCO) Audit
             </div>
 
-            <h2 className="font-display text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
+            <h2 className="font-['Instrument_Serif'] text-2xl sm:text-4xl font-medium text-[#131210] mb-4">
               Why One-Time Sprint Setup Beats Perpetual Monthly Retainers
             </h2>
 
@@ -327,7 +327,7 @@ export default function AIVoiceAgentCostIndiaPage() {
         {/* ROI Breakdown Calculator Example */}
         <section className="max-w-6xl mx-auto px-6 mb-24">
           <div className="p-8 sm:p-12 bg-white border border-[#E5E0D5] rounded-3xl shadow-sm">
-            <h2 className="font-display text-2xl sm:text-3xl font-medium text-[#131210] mb-4">
+            <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl font-medium text-[#131210] mb-4">
               Real-World Financial Model: A Gurugram Real Estate Brokerage
             </h2>
 
@@ -374,7 +374,7 @@ export default function AIVoiceAgentCostIndiaPage() {
                 Transparent Scoping • New Delhi 110001
               </span>
 
-              <h2 className="mt-4 font-display text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
+              <h2 className="mt-4 font-['Instrument_Serif'] text-3xl sm:text-5xl font-medium tracking-tight text-white leading-tight">
                 Calculate the Exact Unit Economics for Your Enterprise
               </h2>
 

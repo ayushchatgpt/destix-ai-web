@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Header } from "@/components/Header";
-import { FinalCtaFooter } from "@/components/FinalCtaFooter";
-import { BookingModal } from "@/components/BookingModal";
+import Header from "@/components/Header";
+import FinalDeploymentFooter from "@/components/FinalDeploymentFooter";
+import BookingModal from "@/components/BookingModal";
 import {
   Workflow,
   CheckCircle2,
@@ -12,6 +12,12 @@ import {
   MessageSquare,
   Cpu,
   ArrowUpRight,
+  ChevronRight,
+  ShieldCheck,
+  Zap,
+  Lock,
+  Server,
+  Layers,
 } from "lucide-react";
 
 export default function AiOsPage() {
@@ -19,33 +25,33 @@ export default function AiOsPage() {
 
   const modules = [
     {
-      title: "Bi-Directional CRM Sync",
-      desc: "Instantly update contact lifecycle stages, call recordings, sentiment score, and next steps in HubSpot, Salesforce, or GoHighLevel within 2 seconds of call completion.",
-      tag: "HubSpot & Salesforce",
+      title: "Bi-Directional CRM Synchronization",
+      desc: "Instantly update contact lifecycle stages, call recordings, audio transcripts, sentiment scores, and next action tasks in HubSpot, Salesforce, or GoHighLevel within 2 seconds of call completion.",
+      tag: "HubSpot & Salesforce Enterprise",
       icon: Database,
     },
     {
       title: "Autonomous WhatsApp Pipelines",
-      desc: "Trigger high-converting WhatsApp messages while the lead is still on the phone. Deliver villa brochures, meeting calendar invites, or checkout links automatically.",
+      desc: "Trigger high-converting WhatsApp messages while the lead is still on the phone. Deliver villa lookbooks, meeting calendar invites, or payment links with zero human delay.",
       tag: "WhatsApp Business API",
       icon: MessageSquare,
     },
     {
       title: "Multi-Step n8n & Python Orchestration",
       desc: "Complex logic flows connecting webhooks, ERP databases, inventory systems, and telephony triggers with 100% data privacy and self-healing error catchers.",
-      tag: "Private Server Deployments",
+      tag: "Private Docker / Cloud Deployments",
       icon: Workflow,
     },
     {
       title: "Company Memory & Rules Engine",
-      desc: "Give your AI persistent knowledge of company policies, pricing tiers, doctor availability, inventory limits, and legal disclaimers. Zero hallucination.",
-      tag: "Vector Embeddings & RAG",
+      desc: "Give your AI persistent knowledge of company policies, pricing tiers, doctor availability, inventory limits, and legal disclaimers. Strictly zero hallucination.",
+      tag: "Vector Embeddings & Hybrid RAG",
       icon: Cpu,
     },
   ];
 
   const workflowSteps = [
-    { step: "01", name: "Inbound Lead / Webhook", detail: "Meta Ad Form, Google Lead, or Inbound Hotline Ring" },
+    { step: "01", name: "Inbound Lead / Webhook", detail: "Meta Ad Form, Google Lead, or Inbound Phone Hotline" },
     { step: "02", name: "Realtime Data Enrichment", detail: "Enrich phone, location, and past CRM history in 80ms" },
     { step: "03", name: "Voice Qualification Call", detail: "DestiX AI dials lead in < 45s, qualifies intent & budget" },
     { step: "04", name: "Instant WhatsApp & Calendar Sync", detail: "Calendar invite locked, brochure PDF dispatched" },
@@ -53,143 +59,165 @@ export default function AiOsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#08090C] bg-cyber-grid text-white">
+    <div className="min-h-screen bg-[#F6F4EE] text-[#181614] selection:bg-[#B88746]/20 selection:text-[#181614] font-sans antialiased">
       <Header onOpenBooking={() => setIsBookingOpen(true)} />
 
-      <main className="pt-32 pb-24">
-        {/* Header */}
-        <section className="px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 text-xs font-mono text-slate-500 mb-4">
-            <Link href="/" className="hover:text-cyan-400">Home</Link>
-            <span>/</span>
-            <span className="text-cyan-400">Capabilities</span>
-            <span>/</span>
-            <span>Enterprise AI Operating System</span>
+      <main className="relative pt-36 sm:pt-44 pb-24 max-w-6xl mx-auto px-5 sm:px-6">
+        {/* Breadcrumb Strip */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono text-[#888277] mb-8">
+          <Link href="/" className="hover:text-[#181614] transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-[#B88746]" />
+          <Link href="/operating-system" className="hover:text-[#181614] transition-colors">Operating System</Link>
+          <ChevronRight className="w-3.5 h-3.5 text-[#B88746]" />
+          <span className="text-[#181614] font-semibold">Enterprise AI OS</span>
+        </nav>
+
+        {/* Hero Section */}
+        <header className="mb-14 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E2DDD1] text-[10px] font-mono tracking-widest text-[#B88746] font-bold uppercase mb-4 shadow-2xs">
+            <Workflow className="w-3 h-3 text-[#B88746]" />
+            <span>OPERATIONAL INFRASTRUCTURE // DESTIX AI</span>
           </div>
+          <h1 className="font-['Instrument_Serif'] text-4xl sm:text-6xl md:text-7xl text-[#181614] tracking-tight leading-[1.08] mb-6">
+            Autonomous workflows that connect <br />
+            <span className="italic text-[#B88746]">voice calls, CRM, and revenue.</span>
+          </h1>
+          <p className="text-[#55514B] font-['Plus_Jakarta_Sans'] text-base sm:text-lg max-w-3xl leading-relaxed">
+            A voice agent without backend automation is just an expensive toy. We build full-stack enterprise operating systems that connect your phones, CRMs, WhatsApp channels, and database records into one synchronized pipeline.
+          </p>
+        </header>
 
-          <div className="max-w-4xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-950/40 px-3.5 py-1 text-xs font-mono font-semibold uppercase tracking-wider text-indigo-300">
-              <Workflow className="size-3.5" />
-              Autonomous Operations Layer
-            </span>
-
-            <h1 className="mt-6 font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight text-white">
-              The unified brain for your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-                leads, CRM, & workflows.
-              </span>
-            </h1>
-
-            <p className="mt-6 text-xl text-slate-300 leading-relaxed max-w-3xl font-light">
-              Stop stitching together disconnected SaaS tools with brittle zaps.
-              DestiX AI engineers a custom AI Operating System with persistent memory, automated n8n pipelines,
-              and native CRM syncing that runs your entire back-office without manual intervention.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <button
-                onClick={() => setIsBookingOpen(true)}
-                className="btn-primary inline-flex items-center gap-3 px-8 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider"
+        {/* 4 Core Modules */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {modules.map((module, idx) => {
+            const Icon = module.icon;
+            return (
+              <div
+                key={idx}
+                className="rounded-3xl bg-white border border-[#E2DDD1] p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#B88746]/50 transition-all duration-300"
               >
-                <span>Install Your AI OS</span>
-                <ArrowUpRight className="size-4" />
-              </button>
-              <Link
-                href="/playbooks"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider text-white hover:border-cyan-400 hover:text-cyan-300"
-              >
-                <span>Explore Production Blueprints</span>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Workflow Pipeline Graphic Section */}
-        <section className="mt-24 px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="rounded-3xl border border-white/10 bg-[#0E1017] p-8 md:p-14 text-white shadow-espresso">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 border-b border-white/10">
-              <div>
-                <span className="text-xs uppercase tracking-widest text-cyan-400 font-mono font-semibold">
-                  // Pipeline Topology
-                </span>
-                <h3 className="mt-2 font-display text-3xl md:text-4xl font-bold text-white">
-                  From cold click to booked revenue in 90 seconds.
-                </h3>
-              </div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-cyan-950/60 border border-cyan-500/30 px-3.5 py-1 text-xs text-cyan-300 font-mono">
-                <span className="size-2 rounded-full bg-emerald-400 animate-ping" />
-                Live Pipeline State
-              </span>
-            </div>
-
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              {workflowSteps.map((ws, idx) => (
-                <div
-                  key={ws.step}
-                  className="glass-panel relative rounded-2xl p-5 flex flex-col justify-between"
-                >
-                  <div>
-                    <span className="font-mono text-xs text-cyan-400">{ws.step}</span>
-                    <h4 className="mt-3 font-display text-lg font-bold text-white leading-snug">{ws.name}</h4>
-                    <p className="mt-2 text-xs text-slate-400 font-light leading-relaxed">{ws.detail}</p>
-                  </div>
-                  {idx < workflowSteps.length - 1 && (
-                    <div className="hidden lg:block absolute -right-2.5 top-1/2 -translate-y-1/2 z-10 text-cyan-400 font-bold">
-                      →
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 rounded-2xl bg-[#EDE8DC] flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-[#B88746]" />
                     </div>
-                  )}
+                    <span className="text-[10px] font-['JetBrains_Mono'] px-2.5 py-1 rounded-md bg-[#F6F4EE] border border-[#E2DDD1] text-[#888277]">
+                      {module.tag}
+                    </span>
+                  </div>
+                  <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-3">
+                    {module.title}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed">
+                    {module.desc}
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            );
+          })}
         </section>
 
-        {/* Core Modules Grid */}
-        <section className="mt-28 px-6 md:px-10 max-w-7xl mx-auto">
-          <div className="max-w-2xl">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
-              // Operating Modules
+        {/* 5-Step Execution Sequence */}
+        <section className="rounded-3xl bg-white border border-[#E2DDD1] p-6 sm:p-10 shadow-xs mb-16">
+          <div className="mb-8">
+            <span className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider block mb-1 font-bold">
+              // END-TO-END DATA PIPELINE
             </span>
-            <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold text-white">
-              Four pillars of the DestiX Operating Layer.
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614]">
+              How Information Moves in Under 45 Seconds
             </h2>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {modules.map((m, idx) => {
-              const Icon = m.icon;
-              return (
-                <div
-                  key={idx}
-                  className="glass-panel glass-panel-hover rounded-2xl p-8 flex flex-col justify-between"
-                >
+          <div className="space-y-4">
+            {workflowSteps.map((step, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 rounded-2xl bg-[#F6F4EE]/60 border border-[#E2DDD1] gap-4"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="font-['JetBrains_Mono'] text-sm font-bold text-[#B88746] w-8">
+                    {step.step}
+                  </span>
                   <div>
-                    <div className="flex items-center justify-between">
-                      <div className="flex size-12 items-center justify-center rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400">
-                        <Icon className="size-6" />
-                      </div>
-                      <span className="rounded-full bg-white/5 border border-white/10 px-3 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-cyan-300">
-                        {m.tag}
-                      </span>
-                    </div>
-
-                    <h3 className="mt-6 font-display text-2xl font-bold text-white">{m.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-400 font-light">{m.desc}</p>
-                  </div>
-
-                  <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-2 text-xs font-mono text-slate-300">
-                    <CheckCircle2 className="size-4 text-emerald-400" />
-                    <span>Included in Pilot & Scale Plans</span>
+                    <h3 className="font-semibold text-sm sm:text-base text-[#181614]">
+                      {step.name}
+                    </h3>
+                    <p className="text-xs text-[#55514B] font-['Plus_Jakarta_Sans'] mt-0.5">
+                      {step.detail}
+                    </p>
                   </div>
                 </div>
-              );
-            })}
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-[10px] font-mono text-[#888277] uppercase tracking-wider">
+                    Automated
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Enterprise Security Box */}
+        <section className="p-8 sm:p-10 rounded-3xl bg-[#EDE8DC] border border-[#E2DDD1] mb-16 shadow-xs">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-2 mb-2">
+                <ShieldCheck className="w-5 h-5 text-[#B88746]" />
+                <span className="text-xs font-['JetBrains_Mono'] text-[#B88746] uppercase tracking-wider font-bold">
+                  SECURITY &amp; SOVEREIGNTY
+                </span>
+              </div>
+              <h2 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-[#181614] mb-2">
+                Your Data Never Trains Public LLM Models
+              </h2>
+              <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed">
+                All client call audio, transcripts, and CRM contacts are isolated in dedicated virtual private environments. Enterprise zero-retention policies and strict SOC-2 compliant encryption in transit and at rest.
+              </p>
+            </div>
+            <Link
+              href="/pricing"
+              className="px-6 py-3 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] text-xs font-mono font-semibold transition-all shrink-0 self-start md:self-center shadow-xs"
+            >
+              Explore Turnkey Pricing
+            </Link>
+          </div>
+        </section>
+
+        {/* Final CTA Banner */}
+        <section className="p-8 sm:p-12 rounded-3xl bg-white border-2 border-[#B88746] text-center shadow-md">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDE8DC] text-[10px] font-['JetBrains_Mono'] text-[#B88746] font-bold uppercase mb-4">
+            INTEGRATED AUTOMATION SPRINT
+          </div>
+          <h2 className="font-['Instrument_Serif'] text-3xl sm:text-5xl text-[#181614] mb-4">
+            Connect Your Telephony &amp; CRM in 14 Days
+          </h2>
+          <p className="text-sm sm:text-base text-[#55514B] font-['Plus_Jakarta_Sans'] max-w-2xl mx-auto mb-8 leading-relaxed">
+            Eliminate manual data entry, missed lead handoffs, and delayed follow-ups. Schedule a 30-minute scoping diagnostic directly with founder Ayush Meena.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <button
+              onClick={() => setIsBookingOpen(true)}
+              className="px-8 py-4 rounded-full bg-[#181614] hover:bg-[#B88746] text-[#F6F4EE] font-bold text-sm tracking-tight transition-all duration-300 shadow-sm"
+            >
+              Book 30-Min Diagnostic Call
+            </button>
+            <Link
+              href="/operating-system"
+              className="px-8 py-4 rounded-full bg-white border border-[#E2DDD1] hover:border-[#181614] text-[#181614] font-semibold text-sm transition-all duration-300"
+            >
+              Explore Operating System
+            </Link>
           </div>
         </section>
       </main>
 
-      <FinalCtaFooter onOpenBooking={() => setIsBookingOpen(true)} />
-      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} initialService="Enterprise AI Operating System" />
+      <FinalDeploymentFooter onOpenBooking={() => setIsBookingOpen(true)} />
+      <BookingModal
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+        initialService="Enterprise AI OS & Automation"
+      />
     </div>
   );
 }

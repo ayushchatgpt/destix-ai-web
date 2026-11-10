@@ -24,10 +24,10 @@ export const TechStackMarquee: React.FC = () => {
       className="border-y border-white/10 bg-[#08090C] py-14 overflow-hidden"
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10 text-center mb-8">
-        <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+        <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
           // Enterprise Infrastructure Stack
         </span>
-        <h3 className="mt-2 font-display text-2xl md:text-3xl font-bold text-white">
+        <h3 className="mt-2 font-['Instrument_Serif'] text-2xl md:text-3xl font-bold text-white">
           Engineered on certified frontier models and carrier SIP backbones.
         </h3>
       </div>
@@ -37,14 +37,14 @@ export const TechStackMarquee: React.FC = () => {
           {partners.map((partner, idx) => (
             <div
               key={`p1-${idx}`}
-              className="glass-panel group flex items-center gap-3 rounded-2xl px-5 py-3 transition-all duration-300 hover:border-cyan-500/40"
+              className="glass-panel group flex items-center gap-3 rounded-2xl px-5 py-3 transition-all duration-300 hover:border-[#B88746]/40"
             >
               <div
                 className="size-2.5 rounded-full transition-transform group-hover:scale-125"
                 style={{ backgroundColor: partner.color, boxShadow: `0 0 10px ${partner.color}` }}
               />
               <div className="text-left">
-                <span className="block font-semibold text-xs text-white group-hover:text-cyan-300 transition-colors">
+                <span className="block font-semibold text-xs text-white group-hover:text-[#B88746] transition-colors">
                   {partner.name}
                 </span>
                 <span className="block text-[10px] font-mono text-slate-400">{partner.role}</span>
@@ -57,14 +57,14 @@ export const TechStackMarquee: React.FC = () => {
           {partners.map((partner, idx) => (
             <div
               key={`p2-${idx}`}
-              className="glass-panel group flex items-center gap-3 rounded-2xl px-5 py-3 transition-all duration-300 hover:border-cyan-500/40"
+              className="glass-panel group flex items-center gap-3 rounded-2xl px-5 py-3 transition-all duration-300 hover:border-[#B88746]/40"
             >
               <div
                 className="size-2.5 rounded-full transition-transform group-hover:scale-125"
                 style={{ backgroundColor: partner.color, boxShadow: `0 0 10px ${partner.color}` }}
               />
               <div className="text-left">
-                <span className="block font-semibold text-xs text-white group-hover:text-cyan-300 transition-colors">
+                <span className="block font-semibold text-xs text-white group-hover:text-[#B88746] transition-colors">
                   {partner.name}
                 </span>
                 <span className="block text-[10px] font-mono text-slate-400">{partner.role}</span>

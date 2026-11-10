@@ -38,10 +38,10 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
       <div className="relative mx-auto max-w-7xl">
         {/* Header */}
         <div className="max-w-2xl">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
             // Core Architecture Capabilities
           </span>
-          <h2 className="mt-3 font-display text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.05]">
+          <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.05]">
             Three ways we install AI that{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
               pays for itself.
@@ -59,17 +59,17 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
           <div className="glass-panel glass-panel-hover group relative flex flex-col justify-between rounded-2xl p-8">
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-slate-500">01</span>
-                <span className="rounded-full border border-cyan-500/30 bg-cyan-950/60 px-3 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-cyan-300">
+                <span className="font-mono text-xs text-[#888277]">01</span>
+                <span className="rounded-full border border-[#B88746]/30 bg-[#EDE8DC]/60 px-3 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-[#B88746]">
                   Autonomous Telephony
                 </span>
               </div>
 
-              <div className="mt-6 flex size-12 items-center justify-center rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <div className="mt-6 flex size-12 items-center justify-center rounded-2xl bg-cyan-500/10 border border-[#B88746]/20 text-[#B88746]">
                 <PhoneCall className="size-6" />
               </div>
 
-              <h3 className="mt-6 font-display text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+              <h3 className="mt-6 font-['Instrument_Serif'] text-2xl font-bold text-white group-hover:text-[#B88746] transition-colors">
                 AI Voice Assistants
               </h3>
               <p className="mt-2 text-sm text-slate-400 font-light leading-relaxed">
@@ -96,7 +96,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                 </div>
               </div>
 
-              <ul className="mt-6 space-y-2.5 text-xs text-slate-300">
+              <ul className="mt-6 space-y-2.5 text-xs text-[#55514B]">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                   <span>Sub-45s speed to lead on inbound form fills</span>
@@ -115,7 +115,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
             <div className="mt-8 pt-5 border-t border-white/10 flex items-center justify-between">
               <button
                 onClick={onOpenBooking}
-                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-cyan-400 hover:text-cyan-300 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-[#B88746] hover:text-[#B88746] transition-colors"
               >
                 <span>Deploy Voice Agent</span>
                 <ArrowUpRight className="size-4" />
@@ -128,7 +128,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
           <div className="glass-panel glass-panel-hover group relative flex flex-col justify-between rounded-2xl p-8">
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-slate-500">02</span>
+                <span className="font-mono text-xs text-[#888277]">02</span>
                 <span className="rounded-full border border-indigo-500/30 bg-indigo-950/60 px-3 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-indigo-300">
                   Autonomous Operations
                 </span>
@@ -138,7 +138,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                 <Workflow className="size-6" />
               </div>
 
-              <h3 className="mt-6 font-display text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+              <h3 className="mt-6 font-['Instrument_Serif'] text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
                 AI Operating System
               </h3>
               <p className="mt-2 text-sm text-slate-400 font-light leading-relaxed">
@@ -148,7 +148,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
               <div className="mt-6 rounded-xl border border-white/10 bg-[#08090C] p-4">
                 <div className="flex items-center justify-between text-[11px] font-mono text-slate-400 mb-2">
                   <span>N8N WORKFLOW STREAM</span>
-                  <span className="text-cyan-400 flex items-center gap-1">
+                  <span className="text-[#B88746] flex items-center gap-1">
                     <span className="size-1.5 rounded-full bg-cyan-400 animate-ping" />
                     Active Pipeline
                   </span>
@@ -161,7 +161,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                   </div>
                   <div className="flex items-center justify-between rounded-lg bg-white/5 px-2.5 py-1.5 border border-white/5">
                     <span className="text-slate-400">Qualification Scoring</span>
-                    <span className="text-cyan-400">Tier-1 HNI</span>
+                    <span className="text-[#B88746]">Tier-1 HNI</span>
                   </div>
                   <div className="flex items-center justify-between rounded-lg bg-white/5 px-2.5 py-1.5 border border-white/5">
                     <span className="text-slate-400">CRM + WhatsApp Sync</span>
@@ -170,7 +170,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                 </div>
               </div>
 
-              <ul className="mt-6 space-y-2.5 text-xs text-slate-300">
+              <ul className="mt-6 space-y-2.5 text-xs text-[#55514B]">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                   <span>Custom n8n and Make.com multi-step orchestrations</span>
@@ -189,7 +189,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
             <div className="mt-8 pt-5 border-t border-white/10 flex items-center justify-between">
               <button
                 onClick={onOpenBooking}
-                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-cyan-400 hover:text-cyan-300 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-[#B88746] hover:text-[#B88746] transition-colors"
               >
                 <span>Install AI OS</span>
                 <ArrowUpRight className="size-4" />
@@ -202,7 +202,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
           <div className="glass-panel glass-panel-hover group relative flex flex-col justify-between rounded-2xl p-8">
             <div>
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-slate-500">03</span>
+                <span className="font-mono text-xs text-[#888277]">03</span>
                 <span className="rounded-full border border-violet-500/30 bg-violet-950/60 px-3 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-violet-300">
                   Digital Architecture
                 </span>
@@ -212,7 +212,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                 <MonitorSmartphone className="size-6" />
               </div>
 
-              <h3 className="mt-6 font-display text-2xl font-bold text-white group-hover:text-violet-300 transition-colors">
+              <h3 className="mt-6 font-['Instrument_Serif'] text-2xl font-bold text-white group-hover:text-violet-300 transition-colors">
                 Websites That Convert
               </h3>
               <p className="mt-2 text-sm text-slate-400 font-light leading-relaxed">
@@ -234,13 +234,13 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
                       ayush.company/3d-experience
                     </span>
                   </div>
-                  <div className="pt-2 text-center text-xs text-cyan-400 font-mono">
+                  <div className="pt-2 text-center text-xs text-[#B88746] font-mono">
                     WebGL 60FPS Interactive Showcase
                   </div>
                 </div>
               </div>
 
-              <ul className="mt-6 space-y-2.5 text-xs text-slate-300">
+              <ul className="mt-6 space-y-2.5 text-xs text-[#55514B]">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                   <span>Next.js App Router with sub-second page loads</span>
@@ -259,7 +259,7 @@ export const CoreServicesTriad: React.FC<CoreServicesTriadProps> = ({ onOpenBook
             <div className="mt-8 pt-5 border-t border-white/10 flex items-center justify-between">
               <button
                 onClick={onOpenBooking}
-                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-cyan-400 hover:text-cyan-300 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-mono font-semibold uppercase text-[#B88746] hover:text-[#B88746] transition-colors"
               >
                 <span>Commission 3D Platform</span>
                 <ArrowUpRight className="size-4" />

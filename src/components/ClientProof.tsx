@@ -118,10 +118,10 @@ export const ClientProof: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
               // Client Outcomes & Field Audits
             </span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight text-white">
+            <h2 className="mt-3 font-['Instrument_Serif'] text-4xl md:text-5xl font-bold tracking-tight text-white">
               Real deployments.{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
                 Unscripted outcomes.
@@ -133,8 +133,8 @@ export const ClientProof: React.FC = () => {
             </p>
           </div>
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-4 py-2 text-xs font-mono text-cyan-300">
-            <ShieldCheck className="size-4 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#B88746]/30 bg-[#EDE8DC]/40 px-4 py-2 text-xs font-mono text-[#B88746]">
+            <ShieldCheck className="size-4 text-[#B88746]" />
             <span>Audited Production Telephony</span>
           </div>
         </div>
@@ -153,7 +153,7 @@ export const ClientProof: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-cyan-950/20 to-transparent" />
 
                   <div className="relative flex items-center justify-between">
-                    <span className="font-mono text-[9px] uppercase tracking-wider bg-cyan-950/80 border border-cyan-500/30 px-2 py-0.5 rounded text-cyan-300">
+                    <span className="font-mono text-[9px] uppercase tracking-wider bg-[#EDE8DC]/80 border border-[#B88746]/30 px-2 py-0.5 rounded text-[#B88746]">
                       Verified
                     </span>
                     <span className="font-mono text-[10px] text-slate-400">
@@ -161,25 +161,25 @@ export const ClientProof: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="relative mx-auto flex size-12 items-center justify-center rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 transition-all duration-300 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]">
+                  <div className="relative mx-auto flex size-12 items-center justify-center rounded-full bg-cyan-500/20 border border-cyan-400/40 text-[#B88746] transition-all duration-300 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]">
                     <Play className="size-5 fill-current pl-0.5" />
                   </div>
 
                   <div className="relative">
-                    <div className="font-display text-3xl font-bold text-white">
+                    <div className="font-['Instrument_Serif'] text-3xl font-bold text-white">
                       {story.metric}
                     </div>
-                    <div className="text-[10px] font-mono text-cyan-300/80 leading-snug">
+                    <div className="text-[10px] font-mono text-[#B88746]/80 leading-snug">
                       {story.metricLabel}
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-4">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-cyan-400 block">
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-[#B88746] block">
                     {story.industry}
                   </span>
-                  <h3 className="mt-1 font-semibold text-sm text-white group-hover:text-cyan-300 transition-colors line-clamp-2">
+                  <h3 className="mt-1 font-semibold text-sm text-white group-hover:text-[#B88746] transition-colors line-clamp-2">
                     {story.title}
                   </h3>
                 </div>
@@ -187,7 +187,7 @@ export const ClientProof: React.FC = () => {
 
               <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
                 <span>View Architecture</span>
-                <ArrowUpRight className="size-3.5 text-cyan-400" />
+                <ArrowUpRight className="size-3.5 text-[#B88746]" />
               </div>
             </div>
           ))}
@@ -202,10 +202,10 @@ export const ClientProof: React.FC = () => {
           <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl border border-white/15 bg-[#0E1017] p-6 sm:p-8 text-white shadow-2xl">
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <div>
-                <span className="font-mono text-[10px] uppercase tracking-wider text-cyan-400">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#B88746]">
                   {activeStory.industry}
                 </span>
-                <h3 className="font-display text-2xl font-bold text-white">{activeStory.client}</h3>
+                <h3 className="font-['Instrument_Serif'] text-2xl font-bold text-white">{activeStory.client}</h3>
               </div>
               <button
                 onClick={() => setActiveStory(null)}
@@ -216,38 +216,38 @@ export const ClientProof: React.FC = () => {
             </div>
 
             <div className="mt-6 space-y-6">
-              <div className="flex items-center justify-between rounded-2xl bg-[#08090C] p-5 border border-cyan-500/30">
+              <div className="flex items-center justify-between rounded-2xl bg-[#08090C] p-5 border border-[#B88746]/30">
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-wider text-slate-400">
                     Production Outcome
                   </div>
-                  <div className="font-display text-4xl font-bold text-cyan-400 mt-1">
+                  <div className="font-['Instrument_Serif'] text-4xl font-bold text-[#B88746] mt-1">
                     {activeStory.metric}
                   </div>
-                  <div className="text-xs text-slate-300">{activeStory.metricLabel}</div>
+                  <div className="text-xs text-[#55514B]">{activeStory.metricLabel}</div>
                 </div>
-                <div className="flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-950/40 px-3.5 py-1.5 text-xs text-cyan-300 font-mono">
-                  <Volume2 className="size-4 animate-pulse text-cyan-400" />
+                <div className="flex items-center gap-2 rounded-full border border-[#B88746]/30 bg-[#EDE8DC]/40 px-3.5 py-1.5 text-xs text-[#B88746] font-mono">
+                  <Volume2 className="size-4 animate-pulse text-[#B88746]" />
                   <span>Audited Audio</span>
                 </div>
               </div>
 
-              <blockquote className="rounded-xl border-l-2 border-cyan-400 bg-white/[0.03] p-4 text-sm text-slate-300 italic">
+              <blockquote className="rounded-xl border-l-2 border-cyan-400 bg-white/[0.03] p-4 text-sm text-[#55514B] italic">
                 "{activeStory.quote}"
               </blockquote>
 
               <div>
-                <div className="font-mono text-xs uppercase tracking-wider text-cyan-400 mb-2">
+                <div className="font-mono text-xs uppercase tracking-wider text-[#B88746] mb-2">
                   Call Dialogue Excerpt
                 </div>
-                <div className="rounded-xl border border-white/10 bg-black/50 p-4 font-mono text-xs text-slate-300 leading-relaxed">
+                <div className="rounded-xl border border-white/10 bg-black/50 p-4 font-mono text-xs text-[#55514B] leading-relaxed">
                   {activeStory.transcriptPreview}
                 </div>
               </div>
 
               <div className="space-y-2">
                 {activeStory.results.map((res, i) => (
-                  <div key={i} className="flex items-center gap-2 text-xs text-slate-300">
+                  <div key={i} className="flex items-center gap-2 text-xs text-[#55514B]">
                     <CheckCircle2 className="size-4 text-emerald-400 shrink-0" />
                     <span>{res}</span>
                   </div>

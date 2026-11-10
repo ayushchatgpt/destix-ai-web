@@ -75,16 +75,16 @@ export const HowWeHelp: React.FC<HowWeHelpProps> = ({ onOpenBooking }) => {
         {/* Header & Visual */}
         <div className="grid items-center gap-12 lg:grid-cols-[1.3fr_1fr]">
           <div className="max-w-2xl">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-cyan-400 font-semibold">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#B88746] font-semibold">
               // Core Architecture Systems
             </span>
-            <h2 className="mt-4 font-display text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.05]">
+            <h2 className="mt-4 font-['Instrument_Serif'] text-4xl md:text-6xl font-bold tracking-tight text-white leading-[1.05]">
               AI that books revenue, not a chatbot that{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
                 annoys your callers.
               </span>
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-slate-300 font-light">
+            <p className="mt-5 text-lg leading-relaxed text-[#55514B] font-light">
               Most automation tools feel robotic, break on natural turn-taking, and frustrate prospects.
               DestiX AI builds bespoke acoustic intelligence that acts like your top senior account executive:
               empathetic, razor-sharp, and laser-focused on qualifying the deal.
@@ -102,7 +102,7 @@ export const HowWeHelp: React.FC<HowWeHelpProps> = ({ onOpenBooking }) => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-transparent to-transparent opacity-80" />
             <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-xs text-white">
-              <span className="font-mono text-[10px] uppercase tracking-wider bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-cyan-500/30 text-cyan-300">
+              <span className="font-mono text-[10px] uppercase tracking-wider bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-[#B88746]/30 text-[#B88746]">
                 Acoustic Laboratory • DestiX AI
               </span>
               <span className="font-mono text-xs text-emerald-400 flex items-center gap-1">
@@ -124,19 +124,19 @@ export const HowWeHelp: React.FC<HowWeHelpProps> = ({ onOpenBooking }) => {
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs text-cyan-400 font-semibold">
+                    <span className="font-mono text-xs text-[#B88746] font-semibold">
                       {pillar.num}
                     </span>
-                    <span className="rounded-full bg-cyan-950/60 border border-cyan-500/30 px-2.5 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-cyan-300">
+                    <span className="rounded-full bg-[#EDE8DC]/60 border border-[#B88746]/30 px-2.5 py-0.5 font-mono text-[10px] font-semibold tracking-wider uppercase text-[#B88746]">
                       {pillar.metric}
                     </span>
                   </div>
 
                   <div className="mt-6 flex items-center gap-3">
-                    <div className="flex size-10 items-center justify-center rounded-xl bg-white/5 border border-white/10 text-cyan-400">
+                    <div className="flex size-10 items-center justify-center rounded-xl bg-white/5 border border-white/10 text-[#B88746]">
                       <Icon className="size-5" />
                     </div>
-                    <h3 className="font-display text-xl font-bold text-white">
+                    <h3 className="font-['Instrument_Serif'] text-xl font-bold text-white">
                       {pillar.title}
                     </h3>
                   </div>
@@ -148,7 +148,7 @@ export const HowWeHelp: React.FC<HowWeHelpProps> = ({ onOpenBooking }) => {
 
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono uppercase text-slate-400">
                   <span>{pillar.tag}</span>
-                  <ArrowUpRight className="size-3.5 text-cyan-400" />
+                  <ArrowUpRight className="size-3.5 text-[#B88746]" />
                 </div>
               </div>
             );
