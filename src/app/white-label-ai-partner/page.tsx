@@ -105,7 +105,7 @@ export default function WhiteLabelAiPartnerPage() {
     {
       icon: Lock,
       title: "100% White-Label & Strict NDA",
-      desc: "No Ayush.company or DestiX AI branding ever appears. Custom white-labeled client portals, dedicated SIP caller IDs, and ironclad mutual non-disclosure.",
+      desc: "No DestiX AI branding ever appears. Custom white-labeled client portals, dedicated SIP caller IDs, and ironclad mutual non-disclosure.",
       badge: "Stealth Execution",
     },
     {
@@ -175,7 +175,7 @@ export default function WhiteLabelAiPartnerPage() {
       a: "We engineer on Retell AI, Vapi, Deepgram Nova-2, Cartesia Sonic, Twilio SIP Trunking, ElevenLabs, OpenAI Realtime, and custom WebSocket pipelines tuned to sub-450ms human conversational latency.",
     },
     {
-      q: "Will our clients ever see Ayush.company or DestiX AI branding?",
+      q: "Will our clients ever see DestiX AI branding?",
       a: "Never. All client deliverables, telephony caller IDs, CRM webhooks, and administrative portals are 100% white-labeled with your agency's logo, domain, and branding.",
     },
     {
@@ -481,7 +481,7 @@ export default function WhiteLabelAiPartnerPage() {
         </div>
       </section>
 
-      {/* Comparison Table: In-House vs Freelancer vs Ayush.company */}
+      {/* Comparison Table: In-House vs Freelancer vs DestiX AI */}
       <section className="py-20 bg-white border-y border-[#E2DDD1]">
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="max-w-3xl mb-12">
@@ -506,7 +506,7 @@ export default function WhiteLabelAiPartnerPage() {
                   <th className="py-4 px-4 sm:px-6">Dimension</th>
                   <th className="py-4 px-4 sm:px-6 text-[#55514B]">In-House AI Developer</th>
                   <th className="py-4 px-4 sm:px-6 text-[#55514B]">Upwork Freelancer</th>
-                  <th className="py-4 px-4 sm:px-6 text-[#B88746] font-bold">Ayush.company Studio</th>
+                  <th className="py-4 px-4 sm:px-6 text-[#B88746] font-bold">DestiX AI Studio</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#E2DDD1] font-['Plus_Jakarta_Sans']">

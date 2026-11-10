@@ -131,7 +131,7 @@ export const FinalCtaFooter: React.FC<FinalCtaFooterProps> = ({ onOpenBooking })
                 </Link>
               </li>
               <li>
-                <Link href="/#live-demo" className="hover:text-cyan-400 transition-colors">
+                <Link href="/voice-agents" className="hover:text-cyan-400 transition-colors">
                   Live Voice Agent Console
                 </Link>
               </li>

@@ -155,7 +155,7 @@ export default function AiVoiceAgentForRealEstatePage() {
     },
     {
       q: "Can the AI voice agent replace human telecallers for real estate?",
-      a: "Yes. Ayush.company eliminates 80% of manual telesales overhead. While human callers take 4 to 14 hours to follow up and suffer from 40% monthly attrition, the AI voice agent calls leads within 30 seconds 24/7/365, ensuring your top closers only speak to pre-qualified buyers.",
+      a: "Yes. DestiX AI eliminates 80% of manual telesales overhead. While human callers take 4 to 14 hours to follow up and suffer from 40% monthly attrition, the AI voice agent calls leads within 30 seconds 24/7/365, ensuring your top closers only speak to pre-qualified buyers.",
     },
     {
       q: "Can the AI qualify buyers for multi-crore luxury projects in Gurgaon and Delhi NCR?",
@@ -163,7 +163,7 @@ export default function AiVoiceAgentForRealEstatePage() {
     },
     {
       q: "How does the AI voice agent handle caller interruptions mid-sentence?",
-      a: "Ayush.company deploys sub-435ms voice parity and sub-200ms acoustic interruption handling. If a buyer interrupts to ask 'What is the price per square foot?', the agent pauses instantly and responds naturally without talking over them.",
+      a: "DestiX AI deploys sub-435ms voice parity and sub-200ms acoustic interruption handling. If a buyer interrupts to ask 'What is the price per square foot?', the agent pauses instantly and responds naturally without talking over them.",
     },
     {
       q: "Does it integrate with LeadSquared, Salesforce, and WhatsApp?",
@@ -194,7 +194,7 @@ export default function AiVoiceAgentForRealEstatePage() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed max-w-2xl mb-8">
-              Engineered by Ayush.company. Deploy autonomous conversational voice agents that dial 99acres, MagicBricks, and Meta ad leads in under 30 seconds, screen buyer budgets (₹2 Cr to ₹25 Cr+), and book confirmed site visits 24/7 without human delay.
+              Engineered by DestiX AI. Deploy autonomous conversational voice agents that dial 99acres, MagicBricks, and Meta ad leads in under 30 seconds, screen buyer budgets (₹2 Cr to ₹25 Cr+), and book confirmed site visits 24/7 without human delay.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -373,7 +373,7 @@ export default function AiVoiceAgentForRealEstatePage() {
               &ldquo;An AI voice agent for real estate is an autonomous conversational telephony system that dials property leads within 30 seconds of submission. It qualifies budget, timeline, and configuration in natural voice, logs details directly into CRMs like LeadSquared, and schedules confirmed site visits without human delay.&rdquo;
             </blockquote>
             <div className="mt-4 text-[11px] font-mono text-[#888277]">
-              Source: Ayush.company Conversational Telephony Benchmark &bull; 45 Words Verified
+              Source: DestiX AI Conversational Telephony Benchmark &bull; 45 Words Verified
             </div>
           </div>
         </div>
@@ -389,7 +389,7 @@ export default function AiVoiceAgentForRealEstatePage() {
             The 3-Step Speed-to-Lead Workflow
           </h2>
           <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] mt-2">
-            How Ayush.company transforms cold portal submissions into showroom site visits in under 3 minutes.
+            How DestiX AI transforms cold portal submissions into showroom site visits in under 3 minutes.
           </p>
         </div>
 
@@ -420,7 +420,7 @@ export default function AiVoiceAgentForRealEstatePage() {
         </div>
       </section>
 
-      {/* Semantic Comparison Table: Human Telecaller vs Legacy IVR vs Ayush.company */}
+      {/* Semantic Comparison Table: Human Telecaller vs Legacy IVR vs DestiX AI */}
       <section className="py-20 bg-white border-y border-[#E2DDD1]">
         <div className="max-w-6xl mx-auto px-5 sm:px-6">
           <div className="max-w-3xl mb-12">
@@ -428,7 +428,7 @@ export default function AiVoiceAgentForRealEstatePage() {
               Performance Architecture
             </span>
             <h2 className="font-['Instrument_Serif'] text-4xl sm:text-5xl text-[#181614] mt-2">
-              Human Telecallers vs Legacy IVR vs Ayush.company
+              Human Telecallers vs Legacy IVR vs DestiX AI
             </h2>
             <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-[#B88746] mt-2">
               Full-Cycle Architectural Telephony Comparison Matrix
@@ -445,7 +445,7 @@ export default function AiVoiceAgentForRealEstatePage() {
                   <th className="py-4 px-4 sm:px-6">Operational Metric</th>
                   <th className="py-4 px-4 sm:px-6 text-[#55514B]">Human Telecaller Team</th>
                   <th className="py-4 px-4 sm:px-6 text-[#55514B]">Legacy IVR Systems</th>
-                  <th className="py-4 px-4 sm:px-6 text-[#B88746] font-bold">Ayush.company Voice AI</th>
+                  <th className="py-4 px-4 sm:px-6 text-[#B88746] font-bold">DestiX AI Voice AI</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#E2DDD1] font-['Plus_Jakarta_Sans']">

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "White Label AI Voice Agent Partner | Fractional AI Dev for Agencies | Ayush.company",
+  title: "White Label AI Voice Agent Partner | Fractional AI Dev for Agencies | DestiX AI",
   description:
-    "Partner with Ayush.company as your white-label AI voice agent and Next.js engineering practice. Deliver sub-450ms voice bots and bespoke WebGL web platforms to your agency clients at 25%–35% margins under strict NDA.",
+    "Partner with DestiX AI as your white-label AI voice agent and Next.js engineering practice. Deliver sub-450ms voice bots and bespoke WebGL web platforms to your agency clients at 25%–35% margins under strict NDA.",
   keywords: [
     "white label ai voice agent partner",
     "fractional ai engineer for digital agencies",
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/white-label-ai-partner",
   },
   openGraph: {
-    title: "White Label AI Voice Agent Partner | Fractional AI Dev for Agencies | Ayush.company",
+    title: "White Label AI Voice Agent Partner | Fractional AI Dev for Agencies | DestiX AI",
     description:
       "Deliver sub-450ms AI voice agents and bespoke Next.js/WebGL applications to your clients at 25%–35% margins. 100% white-labeled under your agency brand with strict NDA.",
     url: "https://ayush.company/white-label-ai-partner",
-    siteName: "Ayush.company",
+    siteName: "DestiX AI",
     locale: "en_US",
     type: "website",
       images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "White Label AI Voice Agent Partner | Ayush.company",
+    title: "White Label AI Voice Agent Partner | DestiX AI",
     description:
       "Fractional AI voice and frontend engineering for design, marketing, and enterprise consultancies.",
       images: ["https://ayush.company/og-white-label.png"],

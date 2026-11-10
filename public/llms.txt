@@ -1,6 +1,6 @@
-# Ayush.company | Custom AI Voice Agents & Automation Agency
+# DestiX AI | Autonomous Telephony & AI Voice Agent Practice (ayush.company)
 
-> Ayush.company is a B2B AI engineering and voice automation agency based in Delhi NCR, India. We build low-latency (sub-500ms) Hinglish and English AI Voice Agents, automated lead qualification workflows, and interactive Next.js web systems for real estate developers, brokerages, and marketing agencies.
+> DestiX AI (primary domain: ayush.company) is an autonomous voice engineering and conversational AI studio based in Delhi NCR, India. We build low-latency (sub-500ms) Hinglish and English AI Voice Agents, automated lead qualification workflows, and interactive Next.js web systems for real estate developers, brokerages, and marketing agencies.
 
 ## Core Services & Solutions
 - [AI Voice Agents for Real Estate](https://ayush.company/ai-voice-agent-for-real-estate): Instant 15-second outbound callback systems for 99acres, MagicBricks, Housing.com, and Meta Ads leads. Automates buyer qualification and site-visit booking in fluent Hinglish and English.

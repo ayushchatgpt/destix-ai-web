@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ayush.company | AI Voice Agent for Real Estate & Lead Calling Automation",
+  title: "DestiX AI | AI Voice Agent for Real Estate & Lead Calling Automation",
   description:
     "Autonomous AI voice agents for real estate developers and brokers. Qualify 99acres, MagicBricks, and Meta ad leads in 30 seconds, screen buyer budgets (3BHK/4BHK/Penthouse), and book site visits 24/7.",
   keywords: [
@@ -18,18 +18,18 @@ export const metadata: Metadata = {
     "property lead calling ai delhi",
     "hinglish voice ai for real estate brokers",
     "dlf gurgaon real estate ai calling system",
-    "Ayush.company real estate AI",
+    "DestiX AI real estate AI",
     "DestiX AI real estate voice",
   ],
   alternates: {
     canonical: "https://ayush.company/ai-voice-agent-for-real-estate",
   },
   openGraph: {
-    title: "AI Voice Agent for Real Estate: Qualify Portal Leads in 30 Seconds | Ayush.company",
+    title: "AI Voice Agent for Real Estate: Qualify Portal Leads in 30 Seconds | DestiX AI",
     description:
       "Convert 4x more real estate leads. Autonomous voice agents call portal and ad leads within 30 seconds, filter buyer budgets, and schedule site tours directly into sales calendars.",
     url: "https://ayush.company/ai-voice-agent-for-real-estate",
-    siteName: "Ayush.company",
+    siteName: "DestiX AI",
     locale: "en_IN",
     type: "website",
       images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Voice Agent for Real Estate | Ayush.company",
+    title: "AI Voice Agent for Real Estate | DestiX AI",
     description:
       "Autonomous speed-to-lead voice qualification for real estate developers and brokers.",
       images: ["https://ayush.company/og-real-estate.png"],

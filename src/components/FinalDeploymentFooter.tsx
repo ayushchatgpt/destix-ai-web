@@ -95,12 +95,12 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              The 5x Scoping Model
+              Scoping &amp; Economics
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">The 5x Hurdle Rate Mandate</a></li>
-              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">Interactive Volume Modeler</a></li>
-              <li><a href="/#scoping-model" className="hover:text-[#F6EFE2] transition-colors">No SaaS Tiers Policy</a></li>
+              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; 5x Hurdle Rate</Link></li>
+              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Enterprise Solution Directory</Link></li>
+              <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Proof</Link></li>
               <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
               <li><Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors font-medium">Agency White-Label Program</Link></li>
             </ul>

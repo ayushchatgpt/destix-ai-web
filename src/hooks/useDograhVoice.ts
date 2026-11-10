@@ -192,8 +192,8 @@ export function useDograhVoice(defaultLanguage: VoiceLanguage = "en"): UseDograh
     if (typeof window !== "undefined") {
       const hostname = window.location.hostname;
       if (hostname.endsWith(".trycloudflare.com") || (window.location.protocol === "https:" && !hostname.includes("localhost"))) {
-        apiUrl = process.env.NEXT_PUBLIC_DOGRAH_TUNNEL_API_URL || "https://filters-musical-guidelines-lan.trycloudflare.com";
-        uiUrl = process.env.NEXT_PUBLIC_DOGRAH_TUNNEL_UI_URL || "https://consideration-activity-baseball-follows.trycloudflare.com";
+        apiUrl = process.env.NEXT_PUBLIC_DOGRAH_TUNNEL_API_URL || "https://tone-spread-looksmart-seat.trycloudflare.com";
+        uiUrl = process.env.NEXT_PUBLIC_DOGRAH_TUNNEL_UI_URL || "https://wheat-burlington-sponsorship-secretariat.trycloudflare.com";
       }
     }
 
@@ -370,19 +370,29 @@ export function useDograhVoice(defaultLanguage: VoiceLanguage = "en"): UseDograh
     }
 
     try {
-      // Retain user activation gesture on mobile by requesting mic immediately
-      if (typeof navigator !== "undefined" && navigator.mediaDevices?.getUserMedia) {
-        try {
-          const preStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          (window as unknown as { DograhWidgetPreStream?: MediaStream }).DograhWidgetPreStream = preStream;
-          micStreamRef.current = preStream;
-          attachAudioAnalyser(preStream);
-        } catch (e) {
-          console.warn("Pre-stream acquisition failed, letting widget handle fallback:", e);
+      // Run mic acquisition and widget connection in parallel for < 2s startup
+      const micPromise = (async () => {
+        if (typeof navigator !== "undefined" && navigator.mediaDevices?.getUserMedia) {
+          try {
+            const preStream = await navigator.mediaDevices.getUserMedia({ 
+              audio: {
+                echoCancellation: true,
+                noiseSuppression: true,
+                autoGainControl: true,
+              } 
+            });
+            (window as unknown as { DograhWidgetPreStream?: MediaStream }).DograhWidgetPreStream = preStream;
+            micStreamRef.current = preStream;
+            attachAudioAnalyser(preStream);
+            return preStream;
+          } catch (e) {
+            console.warn("Pre-stream acquisition failed, letting widget handle fallback:", e);
+          }
         }
-      }
+        return null;
+      })();
 
-      await widget.start();
+      await Promise.all([micPromise, widget.start()]);
       const stream = getWidgetMediaStream() || micStreamRef.current;
       if (stream) {
         micStreamRef.current = stream;

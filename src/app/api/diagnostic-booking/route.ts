@@ -77,7 +77,7 @@ Action: Call or WhatsApp them within 45 seconds to prove speed-to-lead parity!
           body: JSON.stringify({
             access_key: web3AccessKey,
             subject: `🚨 [NEW 30-MIN DIAGNOSTIC] ${bookingReport.lead.name} (${bookingReport.lead.company})`,
-            from_name: "Ayush.company Concierge",
+            from_name: "DestiX AI Concierge",
             name: bookingReport.lead.name,
             email: bookingReport.lead.email,
             phone: bookingReport.lead.phone,

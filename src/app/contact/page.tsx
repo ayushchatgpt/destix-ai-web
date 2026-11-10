@@ -44,7 +44,7 @@ export default function ContactPage() {
         body: JSON.stringify({
           access_key: "309b2462-e5a9-417a-b2e0-6f7402aab022",
           subject: `🚨 [CONTACT DOSSIER] ${formData.name} (${formData.company})`,
-          from_name: "Ayush.company Contact Form",
+          from_name: "DestiX AI Contact Form",
           name: formData.name,
           email: formData.email,
           company: formData.company,

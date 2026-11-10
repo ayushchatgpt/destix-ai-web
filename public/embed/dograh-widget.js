@@ -933,7 +933,7 @@
     // Same skip as the main app's useWebSocketRTC hook.
     const iceServers = state.config.forceTurnRelay
       ? []
-      : [{ urls: ['stun:stun.l.google.com:19302'] }];
+      : [{ urls: ['stun:stun.relay.metered.ca:80', 'stun:stun.l.google.com:19302'] }];
 
     // Add TURN server if credentials are available
     if (state.turnCredentials && state.turnCredentials.uris && state.turnCredentials.uris.length > 0) {
