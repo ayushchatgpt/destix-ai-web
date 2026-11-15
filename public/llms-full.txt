@@ -8,6 +8,7 @@
 - [Transparent Pricing & Unit Economics](https://ayush.company/pricing): Wholesale pass-through carrier minutes (~₹4.50 to ₹7.50/min), zero recurring software seat markups, 100% client code ownership, and a strict 5x Hurdle Rate financial commitment.
 - [Production Playbooks & Blueprints](https://ayush.company/playbooks): 6 verified commercial blueprints across Luxury Real Estate, Healthcare Patient Triage, High-Ticket B2B Sales, Luxury Hospitality, D2C Abandoned Checkout Recovery, and Agency White-Label.
 - [Verified Client Case Studies](https://ayush.company/case-studies): Real operational deployments for Alliance Capital Properties (AED 85M+ pipeline), Pranav Jha Studio, DigiiRox 3D Experience, and Birch Stays.
+- [Press & Executive Media Kit](https://ayush.company/press): Official biographical dossier of Founder Ayush Meena, corporate fact sheet, and publications.
 - [Websites & 3D WebGL](https://ayush.company/websites): High-performance Next.js 15 digital flagships and interactive 60 FPS Three.js spatial experiences.
 - [White-Label AI Agency Partner](https://ayush.company/partners/agency-white-label): Multi-tenant voice core and frontend execution for marketing and growth consultancies.
 

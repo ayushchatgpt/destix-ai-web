@@ -61,6 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.99,
     },
     {
+      url: `${baseUrl}/press`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/services/enterprise-rag-implementation`,
       lastModified: now,
       changeFrequency: "weekly" as const,
