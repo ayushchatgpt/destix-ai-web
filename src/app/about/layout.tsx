@@ -98,6 +98,8 @@ export default function AboutLayout({
               },
               "sameAs": [
                 "https://www.linkedin.com/in/ayush-meena-065a89380/",
+                "https://github.com/ayushchatgpt",
+                "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",
                 "https://github.com/ayushchatgpt/destix-ai-web",
                 "https://ayush.company",
               ],
