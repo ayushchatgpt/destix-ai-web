@@ -104,6 +104,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             <ul className="space-y-2.5 text-[#A89F93]">
               <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; 5x Hurdle Rate</Link></li>
               <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Enterprise Solution Directory</Link></li>
+              <li><Link href="/locations" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">Global Hubs (US, UK &amp; EU) →</Link></li>
               <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Proof</Link></li>
               <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
               <li><Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors font-medium">Agency White-Label Program</Link></li>
@@ -127,34 +128,67 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
 
         {/* Regional Jurisdictions & Voice Telephony Sitelinks */}
         <nav aria-label="Regional Telephony Hubs" className="pt-8 pb-14 border-b border-[#25221F] text-xs">
-          <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-5">
-            Regional Telephony Hubs &amp; Jurisdictions
+          <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-6">
+            Global &amp; Regional Telephony Hubs
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-[#A89F93]">
             <div>
+              <Link href="/locations/uk/london/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                London (UK) →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+44 20 Ofcom &amp; UK GDPR</span>
+            </div>
+            <div>
+              <Link href="/locations/usa/new-york/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                New York City (USA) →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+1 212 Wall St &amp; Manhattan</span>
+            </div>
+            <div>
+              <Link href="/locations/usa/miami/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Miami &amp; Brickell (USA) →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+1 305 Bilingual English/Spanish</span>
+            </div>
+            <div>
+              <Link href="/locations/europe/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Europe Practice →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Paris/Berlin/Zurich GDPR Art 22</span>
+            </div>
+
+            <div>
               <Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Delhi NCR Enterprise Hub →
+                Delhi NCR (HQ) →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place &amp; Central Telephony</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place Central Telephony</span>
             </div>
             <div>
-              <Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Gurugram (Gurgaon) Hub →
+              <Link href="/locations/mumbai/ai-voice-receptionist" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Mumbai Practice →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+91 022 Bandra, BKC &amp; Clinics</span>
             </div>
             <div>
-              <Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Noida &amp; Greater Noida Hub →
+              <Link href="/locations/bengaluru/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Bengaluru Tech Hub →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Corridor</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+91 080 D2C &amp; SaaS Demos</span>
             </div>
             <div>
-              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
-                Dubai Studio &amp; Real Estate ★
+              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Dubai Studio &amp; DIFC ★ →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+971 TDRA &amp; DIFC Real Estate</span>
             </div>
+          </div>
+
+          {/* Minimalist Sub-Strip to All 14 Hubs */}
+          <div className="mt-8 pt-6 border-t border-[#1F1C19] flex flex-wrap items-center justify-between gap-4 text-xs font-['JetBrains_Mono'] text-[#A89F93]">
+            <span>Active Carrier Gateways: <strong className="text-[#F6EFE2]">14 Metropolitan Jurisdictions</strong></span>
+            <Link href="/locations" className="text-[#B88746] hover:text-[#F6EFE2] transition-colors inline-flex items-center gap-1 font-medium">
+              <span>Explore All 14 Global Deployment Hubs (Los Angeles, Gurugram, Noida, Hyderabad, Pune, Chennai) →</span>
+            </Link>
           </div>
         </nav>
 

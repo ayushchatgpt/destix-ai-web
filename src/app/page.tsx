@@ -8,6 +8,7 @@ import { AskAiConsole } from "@/components/AskAiConsole";
 import HowWeBuild from "@/components/HowWeBuild";
 import SelectedWorks from "@/components/SelectedWorks";
 import ProductionPlaybooks from "@/components/ProductionPlaybooks";
+import GlobalTelephonyGateways from "@/components/GlobalTelephonyGateways";
 import CorePracticeAreas from "@/components/CorePracticeAreas";
 import VoiceDemoConsole from "@/components/VoiceDemoConsole";
 import ScopingModel from "@/components/ScopingModel";
@@ -54,6 +55,9 @@ export default function HomePage() {
 
       {/* Section 6: (04) Deployed Production Playbooks (Vertical Blueprints) */}
       <ProductionPlaybooks />
+
+      {/* Section 6.5: Global Carrier Telephony Gateways (US, UK, Europe, GCC, India) */}
+      <GlobalTelephonyGateways />
 
       {/* Section 7: (05) The Core Practice Areas (Deep Espresso Section) */}
       <CorePracticeAreas />

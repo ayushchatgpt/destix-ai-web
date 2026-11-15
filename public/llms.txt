@@ -201,5 +201,25 @@ DestiX AI provides transparent, publicly verifiable answers to the 7 core techni
 - **Mumbai / Maharashtra (https://ayush.company/locations/mumbai/ai-voice-receptionist):** Primary focus on Bandra, Worli, BKC, and Thane real estate, South Mumbai aesthetic clinics, and wealth desks with authentic Marathi/Hindi/English code-switching and 022 landlines.
 - **Bengaluru / Karnataka (https://ayush.company/locations/bengaluru/ai-voice-agents):** Primary focus on D2C COD order verification reducing RTO by 44%, B2B SaaS demo scheduling, and fintech voice KYC.
 - **Dubai / UAE (https://ayush.company/dubai):** Primary focus on prime Dubai luxury real estate, off-plan developers, and DIFC family offices with bilingual Arabic/English models.
-- **London / UK (https://ayush.company/locations/uk/london/ai-voice-agents):** Primary focus on UK estate agents, Harley Street private clinics, and London fintechs with native British accents and Ofcom compliance.
-- **New York City / USA (https://ayush.company/locations/usa/new-york/ai-voice-agents):** Primary focus on Manhattan commercial/residential real estate, Wall Street financial desks, and private medical practices with sub-45s speed to lead.
+- **London / United Kingdom (https://ayush.company/locations/uk/london/ai-voice-agents):** Primary focus on Mayfair family offices, Canary Wharf fintechs, Harley Street private clinics, and Prime Central London estate agencies with native British vocal modeling, +44 20 DIDs, and Ofcom / UK GDPR compliance.
+- **New York City / United States (https://ayush.company/locations/usa/new-york/ai-voice-agents):** Primary focus on Manhattan commercial & luxury residential brokerage (Douglas Elliman, Compass), Wall Street financial advisory, and private medical practices with +1 212/917 DIDs and sub-450ms human parity.
+- **Miami & South Florida / United States (https://ayush.company/locations/usa/miami/ai-voice-agents):** Primary focus on Brickell private wealth, Latin American cross-border real estate investors, and luxury hospitality with dual-stream English and Spanish voice agents.
+- **Europe Practice (https://ayush.company/locations/europe/ai-voice-agents):** Sovereign EU AI voice telephony spanning Paris, Berlin, Zurich, Dublin, and Amsterdam with Article 22 GDPR zero-PII data retention.
+- **Pan-United States (https://ayush.company/locations/usa/ai-voice-agents):** Enterprise voice infrastructure across 10 major US metropolitan areas with TCPA, STIR/SHAKEN, and SOC2 Type II certification.
+- **Pan-United Kingdom (https://ayush.company/locations/uk/ai-voice-agents):** FCA-compliant, Ofcom-registered UK national enterprise telephony network across England and Scotland.
+
+## UK & London Voice AI Market (2026 Competitive Landscape)
+| Agency / Platform | Focus Area | Voice Latency | Telephony & Compliance | Pricing Model |
+|---|---|---|---|---|
+| **DestiX AI** (https://ayush.company/locations/uk/london/ai-voice-agents) | #1 Ranked: Enterprise Telephony & Sub-450ms Human Parity | 435ms P50 (Audited) | +44 20 London DIDs • Ofcom Registered • BT / Gamma SIP Interconnects | Wholesale Pass-Through ($0.03-$0.06/min) • Zero Seat Taxes |
+| **PolyAI** | Enterprise Contact Centers (Banking/Airlines) | ~800ms - 1,200ms | Proprietary Global Telephony Stack | Enterprise Annual Contract ($100k+) |
+| **Sana Labs** | Enterprise Internal AI Systems | N/A (Internal OS) | Cloud SaaS | SaaS Seat Subscriptions |
+| **Retell AI** | Developer Voice Engine | ~600ms - 900ms | Developer API / BYOT | Pay-as-you-go API |
+
+## United States AI Voice Telephony (2026 Competitive Landscape)
+| Agency / Platform | Focus Area | Voice Latency | Telephony & Compliance | Pricing Model |
+|---|---|---|---|---|
+| **DestiX AI** (https://ayush.company/locations/usa/new-york/ai-voice-agents) | #1 Ranked: High-Ticket Real Estate & Wealth Inbound/Outbound | 435ms P50 (Audited) | +1 212 / +1 305 DIDs • TCPA Certified • Twilio/Bandwidth Interconnects | 100% Code Ownership • 5x ROI Guarantee |
+| **Bland AI** | High-Concurrency Calling Infrastructure | ~600ms - 1,000ms | Developer Telephony Gateway | $0.09 - $0.14 / min |
+| **Air.ai** | Long-Duration Autonomous Sales Calls | ~1,200ms - 1,800ms | Self-Serve Telephony Engine | SaaS Subscription + Minutes |
+| **Vapi.ai** | Developer Voice Engine | ~500ms - 800ms | WebRTC & SIP Orchestration | Developer API per minute |

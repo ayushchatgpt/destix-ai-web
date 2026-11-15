@@ -1292,6 +1292,71 @@ export default function RootLayout({
                   "parentOrganization": {"@id": "https://ayush.company/#organization"}
                 },
                 {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#miami-office",
+                  "name": "DestiX AI Miami",
+                  "alternateName": ["DestiX AI Florida", "DestiX Miami"],
+                  "url": "https://ayush.company/locations/usa/miami/ai-voice-agents",
+                  "description": "DestiX AI Miami: Bilingual Spanish and English AI voice agents for Brickell private wealth, Latin American luxury real estate investors, and South Florida aesthetic clinics.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Brickell City Centre, 701 S Miami Ave",
+                    "addressLocality": "Miami",
+                    "addressRegion": "FL",
+                    "postalCode": "33130",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "25.7663",
+                    "longitude": "-80.1936"
+                  },
+                  "areaServed": [
+                    {"@type": "City", "name": "Miami"},
+                    {"@type": "AdministrativeArea", "name": "Brickell"},
+                    {"@type": "AdministrativeArea", "name": "Coral Gables"},
+                    {"@type": "AdministrativeArea", "name": "South Florida"},
+                    {"@type": "Country", "name": "United States"}
+                  ],
+                  "priceRange": "$2,000 - $85,000",
+                  "currenciesAccepted": "USD",
+                  "availableLanguage": ["English", "Spanish"],
+                  "parentOrganization": {"@id": "https://ayush.company/#organization"}
+                },
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#europe-office",
+                  "name": "DestiX AI Europe",
+                  "alternateName": ["DestiX AI EU", "DestiX Europe"],
+                  "url": "https://ayush.company/locations/europe/ai-voice-agents",
+                  "description": "DestiX AI Europe: Article 22 GDPR-compliant sovereign conversational AI voice telephony across Paris, Berlin, Zurich, Dublin, and Amsterdam.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Rue de la Loi / Wetstraat",
+                    "addressLocality": "Brussels",
+                    "addressRegion": "Brussels",
+                    "postalCode": "1000",
+                    "addressCountry": "BE"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "50.8430",
+                    "longitude": "4.3752"
+                  },
+                  "areaServed": [
+                    {"@type": "City", "name": "Paris"},
+                    {"@type": "City", "name": "Berlin"},
+                    {"@type": "City", "name": "Zurich"},
+                    {"@type": "City", "name": "Amsterdam"},
+                    {"@type": "City", "name": "Dublin"},
+                    {"@type": "Continent", "name": "Europe"}
+                  ],
+                  "priceRange": "EUR 2,000 - EUR 85,000",
+                  "currenciesAccepted": "EUR, CHF, GBP, USD",
+                  "availableLanguage": ["English", "French", "German"],
+                  "parentOrganization": {"@id": "https://ayush.company/#organization"}
+                },
+                {
                   "@type": "BreadcrumbList",
                   "@id": "https://ayush.company/#breadcrumbs",
                   "name": "DestiX AI Primary Navigation Breadcrumbs",

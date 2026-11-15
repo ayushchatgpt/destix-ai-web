@@ -27,6 +27,7 @@ export function Header({ onOpenBooking }: HeaderProps) {
     { name: "Websites & 3D", href: "/websites" },
     { name: "Operating System", href: "/operating-system" },
     { name: "Use Cases", href: "/use-cases" },
+    { name: "Global Hubs", href: "/locations" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -57,8 +58,8 @@ export function Header({ onOpenBooking }: HeaderProps) {
           </div>
         </Link>
 
-        {/* Center Nav: 6 Core Subpages */}
-        <div className="hidden lg:flex items-center gap-6 xl:gap-7 text-[13px] font-['Plus_Jakarta_Sans'] font-medium text-[#55514B]">
+        {/* Center Nav: Core Subpages */}
+        <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-[13px] font-['Plus_Jakarta_Sans'] font-medium text-[#55514B]">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
