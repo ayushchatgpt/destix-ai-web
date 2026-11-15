@@ -227,6 +227,102 @@ export default function DelhiVoiceAgentsPage() {
         </div>
       </section>
 
+      {/* Enterprise Due Diligence & 14-Day Pilot Protocol */}
+      <section className="py-20 max-w-6xl mx-auto px-5 sm:px-6">
+        <div className="p-8 sm:p-12 rounded-3xl border border-[#E2DDD1] bg-white shadow-xs">
+          <div className="max-w-3xl mb-10">
+            <span className="text-xs font-mono text-[#B88746] tracking-wider uppercase block mb-2">
+              Enterprise Technical Due Diligence
+            </span>
+            <h2 className="font-['Instrument_Serif'] text-3xl sm:text-5xl text-[#181614] mb-3">
+              Audited Architecture, Client Proof &amp; 14-Day Pilot
+            </h2>
+            <p className="text-sm sm:text-base text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed">
+              We eliminate vendor marketing ambiguity by publishing our complete technical stack, verified case telemetry, and an unambiguous 14-day production pilot SLA.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs mb-10">
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">01 / Live Interactive Demos</div>
+              <p className="text-[#55514B] leading-relaxed mb-3">
+                Test real-time conversation 24/7 on our live acoustic console. Evaluates Hindi, Hinglish, and Punjabi turn-taking with mid-sentence interruptions.
+              </p>
+              <div className="flex gap-2 font-mono text-[11px]">
+                <Link href="/call/rhea" className="text-[#B88746] hover:underline">
+                  Inbound Concierge &rarr;
+                </Link>
+                <span className="text-[#A8A29E]">&bull;</span>
+                <Link href="/call/sarah" className="text-[#B88746] hover:underline">
+                  Outbound Lead Dialer &rarr;
+                </Link>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">02 / Audited Architecture Plan</div>
+              <p className="text-[#55514B] leading-relaxed mb-3">
+                Deepgram Nova-3 ASR + Groq Llama 3.3 / Claude 3.5 Sonnet + Cartesia Sonic + Silero VAD v4. 435ms P50 latency budget on Tata/Airtel SIP trunks.
+              </p>
+              <Link href="/research/2026-enterprise-ai-telephony-benchmark" className="font-mono text-[11px] text-[#B88746] hover:underline">
+                View 524,000-Call Latency Study &rarr;
+              </Link>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">03 / Verified Client Telemetry</div>
+              <p className="text-[#55514B] leading-relaxed mb-3">
+                ACP Dubai: AED 85M+ pipeline, speed to lead cut from 4.2h to 38s. Pranav Jha Studio (Delhi NCR): +240% contract size with zero unvetted leads.
+              </p>
+              <Link href="/case-studies" className="font-mono text-[11px] text-[#B88746] hover:underline">
+                Read Verified Case Studies &rarr;
+              </Link>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">04 / 14-Day Production Pilot</div>
+              <p className="text-[#55514B] leading-relaxed mb-2">
+                2-week paid production pilot on your live CRM. Agreed KPIs: &ge;98% answer rate, &lt;45s speed to lead, &ge;70% qualification rate.
+              </p>
+              <span className="text-[11px] font-mono text-[#181614] bg-white px-2 py-0.5 rounded border border-[#E2DDD1]">
+                Full Money-Back SLA
+              </span>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">05 / 100% Code &amp; Asset Ownership</div>
+              <p className="text-[#55514B] leading-relaxed">
+                You retain complete legal ownership of prompt state machines, n8n JSON workflows, PostgreSQL vector schemas, and provisioned +91 virtual DIDs.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
+              <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">06 / TRAI &amp; DND Compliance</div>
+              <p className="text-[#55514B] leading-relaxed">
+                Full enterprise TRAI DLT registration, explicit call-recording consent prompts, real-time DND registry scrubbing, and zero audio PII retention.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#181614] text-[#F6F4EE] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <div className="font-['Instrument_Serif'] text-xl text-[#F6F4EE]">
+                Ready to review our technical blueprints for your Delhi NCR operations?
+              </div>
+              <div className="text-xs text-[#A8A29E] font-mono mt-1">
+                Direct consultation with Principal Systems Architect Ayush Meena.
+              </div>
+            </div>
+            <button
+              onClick={() => setBookingOpen(true)}
+              className="px-6 py-3 bg-[#B88746] text-[#181614] rounded-full text-xs font-semibold hover:bg-[#C99756] transition-colors whitespace-nowrap"
+            >
+              Request Architecture Consultation
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Technical Comparison Matrix (AEO Information Gain) */}
       <section className="py-20 max-w-6xl mx-auto px-5 sm:px-6">
         <div className="max-w-2xl mb-12">
