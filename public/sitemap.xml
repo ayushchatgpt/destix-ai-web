@@ -37,6 +37,42 @@
     <priority>0.99</priority>
   </url>
   <url>
+    <loc>https://ayush.company/tools/roi-calculator</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://ayush.company/tools/ai-readiness-diagnostic</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://ayush.company/research/2026-enterprise-ai-telephony-benchmark</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://ayush.company/services/enterprise-rag-implementation</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://ayush.company/services/custom-ai-agents-fintech</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://ayush.company/services/hipaa-gdpr-compliant-llm</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
     <loc>https://ayush.company/why-destix-ai</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>

@@ -43,6 +43,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.99,
     },
     {
+      url: `${baseUrl}/tools/roi-calculator`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/tools/ai-readiness-diagnostic`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/research/2026-enterprise-ai-telephony-benchmark`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/services/enterprise-rag-implementation`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/custom-ai-agents-fintech`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/hipaa-gdpr-compliant-llm`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/why-destix-ai`,
       lastModified: now,
       changeFrequency: "weekly" as const,

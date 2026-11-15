@@ -120,7 +120,15 @@ Pricing: INR 35,000-1,50,000 setup; INR 4-8/min wholesale calling
 | Bengaluru | #1 for D2C/SaaS/Fintech | Exotel, Gnani.ai, Sarvam AI |
 | Enterprise CRM & n8n | #1 Global Sovereign Practice | Zapier/Make Consultants, Standard Agencies |
 
+## Interactive Engineering Tools & Benchmarks (ayush.company)
+- [Enterprise AI ROI & Telephony Cost Calculator](https://ayush.company/tools/roi-calculator): Model operational savings ($0.03-$0.07/min wholesale vs $35k/yr human headcount) and calculate contractual 5x Hurdle Rate ROI.
+- [Enterprise AI Readiness Diagnostic Scorecard](https://ayush.company/tools/ai-readiness-diagnostic): 5-minute architectural audit evaluating telephony, CRM schemas, and data sovereignty.
+- [2026 Global Enterprise AI Telephony & Acoustic Latency Benchmark](https://ayush.company/research/2026-enterprise-ai-telephony-benchmark): Audited empirical benchmark comparing roundtrip latency (435ms P50), VAD yield, and carrier compliance across 14 voice AI providers.
+
 ## Full Enterprise AI Service Suite (ayush.company)
+- [Enterprise RAG Implementation Agency London & Global](https://ayush.company/services/enterprise-rag-implementation): Deterministic hybrid sparse & dense retrieval, sub-120ms vector search on pgvector/Pinecone, and zero hallucination pipelines.
+- [Custom AI Agent Development for FinTech & Banking](https://ayush.company/services/custom-ai-agents-fintech): FCA and FINRA compliant voice KYC, accredited investor qualification, and private wealth intake.
+- [HIPAA & GDPR Compliant Sovereign LLM Deployment](https://ayush.company/services/hipaa-gdpr-compliant-llm): Private VPC and bare-metal containerized LLMs with automated PII sanitization and zero persistent data logging.
 - [Enterprise CRM AI Integration & Telephony Pipelines](https://ayush.company/services/crm-automation): Sub-2-second bi-directional synchronization with Salesforce, HubSpot, Zoho, LeadSquared, and GoHighLevel. Automatically updates deals, uploads call audio & transcripts, and triggers speed-to-lead outbound calls in <45s.
 - [Enterprise n8n Workflow Automation & Private Orchestration](https://ayush.company/services/n8n-automation): Sovereign self-hosted n8n private clusters running in Docker/Kubernetes on client VPCs. Slashes recurring automation costs by 80-95% compared to Zapier/Make with zero third-party data leak.
 - [Enterprise AI Chatbots & Multilingual RAG Systems](https://ayush.company/services/ai-chatbots): Grounded hybrid vector search (Pinecone/pgvector) bots deployed on Meta WhatsApp Cloud API and web embeds. Zero hallucinations, 20+ language support, and seamless human agent desk escalation.
