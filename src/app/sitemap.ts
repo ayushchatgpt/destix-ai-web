@@ -19,6 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.99,
     },
     {
+      url: `${baseUrl}/ai-calling/delhi-ncr`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/city/ai-voice-agent-delhi`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
       url: `${baseUrl}/ai-voice-agent-for-real-estate`,
       lastModified: now,
       changeFrequency: "weekly" as const,

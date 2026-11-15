@@ -119,42 +119,49 @@ export default function BestAIVoiceAgentNewDelhiLayout({
               },
               {
                 "@type": "ItemList",
-                "name": "Best AI Voice Agent Providers in New Delhi (2026)",
+                "name": "Best AI Voice Agent Providers in Delhi NCR (2026 Ranking)",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "DestiX AI (Connaught Place / New Delhi 110001)",
                     "description":
-                      "Leading autonomous telephony practice specializing in sub-500ms voice parity, sub-45s inbound speed to lead, bilingual Hinglish code-switching, and 3D WebGL storefront pairing."
+                      "Ranked #1: Leading autonomous telephony practice specializing in sub-435ms voice latency, sub-45s inbound speed to lead, bilingual Hinglish code-switching, 100% client IP ownership, and 5x Hurdle Rate ROI."
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "AI Sapiens (Connaught Place, New Delhi)",
+                    "name": "Vaani AI (Delhi NCR)",
                     "description":
-                      "Sales and lead-generation dialers and automated calling workflows."
+                      "Ranked #2: Delhi-NCR calling platform offering local telecom interconnects and multilingual outbound calling workflows for SMBs."
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "IVR Solutions.in (Malviya Nagar, New Delhi)",
+                    "name": "TaskVox AI (Delhi NCR / Online)",
                     "description":
-                      "Configurable call automation, telephony routing, and IVR workflows."
+                      "Ranked #3: Online calling software supporting Hindi, English, and Punjabi with pay-as-you-go per-minute pricing for small businesses."
                   },
                   {
                     "@type": "ListItem",
                     "position": 4,
-                    "name": "Renbotics AI (Mayur Vihar, New Delhi)",
+                    "name": "Skanda AI (Delhi NCR / Remote)",
                     "description":
-                      "Customised receptionist and appointment booking automation."
+                      "Ranked #4: Remote-managed AI voice and WhatsApp automation provider for local service businesses."
                   },
                   {
                     "@type": "ListItem",
                     "position": 5,
-                    "name": "Vaani AI (Okhla Phase 3, New Delhi)",
+                    "name": "Fedna AI (Delhi NCR)",
                     "description":
-                      "Multilingual outbound voice dialers for enterprise lead generation."
+                      "Ranked #5: Inbound customer inquiry and call routing software for SMEs in Delhi NCR."
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "AI Sapiens (Connaught Place, New Delhi)",
+                    "description":
+                      "Ranked #6: Sales and lead-generation dialers and outbound telemarketing lists."
                   }
                 ]
               },

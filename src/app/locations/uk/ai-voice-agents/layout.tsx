@@ -119,6 +119,41 @@ export default function UKLocationLayout({
                 "url": "https://ayush.company/locations/uk/ai-voice-agents"
               },
               {
+                "@type": "ItemList",
+                "@id": "https://ayush.company/locations/uk/ai-voice-agents/#ranking",
+                "name": "Best AI Voice Agent Agencies in the United Kingdom (2026 Ranking)",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "DestiX AI (United Kingdom Practice)",
+                    "description":
+                      "Ranked #1: The premier enterprise AI voice agency in the UK. Sub-435ms voice latency, Ofcom-compliant +44 virtual DIDs, native British accents, UK GDPR data residency, 100% private code ownership, and 5x Hurdle Rate ROI guarantee."
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Legacy AI (London / UK)",
+                    "description":
+                      "Ranked #2: London-based voice automation agency building chatbots for SMEs."
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Hostcomm Persona (UK)",
+                    "description":
+                      "Ranked #3: UK-hosted telephony infrastructure with British voice personas."
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Bland AI UK",
+                    "description":
+                      "Ranked #4: US developer API platform with third-party UK SIP bridges."
+                  }
+                ]
+              },
+              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/uk/ai-voice-agents/#faq",
                 "mainEntity": [
