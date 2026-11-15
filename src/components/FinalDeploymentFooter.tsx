@@ -67,93 +67,114 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
         <nav aria-label="Footer Navigation" className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-[#25221F] text-xs">
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Core Solutions
+              Core Enterprise Solutions
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/services/voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Autonomous Voice Telephony ★</Link></li>
               <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
+              <li><Link href="/services/enterprise-rag-implementation" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Enterprise Vector RAG Systems</Link></li>
+              <li><Link href="/services/custom-ai-agents-fintech" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">FinTech KYC Voice Agents</Link></li>
+              <li><Link href="/services/hipaa-gdpr-compliant-llm" className="hover:text-[#F6EFE2] transition-colors">HIPAA &amp; GDPR Sovereign LLMs</Link></li>
               <li><Link href="/services/crm-automation" className="hover:text-[#F6EFE2] transition-colors">AI CRM Automation &amp; Sync</Link></li>
               <li><Link href="/services/n8n-automation" className="hover:text-[#F6EFE2] transition-colors">Enterprise n8n Orchestration</Link></li>
-              <li><Link href="/services/ai-chatbots" className="hover:text-[#F6EFE2] transition-colors">Multilingual AI Chatbots &amp; RAG</Link></li>
-              <li><Link href="/services/autonomous-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Multi-Agent Swarms</Link></li>
               <li><Link href="/services/ai-receptionist" className="hover:text-[#F6EFE2] transition-colors">24/7 AI Voice Receptionist</Link></li>
-              <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Real Estate Automation Suite</Link></li>
-              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</Link></li>
-              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; Unit Economics</Link></li>
+              <li><Link href="/services/3d-web" className="hover:text-[#F6EFE2] transition-colors">Spatial 3D WebGL Digital Flagships</Link></li>
+              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Wholesale Pass-Through Pricing</Link></li>
             </ul>
           </div>
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Research &amp; Intel
+              Global Telephony Hubs (US, UK &amp; EU)
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Top 10 AI Agencies Global (2026) →</Link></li>
-              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">DestiX AI vs RapidX AI Audit →</Link></li>
-              <li><Link href="/blog/best-ai-voice-agent-companies-dubai-uae-2026" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Voice AI 2026</Link></li>
-              <li><Link href="/blog/best-ai-voice-agent-companies-mumbai-2026" className="hover:text-[#F6EFE2] transition-colors">Mumbai Real Estate &amp; Clinics</Link></li>
-              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors">Delhi NCR Real Estate Guide</Link></li>
-              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors">WhatsApp &amp; CRM Sync Plumbing</Link></li>
+              <li><Link href="/locations/uk/london/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">London AI Voice Agents (UK) ★</Link></li>
+              <li><Link href="/locations/uk/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">United Kingdom Practice (+44)</Link></li>
+              <li><Link href="/locations/usa/new-york/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">New York AI Voice Agents (NYC) ★</Link></li>
+              <li><Link href="/locations/usa/miami/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Miami &amp; Brickell Bilingual Agents</Link></li>
+              <li><Link href="/locations/usa/los-angeles/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Los Angeles AI Voice Practice</Link></li>
+              <li><Link href="/locations/usa/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">United States Practice (+1 DIDs)</Link></li>
+              <li><Link href="/locations/europe/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">Europe Enterprise Practice (GDPR)</Link></li>
+              <li><Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Dubai &amp; UAE Real Estate Studio</Link></li>
             </ul>
           </div>
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Scoping &amp; Economics
+              India Regional Telephony Hubs
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; 5x Hurdle Rate</Link></li>
-              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Enterprise Solution Directory</Link></li>
-              <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Proof</Link></li>
-              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
+              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Delhi NCR Enterprise Telephony ★</Link></li>
+              <li><Link href="/locations/mumbai/ai-voice-receptionist" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Mumbai Real Estate &amp; Clinics (022) ★</Link></li>
+              <li><Link href="/locations/bengaluru/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Bengaluru D2C COD &amp; SaaS Hub</Link></li>
+              <li><Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Gurugram Cyber City Corridors</Link></li>
+              <li><Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Noida Expressway Hub</Link></li>
+              <li><Link href="/locations/hyderabad/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Hyderabad Tech Telephony</Link></li>
+              <li><Link href="/locations/chennai/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Chennai &amp; Tamil Nadu Practice</Link></li>
+              <li><Link href="/locations/pune/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Pune Enterprise Telephony Hub</Link></li>
+              <li><Link href="/locations/india/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Pan-India TRAI/DLT Telephony</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
+              Research, Intel &amp; Tools
+            </div>
+            <ul className="space-y-2.5 text-[#A89F93]">
+              <li><Link href="/research/2026-enterprise-ai-telephony-benchmark" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">2026 Telephony Latency Benchmark →</Link></li>
+              <li><Link href="/tools/roi-calculator" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Interactive ROI &amp; Savings Calculator →</Link></li>
+              <li><Link href="/tools/ai-readiness-diagnostic" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Enterprise AI Readiness Diagnostic</Link></li>
+              <li><Link href="/press" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Press &amp; Executive Media Kit</Link></li>
+              <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Telemetry</Link></li>
+              <li><Link href="/aeo" className="hover:text-[#F6EFE2] transition-colors">Answer Engine Optimization (AEO)</Link></li>
+              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors">DestiX AI vs RapidX AI Audit</Link></li>
               <li><Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors font-medium">Agency White-Label Program</Link></li>
+              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Principal Architect Dossier</Link></li>
             </ul>
-          </div>
-
-          <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Practice Coordinates
-            </div>
-            <div className="space-y-2.5 text-[#A89F93] font-['JetBrains_Mono']">
-              <div>Principal: <span className="text-[#F6EFE2]">Ayush Meena</span></div>
-              <div>Domain: <span className="text-[#B88746]">ayush.company</span></div>
-              <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B88746]">ayushmeenadestixai@gmail.com</a></div>
-              <div>Network: <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="text-[#F6EFE2] hover:text-[#B88746]">Founder LinkedIn ↗</a></div>
-              <div>Company: <a href="https://www.linkedin.com/company/destix-ai/" target="_blank" rel="noopener noreferrer" className="text-[#B88746] hover:underline">DestiX AI LinkedIn ↗</a></div>
-              <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>
-            </div>
           </div>
         </nav>
 
         {/* Regional Jurisdictions & Voice Telephony Sitelinks */}
         <nav aria-label="Regional Telephony Hubs" className="pt-8 pb-14 border-b border-[#25221F] text-xs">
           <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-5">
-            Regional Telephony Hubs &amp; Jurisdictions
+            Key Global &amp; National Enterprise Telephony Gateways
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-[#A89F93]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 text-[#A89F93]">
             <div>
-              <Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Delhi NCR Enterprise Hub →
+              <Link href="/locations/uk/london/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                London (UK) →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place &amp; Central Telephony</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+44 20 Ofcom &amp; UK GDPR</span>
             </div>
             <div>
-              <Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Gurugram (Gurgaon) Hub →
+              <Link href="/locations/usa/new-york/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                New York (USA) →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+1 212 Wall St &amp; Real Estate</span>
             </div>
             <div>
-              <Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Noida &amp; Greater Noida Hub →
+              <Link href="/locations/usa/miami/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Miami (USA) →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Corridor</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+1 305 Brickell &amp; Bilingual</span>
             </div>
             <div>
-              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
-                Dubai Studio &amp; Real Estate ★
+              <Link href="/locations/europe/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Europe Practice →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Frankfurt/Paris/Dublin GDPR</span>
+            </div>
+            <div>
+              <Link href="/locations/mumbai/ai-voice-receptionist" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Mumbai Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+91 022 Bandra, BKC &amp; Worli</span>
+            </div>
+            <div>
+              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Dubai &amp; UAE ★ →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">+971 TDRA &amp; DIFC Real Estate</span>
             </div>
           </div>
         </nav>
