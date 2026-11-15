@@ -63,95 +63,100 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
           </div>
         </div>
 
-        {/* Clean Directory Navigation (4 Balanced Columns) */}
-        <nav aria-label="Footer Navigation" className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-16 border-b border-[#25221F] text-xs">
+        {/* Directory Navigation */}
+        <nav aria-label="Footer Navigation" className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-[#25221F] text-xs">
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Enterprise Solutions
+              Core Solutions
             </div>
-            <ul className="space-y-3 text-[#A89F93]">
-              <li><Link href="/services/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</Link></li>
-              <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors">AI Voice for Real Estate</Link></li>
-              <li><Link href="/services/enterprise-rag-implementation" className="hover:text-[#F6EFE2] transition-colors">Enterprise Vector RAG</Link></li>
-              <li><Link href="/services/custom-ai-agents-fintech" className="hover:text-[#F6EFE2] transition-colors">FinTech KYC Voice Agents</Link></li>
-              <li><Link href="/services/hipaa-gdpr-compliant-llm" className="hover:text-[#F6EFE2] transition-colors">HIPAA &amp; GDPR Sovereign LLMs</Link></li>
+            <ul className="space-y-2.5 text-[#A89F93]">
+              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
               <li><Link href="/services/crm-automation" className="hover:text-[#F6EFE2] transition-colors">AI CRM Automation &amp; Sync</Link></li>
               <li><Link href="/services/n8n-automation" className="hover:text-[#F6EFE2] transition-colors">Enterprise n8n Orchestration</Link></li>
+              <li><Link href="/services/ai-chatbots" className="hover:text-[#F6EFE2] transition-colors">Multilingual AI Chatbots &amp; RAG</Link></li>
+              <li><Link href="/services/autonomous-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Multi-Agent Swarms</Link></li>
               <li><Link href="/services/ai-receptionist" className="hover:text-[#F6EFE2] transition-colors">24/7 AI Voice Receptionist</Link></li>
+              <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Real Estate Automation Suite</Link></li>
+              <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</Link></li>
+              <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; Unit Economics</Link></li>
             </ul>
           </div>
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Global Hubs (US, UK &amp; EU)
+              Research &amp; Intel
             </div>
-            <ul className="space-y-3 text-[#A89F93]">
-              <li><Link href="/locations/uk/london/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">London Enterprise Hub (UK)</Link></li>
-              <li><Link href="/locations/uk/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">United Kingdom Practice (+44)</Link></li>
-              <li><Link href="/locations/usa/new-york/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">New York AI Voice Agents (NYC)</Link></li>
-              <li><Link href="/locations/usa/miami/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Miami Bilingual Agents (+1)</Link></li>
-              <li><Link href="/locations/usa/los-angeles/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Los Angeles AI Voice Practice</Link></li>
-              <li><Link href="/locations/usa/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">United States National Practice</Link></li>
-              <li><Link href="/locations/europe/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Europe Practice (GDPR Article 22)</Link></li>
-              <li><Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Real Estate Studio</Link></li>
+            <ul className="space-y-2.5 text-[#A89F93]">
+              <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Top 10 AI Agencies Global (2026) →</Link></li>
+              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">DestiX AI vs RapidX AI Audit →</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-companies-dubai-uae-2026" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Voice AI 2026</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-companies-mumbai-2026" className="hover:text-[#F6EFE2] transition-colors">Mumbai Real Estate &amp; Clinics</Link></li>
+              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors">Delhi NCR Real Estate Guide</Link></li>
+              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors">WhatsApp &amp; CRM Sync Plumbing</Link></li>
             </ul>
           </div>
 
           <div>
             <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              India Regional Hubs
+              Scoping &amp; Economics
             </div>
-            <ul className="space-y-3 text-[#A89F93]">
-              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors">Delhi NCR Enterprise Telephony</Link></li>
-              <li><Link href="/locations/mumbai/ai-voice-receptionist" className="hover:text-[#F6EFE2] transition-colors">Mumbai Real Estate &amp; Clinics</Link></li>
-              <li><Link href="/locations/bengaluru/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Bengaluru D2C COD &amp; SaaS</Link></li>
-              <li><Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Gurugram Cyber City Corridors</Link></li>
-              <li><Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Noida Expressway Hub</Link></li>
-              <li><Link href="/locations/hyderabad/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Hyderabad Tech Telephony</Link></li>
-              <li><Link href="/locations/chennai/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Chennai &amp; Tamil Nadu Practice</Link></li>
-              <li><Link href="/locations/india/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors">Pan-India TRAI / DLT Telephony</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
-              Research &amp; Studio
-            </div>
-            <ul className="space-y-3 text-[#A89F93]">
-              <li><Link href="/research/2026-enterprise-ai-telephony-benchmark" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">2026 Latency Benchmark (524k Calls)</Link></li>
-              <li><Link href="/tools/roi-calculator" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">Interactive ROI Calculator</Link></li>
-              <li><Link href="/tools/ai-readiness-diagnostic" className="hover:text-[#F6EFE2] transition-colors">Enterprise Readiness Diagnostic</Link></li>
-              <li><Link href="/press" className="hover:text-[#F6EFE2] transition-colors">Press &amp; Executive Media Kit</Link></li>
-              <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Proof</Link></li>
+            <ul className="space-y-2.5 text-[#A89F93]">
               <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; 5x Hurdle Rate</Link></li>
-              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Principal Architect Dossier</Link></li>
-              <li><Link href="/partners/agency-white-label" className="hover:text-[#F6EFE2] transition-colors">Agency White-Label Program</Link></li>
+              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Enterprise Solution Directory</Link></li>
+              <li><Link href="/case-studies" className="hover:text-[#F6EFE2] transition-colors">Verified Case Studies &amp; Proof</Link></li>
+              <li><Link href="/contact" className="hover:text-[#F6EFE2] transition-colors">Diagnostic Session Booking</Link></li>
+              <li><Link href="/partners/agency-white-label" className="hover:text-[#B88746] transition-colors font-medium">Agency White-Label Program</Link></li>
             </ul>
+          </div>
+
+          <div>
+            <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-4">
+              Practice Coordinates
+            </div>
+            <div className="space-y-2.5 text-[#A89F93] font-['JetBrains_Mono']">
+              <div>Principal: <span className="text-[#F6EFE2]">Ayush Meena</span></div>
+              <div>Domain: <span className="text-[#B88746]">ayush.company</span></div>
+              <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B88746]">ayushmeenadestixai@gmail.com</a></div>
+              <div>Network: <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="text-[#F6EFE2] hover:text-[#B88746]">Founder LinkedIn ↗</a></div>
+              <div>Company: <a href="https://www.linkedin.com/company/destix-ai/" target="_blank" rel="noopener noreferrer" className="text-[#B88746] hover:underline">DestiX AI LinkedIn ↗</a></div>
+              <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>
+            </div>
           </div>
         </nav>
 
-        {/* Minimalist Executive Coordinates Strip */}
-        <div className="py-8 border-b border-[#25221F] flex flex-wrap items-center justify-between gap-4 text-xs font-['JetBrains_Mono'] text-[#A89F93]">
-          <div className="flex flex-wrap items-center gap-3">
-            <span>Principal: <strong className="text-[#F6EFE2]">Ayush Meena</strong></span>
-            <span className="text-white/20">&bull;</span>
-            <span>HQ: <strong className="text-[#F6EFE2]">Connaught Place, New Delhi</strong></span>
-            <span className="text-white/20">&bull;</span>
-            <span>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#B88746] hover:underline">ayushmeenadestixai@gmail.com</a></span>
+        {/* Regional Jurisdictions & Voice Telephony Sitelinks */}
+        <nav aria-label="Regional Telephony Hubs" className="pt-8 pb-14 border-b border-[#25221F] text-xs">
+          <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-5">
+            Regional Telephony Hubs &amp; Jurisdictions
           </div>
-
-          <div className="flex items-center gap-4 text-[11px]">
-            <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F6EFE2] transition-colors">
-              LinkedIn ↗
-            </a>
-            <a href="https://github.com/ayushchatgpt/destix-voice-telephony-benchmark" target="_blank" rel="noopener noreferrer" className="hover:text-[#F6EFE2] transition-colors">
-              GitHub Repo ↗
-            </a>
-            <a href="https://www.wikidata.org/wiki/Q142174891" target="_blank" rel="noopener noreferrer" className="hover:text-[#F6EFE2] transition-colors">
-              Wikidata Q142174891 ↗
-            </a>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-[#A89F93]">
+            <div>
+              <Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Delhi NCR Enterprise Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place &amp; Central Telephony</span>
+            </div>
+            <div>
+              <Link href="/locations/gurugram/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Gurugram (Gurgaon) Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Cyber City &amp; Golf Course Road</span>
+            </div>
+            <div>
+              <Link href="/locations/noida/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Noida &amp; Greater Noida Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 &amp; Expressway Corridor</span>
+            </div>
+            <div>
+              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Dubai Studio &amp; Real Estate ★
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">DIFC, Palm Jebel Ali &amp; Dubai Hills</span>
+            </div>
           </div>
-        </div>
+        </nav>
 
         {/* Massive Architectural Base Brandmark */}
         <div className="py-14 sm:py-20 text-center select-none overflow-hidden">
