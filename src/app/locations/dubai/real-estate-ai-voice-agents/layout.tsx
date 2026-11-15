@@ -69,41 +69,6 @@ export default function DubaiLocationLayout({
                 "description": "Autonomous conversational voice systems and 3D interactive property platforms engineered for prime UAE real estate agencies, verified in production with Alliance Capital Properties (ACP Dubai).",
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/dubai/real-estate-ai-voice-agents/#ranking",
-                "name": "Best AI Voice Agent Companies in Dubai & UAE (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (Dubai & UAE Practice)",
-                    "description":
-                      "Ranked #1: The benchmark autonomous voice and 3D WebGL agency in Dubai. Sub-435ms voice latency, sub-45s speed to lead, bilingual English/Arabic code-switching, verified AED 85M+ pipeline with Alliance Capital Properties (ACP Dubai), and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Groovy Web (Dubai / UAE)",
-                    "description":
-                      "Ranked #2: Web and app development agency offering chatbot integrations."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Digital Graphiks (Dubai)",
-                    "description":
-                      "Ranked #3: Digital marketing agency providing basic automated call center dialers."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Vegavid Technology (UAE)",
-                    "description":
-                      "Ranked #4: IT services firm developing enterprise custom conversational bots."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/dubai/real-estate-ai-voice-agents/#faq",
                 "mainEntity": [

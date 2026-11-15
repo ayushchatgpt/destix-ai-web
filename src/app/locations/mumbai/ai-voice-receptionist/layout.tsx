@@ -150,41 +150,6 @@ export default function MumbaiLocationLayout({
                 ]
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/mumbai/ai-voice-receptionist/#ranking",
-                "name": "Best AI Voice Agent Companies in Mumbai (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (Mumbai & BKC Practice)",
-                    "description":
-                      "Ranked #1: Premier autonomous voice systems practice for Mumbai luxury real estate and healthcare. Sub-435ms latency, sub-45s speed to lead, fluent Mumbai English/Hindi/Marathi code-switching, 100% client IP ownership, and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "HuskyVoice AI (Mumbai)",
-                    "description":
-                      "Ranked #2: Inbound call answering platform for SMBs."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "ElevateBox (Mumbai)",
-                    "description":
-                      "Ranked #3: IT agency offering voice bots and WhatsApp automation."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Insor AI (India)",
-                    "description":
-                      "Ranked #4: Generic telephony software for customer support."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/mumbai/ai-voice-receptionist/#faq",
                 "mainEntity": [

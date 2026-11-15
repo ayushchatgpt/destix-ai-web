@@ -135,41 +135,6 @@ export default function EuropeLocationLayout({
                 ]
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/europe/ai-voice-agents/#ranking",
-                "name": "Best AI Voice Agent Companies in Europe (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (European Practice)",
-                    "description":
-                      "Ranked #1: Leading sovereign AI voice systems studio in Europe. Sub-435ms latency, native multilingual code-switching across 8 European languages, GDPR Article 22 compliant Frankfurt/Dublin hosting, 100% private code ownership, and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Cognigy (Germany)",
-                    "description":
-                      "Ranked #2: Enterprise conversational AI platform for contact centers."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Parloa (Germany)",
-                    "description":
-                      "Ranked #3: Contact center AI automation platform."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Synthflow EU",
-                    "description":
-                      "Ranked #4: No-code voice AI platform with European numbers."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/europe/ai-voice-agents/#faq",
                 "mainEntity": [

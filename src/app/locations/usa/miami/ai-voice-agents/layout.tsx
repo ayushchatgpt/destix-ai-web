@@ -119,34 +119,6 @@ export default function MiamiLayout({
                 "url": "https://ayush.company/locations/usa/miami/ai-voice-agents"
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/usa/miami/ai-voice-agents/#ranking",
-                "name": "Best AI Voice Agent Companies in Miami & South Florida (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (Miami & Brickell Practice)",
-                    "description":
-                      "Ranked #1: The benchmark bilingual AI voice systems studio in Miami. Sub-435ms voice latency, native Spanish/English code-switching, sub-45s speed to lead, +1 (305)/(786) DIDs with STIR/SHAKEN Level-A, 100% private code ownership, and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Bland AI (US API Platform)",
-                    "description":
-                      "Ranked #2: Developer API platform for automated calling with standard US speech models."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Synthflow AI (Miami / US)",
-                    "description":
-                      "Ranked #3: No-code voice AI platform for basic customer service workflows."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/usa/miami/ai-voice-agents/#faq",
                 "mainEntity": [

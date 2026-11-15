@@ -27,6 +27,41 @@ export default function RoiCalculatorPage() {
   const [humanReps, setHumanReps] = useState(6);
   const [leadFormSubmitted, setLeadFormSubmitted] = useState(false);
   const [execEmail, setExecEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleLeadSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!execEmail) return;
+    setIsSubmitting(true);
+    try {
+      await fetch("/api/concierge-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          leadData: {
+            name: "ROI Calculator Prospect",
+            contact: execEmail,
+            vertical: "Interactive ROI Calculator Lead",
+            callVolume: `${monthlyMinutes.toLocaleString()} mins/mo with ${humanReps} reps`,
+            notes: `Projected ROI: ${calculations.roiMultiplier}x. Projected Net Annual Savings: ${currentCfg.symbol}${formatNumber(calculations.annualSavingsVsHuman)} in ${currency}.`,
+          },
+          telemetry: {
+            currentSection: "Tools - ROI Calculator",
+            visitedSections: ["ROI Calculator"],
+            dwellTimeSeconds: 45,
+            scrollDepthPercent: 75,
+            referrer: typeof document !== "undefined" ? document.referrer : "Direct",
+            userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Web Browser",
+          },
+        }),
+      });
+    } catch (err) {
+      console.error("ROI lead submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+      setLeadFormSubmitted(true);
+    }
+  };
 
   const currencyConfig = {
     USD: { symbol: "$", rate: 1, humanSalaryPerRepYear: 42000, destixPerMin: 0.045, saasPerMin: 0.22 },
@@ -269,10 +304,7 @@ export default function RoiCalculatorPage() {
                   </div>
                 ) : (
                   <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      if (execEmail) setLeadFormSubmitted(true);
-                    }}
+                    onSubmit={handleLeadSubmit}
                     className="flex flex-col sm:flex-row gap-3"
                   >
                     <input
@@ -281,13 +313,15 @@ export default function RoiCalculatorPage() {
                       placeholder="Enter corporate executive email"
                       value={execEmail}
                       onChange={(e) => setExecEmail(e.target.value)}
-                      className="flex-1 px-4 py-3 rounded-xl border border-[#E2DDD1] bg-[#F6F4EE] text-xs text-[#1A1817] focus:outline-hidden focus:border-[#B88746]"
+                      disabled={isSubmitting}
+                      className="flex-1 px-4 py-3 rounded-xl border border-[#E2DDD1] bg-[#F6F4EE] text-xs text-[#1A1817] focus:outline-hidden focus:border-[#B88746] disabled:opacity-50"
                     />
                     <button
                       type="submit"
-                      className="px-6 py-3 bg-[#1A1817] text-[#F6F4EE] rounded-xl text-xs font-medium tracking-wide hover:bg-[#33302C] transition-colors whitespace-nowrap"
+                      disabled={isSubmitting}
+                      className="px-6 py-3 bg-[#1A1817] text-[#F6F4EE] rounded-xl text-xs font-medium tracking-wide hover:bg-[#33302C] transition-colors whitespace-nowrap disabled:opacity-50"
                     >
-                      Export Financial Audit
+                      {isSubmitting ? "Exporting..." : "Export Financial Audit"}
                     </button>
                   </form>
                 )}

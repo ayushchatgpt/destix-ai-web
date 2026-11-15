@@ -123,41 +123,6 @@ export default function NewYorkLayout({
                 "url": "https://ayush.company/locations/usa/new-york/ai-voice-agents"
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/usa/new-york/ai-voice-agents/#ranking",
-                "name": "Best AI Voice Agent Companies in New York City (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (New York & Manhattan Practice)",
-                    "description":
-                      "Ranked #1: The premier enterprise AI voice systems practice in NYC. Sub-435ms latency, sub-45s speed to lead, Manhattan +1 (212)/(646) DIDs, STIR/SHAKEN Level-A, 100% private code ownership, and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Bland AI (US Developer Platform)",
-                    "description":
-                      "Ranked #2: Developer API platform for generic outbound phone calling with standard US speech models."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Retell AI (SaaS Calling Bot)",
-                    "description":
-                      "Ranked #3: SaaS conversational voice engine popular with tech startups."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Air AI (US Calling Software)",
-                    "description":
-                      "Ranked #4: High-volume sales dialer platform with variable latency."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/usa/new-york/ai-voice-agents/#faq",
                 "mainEntity": [

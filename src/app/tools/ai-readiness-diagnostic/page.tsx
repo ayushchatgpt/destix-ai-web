@@ -25,6 +25,45 @@ export default function AiReadinessPage() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [showResults, setShowResults] = useState(false);
+  const [execEmail, setExecEmail] = useState("");
+  const [leadFormSubmitted, setLeadFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleLeadSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!execEmail) return;
+    setIsSubmitting(true);
+    try {
+      await fetch("/api/concierge-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          leadData: {
+            name: "Readiness Diagnostic Lead",
+            contact: execEmail,
+            vertical: "Interactive AI Readiness Diagnostic",
+            callVolume: `Diagnostic Score: ${totalScore}/100`,
+            notes: `Score: ${totalScore}/100. Status: ${
+              totalScore >= 80 ? "High Architectural Readiness" : totalScore >= 50 ? "Moderate Readiness" : "Foundational Phase"
+            }.`,
+          },
+          telemetry: {
+            currentSection: "Tools - AI Readiness Diagnostic",
+            visitedSections: ["AI Readiness Diagnostic"],
+            dwellTimeSeconds: 60,
+            scrollDepthPercent: 85,
+            referrer: typeof document !== "undefined" ? document.referrer : "Direct",
+            userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "Web Browser",
+          },
+        }),
+      });
+    } catch (err) {
+      console.error("AI Readiness lead error:", err);
+    } finally {
+      setIsSubmitting(false);
+      setLeadFormSubmitted(true);
+    }
+  };
 
   const questions = [
     {
@@ -176,6 +215,45 @@ export default function AiReadinessPage() {
                       ? "Your organization possesses the necessary API hooks and volume velocity to achieve full production deployment in under 14 days with an audited 5x+ Hurdle Rate ROI."
                       : "Your systems have viable automation pathways, but require sovereign SIP interconnects and webhook hygiene before launching high-throughput autonomous dialers."}
                   </p>
+                </div>
+
+                {/* Email Diagnostic Report Capture */}
+                <div className="my-8 p-6 sm:p-8 rounded-2xl border border-[#E2DDD1] bg-[#F6F4EE]">
+                  <h4 className="font-serif text-lg text-[#1A1817] mb-1">
+                    Email Complete Diagnostic Report & 14-Day Roadmap
+                  </h4>
+                  <p className="text-xs text-[#5A554E] leading-relaxed mb-4">
+                    Receive the comprehensive breakdown of your telephony latency benchmarks, CRM webhook audit, and custom ROI projection prepared by DestiX AI.
+                  </p>
+
+                  {leadFormSubmitted ? (
+                    <div className="p-4 rounded-xl bg-[#B88746]/10 border border-[#B88746]/30 text-xs font-mono text-[#8F6426] flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-[#8F6426]" />
+                      <span>Report dispatched to {execEmail}. Our engineering team will review your telemetry.</span>
+                    </div>
+                  ) : (
+                    <form
+                      onSubmit={handleLeadSubmit}
+                      className="flex flex-col sm:flex-row gap-3"
+                    >
+                      <input
+                        type="email"
+                        required
+                        placeholder="Enter corporate executive email"
+                        value={execEmail}
+                        onChange={(e) => setExecEmail(e.target.value)}
+                        disabled={isSubmitting}
+                        className="flex-1 px-4 py-3 rounded-xl border border-[#E2DDD1] bg-white text-xs text-[#1A1817] focus:outline-hidden focus:border-[#B88746] disabled:opacity-50"
+                      />
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="px-6 py-3 bg-[#1A1817] text-[#F6F4EE] rounded-xl text-xs font-medium tracking-wide hover:bg-[#33302C] transition-colors whitespace-nowrap disabled:opacity-50"
+                      >
+                        {isSubmitting ? "Dispatching..." : "Send Roadmap"}
+                      </button>
+                    </form>
+                  )}
                 </div>
 
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-6 border-t border-[#E2DDD1]">

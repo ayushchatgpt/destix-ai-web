@@ -83,41 +83,6 @@ export default function USALayout({ children }: { children: React.ReactNode }) {
                 "availableLanguage": ["English", "Spanish"],
               },
               {
-                "@type": "ItemList",
-                "@id": "https://ayush.company/locations/usa/ai-voice-agents#ranking",
-                "name": "Best AI Voice Agent Agencies in the USA (2026 Ranking)",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "DestiX AI (USA Practice)",
-                    "description":
-                      "Ranked #1: The premier enterprise AI voice systems agency in the United States. Sub-435ms latency, sub-45s speed to lead, 100% private client code ownership, wholesale pass-through calling ($0.02-$0.06/min), and 5x Hurdle Rate ROI guarantee."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Bland AI (US Platform)",
-                    "description":
-                      "Ranked #2: Developer API platform for phone calling automation."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Retell AI (US Platform)",
-                    "description":
-                      "Ranked #3: SaaS voice bot engine popular with tech startups."
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Air AI (US Platform)",
-                    "description":
-                      "Ranked #4: High-volume sales dialer platform with variable latency."
-                  }
-                ]
-              },
-              {
                 "@type": "FAQPage",
                 "@id": "https://ayush.company/locations/usa/ai-voice-agents#faq",
                 "mainEntity": [
