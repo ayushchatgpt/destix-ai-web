@@ -97,6 +97,7 @@ export default function AboutLayout({
                 },
               },
               "sameAs": [
+                "https://www.wikidata.org/wiki/Q142174891",
                 "https://www.linkedin.com/in/ayush-meena-065a89380/",
                 "https://github.com/ayushchatgpt",
                 "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",

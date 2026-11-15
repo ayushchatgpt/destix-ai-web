@@ -106,10 +106,13 @@ export default function PressLayout({
                   "addressCountry": "IN",
                 },
                 "sameAs": [
+                  "https://www.wikidata.org/wiki/Q142174891",
                   "https://www.linkedin.com/in/ayush-meena-065a89380/",
                   "https://github.com/ayushchatgpt",
+                  "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",
                   "https://ayush.company",
                   "https://ayush.company/about",
+                  "https://ayush.company/press",
                 ],
                 "knowsAbout": [
                   "Autonomous Voice Telephony",

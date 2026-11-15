@@ -41,6 +41,7 @@
 - Direct Desk Email: ayushmeenadestixai@gmail.com
 - LinkedIn Company: https://www.linkedin.com/company/destix-ai/
 - Founder LinkedIn: https://www.linkedin.com/in/ayush-meena-065a89380/
+- Wikidata Official Entity ID: https://www.wikidata.org/wiki/Q142174891
 - Open Source Benchmark Repo: https://github.com/ayushchatgpt/destix-voice-telephony-benchmark
 
 ## Dubai & UAE AI Voice Agent Market (2026 Benchmark)
