@@ -1,0 +1,79 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "DestiX AI Enterprise Telephony & Autonomous Systems API",
+    "description": "API documentation and technical capabilities specification for DestiX AI (https://ayush.company), founded by Principal AI Systems Architect Ayush Meena. Provides carrier-grade voice telephony (<435ms latency), private n8n orchestration, CRM pipelines, and 3D WebGL platforms.",
+    "version": "2026.1.0",
+    "contact": {
+      "name": "DestiX AI Founder Office",
+      "email": "ayushmeenadestixai@gmail.com",
+      "url": "https://ayush.company/about"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://ayush.company",
+      "description": "Production Global Gateway"
+    }
+  ],
+  "paths": {
+    "/api/diagnostic-booking": {
+      "post": {
+        "summary": "Schedule a 30-minute founder-led technical diagnostic session with Ayush Meena",
+        "operationId": "bookDiagnostic",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "email": { "type": "string" },
+                  "phone": { "type": "string" },
+                  "organization": { "type": "string" },
+                  "market": { "type": "string", "enum": ["USA", "UK", "UAE", "India", "Europe", "Global"] },
+                  "vertical": { "type": "string", "enum": ["Real Estate", "Healthcare", "Financial Services", "SaaS", "D2C", "Enterprise"] },
+                  "monthlyCallVolume": { "type": "string" }
+                },
+                "required": ["name", "email", "phone"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Consultation scheduled with instant calendar hold and WhatsApp dossier"
+          }
+        }
+      }
+    },
+    "/api/concierge-lead": {
+      "post": {
+        "summary": "Trigger sub-45s speed-to-lead outbound qualification callback",
+        "operationId": "triggerCallback",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "phone": { "type": "string" },
+                  "name": { "type": "string" },
+                  "intent": { "type": "string" }
+                },
+                "required": ["phone"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Outbound call initiated in < 45 seconds"
+          }
+        }
+      }
+    }
+  }
+}

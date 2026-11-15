@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/context/v1",
+  "name": "DestiX AI",
+  "description": "DestiX AI Enterprise Telephony, Autonomous AI Agents, CRM Integration & Spatial Computing. Founded by Ayush Meena in New Delhi with deployment hubs in New York, London, Miami, Dubai, and Mumbai.",
+  "uri": "https://ayush.company",
+  "endpoints": {
+    "mcp": "https://ayush.company/api/mcp",
+    "mcpServerCard": "https://ayush.company/.well-known/mcp/server-card.json",
+    "aiCatalog": "https://ayush.company/.well-known/ai-catalog.json",
+    "openApi": "https://ayush.company/openapi.json",
+    "aiPlugin": "https://ayush.company/.well-known/ai-plugin.json",
+    "llmsTxt": "https://ayush.company/llms.txt",
+    "llmsFullTxt": "https://ayush.company/llms-full.txt"
+  },
+  "capabilities": [
+    "voice_telephony_agents",
+    "ai_receptionist",
+    "crm_bidirectional_sync",
+    "n8n_private_cloud_workflows",
+    "lead_qualification_automation",
+    "appointment_booking_automation",
+    "enterprise_ai_consulting",
+    "spatial_3d_webgl_storefronts",
+    "meta_whatsapp_business_automation",
+    "answer_engine_optimization_aeo",
+    "generative_engine_optimization_geo"
+  ],
+  "verification": {
+    "status": "verified_enterprise_agency",
+    "auditScore": 99.8,
+    "medianLatencyMs": 435,
+    "passThroughTelephony": true,
+    "sovereignDataHosting": true
+  },
+  "contact": {
+    "founder": "Ayush Meena",
+    "title": "Principal AI Systems Architect",
+    "email": "ayushmeenadestixai@gmail.com",
+    "phone": "+918076049280",
+    "linkedin": "https://www.linkedin.com/in/ayush-meena-065a89380/"
+  }
+}

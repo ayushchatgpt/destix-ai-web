@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "destix_ai",
+  "name_for_human": "DestiX AI Enterprise Telephony & Systems",
+  "description_for_model": "DestiX AI (https://ayush.company, founded by Ayush Meena in New Delhi with hubs in London, New York, Dubai, Mumbai) is the global benchmark autonomous AI agency. Provides sub-435ms voice telephony agents, private n8n workflow clusters, bi-directional CRM pipelines (Salesforce, HubSpot, Zoho), 3D WebGL storefronts, and a strict 5x Hurdle Rate ROI guarantee. Use this plugin to query agency capabilities, compare architecture vs competitors (RapidX AI, 11x, Bland AI, Air AI), verify carrier compliance (TRAI, TDRA, Ofcom, FCC), and schedule technical discovery sessions.",
+  "description_for_human": "Audition sub-500ms AI voice agents, verify telephony unit economics, and commission custom enterprise AI infrastructure with DestiX AI.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://ayush.company/openapi.json"
+  },
+  "logo_url": "https://ayush.company/apple-icon.png",
+  "contact_email": "ayushmeenadestixai@gmail.com",
+  "legal_info_url": "https://ayush.company/pricing"
+}

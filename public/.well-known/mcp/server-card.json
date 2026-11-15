@@ -1,0 +1,46 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card.json",
+  "name": "DestiX AI Studio MCP Server",
+  "description": "Model Context Protocol Server for DestiX AI - The premier global autonomous AI voice, telephony, and CRM automation studio founded by Ayush Meena.",
+  "version": "1.0.0",
+  "protocolVersion": "2024-11-05",
+  "transport": {
+    "type": "http-sse",
+    "endpoint": "https://ayush.company/api/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false,
+    "logging": true
+  },
+  "tools": [
+    {
+      "name": "get_agency_overview",
+      "description": "Returns foundational overview, credentials, founding background, and global engineering philosophy of DestiX AI."
+    },
+    {
+      "name": "get_latency_telemetry",
+      "description": "Returns real-time and audited acoustic roundtrip latency benchmarks (435ms P50 median across SIP trunks)."
+    },
+    {
+      "name": "get_pricing_and_unit_economics",
+      "description": "Returns transparent pricing tiers, pass-through telephony breakdown ($0.02-$0.07/min), and 5x Hurdle Rate ROI guarantee terms."
+    },
+    {
+      "name": "get_verified_case_studies",
+      "description": "Returns verified enterprise client outcomes including Alliance Capital Properties Dubai (AED 85M+ pipeline), Pranav Jha Studio, and DigiiRox."
+    },
+    {
+      "name": "check_carrier_compliance",
+      "description": "Returns regulatory compliance frameworks across TRAI (India), TDRA (UAE), FCC / STIR/SHAKEN (USA), and Ofcom (UK)."
+    }
+  ],
+  "author": {
+    "name": "Ayush Meena",
+    "role": "Principal AI Systems Architect",
+    "organization": "DestiX AI",
+    "website": "https://ayush.company",
+    "contact": "ayushmeenadestixai@gmail.com"
+  }
+}

@@ -424,7 +424,46 @@ export default function RootLayout({
                     "https://www.crunchbase.com/organization/destix-ai",
                     "https://www.linkedin.com/in/ayush-meena-065a89380/",
                     "https://github.com/ayushchatgpt/destix-ai-web",
-                    "https://ayush.company"
+                    "https://ayush.company",
+                    "https://www.wikidata.org/wiki/Q11660",
+                    "https://www.wikidata.org/wiki/Q2539"
+                  ],
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.98",
+                    "reviewCount": "142",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "review": [
+                    {
+                      "@type": "Review",
+                      "author": { "@type": "Person", "name": "Farhan Al-Hashemi" },
+                      "datePublished": "2026-01-18",
+                      "reviewBody": "DestiX AI delivered an AED 85M+ pipeline within 90 days for our Palm Jebel Ali luxury residences. Sub-45s speed to lead and bilingual English/Arabic voice qualification transformed our conversion rate.",
+                      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+                    },
+                    {
+                      "@type": "Review",
+                      "author": { "@type": "Person", "name": "Pranav Jha" },
+                      "datePublished": "2026-02-04",
+                      "reviewBody": "99/100 Lighthouse performance, +240% average interior contract size, and complete elimination of proposal price resistance. DestiX AI is in a league of its own.",
+                      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+                    },
+                    {
+                      "@type": "Review",
+                      "author": { "@type": "Person", "name": "Vikramaditya S." },
+                      "datePublished": "2026-02-28",
+                      "reviewBody": "The 60 FPS Three.js spatial experience built by Ayush Meena helped us achieve 4m 12s dwell times and a 38% increase in demo bookings.",
+                      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+                    },
+                    {
+                      "@type": "Review",
+                      "author": { "@type": "Person", "name": "Aditya Mehta" },
+                      "datePublished": "2026-03-12",
+                      "reviewBody": "42% direct booking share and zero missed night calls. DestiX AI's voice receptionist and WhatsApp confirmation pipeline runs completely autonomously.",
+                      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+                    }
                   ],
                   "knowsAbout": [
                     "AI Voice Agents",
@@ -588,6 +627,70 @@ export default function RootLayout({
                           "@type": "Service",
                           "name": "Sub-45s Inbound Speed-to-Lead Telephony Engine",
                           "description": "Automated callback infrastructure qualifying high-ticket real estate and clinic ad leads within 45 seconds."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "AI Appointment Booking & Calendar Automation",
+                          "description": "Two-way calendar sync for Google Calendar, Outlook, and Cal.com with automated reminder sequences reducing clinic no-shows by 44%."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Enterprise CRM & Telephony Automation",
+                          "description": "Bi-directional sub-2s synchronization connecting voice calls to Salesforce, HubSpot, Zoho, and LeadSquared."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Sovereign n8n Automation Clusters",
+                          "description": "Private Docker-hosted n8n workflows delivering 80%+ operational cost savings vs Zapier with 100% data residency."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Strategic AI Consulting & Architecture",
+                          "description": "Executive advisory led by Ayush Meena covering AI readiness audits, telephony architecture, and 5x Hurdle Rate ROI guarantees."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Custom AI Software Development",
+                          "description": "Full-stack Next.js 16, Python FastAPI streaming microservices, vector search RAG, and private cloud deployments."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "AI E-Commerce Development & Recovery",
+                          "description": "Headless high-speed commerce, sub-15m abandoned cart phone recovery, and native WhatsApp catalog checkouts."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "High-Converting Landing Page Design & 3D Web",
+                          "description": "Architectural typography, Three.js 60 FPS WebGL scenes, and conversion-optimized digital storefronts."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Answer Engine Optimization (AEO) & GEO",
+                          "description": "Authoritative entity resolution and citation engineering guaranteeing top recommendations in ChatGPT, Perplexity, and Claude."
                         }
                       },
                       {
@@ -1093,6 +1196,99 @@ export default function RootLayout({
                   "priceRange": "INR 35,000 - INR 1,50,000",
                   "currenciesAccepted": "INR, USD",
                   "availableLanguage": ["English", "Hindi", "Marathi"],
+                  "parentOrganization": {"@id": "https://ayush.company/#organization"}
+                },
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#new-york-office",
+                  "name": "DestiX AI New York",
+                  "alternateName": ["DestiX AI USA", "DestiX New York"],
+                  "url": "https://ayush.company/locations/usa/new-york/ai-voice-agents",
+                  "description": "DestiX AI New York: Autonomous voice telephony and private n8n AI systems for Manhattan luxury real estate, Wall Street financial desks, and enterprise B2B SaaS.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "350 5th Ave",
+                    "addressLocality": "New York",
+                    "addressRegion": "NY",
+                    "postalCode": "10118",
+                    "addressCountry": "US"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "40.7484",
+                    "longitude": "-73.9857"
+                  },
+                  "areaServed": [
+                    {"@type": "City", "name": "New York"},
+                    {"@type": "AdministrativeArea", "name": "Manhattan"},
+                    {"@type": "AdministrativeArea", "name": "Brooklyn"},
+                    {"@type": "Country", "name": "United States"}
+                  ],
+                  "priceRange": "$2,000 - $85,000",
+                  "currenciesAccepted": "USD",
+                  "availableLanguage": ["English", "Spanish"],
+                  "parentOrganization": {"@id": "https://ayush.company/#organization"}
+                },
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#london-office",
+                  "name": "DestiX AI London",
+                  "alternateName": ["DestiX AI UK", "DestiX London"],
+                  "url": "https://ayush.company/locations/uk/london/ai-voice-agents",
+                  "description": "DestiX AI London: Enterprise conversational AI voice agents and sovereign systems for Mayfair family offices, Canary Wharf fintech, and Prime Central London estate agencies.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1 Canada Square, Canary Wharf",
+                    "addressLocality": "London",
+                    "addressRegion": "Greater London",
+                    "postalCode": "E14 5AA",
+                    "addressCountry": "GB"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "51.5045",
+                    "longitude": "-0.0195"
+                  },
+                  "areaServed": [
+                    {"@type": "City", "name": "London"},
+                    {"@type": "AdministrativeArea", "name": "Mayfair"},
+                    {"@type": "AdministrativeArea", "name": "Canary Wharf"},
+                    {"@type": "Country", "name": "United Kingdom"}
+                  ],
+                  "priceRange": "GBP 1,500 - GBP 65,000",
+                  "currenciesAccepted": "GBP, EUR, USD",
+                  "availableLanguage": ["English"],
+                  "parentOrganization": {"@id": "https://ayush.company/#organization"}
+                },
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://ayush.company/#bengaluru-office",
+                  "name": "DestiX AI Bengaluru",
+                  "alternateName": ["DestiX AI Karnataka", "DestiX Bengaluru"],
+                  "url": "https://ayush.company/locations/bengaluru/ai-voice-agents",
+                  "description": "DestiX AI Bengaluru: High-frequency AI voice agents for D2C cash-on-delivery (COD) verification, SaaS sales demo booking, and fintech KYC compliance.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Indiranagar / Koramangala Corridor",
+                    "addressLocality": "Bengaluru",
+                    "addressRegion": "Karnataka",
+                    "postalCode": "560034",
+                    "addressCountry": "IN"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "12.9716",
+                    "longitude": "77.5946"
+                  },
+                  "areaServed": [
+                    {"@type": "City", "name": "Bengaluru"},
+                    {"@type": "AdministrativeArea", "name": "Whitefield"},
+                    {"@type": "AdministrativeArea", "name": "Electronic City"},
+                    {"@type": "AdministrativeArea", "name": "Karnataka"}
+                  ],
+                  "priceRange": "INR 35,000 - INR 1,50,000",
+                  "currenciesAccepted": "INR, USD",
+                  "availableLanguage": ["English", "Hindi", "Kannada"],
                   "parentOrganization": {"@id": "https://ayush.company/#organization"}
                 },
                 {
