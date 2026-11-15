@@ -72,11 +72,14 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             <ul className="space-y-2.5 text-[#A89F93]">
               <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
               <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
+              <li><Link href="/services/crm-automation" className="hover:text-[#F6EFE2] transition-colors">AI CRM Automation &amp; Sync</Link></li>
+              <li><Link href="/services/n8n-automation" className="hover:text-[#F6EFE2] transition-colors">Enterprise n8n Orchestration</Link></li>
+              <li><Link href="/services/ai-chatbots" className="hover:text-[#F6EFE2] transition-colors">Multilingual AI Chatbots &amp; RAG</Link></li>
+              <li><Link href="/services/autonomous-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Multi-Agent Swarms</Link></li>
+              <li><Link href="/services/ai-receptionist" className="hover:text-[#F6EFE2] transition-colors">24/7 AI Voice Receptionist</Link></li>
               <li><Link href="/solutions/real-estate-automation" className="hover:text-[#F6EFE2] transition-colors text-[#F6EFE2]">Real Estate Automation Suite</Link></li>
               <li><Link href="/voice-agents" className="hover:text-[#F6EFE2] transition-colors">Autonomous Voice Telephony</Link></li>
-              <li><Link href="/solutions" className="hover:text-[#F6EFE2] transition-colors">Solutions Master Index</Link></li>
               <li><Link href="/pricing" className="hover:text-[#F6EFE2] transition-colors">Pricing &amp; Unit Economics</Link></li>
-              <li><Link href="/about" className="hover:text-[#F6EFE2] transition-colors">Founder &amp; Engineering Dossier</Link></li>
             </ul>
           </div>
 
@@ -85,10 +88,11 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Research &amp; Intel
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">2026 Delhi NCR Real Estate Guide →</Link></li>
-              <li><Link href="/blog/best-ai-voice-agent-in-new-delhi" className="hover:text-[#F6EFE2] transition-colors">Best AI Voice Agents New Delhi</Link></li>
-              <li><Link href="/blog/cost-of-ai-voice-agent-vs-telecallers-india" className="hover:text-[#F6EFE2] transition-colors">AI Voice vs Human Telecallers</Link></li>
-              <li><Link href="/blog/ai-voice-agent-cost-india" className="hover:text-[#F6EFE2] transition-colors">Voice Agent Cost in India</Link></li>
+              <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Top 10 AI Agencies Global (2026) →</Link></li>
+              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">DestiX AI vs RapidX AI Audit →</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-companies-dubai-uae-2026" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Voice AI 2026</Link></li>
+              <li><Link href="/blog/best-ai-voice-agent-companies-mumbai-2026" className="hover:text-[#F6EFE2] transition-colors">Mumbai Real Estate &amp; Clinics</Link></li>
+              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors">Delhi NCR Real Estate Guide</Link></li>
               <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors">WhatsApp &amp; CRM Sync Plumbing</Link></li>
             </ul>
           </div>

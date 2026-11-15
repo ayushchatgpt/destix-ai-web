@@ -91,6 +91,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.98,
     },
     {
+      url: `${baseUrl}/services/crm-automation`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/n8n-automation`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/ai-chatbots`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/autonomous-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/services/ai-receptionist`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/websites`,
       lastModified: now,
       changeFrequency: "weekly" as const,
@@ -201,6 +231,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.97,
     },
     {
+      url: `${baseUrl}/locations/bengaluru/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.97,
+    },
+    {
+      url: `${baseUrl}/locations/india/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.97,
+    },
+    {
       url: `${baseUrl}/ai-voice-receptionist`,
       lastModified: now,
       changeFrequency: "weekly" as const,
@@ -222,6 +264,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/blog/best-ai-voice-agent-companies-dubai-uae-2026`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/blog/best-ai-voice-agent-companies-mumbai-2026`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/blog/destix-ai-vs-rapidx-ai-comparison`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/blog/best-ai-automation-agencies-for-business-2026`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.99,
@@ -280,6 +346,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.94,
     },
+
+    // Global Market Hubs
+    { url: `${baseUrl}/locations/usa/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.98 },
+    { url: `${baseUrl}/locations/usa/new-york/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },
+    { url: `${baseUrl}/locations/usa/miami/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },
+    { url: `${baseUrl}/locations/usa/los-angeles/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },
+    { url: `${baseUrl}/locations/uk/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.98 },
+    { url: `${baseUrl}/locations/uk/london/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },
+    { url: `${baseUrl}/locations/europe/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },
+    { url: `${baseUrl}/locations/hyderabad/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.96 },
+    { url: `${baseUrl}/locations/chennai/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.96 },
+    { url: `${baseUrl}/locations/pune/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.96 },
   ];
 
   return routes;
