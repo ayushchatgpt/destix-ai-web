@@ -164,7 +164,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place Central Telephony</span>
             </div>
             <div>
-              <Link href="/locations/mumbai/ai-voice-receptionist" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+              <Link href="/locations/mumbai/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
                 Mumbai Practice →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">+91 022 Bandra, BKC &amp; Clinics</span>

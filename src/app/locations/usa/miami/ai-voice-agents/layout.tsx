@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in Miami & South Florida | DestiX AI",
+  title: "AI Voice Agents in Miami & South Florida | DestiX AI",
   description:
-    "Deploy bilingual AI voice agents in Miami and South Florida. Specialized in Brickell luxury real estate pre-construction, Miami Beach waterfront estates, medical tourism, cosmetic surgery clinics, and Latin American cross-border business. Real-time zero-delay English/Spanish code-switching with +1 305/786/954 local DIDs and carrier SIP infrastructure.",
+    "Deploy bilingual AI voice agents in Miami and South Florida with DestiX AI. Specialized in Brickell luxury real estate pre-construction, Miami Beach waterfront estates, medical tourism, cosmetic surgery clinics, and Latin American cross-border business. Real-time zero-delay English/Spanish code-switching with +1 305/786/954 local DIDs and carrier SIP infrastructure.",
   keywords: [
+    "AI voice agents in Miami",
+    "AI voice agents Miami",
     "AI voice agent Miami",
     "AI agency Miami",
     "AI for Miami real estate",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/usa/miami/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agent Agency in Miami & South Florida | DestiX AI",
+    title: "AI Voice Agents in Miami & South Florida | DestiX AI",
     description:
       "Enterprise autonomous bilingual voice agents for Miami real estate, medical tourism, and hospitality. Instant Spanish/English code-switching and local 305/786 SIP trunks.",
     url: "https://ayush.company/locations/usa/miami/ai-voice-agents",

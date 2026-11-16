@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in Los Angeles | DestiX AI",
+  title: "AI Voice Agents in Los Angeles | DestiX AI",
   description:
-    "Deploy autonomous AI voice agents in Los Angeles. Built for Beverly Hills & Bel Air luxury real estate, Hollywood entertainment studios & talent agencies, Silicon Beach tech scaleups, and Rodeo Drive aesthetic practices. Sub-450ms conversational latency, local +1 310/323/213 DIDs, and carrier-grade Twilio SIP trunking.",
+    "Deploy autonomous AI voice agents in Los Angeles with DestiX AI. Built for Beverly Hills & Bel Air luxury real estate, Hollywood entertainment studios & talent agencies, Silicon Beach tech scaleups, and Rodeo Drive aesthetic practices. Sub-450ms conversational latency, local +1 310/323/213 DIDs, and carrier-grade Twilio SIP trunking.",
   keywords: [
+    "AI voice agents in Los Angeles",
+    "AI voice agents Los Angeles",
     "AI voice agent LA",
     "AI agency Los Angeles",
     "AI for LA real estate",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/usa/los-angeles/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agent Agency in Los Angeles | DestiX AI",
+    title: "AI Voice Agents in Los Angeles | DestiX AI",
     description:
       "Enterprise autonomous AI voice telephony for Hollywood studios, Beverly Hills trophy real estate, and Silicon Beach startups. Sub-450ms human parity and local 310/323/213 DIDs.",
     url: "https://ayush.company/locations/usa/los-angeles/ai-voice-agents",

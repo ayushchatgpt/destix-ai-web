@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in New York City | DestiX AI",
+  title: "AI Voice Agents in New York City | DestiX AI",
   description:
-    "Deploy enterprise autonomous AI voice agents in New York City. Engineered for Manhattan luxury real estate (Douglas Elliman, Compass), Wall Street financial services, high-velocity SaaS scaleups, and Park Avenue healthcare practices. Sub-450ms human parity, local +1 212/917/718/646 DIDs, Twilio SIP interconnects, and strict SOC2/FINRA/HIPAA compliance.",
+    "Deploy enterprise autonomous AI voice agents in New York City with DestiX AI. Engineered for Manhattan luxury real estate (Douglas Elliman, Compass), Wall Street financial services, high-velocity SaaS scaleups, and Park Avenue healthcare practices. Sub-450ms human parity, local +1 212/917/718/646 DIDs, Twilio SIP interconnects, and strict SOC2/FINRA/HIPAA compliance.",
   keywords: [
+    "AI voice agents in New York",
+    "AI voice agents New York",
     "AI voice agent NYC",
-    "best AI agency New York",
+    "AI agency New York",
     "AI voice agent Manhattan",
     "AI receptionist NYC",
     "AI for NYC real estate",
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/usa/new-york/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agent Agency in New York City | DestiX AI",
+    title: "AI Voice Agents in New York City | DestiX AI",
     description:
       "Enterprise autonomous AI voice telephony for Manhattan luxury real estate, Wall Street financial firms, and Silicon Alley scaleups. Sub-450ms voice parity and local 212/917 DIDs.",
     url: "https://ayush.company/locations/usa/new-york/ai-voice-agents",

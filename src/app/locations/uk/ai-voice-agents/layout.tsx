@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in the UK | London, Manchester, Birmingham | DestiX AI",
+  title: "AI Voice Agents in the UK | London, Manchester, Birmingham | DestiX AI",
   description:
-    "DestiX AI is the best AI voice agent agency in the UK, deploying autonomous conversational telephony with sub-500ms voice parity. Purpose-built for UK estate agents, NHS and private clinics, London fintech, and high-growth SaaS across London, Manchester, Birmingham, Edinburgh, Bristol, and Leeds. Ofcom-compliant +44 SIP trunks and full UK GDPR data residency.",
+    "Deploy enterprise autonomous AI voice agents in the UK with DestiX AI. Purpose-built for UK estate agents, NHS and private clinics, London fintech, and high-growth SaaS across London, Manchester, Birmingham, Edinburgh, Bristol, and Leeds. Sub-500ms voice parity, Ofcom-compliant +44 SIP trunks, and full UK GDPR data residency.",
   keywords: [
-    "best AI voice agent UK",
+    "AI voice agents UK",
+    "AI voice agents in the UK",
     "AI voice agent London",
     "AI voice agent Manchester",
     "AI agency UK",
     "AI receptionist London",
     "AI voice agent Birmingham",
     "AI automation UK",
-    "best AI agency London",
     "voice AI for UK real estate",
     "AI calling agency UK",
     "enterprise AI UK",
@@ -27,9 +27,7 @@ export const metadata: Metadata = {
     "SaaS AI voice UK",
     "fintech voice AI London",
     "AI for dental clinics UK",
-    "AI for NHS",
     "Ofcom compliant AI telephony",
-    "best AI voice agent UK 2026",
     "AI voice agent Bristol",
     "AI voice agent Leeds",
     "UK GDPR compliant AI voice",
@@ -41,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/uk/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agent Agency in the UK | London, Manchester, Birmingham | DestiX AI",
+    title: "AI Voice Agents in the UK | London, Manchester, Birmingham | DestiX AI",
     description:
       "Enterprise autonomous AI voice telephony across the United Kingdom. Sub-500ms voice parity, Ofcom-compliant +44 telephony, and direct integrations for UK estate agents, NHS and private clinics, London fintech, and SaaS pipelines.",
     url: "https://ayush.company/locations/uk/ai-voice-agents",

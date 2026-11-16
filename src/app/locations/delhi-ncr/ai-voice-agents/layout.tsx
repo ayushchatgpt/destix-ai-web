@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agents in Delhi NCR (Gurugram, Noida, Delhi) | DestiX AI",
+  title: "AI Voice Agents in Delhi NCR | DestiX AI",
   description:
-    "Looking for the best AI voice agent in Delhi NCR? DestiX AI (founded by Ayush Meena in New Delhi) deploys autonomous voice agents with sub-500ms voice parity, sub-45-second speed-to-lead, and carrier-grade Indian SIP trunks across Gurugram, Noida, and Delhi.",
+    "Deploy enterprise autonomous AI voice agents in Delhi NCR with DestiX AI (founded by Ayush Meena). Sub-500ms voice parity, sub-45-second speed-to-lead, and carrier-grade Indian SIP trunks across Gurugram, Noida, and New Delhi.",
   keywords: [
-    "best ai voice agent in delhi ncr",
     "ai voice agent in delhi ncr",
+    "ai voice agents delhi ncr",
     "ai voice agent delhi",
-    "best ai voice agent delhi",
     "ai voice agency delhi ncr",
-    "best ai voice agent in new delhi",
+    "ai voice agent in new delhi",
     "ai voice agent gurugram",
     "ai voice agent noida",
-    "best ai voice agent india",
+    "ai voice agent india",
     "ai voice receptionist delhi",
     "inbound voice AI Delhi",
     "DestiX AI Delhi",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/delhi-ncr/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agents in Delhi NCR (Gurugram, Noida, Delhi) | DestiX AI",
+    title: "AI Voice Agents in Delhi NCR | DestiX AI",
     description:
       "Enterprise autonomous AI voice telephony for service companies and high-ticket brokerages across Delhi, Gurugram, and Noida. Sub-500ms voice parity and sub-45s speed to lead.",
     url: "https://ayush.company/locations/delhi-ncr/ai-voice-agents",

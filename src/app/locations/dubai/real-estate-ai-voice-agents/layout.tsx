@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dubai Real Estate AI Voice Agents & 3D Web Systems | DestiX AI",
+  title: "AI Voice Agents in Dubai | DestiX AI",
   description:
-    "Autonomous voice receptionists and 3D WebGL portals engineered for Dubai real estate developers and luxury brokerages. Sub-45s speed to lead, multilingual qualification, and CRM sync. Principal: Ayush Meena.",
+    "Deploy autonomous AI voice agents in Dubai with DestiX AI. Engineered for luxury real estate developers, DIFC brokerages, and prime UAE enterprises. Sub-45s speed to lead, multilingual English/Arabic qualification, and carrier-grade UAE SIP trunks. Principal: Ayush Meena.",
   keywords: [
+    "AI Voice Agents in Dubai",
+    "AI Voice Agents Dubai",
     "real estate AI voice agents Dubai",
     "Dubai real estate voice receptionist",
     "3D real estate website Dubai",
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/dubai/real-estate-ai-voice-agents",
   },
   openGraph: {
-    title: "Dubai Real Estate AI Voice Agents & 3D Web Systems | DestiX AI",
+    title: "AI Voice Agents in Dubai | DestiX AI",
     description:
       "Enterprise voice agents and bespoke 3D WebGL property storefronts for prime Dubai brokerages and developers.",
     url: "https://ayush.company/locations/dubai/real-estate-ai-voice-agents",

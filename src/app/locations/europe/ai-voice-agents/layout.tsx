@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agent Agency for Europe | Paris, Berlin, Amsterdam, Zurich | DestiX AI",
+  title: "AI Voice Agents in Europe | Paris, Berlin, Amsterdam, Zurich | DestiX AI",
   description:
-    "Enterprise autonomous AI voice agent agency for European markets. Deploy sub-500ms voice telephony across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm. Full GDPR Article 22 compliance, ePrivacy compliance, sovereign EU cloud infrastructure, multilingual support in 8 European languages, and local SIP trunking (+33, +49, +31, +41, +353, +46).",
+    "Deploy enterprise autonomous AI voice agents in Europe with DestiX AI. Deploy sub-500ms voice telephony across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm. Full GDPR Article 22 compliance, ePrivacy compliance, sovereign EU cloud infrastructure, multilingual support in 8 European languages, and local SIP trunking (+33, +49, +31, +41, +353, +46).",
   keywords: [
+    "AI voice agents in Europe",
+    "AI voice agents Europe",
     "AI voice agent Europe",
     "AI agency Paris",
     "AI voice agent Berlin",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/europe/ai-voice-agents",
   },
   openGraph: {
-    title: "AI Voice Agent Agency for Europe | Paris, Berlin, Amsterdam, Zurich | DestiX AI",
+    title: "AI Voice Agents in Europe | Paris, Berlin, Amsterdam, Zurich | DestiX AI",
     description:
       "Enterprise autonomous AI voice telephony across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm. GDPR-compliant, sub-500ms acoustic latency, 8 European languages, and European carrier SIP trunking.",
     url: "https://ayush.company/locations/europe/ai-voice-agents",

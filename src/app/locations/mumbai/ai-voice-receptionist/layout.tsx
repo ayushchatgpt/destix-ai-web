@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents for Mumbai Real Estate & Healthcare | DestiX AI",
+  title: "AI Voice Agents in Mumbai | DestiX AI",
   description:
-    "Deploy autonomous AI voice agents for luxury real estate (Lodha, Oberoi, Godrej, Piramal brokerages in Bandra, Worli, BKC, Thane) and healthcare clinics in Mumbai. Sub-450ms latency, speed-to-lead qualification, 24/7 patient triage, and CRM scheduling. Founder: Ayush Meena.",
+    "Deploy autonomous AI voice agents in Mumbai with DestiX AI. Built for luxury real estate (Lodha, Oberoi, Godrej, Piramal brokerages in Bandra, Worli, BKC, Thane) and healthcare clinics across Mumbai. Sub-450ms latency, speed-to-lead qualification, 24/7 patient triage, and CRM scheduling. Founder: Ayush Meena.",
   keywords: [
     // Real Estate Keywords
+    "AI voice agents in Mumbai",
+    "AI voice agents Mumbai",
     "AI voice agent Mumbai real estate",
     "Mumbai property lead AI",
     "AI for Lodha brokers",
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/mumbai/ai-voice-receptionist",
   },
   openGraph: {
-    title: "AI Voice Agents for Mumbai Real Estate & Healthcare | DestiX AI",
+    title: "AI Voice Agents in Mumbai | DestiX AI",
     description:
       "Deploy autonomous AI voice agents for luxury real estate brokerages (Lodha, Oberoi, Godrej, Piramal in Bandra, Worli, BKC, Thane) and healthcare clinics across Mumbai.",
     url: "https://ayush.company/locations/mumbai/ai-voice-receptionist",

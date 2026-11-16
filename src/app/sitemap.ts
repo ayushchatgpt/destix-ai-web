@@ -345,6 +345,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.97,
     },
     {
+      url: `${baseUrl}/locations/mumbai/ai-voice-agents`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.98,
+    },
+    {
       url: `${baseUrl}/locations/mumbai/ai-voice-receptionist`,
       lastModified: now,
       changeFrequency: "weekly" as const,

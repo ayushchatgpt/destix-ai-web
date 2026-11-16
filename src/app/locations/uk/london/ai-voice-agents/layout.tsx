@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in London | DestiX AI",
+  title: "AI Voice Agents in London | DestiX AI",
   description:
     "Deploy enterprise autonomous AI voice agents in London with DestiX AI. Purpose-built for Mayfair, Knightsbridge & Kensington prime real estate, Canary Wharf financial services & fintech, Harley Street private clinics, and Shoreditch tech scale-ups. Sub-500ms voice parity, +44 20 London DIDs, BT SIP trunking, and full Ofcom & UK GDPR compliance.",
   keywords: [
+    "AI voice agents in London",
+    "AI voice agents London",
     "AI voice agent London",
-    "best AI agency London",
+    "AI agency London",
     "AI receptionist London",
     "AI for London real estate",
     "AI for estate agents London",
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "https://ayush.company/locations/uk/london/ai-voice-agents",
   },
   openGraph: {
-    title: "Best AI Voice Agent Agency in London | DestiX AI",
+    title: "AI Voice Agents in London | DestiX AI",
     description:
       "Enterprise autonomous voice AI telephony for London prime real estate, Canary Wharf fintech, Harley Street clinics, and Shoreditch SaaS. Sub-500ms voice parity, +44 20 DIDs, BT SIP trunking, and Ofcom/GDPR compliance.",
     url: "https://ayush.company/locations/uk/london/ai-voice-agents",

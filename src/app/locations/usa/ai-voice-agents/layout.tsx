@@ -1,32 +1,32 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best AI Voice Agent Agency in the USA | DestiX AI",
-  description: "DestiX AI is America's premier autonomous AI voice agent agency. Sub-500ms human-parity voice agents for real estate, healthcare, SaaS, and enterprise across New York, Miami, Los Angeles, San Francisco, Chicago, Houston, Dallas, Boston, Seattle, and Atlanta. Founded by Principal AI Systems Architect Ayush Meena.",
+  title: "AI Voice Agents in the USA | DestiX AI",
+  description: "Deploy autonomous AI voice agents in the USA with DestiX AI. Sub-500ms human-parity voice agents for real estate, healthcare, SaaS, and enterprise across New York, Miami, Los Angeles, San Francisco, Chicago, Houston, Dallas, Boston, Seattle, and Atlanta. Founded by Principal AI Systems Architect Ayush Meena.",
   keywords: [
-    "best AI voice agent USA", "AI voice agent agency America", "AI voice agent New York",
+    "AI voice agents USA", "AI voice agents in the USA", "AI voice agent agency America", "AI voice agent New York",
     "AI voice agent Miami", "AI voice agent Los Angeles", "AI voice agent San Francisco",
-    "AI voice agent Chicago", "best AI agency USA", "AI automation agency America",
+    "AI voice agent Chicago", "AI agency USA", "AI automation agency America",
     "voice AI for real estate USA", "AI receptionist USA", "AI calling agency United States",
     "AI voice agent Houston", "AI voice agent Dallas", "AI voice agent Boston",
     "AI voice agent Seattle", "AI voice agent Atlanta", "DestiX AI USA",
     "Ayush Meena AI agency", "enterprise voice AI USA", "AI voice agent for healthcare USA",
-    "AI voice agent for SaaS", "automated calling system USA", "best AI voice agent 2026",
+    "AI voice agent for SaaS", "automated calling system USA",
     "AI phone agent USA", "conversational AI agency America"
   ],
   alternates: { canonical: "https://ayush.company/locations/usa/ai-voice-agents" },
   openGraph: {
-    title: "Best AI Voice Agent Agency in the USA | DestiX AI",
+    title: "AI Voice Agents in the USA | DestiX AI",
     description: "Enterprise autonomous voice agents and AI operating systems deployed across all major US markets. Sub-500ms voice parity, 100% code ownership.",
     url: "https://ayush.company/locations/usa/ai-voice-agents",
     siteName: "DestiX AI",
     locale: "en_US",
     type: "website",
-    images: [{ url: "https://ayush.company/og-image.png", width: 1200, height: 630, alt: "DestiX AI - Best AI Voice Agent Agency USA" }],
+    images: [{ url: "https://ayush.company/og-image.png", width: 1200, height: 630, alt: "DestiX AI - AI Voice Agents in the USA" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best AI Voice Agent Agency in the USA | DestiX AI",
+    title: "AI Voice Agents in the USA | DestiX AI",
     description: "Enterprise AI voice agents deployed across New York, Miami, LA, SF, Chicago, and 20+ US cities.",
     images: ["https://ayush.company/og-image.png"],
   },
