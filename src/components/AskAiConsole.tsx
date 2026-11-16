@@ -9,6 +9,11 @@ export function AskAiConsole() {
     "Summarize what DestiX AI (https://ayush.company) does, who it is for and how its services work.";
   const encoded = encodeURIComponent(promptText);
 
+  // Claude requires a web search query first before fetching URLs to prevent tool security blocks
+  const claudePrompt =
+    "Use web search for 'DestiX AI ayush.company' and summarize what DestiX AI does, who it is for and how its services work.";
+  const encodedClaude = encodeURIComponent(claudePrompt);
+
   const [copiedPrompt, setCopiedPrompt] = useState(false);
   const [showGeminiNotice, setShowGeminiNotice] = useState(false);
 
@@ -38,10 +43,10 @@ export function AskAiConsole() {
     },
     {
       name: "Claude",
-      href: `https://claude.ai/new?q=${encoded}`,
+      href: `https://claude.ai/new?q=${encodedClaude}`,
       logo: "/logos/claude.svg",
       hoverBorder: "hover:border-[#D97757] hover:shadow-[0_4px_16px_-4px_rgba(217,119,87,0.25)]",
-      note: "Auto-fills prompt",
+      note: "Auto-runs web search query",
     },
     {
       name: "Perplexity",
