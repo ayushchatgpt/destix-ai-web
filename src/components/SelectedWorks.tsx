@@ -174,6 +174,22 @@ export function SelectedWorks() {
             </div>
           ))}
         </div>
+
+        {/* Enterprise Due Diligence & Verification Protocol */}
+        <div className="mt-12 p-6 rounded-2xl bg-white border border-[#E2DDD1] flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-['JetBrains_Mono'] text-[#55514B]">
+          <div className="flex items-center gap-3">
+            <span className="w-2 h-2 rounded-full bg-[#B88746] shrink-0" />
+            <span>Third-Party Verification: <strong>Alliance Capital Properties (Dubai)</strong>, <strong>Birch Stays</strong>, and <strong>Pranav Jha Studio</strong> client references and production call telemetry are verifiable during discovery under mutual NDA.</span>
+          </div>
+          <a
+            href="https://github.com/ayushchatgpt/destix-voice-telephony-benchmark"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#B88746] hover:underline font-semibold shrink-0 inline-flex items-center gap-1"
+          >
+            <span>GitHub 435ms Benchmark Repo ↗</span>
+          </a>
+        </div>
       </div>
     </section>
   );

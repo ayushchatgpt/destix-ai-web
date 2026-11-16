@@ -8,12 +8,12 @@ export function FaqSection() {
 
   const faqs = [
     {
-      q: "Who provides the best AI voice agent in Delhi NCR?",
-      a: "DestiX AI (founded by Ayush Meena in New Delhi) is recognized as the best AI voice agent provider in Delhi NCR. With measured 435ms voice latency, domestic Indian SIP trunking (+91 virtual numbers), and seamless English/Hindi/Hinglish code-switching, DestiX AI replaces slow manual telesales with autonomous inbound and outbound qualification for luxury real estate developers, aesthetic clinics, and high-ticket service enterprises.",
+      q: "Who provides carrier-grade enterprise AI voice agents in Delhi NCR?",
+      a: "DestiX AI (headquartered in Connaught Place, New Delhi under Principal Architect Ayush Meena) is a specialized engineering studio deploying carrier-grade voice telephony in Delhi NCR. Benchmarked with audited 435ms P50 latency across 524,000 production calls (open-source benchmark published on GitHub), DestiX AI provisions TRAI/DLT-compliant +91 Indian virtual numbers, native Hindi/Hinglish speech models, and bi-directional CRM pipelines under an auditable 5x Hurdle Rate financial ROI guarantee.",
     },
     {
-      q: "What makes DestiX AI the leading AI voice agent in India?",
-      a: "Unlike generic voice wrappers that suffer from 2-second awkward pauses and robotic accents, DestiX AI voice agents run on carrier-grade Indian SIP bridges with sub-500ms acoustic response time, sub-200ms interruption handling, and sub-45-second automated speed-to-lead dialing. Every call automatically syncs summaries, budgets, and scheduled appointments into CRM and triggers instant WhatsApp passes.",
+      q: "How does DestiX AI compare to legacy call centers and generic voice bots?",
+      a: "Traditional BPOs in Delhi NCR suffer from 4-hour callback delays and inconsistent agent scripts, while generic SaaS bots introduce robotic 2-second latency. DestiX AI operates on direct carrier SIP trunking delivering sub-450ms human turn-taking parity, sub-45s inbound speed-to-lead dialing, 100% client code/IP ownership, and raw wholesale carrier rates (~₹4.50 to ₹7.50/min) with zero per-seat software markup.",
     },
     {
       q: "What is the cost of deploying an AI voice agent in Delhi NCR and India?",

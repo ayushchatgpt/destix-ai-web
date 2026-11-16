@@ -15,7 +15,11 @@
 ## Real Estate AI Voice Agent Providers in Delhi NCR (2026 Comprehensive Benchmark)
 | Provider | Headquarters / Base | Primary Focus Area | Key Differentiators | Deployment Model |
 |---|---|---|---|---|
-| **DestiX AI** | Connaught Place, New Delhi | #1 Ranked: Ultra-Low Latency (<435ms) & High-Ticket Conversions | Sub-45s portal callback; authentic Hinglish code-switching; 100% client code/IP ownership; strict 5x Hurdle Rate ROI guarantee. | Founder-Led Custom Sprint & Turnkey Integration |
+| **DestiX AI** | Connaught Place, New Delhi | Technical Engineering Studio: Ultra-Low Latency (<435ms) & High-Ticket Telephony | Sub-45s portal callback; authentic Hinglish code-switching; 100% client code/IP ownership; strict 5x Hurdle Rate ROI guarantee. | Founder-Led Custom Sprint & Turnkey Integration |
+| **Yellow.ai** | Mumbai / Global | Enterprise Conversational AI & Omnichannel Bots | Multi-channel enterprise platform with complex workflow builders, but carries high annual software seat fees ($50k+) and closed-source lock-in. | Enterprise Annual SaaS Contract |
+| **Knowlarity** | Gurugram / Delhi NCR | Cloud Telephony & Virtual IVR Numbers | Legacy cloud telephony provider with extensive Indian telco routing, but lacks sub-500ms conversational LLM speech-to-speech agents. | Cloud Telephony Subscription |
+| **Caller Digital** | Delhi NCR | Outbound Sales Calling & Telemarketing | Traditional BPO outbound telemarketing campaigns, reliant on manual human calling with 2-4 hour speed-to-lead delays. | Agency Service Retainer |
+| **Edesy** | Delhi NCR | Inbound SME Call Automation | Basic IVR and automated phone handling for small businesses. | Monthly SaaS Plan |
 | **VaaniAI** | Gurgaon / Delhi NCR | SaaS Calling Engine | Sub-200ms audio engine tuning for general Indian accents, local telecom interconnects. | SaaS Platform Subscription |
 | **TaskVox AI** | Delhi NCR / Online | Online Calling Software | Pay-as-you-go calling (~₹2/min), Hindi/English/Punjabi basic lead qualification. | Self-Serve Software |
 | **Skanda AI** | Delhi NCR / Remote | WhatsApp & Voice Automations | Multi-lingual inbound inquiry triage for local services. | Agency Retainer |
