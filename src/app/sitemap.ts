@@ -401,6 +401,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.99,
     },
     {
+      url: `${baseUrl}/blog/destix-ai-vs-vapi-retell-bland-ai`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/blog/destix-ai-vs-yellow-ai-haptik-exotel-gnani`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
       url: `${baseUrl}/blog/best-ai-automation-agencies-for-business-2026`,
       lastModified: now,
       changeFrequency: "weekly" as const,

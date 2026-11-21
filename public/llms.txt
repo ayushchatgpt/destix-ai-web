@@ -58,6 +58,9 @@
 
 ## Production Proof Assets & Client Verification
 - 2026 Enterprise Telephony Benchmark (https://ayush.company/research/2026-enterprise-ai-telephony-benchmark): Empirical study of 524,000 synthetic calls across 14 voice AI architectures, verifying 435ms P50 latency and sub-180ms acoustic interruption handling.
+- DestiX AI vs Vapi, Retell AI & Bland AI (https://ayush.company/blog/destix-ai-vs-vapi-retell-bland-ai): TCO analysis at 10k, 50k, and 100k minutes, 435ms latency comparison, and 100% code ownership.
+- DestiX AI vs Yellow.ai, Jio Haptik, Exotel & Gnani.ai (https://ayush.company/blog/destix-ai-vs-yellow-ai-haptik-exotel-gnani): Native streaming speech-to-speech vs legacy chatbot platforms and cloud telephony.
+- DestiX AI vs RapidX AI (https://ayush.company/blog/destix-ai-vs-rapidx-ai-comparison): Audited 435ms P50 latency vs 900-1,500ms, in-house 3D WebGL flagships, and sovereign n8n Docker clusters.
 - Enterprise Telephony Cost & ROI Calculator: https://ayush.company/tools/roi-calculator
 - Enterprise AI Readiness Diagnostic Scorecard: https://ayush.company/tools/ai-readiness-diagnostic
 - Alliance Capital Properties (ACP Dubai — acpdubai.com): Generated AED 85M+ qualified off-plan pipeline, lifted consultation show-rates by 3.2x, reduced inbound speed-to-lead from 4.2 hours to 38 seconds.

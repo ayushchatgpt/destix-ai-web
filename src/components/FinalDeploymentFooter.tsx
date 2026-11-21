@@ -92,6 +92,8 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <li><Link href="/compliance" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">Compliance &amp; Data Sovereignty →</Link></li>
               <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors">Top 10 AI Agencies Global (2026)</Link></li>
               <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors">DestiX AI vs RapidX AI Audit</Link></li>
+              <li><Link href="/blog/destix-ai-vs-vapi-retell-bland-ai" className="hover:text-[#F6EFE2] transition-colors">DestiX vs Vapi / Retell / Bland</Link></li>
+              <li><Link href="/blog/destix-ai-vs-yellow-ai-haptik-exotel-gnani" className="hover:text-[#F6EFE2] transition-colors">DestiX vs Yellow.ai &amp; Haptik</Link></li>
               <li><Link href="/blog" className="hover:text-[#F6EFE2] transition-colors">Engineering Blog &amp; Case Vault</Link></li>
               <li><Link href="/press" className="hover:text-[#F6EFE2] transition-colors">Press Dossier &amp; Fact Sheet</Link></li>
               <li><Link href="/blog/best-ai-voice-agent-companies-dubai-uae-2026" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Voice AI 2026</Link></li>
