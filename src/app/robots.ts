@@ -22,6 +22,7 @@ export default function robots(): MetadataRoute.Robots {
           "Meta-ExternalAgent",
         ],
         allow: "/",
+        disallow: ["/api/", "/_next/"],
       },
     ],
     sitemap: "https://ayush.company/sitemap.xml",

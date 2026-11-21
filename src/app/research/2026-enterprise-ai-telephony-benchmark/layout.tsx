@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildBenchmarkResearchGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "2026 Global Enterprise AI Telephony & Acoustic Latency Benchmark | DestiX AI Research",
@@ -44,35 +45,7 @@ export default function BenchmarkResearchLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "TechArticle",
-                "@id": "https://ayush.company/research/2026-enterprise-ai-telephony-benchmark#article",
-                headline: "2026 Global Enterprise AI Telephony & Acoustic Latency Benchmark",
-                description:
-                  "Audited empirical research comparing roundtrip turn-taking latency, speech recognition accuracy, and carrier compliance across 14 voice AI providers.",
-                author: {
-                  "@type": "Person",
-                  name: "Ayush Meena",
-                  jobTitle: "Principal AI Systems Architect",
-                  url: "https://ayush.company/about",
-                  sameAs: [
-                    "https://www.linkedin.com/in/ayush-meena-065a89380/",
-                    "https://github.com/ayushchatgpt/destix-ai-web"
-                  ]
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "DestiX AI",
-                  url: "https://ayush.company"
-                },
-                datePublished: "2026-11-15T00:00:00+05:30",
-                dateModified: "2026-11-15T00:00:00+05:30"
-              }
-            ],
-          }),
+          __html: JSON.stringify(buildBenchmarkResearchGraph()),
         }}
       />
       {children}

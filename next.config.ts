@@ -66,6 +66,133 @@ const nextConfig: NextConfig = {
         destination: "https://ayush.company/:path*",
         permanent: true,
       },
+      // Documentation alias for AI crawlers
+      {
+        source: "/docs",
+        destination: "/compliance",
+        permanent: true,
+      },
+      // Legacy & variant location URL consolidation to canonical routes
+      {
+        source: "/ai-voice-agent-delhi-ncr",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/city/ai-voice-agent-delhi",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/ai-calling/delhi-ncr",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/ai-agency-delhi",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/dubai",
+        destination: "/locations/dubai/real-estate-ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/dubai",
+        destination: "/locations/dubai/real-estate-ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/dubai/ai-voice-agents",
+        destination: "/locations/dubai/real-estate-ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/delhi",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/delhi-ncr",
+        destination: "/locations/delhi-ncr/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/gurugram",
+        destination: "/locations/gurugram/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/noida",
+        destination: "/locations/noida/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/mumbai",
+        destination: "/locations/mumbai/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/bengaluru",
+        destination: "/locations/bengaluru/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/hyderabad",
+        destination: "/locations/hyderabad/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/chennai",
+        destination: "/locations/chennai/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/pune",
+        destination: "/locations/pune/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/india",
+        destination: "/locations/india/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/uk",
+        destination: "/locations/uk/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/london",
+        destination: "/locations/uk/london/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/usa",
+        destination: "/locations/usa/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/new-york",
+        destination: "/locations/usa/new-york/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/miami",
+        destination: "/locations/usa/miami/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/los-angeles",
+        destination: "/locations/usa/los-angeles/ai-voice-agents",
+        permanent: true,
+      },
+      {
+        source: "/locations/europe",
+        destination: "/locations/europe/ai-voice-agents",
+        permanent: true,
+      },
     ];
   },
 };

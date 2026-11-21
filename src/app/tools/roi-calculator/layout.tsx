@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildInteractiveToolGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Enterprise AI ROI & Telephony Unit Cost Calculator | DestiX AI",
@@ -46,30 +47,14 @@ export default function RoiCalculatorLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "SoftwareApplication",
-                "@id": "https://ayush.company/tools/roi-calculator#app",
-                name: "DestiX AI Enterprise Telephony & AI ROI Calculator",
-                applicationCategory: "BusinessApplication",
-                operatingSystem: "Web",
-                offers: {
-                  "@type": "Offer",
-                  price: "0",
-                  priceCurrency: "USD",
-                },
-                creator: {
-                  "@type": "Organization",
-                  name: "DestiX AI",
-                  url: "https://ayush.company",
-                },
-                description:
-                  "Financial modeling tool calculating payback horizons, per-minute unit economics, and labor cost displacement for autonomous voice agents and CRM automation.",
-              },
-            ],
-          }),
+          __html: JSON.stringify(
+            buildInteractiveToolGraph({
+              toolSlug: "roi-calculator",
+              toolName: "DestiX AI Enterprise Telephony & AI ROI Calculator",
+              toolDescription:
+                "Financial modeling tool calculating payback horizons, per-minute unit economics, and labor cost displacement for autonomous voice agents and CRM automation.",
+            })
+          ),
         }}
       />
       {children}

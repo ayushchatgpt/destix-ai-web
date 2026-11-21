@@ -81,7 +81,7 @@ export function GlobalTelephonyGateways() {
       did: "+91 (11) Delhi / +91 (22) Mumbai",
       telecom: "Tata Tele & Airtel PRI / SIP Lines",
       compliance: "TRAI 140/160 • DLT Registered",
-      href: "/ai-voice-agent-delhi-ncr",
+      href: "/locations/delhi-ncr/ai-voice-agents",
       icon: PhoneCall,
     },
   ];

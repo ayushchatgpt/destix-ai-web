@@ -13,31 +13,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/ai-voice-agent-delhi-ncr`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.99,
-    },
-    {
-      url: `${baseUrl}/ai-calling/delhi-ncr`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.99,
-    },
-    {
-      url: `${baseUrl}/city/ai-voice-agent-delhi`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.99,
-    },
-    {
-      url: `${baseUrl}/ai-voice-agent-for-real-estate`,
+      url: `${baseUrl}/voice-agents`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.99,
     },
     {
       url: `${baseUrl}/pricing`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/compliance`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.99,
+    },
+    {
+      url: `${baseUrl}/ai-voice-agent-for-real-estate`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.99,
@@ -291,28 +285,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // High-Intent Regional Hubs (Priority 0.96 - 0.98)
     {
-      url: `${baseUrl}/ai-agency-delhi`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.98,
-    },
-    {
-      url: `${baseUrl}/dubai`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.98,
-    },
-    {
       url: `${baseUrl}/locations`,
       lastModified: now,
       changeFrequency: "weekly" as const,
-      priority: 0.96,
+      priority: 0.98,
     },
     {
       url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents`,
       lastModified: now,
       changeFrequency: "weekly" as const,
-      priority: 0.97,
+      priority: 0.99,
     },
     {
       url: `${baseUrl}/locations/delhi-ncr/ai-voice-agents-for-real-estate`,

@@ -199,7 +199,7 @@ export function useDograhVoice(defaultLanguage: VoiceLanguage = "en"): UseDograh
 
     if (!activeToken) {
       console.warn("Dograh embed token is not defined in environment.");
-      setError("Dograh embed configuration missing.");
+      setError("Voice runtime standby.");
       setStatus("failed");
       return;
     }
@@ -324,7 +324,7 @@ export function useDograhVoice(defaultLanguage: VoiceLanguage = "en"): UseDograh
       };
 
       script.onerror = () => {
-        setError(languageRef.current === "ar" ? "فشل تحميل ملحق المحادثة الصوتية." : "Failed to load Dograh voice agent widget script.");
+        setError("Voice engine connection reserved for active sessions.");
         setStatus("failed");
       };
 

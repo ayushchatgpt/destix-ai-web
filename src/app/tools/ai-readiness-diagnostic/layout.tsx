@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildInteractiveToolGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Enterprise AI Readiness Diagnostic & Architectural Scorecard | DestiX AI",
@@ -44,25 +45,14 @@ export default function AiReadinessLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "SoftwareApplication",
-                "@id": "https://ayush.company/tools/ai-readiness-diagnostic#app",
-                name: "DestiX AI Enterprise Readiness Diagnostic Tool",
-                applicationCategory: "BusinessApplication",
-                operatingSystem: "Web",
-                creator: {
-                  "@type": "Organization",
-                  name: "DestiX AI",
-                  url: "https://ayush.company",
-                },
-                description:
-                  "Interactive engineering scorecard measuring CRM readiness, SIP trunking capabilities, compliance frameworks, and voice automation potential.",
-              },
-            ],
-          }),
+          __html: JSON.stringify(
+            buildInteractiveToolGraph({
+              toolSlug: "ai-readiness-diagnostic",
+              toolName: "DestiX AI Enterprise Readiness Diagnostic Tool",
+              toolDescription:
+                "Interactive engineering scorecard measuring CRM readiness, SIP trunking capabilities, compliance frameworks, and voice automation potential.",
+            })
+          ),
         }}
       />
       {children}

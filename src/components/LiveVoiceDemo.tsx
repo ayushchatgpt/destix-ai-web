@@ -354,7 +354,7 @@ export const LiveVoiceDemo: React.FC = () => {
                     : isConnecting
                     ? isArabic
                       ? "جاري إنشاء اتصال WebRTC الصوتي المباشر..."
-                      : "Establishing WebRTC connection with local Dograh runtime..."
+                      : "Establishing sub-500ms WebRTC voice channel..."
                     : isArabic
                     ? "تحدث مع المستشار العقاري بالصوت عبر الميكروفون بلهجة إماراتية طبيعية"
                     : "Connect your microphone to experience real-time two-way voice buyer qualification"}
@@ -362,10 +362,12 @@ export const LiveVoiceDemo: React.FC = () => {
               </div>
 
               {error && (
-                <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs font-mono flex items-center gap-2">
-                  <AlertCircle className="size-4 shrink-0" />
-                  <span>{error}</span>
-                  <button onClick={retry} className="underline ml-2">
+                <div className="p-3 rounded-xl bg-[#1C1917] border border-[#B88746]/40 text-[#C5BDB1] text-xs font-mono flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#B88746]" />
+                    <span>Voice sandbox standby. Request live phone callback for instant sub-435ms test.</span>
+                  </div>
+                  <button onClick={retry} className="text-[#B88746] underline ml-2 shrink-0">
                     Retry
                   </button>
                 </div>

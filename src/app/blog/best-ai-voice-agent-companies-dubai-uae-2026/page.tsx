@@ -1306,12 +1306,12 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-['Plus_Jakarta_Sans']">
             <Link
-              href="/dubai"
+              href="/locations/dubai/real-estate-ai-voice-agents"
               className="p-4 rounded-2xl bg-[#F6F4EE] hover:bg-[#EDE8DC] border border-[#E2DDD1] transition-colors group"
             >
               <div className="font-mono text-[#B88746] font-bold uppercase mb-1">Dubai Studio</div>
               <div className="font-semibold text-[#181614] group-hover:text-[#B88746] flex items-center justify-between">
-                <span>/dubai</span>
+                <span>/locations/dubai</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
               <p className="text-[11px] text-[#888277] mt-1">

@@ -93,7 +93,7 @@ export default function AiAgencyPage() {
   const globalLocations = [
     { city: "New York City", country: "United States", focus: "Wall Street, Manhattan Luxury Real Estate, B2B SaaS", did: "+1 (212) / (917)", href: "/locations/usa/new-york/ai-voice-agents" },
     { city: "London", country: "United Kingdom", focus: "Mayfair Family Offices, Canary Wharf Fintech, Prime Central London", did: "+44 (20)", href: "/locations/uk/london/ai-voice-agents" },
-    { city: "Dubai", country: "United Arab Emirates", focus: "DIFC Sovereign Wealth, Palm Jumeirah & Dubai Hills Real Estate", did: "+971 (4)", href: "/dubai" },
+    { city: "Dubai", country: "United Arab Emirates", focus: "DIFC Sovereign Wealth, Palm Jumeirah & Dubai Hills Real Estate", did: "+971 (4)", href: "/locations/dubai/real-estate-ai-voice-agents" },
     { city: "New Delhi (HQ)", country: "India (Global Headquarters)", focus: "Connaught Place Central Architecture, Telecom Carrier Core", did: "+91 (11)", href: "/ai-agency-delhi" },
     { city: "Mumbai", country: "India", focus: "Bandra Kurla Complex (BKC) Wealth, Worli Real Estate, Clinics", did: "+91 (22)", href: "/locations/mumbai/ai-voice-receptionist" },
     { city: "Bengaluru", country: "India", focus: "D2C E-Commerce COD Verification, SaaS Demo Scheduling, Fintech", did: "+91 (80)", href: "/locations/bengaluru/ai-voice-agents" },

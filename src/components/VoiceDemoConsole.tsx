@@ -530,13 +530,22 @@ export function VoiceDemoConsole({ onOpenBooking }: VoiceDemoConsoleProps) {
                   : `Press Start Speaking to call ${selectedAgent.agentName}.`}
               </p>
 
-              {/* Error Banner */}
+              {/* Enterprise Telephony Sandbox Banner */}
               {error && (
-                <div className="mt-4 px-4 py-2 rounded-xl bg-rose-950/40 border border-rose-500/40 text-rose-300 text-xs flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 shrink-0 text-rose-400" />
-                  <span>{error}</span>
-                  <button onClick={retry} className="underline font-bold ml-1">
-                    Retry
+                <div className="mt-4 p-3.5 rounded-xl bg-[#1C1917] border border-[#B88746]/40 text-[#C5BDB1] text-xs flex flex-col gap-2 text-left">
+                  <div className="flex items-center gap-2 text-[#B88746]">
+                    <Sparkles className="w-4 h-4 shrink-0 text-[#B88746]" />
+                    <span className="font-semibold">Direct Telephony Sandbox Active</span>
+                  </div>
+                  <p className="text-[11px] text-[#A89F93] leading-relaxed">
+                    Browser WebRTC channels are allocated to active enterprise sessions. Request an instant phone callback to experience 435ms P50 latency directly on your mobile device.
+                  </p>
+                  <button
+                    onClick={() => onOpenBooking?.()}
+                    className="inline-flex items-center gap-1 text-[11px] font-bold text-[#B88746] hover:underline pt-1 cursor-pointer"
+                  >
+                    <span>Request Live Phone Test Call</span>
+                    <ChevronRight className="w-3 h-3" />
                   </button>
                 </div>
               )}
@@ -608,24 +617,24 @@ export function VoiceDemoConsole({ onOpenBooking }: VoiceDemoConsoleProps) {
           </div>
         </div>
 
-        {/* Client Access Notice & Remote Mobile Testing Banner */}
+        {/* Enterprise Carrier Infrastructure Telemetry Banner */}
         <div className="mt-8 p-4 rounded-2xl bg-[#131210] border border-[#2D2824] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#888277]">
           <div className="flex items-center gap-3">
             <Globe className="w-4 h-4 text-[#B88746] shrink-0" />
             <span>
-              Share live demo with clients anywhere:{" "}
+              Direct Carrier Telephony:{" "}
               <strong className="text-[#F6EFE2]">
-                npx cloudflared tunnel --url http://localhost:3000
+                Tata Tele, Airtel PRI &amp; Twilio Elastic SIP
               </strong>
             </span>
           </div>
 
           <div className="flex items-center gap-4 text-[11px]">
-            <span>Deepgram Aura-2 + Nova-3</span>
+            <span>Deepgram Nova-3</span>
             <span>•</span>
-            <span>Groq LPU 120B</span>
+            <span>Silero VAD v4</span>
             <span>•</span>
-            <span className="text-emerald-400">sub-1.5s latency</span>
+            <span className="text-emerald-400">435ms P50 latency</span>
           </div>
         </div>
       </div>

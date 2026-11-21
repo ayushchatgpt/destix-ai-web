@@ -70,7 +70,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Core Solutions
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
               <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
               <li><Link href="/services/crm-automation" className="hover:text-[#F6EFE2] transition-colors">AI CRM Automation &amp; Sync</Link></li>
               <li><Link href="/services/n8n-automation" className="hover:text-[#F6EFE2] transition-colors">Enterprise n8n Orchestration</Link></li>
@@ -88,12 +88,14 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Research &amp; Intel
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">Top 10 AI Agencies Global (2026) →</Link></li>
-              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">DestiX AI vs RapidX AI Audit →</Link></li>
+              <li><Link href="/research/2026-enterprise-ai-telephony-benchmark" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">524k Telephony Benchmark ★</Link></li>
+              <li><Link href="/compliance" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-medium">Compliance &amp; Data Sovereignty →</Link></li>
+              <li><Link href="/blog/best-ai-automation-agencies-for-business-2026" className="hover:text-[#F6EFE2] transition-colors">Top 10 AI Agencies Global (2026)</Link></li>
+              <li><Link href="/blog/destix-ai-vs-rapidx-ai-comparison" className="hover:text-[#F6EFE2] transition-colors">DestiX AI vs RapidX AI Audit</Link></li>
+              <li><Link href="/blog" className="hover:text-[#F6EFE2] transition-colors">Engineering Blog &amp; Case Vault</Link></li>
+              <li><Link href="/press" className="hover:text-[#F6EFE2] transition-colors">Press Dossier &amp; Fact Sheet</Link></li>
               <li><Link href="/blog/best-ai-voice-agent-companies-dubai-uae-2026" className="hover:text-[#F6EFE2] transition-colors">Dubai &amp; UAE Voice AI 2026</Link></li>
               <li><Link href="/blog/best-ai-voice-agent-companies-mumbai-2026" className="hover:text-[#F6EFE2] transition-colors">Mumbai Real Estate &amp; Clinics</Link></li>
-              <li><Link href="/blog/top-real-estate-ai-voice-agent-companies-delhi-ncr-2026" className="hover:text-[#F6EFE2] transition-colors">Delhi NCR Real Estate Guide</Link></li>
-              <li><Link href="/services/whatsapp-automation" className="hover:text-[#F6EFE2] transition-colors">WhatsApp &amp; CRM Sync Plumbing</Link></li>
             </ul>
           </div>
 
@@ -158,7 +160,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             </div>
 
             <div>
-              <Link href="/ai-voice-agent-delhi-ncr" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+              <Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
                 Delhi NCR (HQ) →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place Central Telephony</span>

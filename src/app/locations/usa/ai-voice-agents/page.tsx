@@ -736,7 +736,7 @@ export default function USAVoiceAgentsPage() {
                 All Locations
               </Link>
               <span>&bull;</span>
-              <Link href="/dubai" className="hover:text-[#B88746] underline transition-colors">
+              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#B88746] underline transition-colors">
                 Dubai &amp; UAE Hub
               </Link>
               <span>&bull;</span>

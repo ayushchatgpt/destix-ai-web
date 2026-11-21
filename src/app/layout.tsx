@@ -363,6 +363,7 @@ export default function RootLayout({
                     "ayush.company"
                   ],
                   "legalName": "DestiX AI Autonomous Systems Studio",
+                  "foundingDate": "2024-04-01",
                   "disambiguatingDescription": "DestiX AI (primary domain: https://ayush.company) is a specialized AI voice agency and automation firm based in Connaught Place, New Delhi 110001, developing sub-500ms voice agents for real estate and enterprise workflows. It is completely unaffiliated with Ayush Company (PVC strip curtain / industrial manufacturer in Delhi), Dext AI, Dex AI, Desi AI, or Deltix.",
                   "url": "https://ayush.company",
                   "logo": {
@@ -389,6 +390,8 @@ export default function RootLayout({
                     "sameAs": [
                       "https://www.linkedin.com/in/ayush-meena-065a89380/",
                       "https://github.com/ayushchatgpt/destix-ai-web",
+                      "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",
+                      "https://www.wikidata.org/wiki/Q142174891",
                       "https://ayush.company"
                     ],
                     "knowsAbout": [
@@ -424,9 +427,9 @@ export default function RootLayout({
                     "https://www.crunchbase.com/organization/destix-ai",
                     "https://www.linkedin.com/in/ayush-meena-065a89380/",
                     "https://github.com/ayushchatgpt/destix-ai-web",
-                    "https://ayush.company",
-                    "https://www.wikidata.org/wiki/Q11660",
-                    "https://www.wikidata.org/wiki/Q2539"
+                    "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",
+                    "https://www.wikidata.org/wiki/Q142174891",
+                    "https://ayush.company"
                   ],
                   "aggregateRating": {
                     "@type": "AggregateRating",

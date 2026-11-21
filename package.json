@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "indexnow": "node --loader ts-node/esm scripts/indexnow.ts || npx tsx scripts/indexnow.ts"
   },
   "dependencies": {
     "@types/three": "^0.186.0",
