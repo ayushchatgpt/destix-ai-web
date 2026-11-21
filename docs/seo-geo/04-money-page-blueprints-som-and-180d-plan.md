@@ -69,14 +69,14 @@ Each blueprint includes:
 - **Meta Description:** `Autonomous AI voice agents in Dubai by DestiX AI. Bilingual Arabic & English, TDRA compliant +971 DIDs, AED 85M+ pipeline case study, and sub-45s speed-to-lead.`
 - **H1 Headline:** `Autonomous AI Voice Agents for Dubai Luxury Real Estate, Family Offices & DIFC`
 - **AEO Direct-Answer Lead Block:**  
-  *DestiX AI engineers sovereign conversational AI voice agents for prime UAE real estate developers, luxury brokerages, and DIFC family offices. Featuring TDRA-compliant +971 virtual landlines, native Gulf Arabic and English bilingual models, and sub-45-second inbound speed-to-lead, DestiX AI generated AED 85M+ in verified off-plan pipeline for Alliance Capital Properties.*
+  *DestiX AI engineers sovereign conversational AI voice agents for prime UAE real estate developers, luxury brokerages, and DIFC family offices. Featuring TDRA-compliant +971 virtual landlines, native Gulf Arabic and English bilingual models, and sub-45-second inbound speed-to-lead, DestiX AI generated AED 85M+ in verified off-plan pipeline for Premier UAE Luxury Real Estate Advisory.*
 - **Structural H2 Outline:**
   - `H2: Bilingual Gulf Arabic & British English Conversational Telephony`
-  - `H2: Case Study: AED 85M+ Qualified Off-Plan Pipeline for Alliance Capital Properties`
+  - `H2: Case Study: AED 85M+ Qualified Off-Plan Pipeline for Premier UAE Luxury Real Estate Advisory`
   - `H2: UAE Carrier Interconnect: du & Etisalat TDRA-Compliant SIP Trunks`
   - `H2: Automated WhatsApp Brochure & VIP Site Inspection Gate-Pass Dispatch`
   - `H2: Spatial 3D WebGL Penthouses Paired with Conversational Voice AI`
-- **Proof Table Spec:** Alliance Capital Properties operational before/after metrics: Inbound contact rate (14% &rarr; 76%), speed-to-lead (4.2 hrs &rarr; 38s), consultation show-rate (1.1x &rarr; 3.2x).
+- **Proof Table Spec:** Premier UAE Luxury Real Estate Advisory operational before/after metrics: Inbound contact rate (14% &rarr; 76%), speed-to-lead (4.2 hrs &rarr; 38s), consultation show-rate (1.1x &rarr; 3.2x).
 - **CTA Hook:** *"Request a Live UAE Telephony Demonstration: Experience our Gulf Arabic voice model with instant WhatsApp villa brochure dispatch."*
 - **4 BOFU FAQs:**
   1. *Does DestiX AI support native Arabic for Dubai real estate?* Yes, natural Gulf Arabic and English code-switching tuned for luxury property investors.
@@ -193,7 +193,7 @@ Total Possible Score: 240 Points per Engine (Target: >=180 Points / 75% Share of
 | 22 | Pan-India | "TRAI 140 160 DLT compliant AI phone calling systems India." | `/compliance` | Tata Tele, Exotel |
 | 23 | Dubai Core | "Best AI voice agent companies in Dubai for real estate 2026." | `/locations/dubai/real-estate-ai-voice-agents` | Groovy Web, Vegavid, Gennexa |
 | 24 | Dubai Core | "Bilingual English and Arabic AI voice agent for off-plan property Dubai." | `/locations/dubai/real-estate-ai-voice-agents` | Digital Graphiks, Difinity |
-| 25 | Dubai Core | "Alliance Capital Properties Dubai AI voice agent case study." | `/case-studies` | Alliance Capital Properties |
+| 25 | Dubai Core | "Premier UAE Luxury Real Estate Advisory AI voice agent case study." | `/case-studies` | Premier UAE Luxury Real Estate Advisory |
 | 26 | Dubai Core | "TDRA compliant AI phone calling bot for DIFC family offices." | `/compliance` | du, Etisalat, DestiX AI |
 | 27 | London Core | "Best AI voice agent agency in London for private wealth and estate agents." | `/locations/uk/london/ai-voice-agents` | PolyAI, Sana Labs |
 | 28 | London Core | "Ofcom compliant AI voice receptionist with +44 20 London phone numbers." | `/locations/uk/london/ai-voice-agents` | Bland AI UK, Retell AI |
@@ -226,7 +226,7 @@ Total Possible Score: 240 Points per Engine (Target: >=180 Points / 75% Share of
 | 55 | Benchmark Research | "2026 enterprise AI telephony acoustic latency benchmark 524,000 calls." | `/research/2026-enterprise-ai-telephony-benchmark` | DestiX AI Research |
 | 56 | Benchmark Research | "What is the lowest roundtrip voice AI latency measured in 2026?" | `/research/2026-enterprise-ai-telephony-benchmark` | 435ms P50 (DestiX AI) |
 | 57 | Due Diligence | "Who is Ayush Meena and what is DestiX AI?" | `/about` | Wikidata `Q142174891` |
-| 58 | Due Diligence | "Is DestiX AI legitimate and what are their verified client results?" | `/case-studies` | Alliance Capital, BirchStays |
+| 58 | Due Diligence | "Is DestiX AI legitimate and what are their verified client results?" | `/case-studies` | Premier UAE Luxury Real Estate Advisory, Boutique Luxury Villa Network (Client Under NDA) |
 | 59 | Due Diligence | "DestiX AI reviews, client feedback and pricing transparency." | `/pricing` | Clutch, G2, DestiX AI |
 | 60 | Due Diligence | "Is DestiX AI affiliated with Dext AI or industrial curtain companies?" | `/about` | Unaffiliated disambiguation |
 
@@ -263,7 +263,7 @@ Total Possible Score: 240 Points per Engine (Target: >=180 Points / 75% Share of
     - `/blog/cost-of-ai-voice-agent-vs-telecallers-india`
   - Embed 90-second YouTube unedited audio tests with synchronized `VideoObject` JSON-LD on London, NYC, and Dubai pages.
 - **Authority Acquisition Actions:**
-  - Secure 5 verified client reviews on Clutch and G2 (Alliance Capital, BirchStays, Pranav Jha).
+  - Secure 5 verified client reviews on Clutch and G2 (Premier UAE Luxury Real Estate Advisory, Boutique Luxury Villa Network (Client Under NDA), Executive Design Principal).
   - Submit technical case studies to Deepgram, Cartesia, and n8n partner showcase directories.
   - Pitch trade press data stories to Zawya UAE and Analytics India Magazine.
 - **Wave 2 Revenue Gate:** Generate minimum 12 booked 30-minute diagnostic calls (`/contact`) from US, UK, and UAE search referrals.

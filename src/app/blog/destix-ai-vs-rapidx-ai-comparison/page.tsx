@@ -51,7 +51,7 @@ export default function DestixVsRapidxPage() {
     },
     {
       feature: "Production Luxury Case Proof",
-      destix: "Alliance Capital Properties (AED 85M+ pipeline)",
+      destix: "Premier UAE Luxury Real Estate Advisory (AED 85M+ pipeline)",
       rapidx: "SMB & Brokerage Outbound Pilots",
       destixAdvantage: true,
     },

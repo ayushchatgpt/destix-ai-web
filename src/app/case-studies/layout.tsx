@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Client Case Studies & Verified Deployment Audits | DestiX AI",
   description:
-    "Explore audited operational case studies from DestiX AI: Alliance Capital Properties (AED 85M+ pipeline), Pranav Jha Studio, DigiiRox 3D, and Birch Stays luxury vacation network. Verified metrics with zero hypothetical claims.",
+    "Explore audited operational case studies from DestiX AI: Premier UAE Luxury Real Estate Advisory (AED 85M+ pipeline), Award-Winning Architectural & Spatial Design Practice (Client Under NDA), Spatial 3D WebGL Studio 3D, and Boutique Luxury Villa Network (Client Under NDA) luxury vacation network. Verified metrics with zero hypothetical claims.",
   keywords: [
     "destix ai case studies",
     "real estate voice agent case study",
     "ai voice agent deployment proof",
-    "alliance capital properties dubai ai",
-    "pranav jha studio",
+    "premier uae luxury real estate advisory ai",
+    "architectural studio case study",
     "birch stays voice agent",
     "ayush meena client proof",
   ],

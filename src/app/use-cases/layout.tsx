@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Luxury Real Estate Agency Websites & Advisory Systems | DestiX AI",
   description:
-    "Production playbooks for luxury real estate agencies, private wealth firms, and boutique practices. Proven architectures including Alliance Capital Properties (ACP Dubai) driving AED 85M+ pipeline.",
+    "Production playbooks for luxury real estate agencies, private wealth firms, and boutique practices. Proven architectures including Premier UAE Luxury Real Estate Advisory driving AED 85M+ pipeline.",
   keywords: [
     "real estate agency website",
     "luxury real estate website",
     "real estate voice agent",
     "real estate AI lead qualification",
-    "Alliance Capital Properties Dubai",
-    "ACP Dubai",
+    "Premier UAE Luxury Real Estate Advisory",
+    "UAE Luxury Real Estate Advisory",
     "DestiX AI",
     "Desti",
     "Ayush Meena",

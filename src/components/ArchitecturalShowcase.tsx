@@ -6,12 +6,12 @@ import { ArrowUpRight, ExternalLink, Globe, Layers, Sparkles, Terminal } from "l
 export default function ArchitecturalShowcase() {
   const showcases = [
     {
-      id: "digiirox",
+      id: "spatial-3d-webgl",
       num: "01",
       title: "3D Spatial Interactive Launch Platform",
-      client: "Digiirox Interactive",
-      url: "https://digiiroxinteractiveexperience.vercel.app",
-      domain: "digiiroxinteractiveexperience.vercel.app",
+      client: "Interactive Spatial 3D WebGL Studio (Client Under NDA)",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA",
       category: "Spatial WebGL / Three.js Engineering",
       desc: "Category-defining interactive spatial experience engineered for an international product launch. Full Three.js 60 FPS viewport, dynamic geometry shaders, ambient spatial audio, and bespoke micro-interactions.",
       metrics: [
@@ -22,12 +22,12 @@ export default function ArchitecturalShowcase() {
       tags: ["Three.js", "WebGL", "Next.js", "Spatial Motion", "GLSL Shaders"],
     },
     {
-      id: "pranav-jha",
+      id: "architectural-studio",
       num: "02",
       title: "High-End Editorial Brand Architecture",
-      client: "Pranav Jha Studio",
-      url: "https://pranav-jha-portfolio.vercel.app",
-      domain: "pranav-jha-portfolio.vercel.app",
+      client: "Award-Winning Architectural & Spatial Design Practice (Client Under NDA)",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA",
       category: "Creative Direction & Kinetic Web",
       desc: "Architectural digital identity platform designed with razor-sharp editorial typography, smooth scroll physics, and sub-second page transitions. Built to command high-ticket client authority.",
       metrics: [
@@ -42,8 +42,8 @@ export default function ArchitecturalShowcase() {
       num: "03",
       title: "Luxury Estate & Villa Benchmark",
       client: "Meridian Living & Estates",
-      url: "https://birchstays.com",
-      domain: "birchstays.com / thewellcg.com styling",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA • High-Ticket Hospitality Styling",
       category: "Autonomous Phone AI + Spatial Real Estate",
       desc: "High-net-worth property acquisition platform fused with an autonomous DestiX phone qualification agent. Incoming buyer inquiries for ₹15Cr+ private villas are answered within 2 rings and booked into executive inspection slots.",
       metrics: [

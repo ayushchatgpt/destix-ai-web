@@ -55,7 +55,7 @@ export default function UseCasesPage() {
         { label: "Appointment Rate", val: "94%", change: "+380% vs email" },
         { label: "Pipeline Influenced", val: "$14.2M+", change: "Quarterly qualified" },
       ],
-      liveExample: "Alliance Capital Properties (acpdubai.com)",
+      liveExample: "Premier UAE Luxury Real Estate Advisory (Protected Under Mutual NDA)",
     },
     {
       id: "healthcare",
@@ -119,7 +119,7 @@ export default function UseCasesPage() {
         { label: "Proposal Close Rate", val: "3.2x", change: "Only qualified buyers" },
         { label: "Audit Accuracy", val: "99.2%", change: "Strict criteria adherence" },
       ],
-      liveExample: "Pranav Jha Luxury Editorial & Private Advisory",
+      liveExample: "Architectural & Spatial Design Practice (Client Under NDA)",
     },
     {
       id: "hospitality",
@@ -151,7 +151,7 @@ export default function UseCasesPage() {
         { label: "Direct Booking Lift", val: "+62%", change: "Reduced OTA dependency" },
         { label: "Guest Satisfaction", val: "4.9/5", change: "Instant concierge response" },
       ],
-      liveExample: "BirchStays & Private Retreat Landmarks",
+      liveExample: "Boutique Luxury Villa Network (Client Under NDA) & Private Retreat Landmarks",
     },
   ];
 

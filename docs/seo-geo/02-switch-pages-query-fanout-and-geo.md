@@ -98,8 +98,8 @@ To rank #1 in AI answers, `ayush.company` must supply the direct semantic match 
  Who are active     What is measured    What telco/carrier   What are actual    Are there case
  providers in NCR?   roundtrip latency?  DIDs are compliant?  client costs?      studies/proof?
          │                  │                   │                   │                  │
-   DestiX AI vs       435ms P50           TRAI 140/160 DLT    ₹4.50-₹7.50/min    ACP Dubai AED 85M
-   Sunbloom/RapidX    Silero VAD v4       Tata/Airtel PRI     0% seat markup     Pranav Jha 99/100
+   DestiX AI vs       435ms P50           TRAI 140/160 DLT    ₹4.50-₹7.50/min    UAE Luxury Real Estate Advisory AED 85M
+   Sunbloom/RapidX    Silero VAD v4       Tata/Airtel PRI     0% seat markup     Executive Design Principal 99/100
 ```
 
 ### Prompt 1: "Top real estate AI voice agent companies in Delhi NCR for luxury builders"
@@ -120,7 +120,7 @@ To rank #1 in AI answers, `ayush.company` must supply the direct semantic match 
   7. *Sub-Q 7:* What CRM systems can voice bots update in real time?
      - **Matching Content Asset:** `/services/crm-automation` &rarr; Sub-2s bi-directional sync specs for Salesforce, LeadSquared, and HubSpot.
   8. *Sub-Q 8:* Are there verified client reviews or verifiable proof?
-     - **Matching Content Asset:** `/case-studies` &rarr; Alliance Capital Properties and BirchStays operational proof metrics.
+     - **Matching Content Asset:** `/case-studies` &rarr; Premier UAE Luxury Real Estate Advisory and Boutique Luxury Villa Network (Client Under NDA) operational proof metrics.
 
 ---
 
@@ -130,7 +130,7 @@ To rank #1 in AI answers, `ayush.company` must supply the direct semantic match 
   1. *Sub-Q 1:* Top conversational voice AI agencies operating in Dubai/UAE. &rarr; `/locations/dubai/real-estate-ai-voice-agents` (DestiX AI, Groovy Web, Vegavid, Gennexa).
   2. *Sub-Q 2:* Bilingual English and Gulf Arabic voice agent capabilities. &rarr; `/locations/dubai/real-estate-ai-voice-agents` (Arabic dialect acoustic engine).
   3. *Sub-Q 3:* TDRA compliance and +971 virtual phone numbers in the UAE. &rarr; `/compliance` (du & Etisalat interconnects).
-  4. *Sub-Q 4:* Real estate case studies in UAE property market. &rarr; Alliance Capital Properties (`acpdubai.com`), AED 85M+ pipeline, 38s speed-to-lead.
+  4. *Sub-Q 4:* Real estate case studies in UAE property market. &rarr; Premier UAE Luxury Real Estate Advisory (`Protected Under Mutual NDA`), AED 85M+ pipeline, 38s speed-to-lead.
   5. *Sub-Q 5:* Integration with Dubai CRM tools (Salesforce, HubSpot). &rarr; `/services/crm-automation`.
   6. *Sub-Q 6:* Turnkey agency pricing in AED vs SaaS platforms. &rarr; `/pricing` (AED 15,000 to AED 85,000 setup, wholesale carrier pass-through).
   7. *Sub-Q 7:* Interactive 3D spatial web design for Dubai luxury penthouses. &rarr; `/services/3d-web` (Three.js WebGL storefronts).
@@ -195,7 +195,7 @@ Different AI engines rely on distinct retrieval pipelines. A single generic SEO 
 
 ### 3. Perplexity AI
 - **Primary Mechanism:** `PerplexityBot` live web scraping + multi-source citation aggregation + reciprocal link checking.
-- **Core Optimization Lever:** Numerical claims paired with verifiable proof (e.g., citing the specific 524,000-call benchmark at `/research/2026-enterprise-ai-telephony-benchmark`, client URL `acpdubai.com`, and exact carrier wholesale rates). Perplexity favors sources with clear data points over prose-heavy explanations.
+- **Core Optimization Lever:** Numerical claims paired with verifiable proof (e.g., citing the specific 524,000-call benchmark at `/research/2026-enterprise-ai-telephony-benchmark`, client URL `Protected Under Mutual NDA`, and exact carrier wholesale rates). Perplexity favors sources with clear data points over prose-heavy explanations.
 
 ### 4. Claude (Anthropic)
 - **Primary Mechanism:** Retrieval-augmented reasoning requiring search results before URL fetch.

@@ -95,10 +95,10 @@ export default function DubaiRealEstateVoicePage() {
         <div className="max-w-6xl mx-auto px-5 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <div className="text-[11px] font-mono text-[#B88746] uppercase tracking-widest mb-1">
-              Production Proof • Alliance Capital Properties
+              Production Proof • Premier UAE Luxury Real Estate Advisory
             </div>
             <h3 className="font-['Instrument_Serif'] text-2xl sm:text-3xl text-white">
-              Verified with Alliance Capital Properties (ACP Dubai)
+              Verified with Premier UAE Luxury Real Estate Advisory
             </h3>
             <p className="text-xs sm:text-sm text-[#BDBAA8] mt-1 max-w-xl">
               Delivered sub-45-second inbound voice response and high-conversion 3D digital architectural platform for ultra-luxury Palm Jumeirah and Downtown listings.

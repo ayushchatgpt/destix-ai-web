@@ -511,7 +511,7 @@ export default function AiVoiceAgentForRealEstatePage() {
               FIELD BENCHMARK RESULTS
             </span>
             <h3 className="font-['Instrument_Serif'] text-3xl text-[#181614] mt-4 mb-6">
-              Alliance Capital Properties Case Study
+              Premier UAE Luxury Real Estate Advisory Case Study
             </h3>
             <div className="grid grid-cols-2 gap-4 font-mono text-center mb-6">
               <div className="p-4 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">

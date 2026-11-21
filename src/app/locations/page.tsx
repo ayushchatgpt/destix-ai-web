@@ -126,7 +126,7 @@ export default function LocationsHubPage() {
           desc: "Tailored for prime brokerage firms, off-plan developers, and private family offices. Multilingual qualification with sub-500ms voice parity.",
           href: "/locations/dubai/real-estate-ai-voice-agents",
           icon: Building2,
-          stats: "ACP Dubai Verified",
+          stats: "UAE Luxury Real Estate Advisory Verified",
         },
       ],
     },

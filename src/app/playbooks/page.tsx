@@ -121,7 +121,7 @@ export default function PlaybooksPage() {
         "Follows up automatically if checkout is not completed within 20 minutes.",
       ],
       sampleDialog: [
-        { role: "Agent", text: "Good afternoon, thank you for calling Birch Stays Luxury Escapes. This is Maya. Are you planning a getaway for an upcoming weekend?" },
+        { role: "Agent", text: "Good afternoon, thank you for calling Boutique Luxury Villa Network (Client Under NDA) Luxury Escapes. This is Maya. Are you planning a getaway for an upcoming weekend?" },
         { role: "Guest", text: "Hi Maya, looking for a 5-bedroom private villa in North Goa for next weekend with private pool." },
         { role: "Agent", text: "Our Estate Villa Morjim is available for those dates. It features an infinity pool, private chef, and accommodates up to 12 guests. Would you like me to send the walkthrough video and pricing to this WhatsApp number?" },
         { role: "Guest", text: "Yes please, send it right away." },

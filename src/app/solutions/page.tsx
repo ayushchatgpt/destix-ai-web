@@ -137,7 +137,7 @@ export default function SolutionsDirectoryPage() {
         categoryLabel: "Real Estate Automation",
         tag: "GLOBAL HUBS",
         sla: "AED Screening",
-        summary: "Autonomous off-plan and waterfront investment qualification verified for Alliance Capital Properties (ACP Dubai).",
+        summary: "Autonomous off-plan and waterfront investment qualification verified for Premier UAE Luxury Real Estate Advisory.",
         targetHref: "/locations/dubai/real-estate-ai-voice-agents",
       },
       {
@@ -917,7 +917,7 @@ export default function SolutionsDirectoryPage() {
         categoryLabel: "Enterprise & CRM",
         tag: "PROPERTY STOREFRONT",
         sla: "Interactive Architectural 3D",
-        summary: "Interactive 3D digital storefronts for luxury real estate developers, verified for Alliance Capital Properties.",
+        summary: "Interactive 3D digital storefronts for luxury real estate developers, verified for Premier UAE Luxury Real Estate Advisory.",
         targetHref: "/services/3d-web",
       },
       {
@@ -952,7 +952,7 @@ export default function SolutionsDirectoryPage() {
         category: "enterprise",
         categoryLabel: "Enterprise & CRM",
         tag: "HOSPITALITY",
-        sla: "BirchStays & The Boundary",
+        sla: "Boutique Luxury Hospitality Network (Client Under NDA)",
         summary: "High-end private villa booking and guest concierge qualification across Goa, Alibaug, and London desks.",
         targetHref: "/use-cases",
       },

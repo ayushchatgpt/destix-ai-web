@@ -17,7 +17,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
   const transcripts = [
     {
       speaker: "DestiX Agent",
-      text: "Good afternoon. I noticed your private inquiry regarding the Palm Jebel Ali seafront residences with Alliance Capital Properties. Are you exploring this for portfolio capital allocation or a family residence?",
+      text: "Good afternoon. I noticed your private inquiry regarding the Palm Jebel Ali seafront residences with Premier UAE Luxury Real Estate Advisory. Are you exploring this for portfolio capital allocation or a family residence?",
     },
     {
       speaker: "Prospect (Investor)",
@@ -314,7 +314,7 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
                       FEATURED ARCHITECTURAL DEPLOYMENT
                     </div>
                     <div className="font-['Instrument_Serif'] text-2xl font-bold mt-1">
-                      Alliance Capital Properties (ACP Dubai) &bull; UAE Advisory
+                      Premier UAE Luxury Real Estate Advisory &bull; UAE Advisory
                     </div>
                     <p className="text-xs font-['Plus_Jakarta_Sans'] text-stone-400 mt-1 max-w-md">
                       Bespoke real estate capital allocation platform and autonomous acquisition infrastructure for Dubai waterfront developments and private wealth investors.

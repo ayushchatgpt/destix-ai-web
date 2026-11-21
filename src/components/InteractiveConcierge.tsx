@@ -201,7 +201,7 @@ export function InteractiveConcierge() {
       } else if (lower.includes("price") || lower.includes("cost") || lower.includes("pricing") || lower.includes("fee")) {
         reply = `Our commercial deployments are structured with total unit-economic clarity: one-time custom engineering (₹35k – ₹1.5L depending on CRM depth) + wholesale usage pass-through at ₹4 to ₹8 per conversation minute. Zero recurring per-seat markups. If we cannot model a 5x return on your audit, we decline the engagement.`;
       } else if (lower.includes("real estate") || lower.includes("dubai") || lower.includes("villa") || lower.includes("acp")) {
-        reply = `For luxury real estate (such as our live deployment for Alliance Capital Properties in Dubai), the agent dials inbound leads in under 45 seconds, screens for minimum budgets (e.g. ₹5Cr+ or AED 5M+), qualifies possession timelines, and sends private lookbooks via WhatsApp directly to WhatsApp.`;
+        reply = `For luxury real estate (such as our live deployment for Premier UAE Luxury Real Estate Advisory in Dubai), the agent dials inbound leads in under 45 seconds, screens for minimum budgets (e.g. ₹5Cr+ or AED 5M+), qualifies possession timelines, and sends private lookbooks via WhatsApp directly to WhatsApp.`;
       } else if (lower.includes("book") || lower.includes("schedule") || lower.includes("call") || lower.includes("ayush") || lower.includes("consult")) {
         reply = `I would be delighted to coordinate a 30-minute diagnostic session directly with Ayush Meena. Please share your Name and WhatsApp / Mobile number below, and I will dispatch your dossier directly to his priority desk.`;
         setLeadFormOpen(true);

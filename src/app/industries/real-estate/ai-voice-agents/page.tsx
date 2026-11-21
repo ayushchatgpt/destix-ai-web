@@ -143,10 +143,10 @@ export default function RealEstateIndustryPage() {
               Audited Case Study
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl text-[#1A1817] mb-4">
-              Alliance Capital Properties Dubai (AED 85M+ Qualified Pipeline)
+              Premier UAE Luxury Real Estate Advisory (AED 85M+ Qualified Pipeline)
             </h2>
             <p className="text-sm text-[#5A554E] leading-relaxed max-w-3xl mb-6">
-              Alliance Capital Properties deployed DestiX AI across off-plan luxury villa developments in Dubai Hills and Palm Jumeirah. Inbound leads from Meta ads were phoned in under 42 seconds, qualifying buyer liquidity and booking over 140 on-site viewings in the first 60 days.
+              Premier UAE Luxury Real Estate Advisory deployed DestiX AI across off-plan luxury villa developments in Dubai Hills and Palm Jumeirah. Inbound leads from Meta ads were phoned in under 42 seconds, qualifying buyer liquidity and booking over 140 on-site viewings in the first 60 days.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
               <div>

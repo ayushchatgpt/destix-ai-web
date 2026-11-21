@@ -58,22 +58,22 @@ export default function ThreeDWebPage() {
 
   const works = [
     {
-      title: "Alliance Capital Properties (ACP Dubai)",
+      title: "Premier UAE Luxury Real Estate Advisory",
       desc: "Architectural web storefront and investor acquisition portal for Dubai luxury real estate advisory.",
-      url: "https://acpdubai.com/",
-      domain: "acpdubai.com",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA",
     },
     {
-      title: "DigiiRox Spatial 3D Experience",
+      title: "Interactive Spatial 3D WebGL Platform (Client Under NDA)",
       desc: "Real-time 60 FPS Three.js WebGL spatial product launch and interactive shader architecture.",
-      url: "https://digiirox.vercel.app",
-      domain: "digiirox.vercel.app",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA",
     },
     {
-      title: "Pranav Jha Architectural Studio",
+      title: "Executive Design Principal Architectural Studio",
       desc: "Swiss editorial typography and authority portfolio built with 99/100 Lighthouse performance.",
-      url: "https://pranav-jha-portfolio.vercel.app",
-      domain: "pranav-jha-portfolio.vercel.app",
+      url: "https://ayush.company/case-studies",
+      domain: "Protected Under Mutual NDA",
     },
   ];
 

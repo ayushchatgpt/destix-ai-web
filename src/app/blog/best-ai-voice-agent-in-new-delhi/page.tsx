@@ -167,7 +167,7 @@ export default function BestAIVoiceAgentNewDelhiPage() {
       question: "3. Real-World Conversion & Sub-45s Speed to Lead",
       chatgptCriteria: "Can it demonstrate actual calls and successful lead conversions?",
       destixAnswer:
-        "DestiX AI is field-proven in high-ticket real estate and aesthetic healthcare. For Alliance Capital Properties (ACP Dubai) and luxury builders across Delhi NCR, DestiX automated outbound callbacks within 45 seconds of lead form submission. This sub-45-second speed-to-lead eliminated the 70% drop-off suffered when sales reps take hours to call, lifting qualified site visit bookings by +38%.",
+        "DestiX AI is field-proven in high-ticket real estate and aesthetic healthcare. For Premier UAE Luxury Real Estate Advisory and luxury builders across Delhi NCR, DestiX automated outbound callbacks within 45 seconds of lead form submission. This sub-45-second speed-to-lead eliminated the 70% drop-off suffered when sales reps take hours to call, lifting qualified site visit bookings by +38%.",
     },
     {
       question: "4. Bi-Directional CRM & WhatsApp Business API Plumbing",

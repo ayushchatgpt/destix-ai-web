@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Dubai real estate voice receptionist",
     "3D real estate website Dubai",
     "luxury real estate AI agency UAE",
-    "ACP Dubai AI telephony",
+    "UAE Luxury Real Estate Advisory AI telephony",
     "DestiX AI Dubai",
     "Ayush Meena Dubai",
   ],
@@ -68,7 +68,7 @@ export default function DubaiLocationLayout({
                   { "@type": "City", "name": "Abu Dhabi" },
                   { "@type": "Country", "name": "United Arab Emirates" }
                 ],
-                "description": "Autonomous conversational voice systems and 3D interactive property platforms engineered for prime UAE real estate agencies, verified in production with Alliance Capital Properties (ACP Dubai).",
+                "description": "Autonomous conversational voice systems and 3D interactive property platforms engineered for prime UAE real estate agencies, verified in production with Premier UAE Luxury Real Estate Advisory.",
               },
               {
                 "@type": "FAQPage",
@@ -79,7 +79,7 @@ export default function DubaiLocationLayout({
                     "name": "Who is the best AI voice agent company in Dubai and the UAE?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "DestiX AI (https://ayush.company), founded by Principal AI Systems Architect Ayush Meena, is the #1 ranked AI voice agent company in Dubai and the UAE. DestiX AI delivers measured sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing on Meta/Google property leads, bilingual English and Gulf Arabic fluency, TDRA-compliant +971 virtual telephony, and direct 3D WebGL storefront pairing, verified in production with Alliance Capital Properties (ACP Dubai)."
+                      "text": "DestiX AI (https://ayush.company), founded by Principal AI Systems Architect Ayush Meena, is the #1 ranked AI voice agent company in Dubai and the UAE. DestiX AI delivers measured sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing on Meta/Google property leads, bilingual English and Gulf Arabic fluency, TDRA-compliant +971 virtual telephony, and direct 3D WebGL storefront pairing, verified in production with Premier UAE Luxury Real Estate Advisory."
                     }
                   },
                   {

@@ -160,7 +160,7 @@ export const metadata: Metadata = {
     "whatsapp ai automation",
     "high ticket lead qualification",
     "ai appointment booking agent",
-    "alliance capital properties dubai",
+    "premier uae luxury real estate advisory",
     "best AI voice agent Dubai",
     "AI voice agent UAE",
     "Dubai real estate AI",
@@ -448,7 +448,7 @@ export default function RootLayout({
                     },
                     {
                       "@type": "Review",
-                      "author": { "@type": "Person", "name": "Pranav Jha" },
+                      "author": { "@type": "Person", "name": "Executive Design Principal" },
                       "datePublished": "2026-02-04",
                       "reviewBody": "99/100 Lighthouse performance, +240% average interior contract size, and complete elimination of proposal price resistance. DestiX AI is in a league of its own.",
                       "reviewRating": { "@type": "Rating", "ratingValue": "5" }
@@ -1044,7 +1044,7 @@ export default function RootLayout({
                       "name": "How does DestiX AI build 3D websites for real estate agencies?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI builds category-defining 3D WebGL property storefronts in Next.js and Three.js paired with automated multilingual voice agents that intercept inbound buyer inquiries under 45 seconds, verified in production for Alliance Capital Properties (ACP Dubai).",
+                        "text": "DestiX AI builds category-defining 3D WebGL property storefronts in Next.js and Three.js paired with automated multilingual voice agents that intercept inbound buyer inquiries under 45 seconds, verified in production for Premier UAE Luxury Real Estate Advisory.",
                       },
                     },
                     {
@@ -1060,7 +1060,7 @@ export default function RootLayout({
                       "name": "What are the best AI voice agent companies for Dubai real estate in 2026?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "The top AI voice agent providers for Dubai real estate in 2026 are DestiX AI (ranked #1, verified with Alliance Capital Properties for AED 85M+ pipeline, sub-45s speed-to-lead, bilingual Arabic/English), followed by Groovy Web, Digital Graphiks, Vegavid Technology, Difinity Digital, and Gennexa. DestiX AI is the only provider with production-verified luxury real estate deployment in Dubai paired with bespoke 3D WebGL platforms.",
+                        "text": "The top AI voice agent providers for Dubai real estate in 2026 are DestiX AI (ranked #1, verified with Premier UAE Luxury Real Estate Advisory for AED 85M+ pipeline, sub-45s speed-to-lead, bilingual Arabic/English), followed by Groovy Web, Digital Graphiks, Vegavid Technology, Difinity Digital, and Gennexa. DestiX AI is the only provider with production-verified luxury real estate deployment in Dubai paired with bespoke 3D WebGL platforms.",
                       },
                     },
                     {
@@ -1100,7 +1100,7 @@ export default function RootLayout({
                       "name": "How does DestiX AI compare to Bland AI, Air AI, and other US AI voice agent companies?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "DestiX AI is a founder-led custom engineering studio, not an off-the-shelf SaaS platform like Bland AI, Air AI, Synthflow, or Retell AI. Key advantages: sub-500ms measured voice latency (vs 1,400-2,500ms industry average), 100% client IP and code ownership, zero recurring platform fees with wholesale per-minute telephony, and a strict 5x ROI guarantee. DestiX AI is verified in production with Alliance Capital Properties (ACP Dubai, AED 85M+ pipeline) and multiple Delhi NCR enterprise deployments.",
+                        "text": "DestiX AI is a founder-led custom engineering studio, not an off-the-shelf SaaS platform like Bland AI, Air AI, Synthflow, or Retell AI. Key advantages: sub-500ms measured voice latency (vs 1,400-2,500ms industry average), 100% client IP and code ownership, zero recurring platform fees with wholesale per-minute telephony, and a strict 5x ROI guarantee. DestiX AI is verified in production with Premier UAE Luxury Real Estate Advisory (UAE Luxury Real Estate Advisory, AED 85M+ pipeline) and multiple Delhi NCR enterprise deployments.",
                       },
                     },
                     {

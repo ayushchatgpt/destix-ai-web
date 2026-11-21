@@ -99,7 +99,7 @@ export default function AiAgencyLayout({
                 },
                 "award": [
                   "Global Benchmark in Sub-500ms Conversational Voice Telephony 2026",
-                  "#1 Ranked Real Estate AI Voice Agency (Alliance Capital Properties Benchmark)",
+                  "#1 Ranked Real Estate AI Voice Agency (Premier UAE Luxury Real Estate Advisory Benchmark)",
                   "Enterprise Sovereign Telephony Compliance Award (TRAI, TDRA, Ofcom, FCC)"
                 ]
               },

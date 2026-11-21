@@ -50,7 +50,7 @@ export default function AiAgencyDelhiPage() {
     {
       step: "04",
       title: "Spatial 3D WebGL Architecture",
-      desc: "Category-defining 3D Three.js storefronts that captivate luxury real estate buyers and high-ticket service clients, verified in production for ACP Dubai.",
+      desc: "Category-defining 3D Three.js storefronts that captivate luxury real estate buyers and high-ticket service clients, verified in production for UAE Luxury Real Estate Advisory.",
       href: "/websites",
       icon: Globe,
     },

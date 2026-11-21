@@ -650,7 +650,7 @@ export default function MumbaiVoiceReceptionistPage() {
             <div className="p-6 rounded-2xl bg-[#F6F4EE] border border-[#E2DDD1]">
               <div className="font-mono text-[#8F6426] font-semibold mb-2 uppercase">03 / Verified Client Telemetry</div>
               <p className="text-[#55514B] leading-relaxed mb-3">
-                ACP Dubai: AED 85M+ pipeline, speed to lead cut from 4.2h to 38s. Birch Stays (Goa/Alibaug): 42% direct booking share via WhatsApp + voice sync.
+                UAE Luxury Real Estate Advisory: AED 85M+ pipeline, speed to lead cut from 4.2h to 38s. Boutique Luxury Villa Network (Client Under NDA) (Goa/Alibaug): 42% direct booking share via WhatsApp + voice sync.
               </p>
               <Link href="/case-studies" className="font-mono text-[11px] text-[#B88746] hover:underline">
                 Read Verified Case Studies &rarr;

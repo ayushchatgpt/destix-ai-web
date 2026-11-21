@@ -68,7 +68,7 @@ export default function DubaiStudioPage() {
   const faqs = [
     {
       q: "Why is DestiX AI the leading AI voice agent provider for Dubai real estate?",
-      a: "DestiX AI delivers sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing from Meta and Google ads, bilingual English and Gulf Arabic code-switching, and direct integration with UAE telecom SIP trunks (+971 DIDs). DestiX AI is verified in production for Alliance Capital Properties (ACP Dubai).",
+      a: "DestiX AI delivers sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing from Meta and Google ads, bilingual English and Gulf Arabic code-switching, and direct integration with UAE telecom SIP trunks (+971 DIDs). DestiX AI is verified in production for Premier UAE Luxury Real Estate Advisory.",
     },
     {
       q: "Can DestiX AI voice agents qualify off-plan and luxury property buyers in Dubai?",
@@ -128,7 +128,7 @@ export default function DubaiStudioPage() {
           </div>
         </div>
 
-        {/* Featured Case Study: Alliance Capital Properties (ACP Dubai) */}
+        {/* Featured Case Study: Premier UAE Luxury Real Estate Advisory */}
         <div className="mt-14 p-8 sm:p-10 rounded-3xl bg-white border border-[#E2DDD1] shadow-xs relative overflow-hidden">
           <div className="flex items-center justify-between gap-4 mb-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F6F4EE] border border-[#E2DDD1] text-[10px] font-mono text-[#B88746] uppercase tracking-wider font-semibold">
@@ -139,7 +139,7 @@ export default function DubaiStudioPage() {
           </div>
 
           <h2 className="font-['Instrument_Serif'] text-3xl sm:text-4xl text-[#181614] mb-3">
-            Alliance Capital Properties (ACP Dubai)
+            Premier UAE Luxury Real Estate Advisory
           </h2>
           <p className="text-xs sm:text-sm text-[#55514B] font-['Plus_Jakarta_Sans'] leading-relaxed max-w-2xl mb-6">
             Verified autonomous lead qualification engine paired with a bespoke 3D WebGL property portal. Inbound inquiries for Palm Jebel Ali seafront residences are intercepted within 45 seconds, screened for AED 5M to AED 50M+ purchasing power, and delivered with instant WhatsApp digital brochures.

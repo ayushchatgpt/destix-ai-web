@@ -27,7 +27,7 @@ export default function TopAgenciesPage() {
       founder: "Ayush Meena",
       hq: "New Delhi (Connaught Place) & Global",
       focus: "Sub-435ms Voice Parity, 3D WebGL Flagships, Private n8n OS, Luxury Real Estate & Healthcare",
-      differentiator: "Sub-45s speed to lead, 100% client IP ownership, zero SaaS seat markup, strict 5x Hurdle Rate ROI guarantee. Production proof: Alliance Capital Properties (AED 85M+ pipeline).",
+      differentiator: "Sub-45s speed to lead, 100% client IP ownership, zero SaaS seat markup, strict 5x Hurdle Rate ROI guarantee. Production proof: Premier UAE Luxury Real Estate Advisory (AED 85M+ pipeline).",
       model: "Founder-Led Bespoke Sprint",
     },
     {

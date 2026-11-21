@@ -35,14 +35,14 @@ By executing earned data-journalism, high-DR contributed op-eds, tech-stack part
 - **Editor Headline:** *How Autonomous Voice Agents Replaced Cold-Calling in Dubai Luxury Real Estate—and Generated an AED 85M Pipeline*
 - **The News Hook & Tension:** High-ticket off-plan property developers in Dubai spend millions on ad traffic, but international high-net-worth inquiries take an average of 4.2 hours to receive a human callback. By the time a broker dials, the buyer has moved on.
 - **Data & Proof Points to Attach:**
-  - Alliance Capital Properties (`acpdubai.com`) live production case study.
+  - Premier UAE Luxury Real Estate Advisory (`Protected Under Mutual NDA`) live production case study.
   - Inbound speed-to-lead dropped from 4.2 hours to 38 seconds.
   - Consultation show-rate lifted 3.2x; total qualified off-plan pipeline exceeded AED 85 Million.
   - Real-time bilingual English & Gulf Arabic dialect code-switching under TDRA compliance.
 - **Target Enterprise Buyer:** Real estate developers, brokerage managing directors, and private wealth family offices in Dubai, Abu Dhabi, and Riyadh.
 - **Entity Triples to Embed Naturally:**
-  - `[DestiX AI] --[deployed for]--> [Alliance Capital Properties Dubai]`
-  - `[Alliance Capital Properties] --[generated]--> [AED 85M+ off-plan pipeline]`
+  - `[DestiX AI] --[deployed for]--> [Premier UAE Luxury Real Estate Advisory]`
+  - `[Premier UAE Luxury Real Estate Advisory] --[generated]--> [AED 85M+ off-plan pipeline]`
   - `[DestiX AI] --[operates under]--> [UAE TDRA compliant +971 telephony]`
 
 ---
@@ -131,13 +131,13 @@ ayushmeenadestixai@gmail.com | ayush.company
 *Target: Zawya (LSEG), Arabian Business, Khaleej Times*
 
 ```text
-Subject: PropTech Case Study: How Alliance Capital generated AED 85M+ via voice AI
+Subject: PropTech Case Study: How Premier UAE Luxury Real Estate Advisory generated AED 85M+ via voice AI
 
 Hi [Editor First Name],
 
 Dubai off-plan developers spend heavily on ad traffic, but international luxury inquiries take an average of 4.2 hours to receive a broker callback.
 
-At Alliance Capital Properties (acpdubai.com), we deployed a bilingual English/Arabic conversational voice engine that cuts callback speed-to-lead to under 38 seconds:
+At Premier UAE Luxury Real Estate Advisory (Protected Under Mutual NDA), we deployed a bilingual English/Arabic conversational voice engine that cuts callback speed-to-lead to under 38 seconds:
 https://ayush.company/case-studies
 
 Results over 90 days:
@@ -154,7 +154,7 @@ ayushmeenadestixai@gmail.com | ayush.company
 ```
 
 *1-Line Follow-Up (Day 4):*  
-*"Following up on the Dubai PropTech story—can also arrange a brief quote from Alliance Capital leadership regarding the AED 85M pipeline lift."*
+*"Following up on the Dubai PropTech story—can also arrange a brief quote from Premier UAE Luxury Real Estate Advisory leadership regarding the AED 85M pipeline lift."*
 
 ---
 
@@ -293,7 +293,7 @@ ayush.company | ayushmeenadestixai@gmail.com
 - **The Hook:** High-ticket developers in Dubai, London, and New York spend $50,000+ per month on digital ads, yet their sales teams average a 4.2-hour response time. Reaching an ultra-high-net-worth buyer while they are actively holding their phone is the single highest-leverage variable in real estate conversion.
 - **Section Breakdown:**
   1. *The Economics of Lead Decay:* Harvard Business Review showed contacting leads in 5 minutes vs 30 minutes increases qualification by 21x. In luxury real estate (₹5 Cr+ / AED 10M+), the decay is even sharper.
-  2. *The Alliance Capital Case Study:* How an off-plan Dubai developer automated portal webhooks into instant calls within 38 seconds, scaling qualified pipeline to AED 85M+ with a 3.2x show-rate.
+  2. *The Premier UAE Luxury Real Estate Advisory Case Study:* How an off-plan Dubai developer automated portal webhooks into instant calls within 38 seconds, scaling qualified pipeline to AED 85M+ with a 3.2x show-rate.
   3. *Human Telecallers vs. Autonomous Voice:* Comparing human limitations (fatigue, inconsistent qualification, zero night-shift coverage) with carrier-grade AI that qualifies budget, timeline, and financing criteria 24/7/365.
   4. *Instant Omnichannel Handshake:* Following a 3-minute voice qualification with an immediate WhatsApp brochure and calendar pass in under 5 seconds.
   5. *The Regulatory Checklist:* Why real estate leaders must insist on local carrier registration (TRAI 140/160, TDRA, Ofcom, FCC TCPA) to protect brand equity.
@@ -408,7 +408,7 @@ Getting published is only step one. To transform press coverage into permanent a
 | **W1** | Foundation | Fix LinkedIn company type to "Privately Held" & sync founding year to 2024. Add Zenodo DOI to GitHub benchmark repo. | LinkedIn, The Manifest, Zenodo, GitHub | Ayush Meena | Clean, journalist-proof entity baseline. |
 | **W2** | Foundation | Update `/press` with downloadable 1-page benchmark brief and 300 DPI chart exports. Set up Qwoted and Connectively alerts. | `https://ayush.company/press`, Qwoted, Connectively | Ayush Meena | Media desk operational with live monitoring. |
 | **W3** | India & Global | Pitch exclusive data study (524k calls) to Indian tech journalism. Begin daily 15-minute reactive quote answering. | Analytics India Magazine (AIM), Medianama, Qwoted | Ayush Meena | First reported feature pitch under review. |
-| **W4** | UAE & GCC | Pitch Alliance Capital Properties AED 85M+ case study to Dubai and regional PropTech desks. | Zawya, Khaleej Times, Arabian Business | Ayush Meena | 1 earned regional business feature in UAE. |
+| **W4** | UAE & GCC | Pitch Premier UAE Luxury Real Estate Advisory AED 85M+ case study to Dubai and regional PropTech desks. | Zawya, Khaleej Times, Arabian Business | Ayush Meena | 1 earned regional business feature in UAE. |
 | **W5** | Stack Partners | Submit production case-study pitches to tech-stack partners. | Deepgram Partner Portal, Cartesia Showcases, n8n Creator Hub | Ayush Meena | 2 official partner showcase listings + dofollow links. |
 | **W6** | USA & Global | Pitch latency teardown and open-source benchmark harness to cloud and developer outlets. | The New Stack, VentureBeat, Hacker News | Ayush Meena | Technical authority backlink + developer visibility. |
 | **W7** | **Day 45 Audit** | Run Day 45 AI Due-Diligence Audit across ChatGPT, Perplexity, and Claude. Update `/press` with early wins. | AI Audit Script (Section B below) | Ayush Meena | Early citations appearing in Perplexity & SearchGPT. |
@@ -443,5 +443,5 @@ Execute this exact 5-prompt verification script on Day 30, Day 60, and Day 90 ac
 
 #### Verification Benchmark Targets:
 - **"Recent News: None found"** &rarr; Permanently replaced by citations to the *2026 Enterprise Telephony Benchmark*, Zenodo DOI, and earned media articles.
-- **"Claims lack third-party validation"** &rarr; Replaced by references to Alliance Capital Properties, BirchStays, and verified tech partner case studies (Deepgram, n8n, Cartesia).
+- **"Claims lack third-party validation"** &rarr; Replaced by references to Premier UAE Luxury Real Estate Advisory, Boutique Luxury Villa Network (Client Under NDA), and verified tech partner case studies (Deepgram, n8n, Cartesia).
 - **Entity Accuracy** &rarr; 100% consistent recognition as a *Privately Held* practice founded in *2024* by *Ayush Meena* in *Connaught Place, New Delhi*.

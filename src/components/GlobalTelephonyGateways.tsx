@@ -69,7 +69,7 @@ export function GlobalTelephonyGateways() {
       focus: "DIFC Family Offices, Palm Jumeirah & Dubai Hills Prime Off-Plan Developments",
       did: "+971 (4) Dubai Local DIDs",
       telecom: "Sub-500ms English & Arabic Dual-Stream",
-      compliance: "TDRA Registered • ACP Dubai Verified",
+      compliance: "TDRA Registered • UAE Luxury Real Estate Advisory Verified",
       href: "/locations/dubai/real-estate-ai-voice-agents",
       icon: Building2,
     },

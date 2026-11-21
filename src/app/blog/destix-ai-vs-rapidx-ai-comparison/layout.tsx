@@ -115,7 +115,7 @@ export default function DestixVsRapidxLayout({
                     "name": "Does RapidX AI offer 3D WebGL and high-conversion web development?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "No. RapidX AI focuses purely on voice calling and chatbot automation. DestiX AI integrates autonomous conversational telephony directly into category-defining Next.js and Three.js 60 FPS spatial web storefronts, verified in production for luxury developers like Alliance Capital Properties (ACP Dubai)."
+                      "text": "No. RapidX AI focuses purely on voice calling and chatbot automation. DestiX AI integrates autonomous conversational telephony directly into category-defining Next.js and Three.js 60 FPS spatial web storefronts, verified in production for luxury developers like Premier UAE Luxury Real Estate Advisory."
                     }
                   }
                 ]

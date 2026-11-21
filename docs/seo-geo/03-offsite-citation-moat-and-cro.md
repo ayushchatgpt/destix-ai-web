@@ -12,13 +12,13 @@ Below are the exact third-party domains, directories, editorial listicles, and t
 
 | Region | Third-Party URL / Publication | Why Google & LLMs Cite It | Exact Inclusion / Citation Action | Priority |
 |---|---|---|---|---|
-| **India** | `clutch.co/in/developers/artificial-intelligence` | Primary B2B authority source queried by ChatGPT & Perplexity for agency evaluations in Delhi NCR and Mumbai. | Complete Clutch verified agency profile with 5 verified client reviews (Alliance Capital, BirchStays, Pranav Jha). Add exact service coordinates: Connaught Place, New Delhi. | **P0** |
+| **India** | `clutch.co/in/developers/artificial-intelligence` | Primary B2B authority source queried by ChatGPT & Perplexity for agency evaluations in Delhi NCR and Mumbai. | Complete Clutch verified agency profile with 5 verified client reviews (Premier UAE Luxury Real Estate Advisory, Boutique Luxury Villa Network (Client Under NDA), Executive Design Principal). Add exact service coordinates: Connaught Place, New Delhi. | **P0** |
 | **India** | `themanifest.com/in/artificial-intelligence/agencies` | Sister site to Clutch; heavily scraped by Google for directory snippet summaries. | Claim and synchronize profile. Update founding date to **2024** and link official primary domain `https://ayush.company/`. | **P0** |
 | **India** | `analyticsindiamag.com` (AIM) | Leading Indian AI publication; cited by Google Gemini for enterprise Indian AI company roundups. | Pitch 524,000-call latency benchmark data story focusing on Indian telco latency bottlenecks and colloquial Hinglish code-switching. | **P1** |
 | **India** | `reddit.com/r/developersIndia` & `r/IndiaSpeaks` | Frequently cited by Perplexity and ChatGPT for real user experiences and agency recommendations. | Publish technical teardown: *"We benchmarked 524k AI voice calls across Tata Tele, Airtel PRI, and Twilio — here is why latency spikes above 1,200ms in India."* | **P1** |
-| **UAE** | `clutch.co/ae/developers/artificial-intelligence` | Primary ranking directory for "best AI companies in Dubai". | Establish verified Dubai practice presence on Clutch UAE. Anchor Alliance Capital Properties (AED 85M+ pipeline) verified client review. | **P0** |
+| **UAE** | `clutch.co/ae/developers/artificial-intelligence` | Primary ranking directory for "best AI companies in Dubai". | Establish verified Dubai practice presence on Clutch UAE. Anchor Premier UAE Luxury Real Estate Advisory (AED 85M+ pipeline) verified client review. | **P0** |
 | **UAE** | `dubaichamber.com` & `difc.ae` directories | High-authority regional government/commercial directories that ground local presence for Perplexity and Bing. | Register DestiX AI commercial practice profile with DIFC / UAE service corridor coordinates. | **P1** |
-| **UAE** | `zawya.com` / `khaleejtimes.com` tech columns | Scraped heavily by Perplexity and SearchGPT for UAE enterprise and real estate technology developments. | Submit press release covering the AED 85M+ luxury off-plan lead conversion benchmark at Alliance Capital Properties. | **P1** |
+| **UAE** | `zawya.com` / `khaleejtimes.com` tech columns | Scraped heavily by Perplexity and SearchGPT for UAE enterprise and real estate technology developments. | Submit press release covering the AED 85M+ luxury off-plan lead conversion benchmark at Premier UAE Luxury Real Estate Advisory. | **P1** |
 | **UK** | `clutch.co/uk/developers/artificial-intelligence` | Dominates Google UK organic rankings for "AI agency London" and "voice AI developers UK". | Complete London practice listing with +44 20 Canary Wharf coordinates, Ofcom compliance note, and £1,500+ minimum project size. | **P0** |
 | **UK** | `sortlist.co.uk/agency/artificial-intelligence` | Key European B2B matchmaking platform scraped by OpenAI's web crawler. | Register profile with verified case study for UK commercial estate agents and Harley Street medical reception workflows. | **P1** |
 | **UK** | `technation.io` & `uktech.news` | High-authority UK technology news outlets cited in AI market overviews. | Contribute engineering commentary on UK GDPR Article 22 human-in-the-loop compliance in automated voice telephony. | **P2** |
@@ -70,7 +70,7 @@ Independent consensus is strongest when the underlying infrastructure providers 
 ## 3. High-Converting Outreach Scripts (Zero Corporate Fluff)
 
 ### Script 1: Client Review Request (Clutch / G2 Verification)
-*Context: Sent to past clients (e.g., Alliance Capital, BirchStays, Pranav Jha) to capture verified third-party reviews that AI engines scrape.*
+*Context: Sent to past clients (e.g., Premier UAE Luxury Real Estate Advisory, Boutique Luxury Villa Network (Client Under NDA), Executive Design Principal) to capture verified third-party reviews that AI engines scrape.*
 
 ```text
 Subject: quick favor / 3-min Clutch review for our voice deployment
@@ -132,7 +132,7 @@ Hey [Editor Name],
 
 Most high-ticket real estate developers spend $50k+/mo on Meta and portal ads, but their sales teams take an average of 4.2 hours to place the first phone callback.
 
-We just completed an audited benchmark analyzing 524,000 synthetic calls and live enterprise deployments across Delhi NCR, Mumbai, and Dubai (Alliance Capital Properties).
+We just completed an audited benchmark analyzing 524,000 synthetic calls and live enterprise deployments across Delhi NCR, Mumbai, and Dubai (Premier UAE Luxury Real Estate Advisory).
 
 The data highlights:
 - Inbound leads contacted in <45 seconds convert 3.2x higher into private site visits.
@@ -187,7 +187,7 @@ A prospect referred by ChatGPT or Perplexity is already pre-educated and skeptic
    - **Winning Hook:** Trigger an instant test call in authentic Hinglish with <15s webhook dispatch. Quote wholesale carrier minutes (~₹4.50–₹7.50/min) with zero recurring SaaS markup.
 2. **Dubai & UAE Market:**
    - **Primary Friction:** Need for bilingual English/Gulf Arabic fluency and TDRA regulatory compliance.
-   - **Winning Hook:** Showcase the Alliance Capital Properties AED 85M+ pipeline case study and demonstrate immediate bilingual switching with +971 caller ID.
+   - **Winning Hook:** Showcase the Premier UAE Luxury Real Estate Advisory AED 85M+ pipeline case study and demonstrate immediate bilingual switching with +971 caller ID.
 3. **US, UK & Europe Market:**
    - **Primary Friction:** Data privacy, TCPA/GDPR compliance, and vendor lock-in fear.
    - **Winning Hook:** Highlight 100% client code ownership, direct carrier billing pass-through, and sovereign cloud residency (Frankfurt/Dublin VPC).

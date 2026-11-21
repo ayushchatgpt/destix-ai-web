@@ -130,21 +130,21 @@ export default function WhyDestixAiPage() {
 
   const caseStudies = [
     {
-      client: "Alliance Capital Properties (ACP Dubai)",
+      client: "Premier UAE Luxury Real Estate Advisory",
       jurisdiction: "Dubai, United Arab Emirates (DIFC & Palm Jumeirah)",
       result: "AED 85,000,000+ Qualified Pipeline",
       detail: "Inbound leads for Palm Jebel Ali and luxury penthouses qualified in <45s. Bilingual English/Gulf Arabic code-switching paired with an interactive 3D WebGL property portal.",
       stat: "3.2x Show Rate Lift",
     },
     {
-      client: "Pranav Jha Studio",
+      client: "Award-Winning Architectural & Spatial Design Practice (Client Under NDA)",
       jurisdiction: "New Delhi & Gurugram, India",
       result: "+240% Average Contract Size",
       detail: "High-end architectural practice digital flagship. 99/100 Lighthouse performance, bespoke typographic grid, and zero proposal price resistance from luxury villa clients.",
       stat: "99/100 Performance",
     },
     {
-      client: "Birch Stays Luxury Network",
+      client: "Boutique Luxury Hospitality Network (Client Under NDA)",
       jurisdiction: "Goa, Alibaug, Coorg (Hospitality)",
       result: "42% Direct Booking Share",
       detail: "24/7 autonomous voice intake and WhatsApp booking pipeline. Eliminated after-hours booking abandonment and reduced OTA commission leakage by ₹45L+ annually.",

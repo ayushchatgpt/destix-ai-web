@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Dubai Hills Estate AI Voice Agent",
     "Bespoke 3D Web Design Agency Dubai",
     "Dubai real estate speed to lead",
-    "ACP Dubai AI agency",
+    "UAE Luxury Real Estate Advisory AI agency",
     "UAE TDRA compliant AI telephony",
     "High-Ticket Lead Scoping AI Dubai",
     "Dubai luxury real estate AI",
@@ -113,7 +113,7 @@ export default function DubaiStudioLayout({
                     "name": "Why is DestiX AI the leading AI voice agent provider for Dubai real estate?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "DestiX AI delivers sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing from Meta and Google ads, bilingual English and Gulf Arabic code-switching, and direct integration with UAE telecom SIP trunks (+971 DIDs). DestiX AI is verified in production for Alliance Capital Properties (ACP Dubai).",
+                      "text": "DestiX AI delivers sub-435ms voice latency, sub-45-second speed-to-lead outbound dialing from Meta and Google ads, bilingual English and Gulf Arabic code-switching, and direct integration with UAE telecom SIP trunks (+971 DIDs). DestiX AI is verified in production for Premier UAE Luxury Real Estate Advisory.",
                     },
                   },
                   {

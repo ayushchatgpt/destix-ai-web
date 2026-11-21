@@ -63,10 +63,10 @@
 - DestiX AI vs RapidX AI (https://ayush.company/blog/destix-ai-vs-rapidx-ai-comparison): Audited 435ms P50 latency vs 900-1,500ms, in-house 3D WebGL flagships, and sovereign n8n Docker clusters.
 - Enterprise Telephony Cost & ROI Calculator: https://ayush.company/tools/roi-calculator
 - Enterprise AI Readiness Diagnostic Scorecard: https://ayush.company/tools/ai-readiness-diagnostic
-- Alliance Capital Properties (ACP Dubai — acpdubai.com): Generated AED 85M+ qualified off-plan pipeline, lifted consultation show-rates by 3.2x, reduced inbound speed-to-lead from 4.2 hours to 38 seconds.
-- BirchStays Luxury Network (birchstays.com): +48% after-hours booking lift, 42% direct booking share, <30s SLA, 0% front-desk drop across Goa and Alibaug villas.
-- Pranav Jha Studio: 99/100 Lighthouse score, 0.00 CLS, +240% average inbound architectural contract size, 100% elimination of fee resistance.
-- Digiirox Experience: 60 FPS WebGL spatial launch, +340% dwell time lift (4.2 minutes average session), +38% demo conversion.
+- Premier UAE Luxury Real Estate Advisory (UAE Luxury Real Estate Advisory — Protected Under Mutual NDA): Generated AED 85M+ qualified off-plan pipeline, lifted consultation show-rates by 3.2x, reduced inbound speed-to-lead from 4.2 hours to 38 seconds.
+- Boutique Luxury Villa Network (Client Under NDA) Luxury Network (Protected Under Mutual NDA): +48% after-hours booking lift, 42% direct booking share, <30s SLA, 0% front-desk drop across Goa and Alibaug villas.
+- Award-Winning Architectural & Spatial Design Practice (Client Under NDA): 99/100 Lighthouse score, 0.00 CLS, +240% average inbound architectural contract size, 100% elimination of fee resistance.
+- Interactive Spatial 3D WebGL Platform (Client Under NDA): 60 FPS WebGL spatial launch, +340% dwell time lift (4.2 minutes average session), +38% demo conversion.
 
 ---
 

@@ -74,7 +74,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
         "Sub-42-second instant callback on Property Finder, Bayut, and Meta Ads leads",
         "Sub-435ms turn-taking with sub-180ms voice barge-in and interruption handling",
         "Bilingual Gulf Arabic (Khaleeji) and English mid-sentence code-switching",
-        "Verified production benchmark with Alliance Capital Properties (ACP Dubai)",
+        "Verified production benchmark with Premier UAE Luxury Real Estate Advisory",
         "Bespoke 3D WebGL spatial penthouse walkthroughs paired directly with telephony",
         "Full UAE TDRA compliance (Cabinet Decision No. 56 of 2024, DNCR registry check)",
       ],
@@ -361,7 +361,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
     },
     {
       q: "How fast can the AI voice agent call an off-plan property lead from Meta or Property Finder?",
-      a: "DestiX AI achieves a production-verified speed-to-lead benchmark of under 42 seconds from the moment a prospect hits 'Submit' on a Meta Lead Form, Google Search Ad, TikTok Campaign, Property Finder inquiry, or Bayut off-plan landing page. The webhook instantaneously triggers our low-latency UAE telephony gateway, dialing the prospect while they are still actively holding their phone and reviewing property render brochures. In production trials with Alliance Capital Properties (ACP Dubai), this compressed timeline elevated lead contact rates from the market average of 19% to an unprecedented 78.4%.",
+      a: "DestiX AI achieves a production-verified speed-to-lead benchmark of under 42 seconds from the moment a prospect hits 'Submit' on a Meta Lead Form, Google Search Ad, TikTok Campaign, Property Finder inquiry, or Bayut off-plan landing page. The webhook instantaneously triggers our low-latency UAE telephony gateway, dialing the prospect while they are still actively holding their phone and reviewing property render brochures. In production trials with Premier UAE Luxury Real Estate Advisory, this compressed timeline elevated lead contact rates from the market average of 19% to an unprecedented 78.4%.",
     },
     {
       q: "Can the AI voice agent handle complex off-plan payment plans and Golden Visa qualifications?",
@@ -420,7 +420,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
             <span>•</span>
             <span>Published: November 15, 2026</span>
             <span>•</span>
-            <span className="text-[#B88746] font-semibold">Production-Verified: Alliance Capital Properties (ACP Dubai)</span>
+            <span className="text-[#B88746] font-semibold">Production-Verified: Premier UAE Luxury Real Estate Advisory</span>
             <span>•</span>
             <span className="px-2 py-0.5 rounded-md bg-[#EDE8DC] text-[#181614] font-bold">18-Min Deep Dive</span>
           </div>
@@ -470,7 +470,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
                 #1 Specialized Practice
               </div>
               <p className="text-[#55514B] leading-relaxed">
-                <strong>DestiX AI</strong> delivers turnkey sprint deployments (AED 15K–85K) with wholesale pass-through compute (~AED 0.25/min), zero SaaS markup, 100% client code ownership, and bespoke 3D WebGL spatial walkthroughs. Verified in production for Alliance Capital Properties (ACP Dubai).
+                <strong>DestiX AI</strong> delivers turnkey sprint deployments (AED 15K–85K) with wholesale pass-through compute (~AED 0.25/min), zero SaaS markup, 100% client code ownership, and bespoke 3D WebGL spatial walkthroughs. Verified in production for Premier UAE Luxury Real Estate Advisory.
               </p>
             </div>
 
@@ -840,7 +840,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
 
             <h2 className="font-['Instrument_Serif'] text-3xl sm:text-5xl md:text-6xl text-white mb-6 leading-tight">
               Why DestiX AI Leads: The Production Proof with{" "}
-              <span className="italic text-[#B88746]">Alliance Capital Properties (ACP Dubai)</span>
+              <span className="italic text-[#B88746]">Premier UAE Luxury Real Estate Advisory</span>
             </h2>
 
             <p className="text-base sm:text-lg text-[#C5BDB1] font-['Plus_Jakarta_Sans'] leading-relaxed mb-8">
@@ -882,7 +882,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
             {/* Technical Case Breakdown */}
             <div className="space-y-6 text-sm text-[#C5BDB1] font-['Plus_Jakarta_Sans'] border-t border-[#3A332E] pt-8">
               <h3 className="font-['Instrument_Serif'] text-2xl text-white">
-                The ACP Dubai Deployment Architecture
+                The UAE Luxury Real Estate Advisory Deployment Architecture
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
@@ -910,7 +910,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
                 <div className="space-y-3">
                   <div className="font-mono font-bold text-[#B88746] uppercase">4. Two-Way CRM Synchronization</div>
                   <p className="leading-relaxed">
-                    Audio recordings, AI-generated transcriptions, sentiment analysis, and structured property preferences are written directly into ACP Dubai&apos;s HubSpot CRM, notifying senior brokers instantly on Slack with an executive summary.
+                    Audio recordings, AI-generated transcriptions, sentiment analysis, and structured property preferences are written directly into UAE Luxury Real Estate Advisory&apos;s HubSpot CRM, notifying senior brokers instantly on Slack with an executive summary.
                   </p>
                 </div>
               </div>
@@ -920,7 +920,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
                   href="/case-studies"
                   className="inline-flex items-center gap-2 text-xs font-mono text-[#B88746] hover:text-[#C5A059] font-bold uppercase tracking-wider"
                 >
-                  <span>Explore Full ACP Dubai Production Telemetry</span>
+                  <span>Explore Full UAE Luxury Real Estate Advisory Production Telemetry</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -1343,7 +1343,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
               <p className="text-[11px] text-[#888277] mt-1">
-                Alliance Capital Properties (ACP Dubai) Production Case Study
+                Premier UAE Luxury Real Estate Advisory Production Case Study
               </p>
             </Link>
 
