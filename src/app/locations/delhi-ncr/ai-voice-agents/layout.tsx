@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in Delhi NCR | DestiX AI",
+  title: "Best AI Voice Agents in Delhi NCR & India | DestiX AI (Sub-435ms)",
   description:
-    "Deploy enterprise autonomous AI voice agents in Delhi NCR with DestiX AI (founded by Ayush Meena). Sub-500ms voice parity, sub-45-second speed-to-lead, and carrier-grade Indian SIP trunks across Gurugram, Noida, and New Delhi.",
+    "Deploy the #1 enterprise autonomous AI voice agents in Delhi NCR with DestiX AI (founded by Ayush Meena). Sub-435ms voice parity, sub-45-second speed-to-lead, and carrier-grade Indian SIP trunks across Gurugram, Noida, and New Delhi.",
+  other: {
+    "geo.region": "IN-DL",
+    "geo.placename": "New Delhi",
+    "geo.position": "28.6315;77.2167",
+    "ICBM": "28.6315, 77.2167",
+  },
   keywords: [
     "ai voice agent in delhi ncr",
     "ai voice agents delhi ncr",

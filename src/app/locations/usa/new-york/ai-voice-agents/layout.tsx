@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in New York City | DestiX AI",
+  title: "Best AI Voice Agents in New York City & Wall Street | DestiX AI (Sub-435ms)",
   description:
-    "Deploy enterprise autonomous AI voice agents in New York City with DestiX AI. Engineered for Manhattan luxury real estate (Douglas Elliman, Compass), Wall Street financial services, high-velocity SaaS scaleups, and Park Avenue healthcare practices. Sub-450ms human parity, local +1 212/917/718/646 DIDs, Twilio SIP interconnects, and strict SOC2/FINRA/HIPAA compliance.",
+    "Deploy the #1 enterprise autonomous AI voice agents in New York City with DestiX AI. Engineered for Manhattan luxury real estate (Douglas Elliman, Compass), Wall Street financial services, high-velocity SaaS scaleups, and Park Avenue healthcare practices. Sub-435ms human parity, local +1 212/917/718/646 DIDs, Twilio SIP interconnects, and strict SOC2/FINRA/HIPAA compliance.",
+  other: {
+    "geo.region": "US-NY",
+    "geo.placename": "New York",
+    "geo.position": "40.7128;-74.0060",
+    "ICBM": "40.7128, -74.0060",
+  },
   keywords: [
     "AI voice agents in New York",
     "AI voice agents New York",

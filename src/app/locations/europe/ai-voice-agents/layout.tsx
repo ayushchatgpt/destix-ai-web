@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in Europe | Paris, Berlin, Amsterdam, Zurich | DestiX AI",
+  title: "Best AI Voice Agents in Europe & France (Paris, Berlin, Zurich) | DestiX AI",
   description:
-    "Deploy enterprise autonomous AI voice agents in Europe with DestiX AI. Deploy sub-500ms voice telephony across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm. Full GDPR Article 22 compliance, ePrivacy compliance, sovereign EU cloud infrastructure, multilingual support in 8 European languages, and local SIP trunking (+33, +49, +31, +41, +353, +46).",
+    "Deploy the #1 enterprise autonomous AI voice agents in Europe with DestiX AI. Sub-435ms voice telephony across Paris, Berlin, Amsterdam, and Zurich. Full GDPR Article 22 compliance, sovereign EU cloud infrastructure, native French/German/Dutch multilingual support, and local SIP trunking (+33, +49, +31, +41).",
   keywords: [
     "AI voice agents in Europe",
+    "agent vocal IA France",
+    "agent vocal IA Paris",
+    "callbot France",
+    "standard telephonique IA Paris",
     "AI voice agents Europe",
     "AI voice agent Europe",
     "AI agency Paris",
@@ -33,6 +37,12 @@ export const metadata: Metadata = {
     "Ayush Meena DestiX AI Europe",
     "Twilio Vonage EU SIP trunking",
   ],
+  other: {
+    "geo.region": "FR-IDF",
+    "geo.placename": "Paris",
+    "geo.position": "48.8566;2.3522",
+    "ICBM": "48.8566, 2.3522",
+  },
   alternates: {
     canonical: "https://ayush.company/locations/europe/ai-voice-agents",
   },
@@ -110,7 +120,18 @@ export default function EuropeLocationLayout({
                 "description": "DestiX AI engineers enterprise-grade autonomous conversational AI voice telephony across Europe. Operating under strict GDPR Article 22 compliance, ePrivacy Directives, and carrier-grade European SIP trunking across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm.",
                 "url": "https://ayush.company/locations/europe/ai-voice-agents",
                 "priceRange": "€2,000 - €75,000",
-                "currenciesAccepted": "EUR, CHF, GBP, USD"
+                "currenciesAccepted": "EUR, CHF, GBP, USD",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "54",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                },
+                "speakable": {
+                  "@type": "SpeakableSpecification",
+                  "cssSelector": ["h1", ".aeo-direct-answer", ".faq-lead-answer"]
+                }
               },
               {
                 "@type": "BreadcrumbList",

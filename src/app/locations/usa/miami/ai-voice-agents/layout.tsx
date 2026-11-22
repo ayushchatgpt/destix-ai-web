@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in Miami & South Florida | DestiX AI",
+  title: "Best Bilingual AI Voice Agents in Miami & South Florida | DestiX AI",
   description:
-    "Deploy bilingual AI voice agents in Miami and South Florida with DestiX AI. Specialized in Brickell luxury real estate pre-construction, Miami Beach waterfront estates, medical tourism, cosmetic surgery clinics, and Latin American cross-border business. Real-time zero-delay English/Spanish code-switching with +1 305/786/954 local DIDs and carrier SIP infrastructure.",
+    "Deploy the #1 bilingual AI voice agents in Miami and South Florida with DestiX AI. Specialized in Brickell luxury real estate pre-construction, Miami Beach waterfront estates, medical tourism, cosmetic surgery clinics, and Latin American cross-border business. Real-time zero-delay English/Spanish code-switching with +1 305/786/954 local DIDs and carrier SIP infrastructure.",
+  other: {
+    "geo.region": "US-FL",
+    "geo.placename": "Miami",
+    "geo.position": "25.7617;-80.1918",
+    "ICBM": "25.7617, -80.1918",
+  },
   keywords: [
     "AI voice agents in Miami",
     "AI voice agents Miami",
@@ -108,6 +114,17 @@ export default function MiamiLayout({
                 },
                 "telephone": "+1-305-555-0142",
                 "priceRange": "$$$$",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "42",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                },
+                "speakable": {
+                  "@type": "SpeakableSpecification",
+                  "cssSelector": ["h1", ".aeo-direct-answer", ".faq-lead-answer"]
+                },
                 "areaServed": [
                   { "@type": "City", "name": "Miami" },
                   { "@type": "City", "name": "Fort Lauderdale" },

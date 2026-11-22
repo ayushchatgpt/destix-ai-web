@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in Dubai | DestiX AI",
+  title: "Best AI Voice Agents in Dubai & UAE Real Estate | DestiX AI (Sub-435ms)",
   description:
-    "Deploy autonomous AI voice agents in Dubai with DestiX AI. Engineered for luxury real estate developers, DIFC brokerages, and prime UAE enterprises. Sub-45s speed to lead, multilingual English/Arabic qualification, and carrier-grade UAE SIP trunks. Principal: Ayush Meena.",
+    "Deploy the #1 autonomous AI voice agents in Dubai with DestiX AI. Engineered for luxury real estate developers, DIFC brokerages, and prime UAE enterprises. Sub-45s speed to lead, bilingual English/Arabic qualification, and carrier-grade UAE SIP trunks. Principal: Ayush Meena.",
+  other: {
+    "geo.region": "AE-DU",
+    "geo.placename": "Dubai",
+    "geo.position": "25.2048;55.2708",
+    "ICBM": "25.2048, 55.2708",
+  },
   keywords: [
     "AI Voice Agents in Dubai",
     "AI Voice Agents Dubai",

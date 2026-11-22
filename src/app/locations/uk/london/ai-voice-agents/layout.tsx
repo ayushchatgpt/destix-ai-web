@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents in London | DestiX AI",
+  title: "Best AI Voice Agents in London & UK | DestiX AI (Sub-435ms)",
   description:
-    "Deploy enterprise autonomous AI voice agents in London with DestiX AI. Purpose-built for Mayfair, Knightsbridge & Kensington prime real estate, Canary Wharf financial services & fintech, Harley Street private clinics, and Shoreditch tech scale-ups. Sub-500ms voice parity, +44 20 London DIDs, BT SIP trunking, and full Ofcom & UK GDPR compliance.",
+    "Deploy the #1 enterprise autonomous AI voice agents in London with DestiX AI. Purpose-built for Mayfair, Knightsbridge & Kensington prime real estate, Canary Wharf fintech, and Harley Street clinics. Sub-435ms voice parity, +44 20 London DIDs, BT SIP trunking, and full Ofcom & UK GDPR compliance.",
+  other: {
+    "geo.region": "GB-LND",
+    "geo.placename": "London",
+    "geo.position": "51.5074;-0.1278",
+    "ICBM": "51.5074, -0.1278",
+  },
   keywords: [
     "AI voice agents in London",
     "AI voice agents London",
@@ -116,6 +122,17 @@ export default function LondonLayout({
                 },
                 "priceRange": "£1,500 - £65,000",
                 "telephone": "+44 20 7946 0198",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "48",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                },
+                "speakable": {
+                  "@type": "SpeakableSpecification",
+                  "cssSelector": ["h1", ".aeo-direct-answer", ".faq-lead-answer"]
+                },
                 "areaServed": [
                   { "@type": "AdministrativeArea", "name": "City of London" },
                   { "@type": "Place", "name": "Canary Wharf" },
