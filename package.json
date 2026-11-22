@@ -9,7 +9,11 @@
     "lint": "eslint",
     "indexnow": "node --loader ts-node/esm scripts/indexnow.ts || npx tsx scripts/indexnow.ts",
     "outreach:stage": "python scripts/dispatch-outreach.py build",
-    "outreach:launch": "python scripts/dispatch-outreach.py launch"
+    "outreach:launch": "python scripts/dispatch-outreach.py launch",
+    "campaign:status": "python scripts/campaign-status.py",
+    "abm:stage": "python scripts/daily-abm-engine.py stage",
+    "abm:launch": "python scripts/daily-abm-engine.py launch all",
+    "abm:status": "python scripts/daily-abm-engine.py status"
   },
   "dependencies": {
     "@types/three": "^0.186.0",
