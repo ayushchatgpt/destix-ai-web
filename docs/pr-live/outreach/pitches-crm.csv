@@ -1,0 +1,35 @@
+outlet_id,publication_name,region,beat,editorial_contact,verification_status,pitch_hook,link_asset,status
+1,Analytics India Magazine,India,Enterprise AI & Audio ML,editor@analyticsindiamag.com,Direct Desk,524k Calls Benchmark (Silero+Deepgram+Groq),https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+2,Inc42,India,AI Startups & Enterprise Tech,[VERIFY_ON_MUCK_RACK],Pending Verification,Sovereign Voice vs SaaS Arbitrage in India,https://ayush.company/press,Ready to Send
+3,YourStory,India,Deep Tech & Spinoffs,editorial@yourstory.com,Direct Desk,Founder Journey: Solving 1200ms Latency Bottleneck,https://ayush.company/press,Ready to Send
+4,The Economic Times,India,Enterprise Tech & Telecom,etnews@timesgroup.com,Direct Desk,Telecom Pass-Through vs SaaS Markups,https://ayush.company/tools/roi-calculator,Ready to Send
+5,Mint (Livemint),India,AI & Corporate Transformation,feedback@livemint.com,Direct Desk,Real Estate Sub-45s Speed to Lead,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+6,Business Standard,India,IT & Telecom Desk,feedback@bspmail.in,Direct Desk,Direct Carrier SIP Peering & TRAI DLT,https://ayush.company/compliance,Ready to Send
+7,MediaNama,India,Digital Policy & Telecom,editorial@medianama.com,Direct Desk,TRAI DLT & Real-Time DND Scrubbing Math,https://ayush.company/compliance,Ready to Send
+8,Arabian Business,UAE,GCC Real Estate & Wealth,editorial@arabianbusiness.com,Direct Desk,Dubai Real Estate 14-Hour Callback Gap,https://ayush.company/case-studies,Ready to Send
+9,Gulf News,UAE,Business Technology Desk,readers@gulfnews.com,Direct Desk,Sub-500ms Voice Telephony in UAE Off-Plan,https://ayush.company/press,Ready to Send
+10,The National,UAE,Future Tech & Enterprise AI,business@thenationalnews.com,Direct Desk,Sovereign Private AI VPCs in GCC,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+11,Zawya,UAE,Middle East Corporate Tech,editorial.zawya@lseg.com,Direct Desk,Off-Plan Real Estate Speed-to-Lead Telemetry,https://ayush.company/tools/roi-calculator,Ready to Send
+12,Khaleej Times,UAE,Business & Innovation,news@khaleejtimes.com,Direct Desk,Sub-45s Voice Qualification Cuts Ad Spend Waste,https://ayush.company/press,Ready to Send
+13,TechRadar Middle East,UAE,Enterprise Tech & Cloud,[VERIFY_ON_MUCK_RACK],Pending Verification,Direct SIP vs WebRTC Wrappers by 800ms,https://github.com/ayushchatgpt/destix-voice-telephony-benchmark,Ready to Send
+14,Sifted,UK,Deep Tech / AI Infrastructure,editorial@sifted.eu,Direct Desk,The Death of the Voice SaaS Wrapper,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+15,Tech.eu,UK / Europe,European Scaleup Tech,editor@tech.eu,Direct Desk,Sub-500ms Voice Parity Under EU AI Act,https://ayush.company/press,Ready to Send
+16,TechRadar Pro UK,UK,Enterprise Computing,techradarpro@futurenet.com,Direct Desk,The Hidden Economics of Enterprise Voice AI,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+17,The Register,UK,Enterprise Telecoms,news@theregister.com,Direct Desk,Bypassing WebRTC Bloat for 435ms Telephony,https://github.com/ayushchatgpt/destix-voice-telephony-benchmark,Ready to Send
+18,Property Week,UK,PropTech & Development,propertyweek@propertyweek.com,Direct Desk,Autonomous Telephony Recovers 64% Night Leads,https://ayush.company/case-studies,Ready to Send
+19,Evening Standard,UK,London Tech & Business,business@standard.co.uk,Direct Desk,Sub-45s AI Voice Calling Hits London Prop,https://ayush.company/press,Ready to Send
+20,Inman,USA,PropTech & Brokerage Tech,contributors@inman.com,Direct Desk,Why Real Estate Loses 64% Leads After 7 PM,https://ayush.company/industries/real-estate/ai-voice-agents,Ready to Send
+21,VentureBeat,USA,Enterprise AI & Audio ML,ai@venturebeat.com,Direct Desk,Achieving 435ms Telephony Latency at Scale,https://github.com/ayushchatgpt/destix-voice-telephony-benchmark,Ready to Send
+22,TechCrunch,USA,Enterprise Infrastructure,tips@techcrunch.com,Direct Desk,Why Companies Are Ditching Voice AI SaaS,https://ayush.company/press,Ready to Send
+23,The Information,USA,Applied AI & Cloud Margins,tips@theinformation.com,Direct Desk,The Real Margins & Latency Math Behind Voice Wrappers,https://ayush.company/tools/roi-calculator,Ready to Send
+24,Healthcare IT News,USA,Clinical Telephony,[VERIFY_ON_MUCK_RACK],Pending Verification,Private Surgical Triage Under HIPAA Sovereignty,https://ayush.company/industries/clinics/ai-voice-agents,Ready to Send
+25,Commercial Observer,USA,Commercial Real Estate,[VERIFY_ON_MUCK_RACK],Pending Verification,Sub-45s Autonomous Voice Telephony for Leases,https://ayush.company/industries/real-estate/ai-voice-agents,Ready to Send
+26,The Real Deal,USA,NYC & Miami PropTech,news@therealdeal.com,Direct Desk,Miami & NYC Voice AI Cuts Lead Delay to 45s,https://ayush.company/press,Ready to Send
+27,Silicon Valley Business Journal,USA,B2B Enterprise Innovation,editorial@bizjournals.com,Direct Desk,From SaaS Subscriptions to Sovereign Code Ownership,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+28,FrenchWeb.fr,Europe (France),French Tech & Enterprise,redaction@frenchweb.fr,Direct Desk,Tribune: Les coulisses économiques de l IA vocale,https://ayush.company/fr/agent-vocal-ia,Ready to Send
+29,Maddyness,Europe (France),Innovation & Deep Tech,redaction@maddyness.com,Direct Desk,Pourquoi les entreprises choisissent l IA vocale souveraine,https://ayush.company/press,Ready to Send
+30,Les Echos,Europe (France),Transformation Numérique,redaction@lesechos.fr,Direct Desk,Les télécoms face aux agents vocaux autonomes,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+31,Handelsblatt,Europe (Germany),Enterprise AI & Sovereignty,redaktion@handelsblatt.com,Direct Desk,Gastbeitrag: Warum Enterprise Voice AI Datenhoheit braucht,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+32,Gründerszene,Europe (Germany),Enterprise Startups,redaktion@gruenderszene.de,Direct Desk,Das Ende der SaaS-Wrapper im Bereich Voice AI,https://ayush.company/press,Ready to Send
+33,Silicon Canals,Europe (Benelux),Scaleup Infrastructure,editor@siliconcanals.com,Direct Desk,Sub-500ms Conversational AI Replaces Legacy Call Centers,https://ayush.company/research/2026-enterprise-ai-telephony-benchmark,Ready to Send
+34,CX Today,Global,Conversational AI & Contact Center,editorial@cxtoday.com,Direct Desk,Navigating Global Telecom Compliance for Voice AI,https://ayush.company/compliance,Ready to Send

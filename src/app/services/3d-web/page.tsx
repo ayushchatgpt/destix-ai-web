@@ -51,7 +51,7 @@ export default function ThreeDWebPage() {
   const comparison = [
     { feature: "Framework", generic: "WordPress / Webflow Templates", destix: "Next.js 15 App Router + TypeScript" },
     { feature: "3D Rendering", generic: "Heavy video loops or none", destix: "Custom 60FPS Three.js WebGL" },
-    { feature: "Page Speed", generic: "3.5s - 6s loading lag", destix: "Sub-400ms Edge TTFB" },
+    { feature: "Page Speed", generic: "3.5s - 6s loading lag", destix: "Sub-500ms Edge TTFB" },
     { feature: "AI Voice & CRM Integration", generic: "Disjointed 3rd party chat widget", destix: "Native Realtime Voice & n8n APIs" },
     { feature: "Ownership", generic: "Subscription vendor lock-in", destix: "100% Client-Owned Source Code" },
   ];

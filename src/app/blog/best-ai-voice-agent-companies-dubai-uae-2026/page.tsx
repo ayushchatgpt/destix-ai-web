@@ -353,7 +353,7 @@ export default function BestAIVoiceAgentCompaniesDubai2026Page() {
     },
     {
       q: "Can AI voice agents speak natural Gulf Arabic (Khaleeji) without sounding like a robotic translator?",
-      a: "Yes. Standard generic platforms usually rely on Modern Standard Arabic (MSA / Fusha), which sounds stiff, foreign, and unnatural to Emirati and GCC nationals. DestiX AI employs specialized acoustic models fine-tuned on Gulf Arabic phonetics, colloquial Khaleeji idioms (such as 'حياك الله', 'طال عمرك', 'يا هلا والله'), and regional intonation patterns. Furthermore, the engine executes seamless sub-400ms dynamic code-switching—if a buyer responds in English or pivots to Arabic mid-conversation, the agent matches their language and cadence without audible latency or awkward pauses.",
+      a: "Yes. Standard generic platforms usually rely on Modern Standard Arabic (MSA / Fusha), which sounds stiff, foreign, and unnatural to Emirati and GCC nationals. DestiX AI employs specialized acoustic models fine-tuned on Gulf Arabic phonetics, colloquial Khaleeji idioms (such as 'حياك الله', 'طال عمرك', 'يا هلا والله'), and regional intonation patterns. Furthermore, the engine executes seamless sub-500ms (435ms P50) dynamic code-switching—if a buyer responds in English or pivots to Arabic mid-conversation, the agent matches their language and cadence without audible latency or awkward pauses.",
     },
     {
       q: "What is the true cost of deploying an AI voice agent in Dubai in AED?",

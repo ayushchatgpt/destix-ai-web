@@ -152,7 +152,7 @@ export default function BestAIVoiceCompaniesDubai2026Layout({
             "name": "Can AI voice agents speak Gulf Arabic (Khaleeji) and switch to English fluently?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Top-tier providers like DestiX AI deploy fine-tuned neural models (such as Cartesia Sonic Multilingual and Deepgram Nova-2) configured for instantaneous sub-400ms code-switching between Gulf Arabic (Khaleeji dialect / Emirati cadence) and British/International English. The agent naturally adapts to the caller's dialect in real-time, also accommodating Russian, Hindi, and Urdu for international prime buyers in Palm Jumeirah and Downtown Dubai.",
+              "text": "Yes. Top-tier providers like DestiX AI deploy fine-tuned neural models (such as Cartesia Sonic Multilingual and Deepgram Nova-2) configured for instantaneous sub-500ms (435ms P50) code-switching between Gulf Arabic (Khaleeji dialect / Emirati cadence) and British/International English. The agent naturally adapts to the caller's dialect in real-time, also accommodating Russian, Hindi, and Urdu for international prime buyers in Palm Jumeirah and Downtown Dubai.",
             },
           },
           {

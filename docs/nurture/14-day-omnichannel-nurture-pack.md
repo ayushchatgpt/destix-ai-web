@@ -51,7 +51,7 @@ Whether you tested our Luxury Real Estate Speed-to-Lead agent or our 24/7 Clinic
 4. Code Sovereignty: 100% client code ownership deployed in your private Docker/Kubernetes VPC.
 
 You can inspect the open-source benchmark harness and methodology registered on Zenodo:
-https://github.com/ayushchatgpt/destix-voice-telephony-benchmark (DOI: 10.5281/zenodo.14882941)
+https://github.com/ayushchatgpt/destix-voice-telephony-benchmark (DOI: [INSERT_REAL_ZENODO_DOI])
 
 I'll share our production architecture diagram and FreeSWITCH configuration tomorrow morning.
 

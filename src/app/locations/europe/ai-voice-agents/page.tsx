@@ -47,7 +47,7 @@ export default function EuropeVoiceAgentsPage() {
       regulator: "ARCEP Compliant",
       focus: "Luxury Hospitality, High-Fashion & MedTech",
       description:
-        "Engineered for Parisian luxury maisons, private medical practices, and tech scale-ups. Fluid Metropolitan French with formal 'vous' courtesy registers and sub-400ms acoustic parity.",
+        "Engineered for Parisian luxury maisons, private medical practices, and tech scale-ups. Fluid Metropolitan French with formal 'vous' courtesy registers and sub-500ms (435ms P50) acoustic parity.",
       telephony: "Direct Paris Edge Interconnect (PAR-1) via Twilio EU & Orange SIP.",
       status: "Active SIP Gateway",
     },
@@ -323,7 +323,7 @@ export default function EuropeVoiceAgentsPage() {
     },
     {
       metric: "Multilingual Code-Switching",
-      destix: "8 Languages in sub-400ms",
+      destix: "8 Languages in sub-500ms (435ms P50)",
       callCenter: "Requires distinct language shifts",
       usWrapper: "English only or clunky translation",
     },
@@ -342,7 +342,7 @@ export default function EuropeVoiceAgentsPage() {
     },
     {
       q: "Which languages and regional accents do your European AI voice agents support?",
-      a: "Our European models feature native acoustic code-switching across 8 primary European languages: English (UK RP, Irish, and European business dialects), French (Metropolitan Parisien and Swiss French), German (Standard Hochdeutsch, Austrian, and Swiss German accents), Dutch, Italian, Spanish (Castilian), Portuguese, and Swedish. The agents dynamically detect language shifts in sub-400ms and continue the conversation seamlessly in the speaker's language without disconnecting or restarting the session.",
+      a: "Our European models feature native acoustic code-switching across 8 primary European languages: English (UK RP, Irish, and European business dialects), French (Metropolitan Parisien and Swiss French), German (Standard Hochdeutsch, Austrian, and Swiss German accents), Dutch, Italian, Spanish (Castilian), Portuguese, and Swedish. The agents dynamically detect language shifts in sub-500ms (435ms P50) and continue the conversation seamlessly in the speaker's language without disconnecting or restarting the session.",
     },
     {
       q: "How does European telephony, DID routing, and SIP trunking work across Paris, Berlin, Amsterdam, Zurich, Dublin, and Stockholm?",
@@ -460,7 +460,7 @@ export default function EuropeVoiceAgentsPage() {
               Multilingual Parity
             </div>
             <p className="text-[11px] text-[#55514B] mt-1">
-              Real-time mid-sentence code switching in sub-400ms
+              Real-time mid-sentence code switching in sub-500ms (435ms P50)
             </p>
           </div>
         </div>
@@ -595,7 +595,7 @@ export default function EuropeVoiceAgentsPage() {
             </span>
             <h2 className="font-['Instrument_Serif'] text-4xl sm:text-6xl text-[#181614] mt-2">
               8 Native European Languages.{" "}
-              <span className="italic text-[#B88746]">Sub-400ms Code-Switching.</span>
+              <span className="italic text-[#B88746]">Sub-500ms (435ms P50) Code-Switching.</span>
             </h2>
             <p className="text-sm sm:text-base text-[#55514B] font-['Plus_Jakarta_Sans'] mt-3 leading-relaxed">
               European business is inherently multilingual. Our voice models seamlessly transition between languages in real time without lag, awkward translations, or connection drops.
@@ -646,7 +646,7 @@ export default function EuropeVoiceAgentsPage() {
               <div className="flex flex-wrap items-center gap-6 pt-2 text-xs font-mono text-[#6B655C]">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="size-4 text-[#B88746]" />
-                  <span>Sub-400ms Language Detection</span>
+                  <span>Sub-500ms (435ms P50) Language Detection</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="size-4 text-[#B88746]" />

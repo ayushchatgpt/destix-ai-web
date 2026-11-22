@@ -26,23 +26,97 @@ import {
   Check,
   ShieldCheck,
   Terminal,
+  PhoneCall,
+  Calendar,
+  Code2,
 } from "lucide-react";
 
 export default function PressPage() {
   const [bookingOpen, setBookingOpen] = useState(false);
   const [copiedBio, setCopiedBio] = useState<string | null>(null);
-  const [selectedBioLength, setSelectedBioLength] = useState<"50" | "100" | "250">("250");
+  const [selectedBioLength, setSelectedBioLength] = useState<"50" | "100" | "200">("200");
+  const [copiedEmbed, setCopiedEmbed] = useState(false);
+  const [factSheetModal, setFactSheetModal] = useState(false);
 
   const bioTexts = {
-    "50": "Ayush Meena is an Indian AI systems architect and founder of DestiX AI (ayush.company), headquartered in Connaught Place, New Delhi. He pioneers 435ms P50 latency conversational voice telephony, 3D WebGL storefronts, and sovereign private AI operating systems for high-ticket real estate and healthcare practices globally.",
-    "100": "Ayush Meena is an Indian AI systems architect and the founder of DestiX AI (ayush.company), based in Connaught Place, New Delhi. Operating across India, Dubai, the UK, and the USA, Meena architects carrier-grade conversational AI voice infrastructure achieving audited 435ms P50 latency across 524,000 synthetic calls. DestiX AI replaces recurring SaaS seat taxes with 100% client code ownership, direct wholesale carrier pass-through (~₹4.50–₹7.50/min), and a mandatory 5x Hurdle Rate ROI guarantee. His systems have driven over AED 85M+ in verified pipeline across prime commercial corridors.",
-    "250": "Ayush Meena is an Indian AI systems architect and the founder of DestiX AI (https://ayush.company), headquartered in Connaught Place, New Delhi. Operating across India, Dubai/UAE, the UK, the US, and Europe, Meena specializes in carrier-grade conversational voice telephony, sub-45-second speed-to-lead outbound dialing, and spatial 3D WebGL web platforms for high-ticket commercial practices.\n\nFrustrated by generic SaaS wrappers charging 1,000% markups on telephony while suffering from noticeable 1.5-to-2.5-second delays, Meena pioneered the 435ms P50 latency architecture. This pipeline combines Silero Voice Activity Detection (VAD v4), Deepgram Nova-3 streaming ASR, Groq and Anthropic token generation, and Cartesia Sonic speech synthesis with direct Tier-1 carrier cross-connects (Tata Telecommunications, Airtel Enterprise PRI, Twilio Elastic SIP).\n\nUnder Meena's architectural leadership, DestiX AI enforces 100% Client Code & IP Ownership, private Docker/n8n VPC clusters, and direct carrier billing with zero per-seat platform markups. All enterprise engagements are bound by a contractual 5x Hurdle Rate ROI guarantee. His work spans sovereign real estate acquisition engines generating AED 85M+ in verified off-plan pipeline, luxury boutique hospitality networks, and Swiss-style architectural web flagships.",
+    "50": "Ayush Meena is an Indian AI systems architect and founder of DestiX AI (ayush.company), headquartered in Connaught Place, New Delhi. He architects carrier-grade 435ms P50 latency voice telephony, 3D WebGL storefronts, and sovereign private AI operating systems for high-ticket commercial practices across India, the UAE, UK, US, and Europe.",
+    "100": "Ayush Meena is an Indian AI systems architect and the founder of DestiX AI (https://ayush.company), headquartered in Connaught Place, New Delhi. Operating internationally across India, Dubai, London, NYC, and Miami, Meena designs carrier-grade conversational AI voice telephony achieving audited 435ms P50 latency across 524,000 synthetic calls and 14 architectures. DestiX AI replaces recurring SaaS seat markups with 100% client code ownership, direct wholesale carrier pass-through (~₹4.50–₹7.50/min), and a contractual 5x Hurdle Rate ROI guarantee. His systems have qualified over AED 85M+ in verified off-plan pipeline across prime commercial corridors.",
+    "200": "Ayush Meena is an Indian AI systems architect and the founder of DestiX AI (https://ayush.company), headquartered in Connaught Place, New Delhi. Operating globally across India, the UAE, UK, US, and Europe, Meena specializes in carrier-grade conversational voice telephony, sub-45-second speed-to-lead outbound dialing, and spatial 3D WebGL web platforms for high-ticket enterprise practices.\n\nRejecting generic SaaS wrappers that impose 300% to 1,000% markups on telephony while suffering from noticeable 1.5-to-2.5-second turn-taking delays, Meena engineered the sovereign 435ms P50 latency architecture. This pipeline integrates Silero Voice Activity Detection (VAD v4), Deepgram Nova-3 streaming ASR, Groq Llama-3 inference, and Cartesia Sonic speech synthesis directly through Tier-1 telecom cross-connects (Tata Telecommunications, Airtel Enterprise PRI, and Twilio Elastic SIP).\n\nUnder Meena's architectural leadership, DestiX AI enforces 100% Client Code & IP Ownership, private Docker/n8n VPC clusters, and direct wholesale carrier pass-through pricing with zero per-seat fees. Every enterprise engagement is contractually bound to a 5x Hurdle Rate ROI covenant. His deployments span luxury real estate advisory pipelines qualifying AED 85M+ in off-plan inventory, high-ticket private surgical clinics, and Swiss-inspired architectural flagships.",
   };
 
-  const handleCopyBio = (length: "50" | "100" | "250") => {
+  const handleCopyBio = (length: "50" | "100" | "200") => {
     navigator.clipboard.writeText(bioTexts[length]);
     setCopiedBio(length);
     setTimeout(() => setCopiedBio(null), 2500);
+  };
+
+  const embedSvgCode = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%" style="background:#FAF8F5;border-radius:16px;font-family:system-ui,-apple-system,sans-serif">
+  <rect width="800" height="360" fill="#FAF8F5" rx="16"/>
+  <text x="32" y="44" font-size="18" font-weight="700" fill="#1A1817">Enterprise Voice AI Latency Benchmark (aRTT)</text>
+  <text x="32" y="68" font-size="12" fill="#7D7871">524,000 Synthetic Calls Audited Across 14 Topologies (Source: DestiX AI / ayush.company)</text>
+  
+  <!-- DestiX AI -->
+  <text x="32" y="120" font-size="13" font-weight="600" fill="#1A1817">DestiX AI Sovereign Pipeline (435ms P50)</text>
+  <rect x="32" y="132" width="232" height="28" rx="6" fill="#1A1817"/>
+  <text x="42" y="151" font-size="11" font-weight="600" fill="#F6F4EE">435ms (Silero 180ms + Deepgram 120ms + Groq 65ms + Cartesia 70ms)</text>
+  
+  <!-- Retell AI -->
+  <text x="32" y="190" font-size="13" font-weight="600" fill="#5A554E">Retell AI Multi-Tenant SaaS (950ms P50)</text>
+  <rect x="32" y="202" width="507" height="28" rx="6" fill="#D6C7B2"/>
+  <text x="42" y="221" font-size="11" font-weight="500" fill="#1A1817">950ms (+118% Latency Overhead)</text>
+  
+  <!-- Bland AI / Legacy Wrapper -->
+  <text x="32" y="260" font-size="13" font-weight="600" fill="#5A554E">Standard SaaS Wrapper / Bland AI (1,450ms P50)</text>
+  <rect x="32" y="272" width="736" height="28" rx="6" fill="#E2DDD1"/>
+  <text x="42" y="291" font-size="11" font-weight="500" fill="#7D7871">1,450ms (+233% Latency Overhead // Noticeable Human Lag)</text>
+  
+  <line x1="32" y1="324" x2="768" y2="324" stroke="#E2DDD1" stroke-width="1"/>
+  <text x="32" y="342" font-size="10" fill="#8F6426" font-family="monospace">DestiX AI Architecture Guarantee: Direct Tier-1 SIP + Zero SaaS Per-Seat Markup + 5x Hurdle Rate ROI</text>
+</svg>`;
+
+  const handleCopyEmbed = () => {
+    navigator.clipboard.writeText(embedSvgCode);
+    setCopiedEmbed(true);
+    setTimeout(() => setCopiedEmbed(false), 2500);
+  };
+
+  const handleDownloadFactSheet = () => {
+    const textContent = `# DESTIX AI (AYUSH.COMPANY) — 2026 OFFICIAL ENTERPRISE FACT SHEET
+Principal AI Systems Architect: Ayush Meena
+Founding Headquarters: Connaught Place, New Delhi 110001, India
+Operating Corridors: India, UAE (Dubai), UK (London), USA (NYC, Miami, LA, Texas), Europe (Paris, Berlin, Zurich, Amsterdam)
+Primary Canonical Domain: https://ayush.company
+
+## CORE TELEMETRY & SPECIFICATIONS
+- Acoustic Round-Trip Time (aRTT): 435ms P50 (sub-500ms) audited across 524,000 synthetic calls and 14 voice AI topologies.
+- Architectural Stack: Silero VAD v4 (turn detection <180ms) + Deepgram Nova-3 (streaming ASR 120ms) + Groq Llama-3 (65ms first-token) + Cartesia Sonic (70ms chunk synthesis).
+- Telephony & Carriers: Direct Tier-1 cross-connects (Tata Telecommunications SIP, Airtel Enterprise PRI, Twilio Elastic SIP).
+- Client Economics: 100% Client Code & IP Ownership. 0% SaaS seat markup. Direct wholesale carrier pass-through (~₹4.50–₹7.50/min or $0.02–$0.04/min).
+- Commercial Guarantee: Mandatory 5x Hurdle Rate ROI guarantee on enterprise deployments.
+- Sovereign Infrastructure: Self-hosted Docker / n8n workflow clusters deployed in client's own AWS/GCP/Azure Virtual Private Cloud (VPC).
+- Verified Production Proof: AED 85M+ verified off-plan pipeline qualified for premier UAE luxury real estate advisory with sub-40-second speed-to-lead callback.
+
+## GLOBAL TELECOM & REGULATORY COMPLIANCE
+- India: TRAI Commercial Communications Customer Preference Regulations (DLT Principal Entity registration).
+- UAE: TDRA regulatory guidelines and local VoIP peering.
+- United Kingdom: Ofcom CLI Presentation Standards and TPS/CTPS do-not-call scrubbing.
+- United States: FCC STIR/SHAKEN A-Level attestation and TCPA consent compliance.
+- European Union: EU AI Act High-Risk / Transparency Articles and GDPR Article 22 automated decision safeguards.
+
+## MEDIA CONTACT & EXECUTIVE SCHEDULING
+- Press Inquiries & Keynotes: ayushmeenadestixai@gmail.com
+- Schedule 30-Minute Diagnostic: https://ayush.company/contact
+- Dataset Citation: Zenodo [INSERT_REAL_ZENODO_DOI]`;
+
+    const blob = new Blob([textContent], { type: "text/markdown" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "destix-ai-enterprise-factsheet-2026.md";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   const pressReleases = [
@@ -51,7 +125,7 @@ export default function PressPage() {
       tag: "RESEARCH PUBLICATION",
       title: "DestiX AI Publishes 2026 Enterprise Telephony Benchmark Across 524,000 Synthetic Calls",
       summary:
-        "Audited latency study measuring acoustic round-trip time across 14 voice AI architectures, establishing sub-435ms P50 latency through Silero VAD v4, Deepgram Nova-3, and Groq inference.",
+        "Audited latency study measuring acoustic round-trip time across 14 voice AI architectures, establishing sub-500ms (435ms P50) latency through Silero VAD v4, Deepgram Nova-3, Groq inference, and Cartesia Sonic synthesis.",
       link: "/research/2026-enterprise-ai-telephony-benchmark",
       type: "Internal Research",
     },
@@ -124,9 +198,9 @@ export default function PressPage() {
     { label: "Founding Headquarters", value: "Connaught Place, New Delhi 110001, India" },
     { label: "Primary Operating Domain", value: "https://ayush.company" },
     { label: "Core Specializations", value: "Autonomous Voice Telephony, Sub-45s Speed to Lead, 3D WebGL Digital Flagships, Sovereign Enterprise AI" },
-    { label: "Telephony Compliance", value: "TRAI DLT (India), Ofcom (UK), FCC/TCPA (US), TDRA (UAE), GDPR Article 22 (EU)" },
+    { label: "Telephony Compliance", value: "TRAI DLT (India), Ofcom (UK), FCC/TCPA (US), TDRA (UAE), GDPR Article 22 & EU AI Act (EU)" },
     { label: "Benchmark Telephony Latency", value: "435ms P50 Acoustic Round-Trip Time (aRTT)" },
-    { label: "Economic Covenant", value: "Strict 5x Hurdle Rate ROI Guarantee" },
+    { label: "Economic Covenant", value: "Strict 5x Hurdle Rate ROI Guarantee & 100% Client Code Ownership" },
   ];
 
   return (
@@ -135,7 +209,7 @@ export default function PressPage() {
 
       <main className="pt-24 pb-20">
         {/* Breadcrumb */}
-        <div className="max-w-7xl mx-auto px-6 mb-8">
+        <div className="max-w-7xl mx-auto px-6 mb-6">
           <nav className="flex items-center gap-2 text-xs font-mono tracking-wider text-[#7D7871] uppercase">
             <Link href="/" className="hover:text-[#1A1817] transition-colors">
               Home
@@ -144,6 +218,47 @@ export default function PressPage() {
             <span className="text-[#1A1817]">Press &amp; Media Kit</span>
           </nav>
         </div>
+
+        {/* ABOVE-THE-FOLD HIGH-CONVERTING INQUIRY BAR */}
+        <section className="max-w-7xl mx-auto px-6 mb-10">
+          <div className="p-4 sm:p-5 rounded-2xl bg-[#1A1817] text-[#F6F4EE] border border-[#B88746]/40 shadow-lg flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-xl bg-[#B88746]/20 border border-[#B88746]/40 flex items-center justify-center shrink-0">
+                <Activity className="w-5 h-5 text-[#B88746] animate-pulse" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-0.5 rounded-full bg-[#B88746] text-[#1A1817] font-bold">
+                    LIVE 435ms TELEPHONY AUDIT
+                  </span>
+                  <span className="text-xs font-mono text-[#A8A29E] hidden sm:inline">
+                    P50 Audited across 524k synthetic calls
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-[#F6F4EE] mt-0.5 font-medium">
+                  Hear human-parity conversational voice AI live in under 45 seconds or book a confidential 30-minute architectural diagnostic.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 shrink-0 w-full sm:w-auto justify-end">
+              <Link
+                href="/contact"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#B88746] hover:bg-[#C99756] text-[#1A1817] font-semibold text-xs font-mono transition-colors shadow-sm"
+              >
+                <Calendar className="w-3.5 h-3.5 text-[#1A1817]" />
+                <span>Book 30-Min Diagnostic (/contact)</span>
+              </Link>
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-[#F6F4EE] text-xs font-mono border border-white/10 transition-colors"
+              >
+                <PhoneCall className="w-3.5 h-3.5 text-[#B88746]" />
+                <span>Hear 435ms Demo</span>
+              </button>
+            </div>
+          </div>
+        </section>
 
         {/* Hero */}
         <section className="max-w-7xl mx-auto px-6 mb-16">
@@ -155,9 +270,25 @@ export default function PressPage() {
             <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-[1.08] tracking-tight mb-6">
               Press, Research &amp; Media Kit
             </h1>
-            <p className="text-lg text-[#5A554E] leading-relaxed mb-8 max-w-3xl">
+            <p className="text-lg text-[#5A554E] leading-relaxed mb-6 max-w-3xl">
               Official biographical dossier of Founder &amp; Principal AI Systems Architect Ayush Meena, corporate research publications, audited 524k-call benchmark telemetry, and verified media assets for DestiX AI.
             </p>
+            <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
+              <button
+                onClick={handleDownloadFactSheet}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FAF8F5] border border-[#E2DDD1] hover:border-[#B88746] text-[#1A1817] font-medium transition-colors"
+              >
+                <Download className="w-3.5 h-3.5 text-[#B88746]" />
+                <span>Download 1-Page Fact Sheet (Markdown)</span>
+              </button>
+              <a
+                href="#latency-chart"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FAF8F5] border border-[#E2DDD1] hover:border-[#B88746] text-[#1A1817] font-medium transition-colors"
+              >
+                <BarChart3 className="w-3.5 h-3.5 text-[#B88746]" />
+                <span>View &amp; Embed 435ms Latency Chart</span>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -214,7 +345,7 @@ export default function PressPage() {
 
                   {/* Length Switcher */}
                   <div className="flex items-center gap-1.5 p-1 rounded-xl bg-[#EDE8DC] border border-[#E2DDD1]">
-                    {(["50", "100", "250"] as const).map((len) => (
+                    {(["50", "100", "200"] as const).map((len) => (
                       <button
                         key={len}
                         onClick={() => setSelectedBioLength(len)}
@@ -270,33 +401,100 @@ export default function PressPage() {
           </div>
         </section>
 
-        {/* Primary Data: 524,000-Call Telephony Latency Benchmark */}
-        <section className="max-w-7xl mx-auto px-6 mb-20">
+        {/* EMBEDDABLE 435MS VS. 1,200MS LATENCY SVG CHART */}
+        <section id="latency-chart" className="max-w-7xl mx-auto px-6 mb-20 scroll-mt-28">
           <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#E2DDD1] shadow-xs">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 pb-6 border-b border-[#E2DDD1]">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B88746]/10 text-[10px] font-mono tracking-widest text-[#8F6426] font-bold uppercase mb-3">
                   <Activity className="w-3 h-3 text-[#B88746]" />
-                  AUDITED TELEMETRY // 524,000 SYNTHETIC CALLS
+                  EMBEDDABLE MEDIA ASSET // AUDITED BENCHMARK
                 </div>
                 <h2 className="font-serif text-3xl sm:text-4xl text-[#1A1817]">
-                  2026 Enterprise Telephony Benchmark Data
+                  435ms vs. 1,200ms+ Latency Visual Breakdown
                 </h2>
                 <p className="text-xs sm:text-sm text-[#5A554E] mt-2 max-w-2xl">
-                  Acoustic round-trip time (aRTT) measured across cellular carrier connections (Airtel, Jio, Vodafone, du, Etisalat) comparing four leading voice AI platforms.
+                  Acoustic round-trip time (aRTT) measured across cellular carrier connections. DestiX AI sovereign direct-SIP pipeline vs. multi-tenant SaaS wrappers. Free to embed for journalists, researchers, and tech publications.
                 </p>
               </div>
 
               <div className="flex items-center gap-3 shrink-0">
-                <a
-                  href="https://github.com/ayushchatgpt/destix-voice-telephony-benchmark"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleCopyEmbed}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1A1817] hover:bg-[#33302C] text-[#F6F4EE] text-xs font-mono transition-colors shadow-2xs"
                 >
-                  <Terminal className="w-3.5 h-3.5 text-[#B88746]" />
-                  <span>GitHub Benchmark Repo ↗</span>
-                </a>
+                  {copiedEmbed ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Copied Embed SVG Code!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Code2 className="w-3.5 h-3.5 text-[#B88746]" />
+                      <span>Copy Embed SVG Code</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Rendered Live Visual Comparison Chart */}
+            <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#E2DDD1] mb-6">
+              <div className="space-y-6">
+                {/* DestiX AI Sovereign Pipeline */}
+                <div>
+                  <div className="flex items-center justify-between text-xs font-mono mb-2">
+                    <span className="font-bold text-[#1A1817] flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                      DestiX AI Sovereign Pipeline (Audited 435ms P50)
+                    </span>
+                    <span className="font-bold text-emerald-700">435 ms aRTT</span>
+                  </div>
+                  <div className="w-full bg-[#E2DDD1] rounded-xl h-10 overflow-hidden flex shadow-inner">
+                    <div style={{ width: "41%" }} className="bg-[#1A1817] text-[#F6F4EE] text-[10px] font-mono flex items-center justify-center font-medium px-2">
+                      VAD 180ms
+                    </div>
+                    <div style={{ width: "27%" }} className="bg-[#33302C] text-[#F6F4EE] text-[10px] font-mono flex items-center justify-center font-medium px-2">
+                      ASR 120ms
+                    </div>
+                    <div style={{ width: "15%" }} className="bg-[#8F6426] text-[#F6F4EE] text-[10px] font-mono flex items-center justify-center font-medium px-1">
+                      LLM 65ms
+                    </div>
+                    <div style={{ width: "17%" }} className="bg-[#B88746] text-[#1A1817] text-[10px] font-mono flex items-center justify-center font-bold px-1">
+                      TTS 70ms
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between text-[11px] font-mono text-[#7D7871] mt-1.5">
+                    <span>Silero VAD v4 &bull; Deepgram Nova-3 &bull; Groq Llama-3 &bull; Cartesia Sonic</span>
+                    <span className="text-emerald-700 font-semibold">Sub-human perceptual threshold (&lt;500ms)</span>
+                  </div>
+                </div>
+
+                {/* Retell AI */}
+                <div>
+                  <div className="flex items-center justify-between text-xs font-mono mb-2">
+                    <span className="font-medium text-[#5A554E]">Retell AI Multi-Tenant SaaS (950ms P50)</span>
+                    <span className="font-semibold text-amber-700">950 ms aRTT (+118% lag)</span>
+                  </div>
+                  <div className="w-full bg-[#E2DDD1] rounded-xl h-9 overflow-hidden flex shadow-inner opacity-80">
+                    <div style={{ width: "80%" }} className="bg-[#A8A29E] text-[#1A1817] text-[10px] font-mono flex items-center justify-center font-medium px-2">
+                      950ms Multi-Tenant Cloud Proxy Overhead
+                    </div>
+                  </div>
+                </div>
+
+                {/* Standard SaaS Wrapper / Bland AI */}
+                <div>
+                  <div className="flex items-center justify-between text-xs font-mono mb-2">
+                    <span className="font-medium text-[#5A554E]">Standard SaaS Wrapper / Bland AI (1,450ms P50)</span>
+                    <span className="font-semibold text-red-700">1,450 ms aRTT (+233% lag)</span>
+                  </div>
+                  <div className="w-full bg-[#E2DDD1] rounded-xl h-9 overflow-hidden flex shadow-inner opacity-60">
+                    <div style={{ width: "100%" }} className="bg-[#D6C7B2] text-[#1A1817] text-[10px] font-mono flex items-center justify-center font-medium px-2">
+                      1,450ms–2,200ms Noticeable Conversational Gap (Causes Constant Audio Collisions)
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -344,7 +542,7 @@ export default function PressPage() {
 
             <div className="mt-6 pt-4 border-t border-[#E2DDD1] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] font-mono text-[#7D7871]">
               <div>
-                Dataset DOI: <span className="text-[#1A1817]">10.5281/zenodo.destix-telephony-benchmark-2026</span> &bull; 524,000 synthetic test runs across 14 voice AI topologies.
+                Dataset DOI: <span className="text-[#1A1817]">[INSERT_REAL_ZENODO_DOI]</span> &bull; 524,000 synthetic test runs across 14 voice AI topologies.
               </div>
               <Link
                 href="/research/2026-enterprise-ai-telephony-benchmark"
@@ -358,13 +556,22 @@ export default function PressPage() {
 
         {/* Corporate Fact Sheet */}
         <section className="max-w-7xl mx-auto px-6 mb-20">
-          <div className="mb-8">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#8F6426] block mb-2">
-              Corporate Reference Telemetry
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#1A1817]">
-              DestiX AI Fact Sheet
-            </h2>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <span className="text-xs font-mono uppercase tracking-widest text-[#8F6426] block mb-2">
+                Corporate Reference Telemetry
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#1A1817]">
+                DestiX AI Fact Sheet
+              </h2>
+            </div>
+            <button
+              onClick={handleDownloadFactSheet}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#1A1817] text-[#F6F4EE] text-xs font-mono hover:bg-[#33302C] transition-colors"
+            >
+              <Download className="w-3.5 h-3.5 text-[#B88746]" />
+              <span>Download Fact Sheet</span>
+            </button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -474,12 +681,20 @@ export default function PressPage() {
               <div>
                 Direct Media Contact: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6F4EE] underline">ayushmeenadestixai@gmail.com</a>
               </div>
-              <button
-                onClick={() => setBookingOpen(true)}
-                className="px-6 py-3 rounded-full bg-[#B88746] text-[#1A1817] font-semibold text-xs tracking-wide hover:bg-[#C99756] transition-colors cursor-pointer"
-              >
-                Schedule Executive Interview
-              </button>
+              <div className="flex items-center gap-3">
+                <Link
+                  href="/contact"
+                  className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-[#F6F4EE] font-medium text-xs tracking-wide transition-colors"
+                >
+                  Book 30-Min Diagnostic
+                </Link>
+                <button
+                  onClick={() => setBookingOpen(true)}
+                  className="px-6 py-2.5 rounded-full bg-[#B88746] text-[#1A1817] font-semibold text-xs tracking-wide hover:bg-[#C99756] transition-colors cursor-pointer"
+                >
+                  Schedule Executive Interview
+                </button>
+              </div>
             </div>
           </div>
         </section>

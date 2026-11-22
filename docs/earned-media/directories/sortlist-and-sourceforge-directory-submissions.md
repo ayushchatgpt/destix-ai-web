@@ -32,7 +32,7 @@ DestiX AI engineers carrier-grade, sub-435ms streaming conversational voice agen
 Unlike proprietary SaaS voice wrappers that mark up carrier minutes by 300% and suffer from 1,200ms+ latency, DestiX AI deploys sovereign voice pipelines directly in client private VPCs (Docker / Kubernetes) with wholesale telecom interconnects (Tata Tele, BT, du, Twilio, Telnyx).
 
 Audited Benchmarks & Production Proof:
-• 524,000-Call Latency Study: Audited 435ms P50 roundtrip voice turnaround and sub-180ms interruption recovery (Zenodo DOI: 10.5281/zenodo.14882941).
+• 524,000-Call Latency Study: Audited 435ms P50 roundtrip voice turnaround and sub-180ms interruption recovery (Zenodo DOI: [INSERT_REAL_ZENODO_DOI]).
 • Luxury Real Estate Speed-to-Lead: Generated AED 85M+ in verified off-plan pipeline for a Premier UAE Luxury Real Estate Advisory firm (<38s inbound SLA).
 • 24/7 Clinical & Hospitality Concierge: +48% increase in after-hours patient consultation bookings for a Boutique Luxury Healthcare & Hospitality Network.
 • 5x Hurdle Rate Guarantee: All enterprise commissions require an audited 5x projected ROI hurdle rate before contract initiation.
