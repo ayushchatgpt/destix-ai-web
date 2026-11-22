@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { AmbientAtmosphere } from "@/components/AmbientAtmosphere";
 import { InteractiveConcierge } from "@/components/InteractiveConcierge";
+import { AttributionProvider } from "@/lib/attribution";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -1412,13 +1413,15 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[#F6F4EE] text-[#181614] font-sans selection:bg-[#B88746]/20 selection:text-[#181614]">
-        <AmbientAtmosphere />
-        <CustomCursor />
-        <SmoothScroll />
-        <ScrollReveal />
-        {children}
-        <InteractiveConcierge />
-        <Analytics />
+        <AttributionProvider>
+          <AmbientAtmosphere />
+          <CustomCursor />
+          <SmoothScroll />
+          <ScrollReveal />
+          {children}
+          <InteractiveConcierge />
+          <Analytics />
+        </AttributionProvider>
       </body>
     </html>
   );
