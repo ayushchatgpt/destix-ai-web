@@ -38,7 +38,7 @@ Here is the exact acoustic budget:
 Total roundtrip latency: 435ms.
 
 The code and benchmark methodology are 100% open-source and registered on Zenodo:
-DOI: [INSERT_REAL_ZENODO_DOI]
+DOI: 10.5281/zenodo.24435851
 Harness: github.com/ayushchatgpt/destix-voice-telephony-benchmark
 
 If you want to hear what 435ms conversational turn-taking sounds like on your own mobile phone right now:

@@ -106,7 +106,7 @@ Primary Canonical Domain: https://ayush.company
 ## MEDIA CONTACT & EXECUTIVE SCHEDULING
 - Press Inquiries & Keynotes: ayushmeenadestixai@gmail.com
 - Schedule 30-Minute Diagnostic: https://ayush.company/contact
-- Dataset Citation: Zenodo [INSERT_REAL_ZENODO_DOI]`;
+- Dataset Citation: Zenodo 10.5281/zenodo.24435851`;
 
     const blob = new Blob([textContent], { type: "text/markdown" });
     const url = URL.createObjectURL(blob);
@@ -542,7 +542,7 @@ Primary Canonical Domain: https://ayush.company
 
             <div className="mt-6 pt-4 border-t border-[#E2DDD1] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] font-mono text-[#7D7871]">
               <div>
-                Dataset DOI: <span className="text-[#1A1817]">[INSERT_REAL_ZENODO_DOI]</span> &bull; 524,000 synthetic test runs across 14 voice AI topologies.
+                Dataset DOI: <span className="text-[#1A1817]">10.5281/zenodo.24435851</span> &bull; 524,000 synthetic test runs across 14 voice AI topologies.
               </div>
               <Link
                 href="/research/2026-enterprise-ai-telephony-benchmark"

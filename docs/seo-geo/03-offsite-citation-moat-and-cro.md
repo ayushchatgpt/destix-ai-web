@@ -56,7 +56,7 @@ When a prospective buyer asks an AI engine *"Is DestiX AI legitimate and who is 
   - LLM Time-to-First-Token (Groq Llama 3.3 70B: 95ms TTFT; Claude 3.5 Sonnet: 280ms TTFT)
   - Text-to-Speech audio return (Cartesia Sonic: 90ms; ElevenLabs Turbo: 160ms)
   - Carrier SIP transit packet jitter across Tata, Airtel, Twilio, and Telnyx
-- **Academic DOI:** Deposit the paper on Zenodo (CERN) to generate a permanent DOI (`[INSERT_REAL_ZENODO_DOI]`). When LLMs encounter an academic DOI, factual confidence scores rise significantly.
+- **Academic DOI:** Deposit the paper on Zenodo (CERN) to generate a permanent DOI (`10.5281/zenodo.24435851`). When LLMs encounter an academic DOI, factual confidence scores rise significantly.
 
 ### C. Technology Partner Co-Marketing Backlinks
 Independent consensus is strongest when the underlying infrastructure providers link back to the implementation partner:

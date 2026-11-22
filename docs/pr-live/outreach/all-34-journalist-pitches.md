@@ -293,7 +293,7 @@ Most "voice bots" in the Middle East run on WebRTC browser tunnels that suffer 1
 
 We benchmarked 524,000 calls across 14 topologies, showing that compiling Silero VAD v4 to local ONNX and peering directly via Tier-1 SIP drops P50 acoustic latency to 435ms.
 
-Full open-source benchmark and raw telemetry: https://github.com/ayushchatgpt/destix-voice-telephony-benchmark (DOI: [INSERT_REAL_ZENODO_DOI]).
+Full open-source benchmark and raw telemetry: https://github.com/ayushchatgpt/destix-voice-telephony-benchmark (DOI: 10.5281/zenodo.24435851).
 
 Would you be interested in covering the technical architecture or reviewing our benchmark methodology?
 
@@ -487,7 +487,7 @@ While OpenAI and Google push multi-modal models, running conversational speech o
 
 DestiX AI published an empirical benchmark analyzing 524,000 synthetic calls across 14 voice AI architectures. By combining compiled Silero VAD v4, Deepgram Nova-3, and Groq LPU inference over direct SIP trunks, we achieved a 435ms P50 acoustic round-trip time.
 
-Raw dataset registered on Zenodo (DOI: [INSERT_REAL_ZENODO_DOI]) and open-sourced at https://github.com/ayushchatgpt/destix-voice-telephony-benchmark.
+Raw dataset registered on Zenodo (DOI: 10.5281/zenodo.24435851) and open-sourced at https://github.com/ayushchatgpt/destix-voice-telephony-benchmark.
 
 Would your enterprise AI beat be interested in an exclusive deep dive on low-latency audio architecture?
 

@@ -2,7 +2,7 @@
 
 > **Archive Target:** [Zenodo.org](https://zenodo.org/deposit/new) (CERN Open Access Repository)  
 > **Resource Type:** Dataset / Open Research Software Telemetry  
-> **Permanent Identifier:** Generated upon publication (`[INSERT_REAL_ZENODO_DOI]`)  
+> **Permanent Identifier:** Generated upon publication (`10.5281/zenodo.24435851`)  
 > **License:** Creative Commons Attribution 4.0 International (CC-BY-4.0)  
 > **Subject Classifications:** Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS); Distributed Computing (cs.DC)
 
@@ -80,4 +80,4 @@ CALL-000003,2026-01-12T08:14:35Z,TOPOLOGY-01-BLAND,WebRTC Proxy,AE-DUBAI,589,380
 3. Paste Title, Author (`Ayush Meena`), Abstract, and Keywords from Section 1 above.
 4. Upload CSV and JSON files.
 5. Click **Publish**. Zenodo will immediately assign a permanent DOI: `10.5281/zenodo.XXXXXXX`.
-6. Replace `[INSERT_REAL_ZENODO_DOI]` with your assigned DOI string across production repositories.
+6. Replace `10.5281/zenodo.24435851` with your assigned DOI string across production repositories.

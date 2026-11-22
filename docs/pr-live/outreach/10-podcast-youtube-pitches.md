@@ -92,7 +92,7 @@ In enterprise telephony, latency isn't just LLM token speed—it’s acoustic ro
 
 DestiX AI conducted an empirical telemetry benchmark across 524k calls evaluating 14 topologies, establishing that direct Tier-1 SIP interconnects and localized neural VAD reduce P50 latency from 1,450ms down to 435ms.
 
-Dataset registered on Zenodo (DOI: [INSERT_REAL_ZENODO_DOI]) and documented at https://ayush.company/research/2026-enterprise-ai-telephony-benchmark.
+Dataset registered on Zenodo (DOI: 10.5281/zenodo.24435851) and documented at https://ayush.company/research/2026-enterprise-ai-telephony-benchmark.
 
 I’d love to share our experimental methodology, failure modes, and findings on TWIML, including an unscripted live telephony test.
 

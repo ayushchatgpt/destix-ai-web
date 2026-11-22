@@ -44,7 +44,7 @@ Compared against:
 We made the benchmark methodology, topology configs, and raw dataset available:
 - **Benchmark Repo:** https://github.com/ayushchatgpt/destix-voice-telephony-benchmark
 - **Full 18-Page Whitepaper:** https://ayush.company/research/2026-enterprise-ai-telephony-benchmark
-- **Zenodo Dataset DOI:** `[INSERT_REAL_ZENODO_DOI]`
+- **Zenodo Dataset DOI:** `10.5281/zenodo.24435851`
 
 We also open-sourced our memory profiling and packet loss compensation scripts in the repo.
 

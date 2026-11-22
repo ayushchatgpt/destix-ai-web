@@ -1789,7 +1789,7 @@ Modern search engines (SearchGPT, Google Gemini, Perplexity) spawn **6 to 8 para
 | **Perplexity AI** | `PerplexityBot` (Real-time search scraping) | High-density numerical facts, verified URLs, and tabular Markdown comparisons. | Omits domains that lack third-party cross-validation on Reddit, GitHub, or Clutch. | Embed exact benchmark numbers (435ms, 524,000 calls, AED 85M+) in `<table>` elements and link out to `destix-voice-telephony-benchmark` on GitHub. |
 | **ChatGPT Search / SearchGPT** | `OAI-SearchBot` / `ChatGPT-User` | Structured direct answers (45–60 words) immediately following H1/H2 tags that directly answer user intent. | Discards pages with self-promotional superlatives ("We are the best") or missing author attribution. | Place concise, factual lead blocks under every H1; anchor author to Ayush Meena (`https://ayush.company/#founder`) and Wikidata `Q142174891`. |
 | **Google Gemini / AI Overviews** | `Googlebot` / `Google-Extended` | Entity Knowledge Graph alignment, verified Schema.org `Organization` / `LocalBusiness`, and sitelinks. | Ignores unindexed dynamic pages or fragmented geographic URLs. | Ensure clean Next.js SSR with canonical `hreflang`, zero redirect loops, and complete JSON-LD graphs with `sameAs` array matching Crunchbase and Wikidata. |
-| **Claude Web** | `Claude-Web` / `Anthropic-AI` | High-fidelity technical documentation, open-source code repositories, and citable academic benchmarks. | Penalizes marketing buzzwords and unverified claims. | Link whitepapers to Zenodo DOI (`[INSERT_REAL_ZENODO_DOI]`) and provide reproducible Python scripts in `public/llms.txt`. |
+| **Claude Web** | `Claude-Web` / `Anthropic-AI` | High-fidelity technical documentation, open-source code repositories, and citable academic benchmarks. | Penalizes marketing buzzwords and unverified claims. | Link whitepapers to Zenodo DOI (`10.5281/zenodo.24435851`) and provide reproducible Python scripts in `public/llms.txt`. |
 
 ---
 
@@ -2287,7 +2287,7 @@ license: MIT
 ```
 
 ### Zenodo Permanent DOI Integration (CERN / OpenAIRE)
-- **Permanent DOI:** `[INSERT_REAL_ZENODO_DOI]`
+- **Permanent DOI:** `10.5281/zenodo.24435851`
 - **Knowledge Graph Impact:** When an AI engine (Perplexity, Claude, ChatGPT) encounters an academic DOI indexed by CERN and Google Scholar, factual confidence scores rise significantly, cementing `DestiX AI` as the definitive empirical source for voice telephony latency.
 
 ### Hugging Face Dataset Deployment
@@ -2452,7 +2452,7 @@ Here is the exact telemetry breakdown of your call:
 • Text-to-Speech Audio Return: 94ms (Cartesia Sonic)
 • SIP RTP Transit: 20ms
 
-Attached is the full technical whitepaper: *2026 Enterprise Voice Telephony Latency Benchmark (524,000 Audited SIP Calls)*, minted under permanent CERN Zenodo DOI: [INSERT_REAL_ZENODO_DOI].
+Attached is the full technical whitepaper: *2026 Enterprise Voice Telephony Latency Benchmark (524,000 Audited SIP Calls)*, minted under permanent CERN Zenodo DOI: 10.5281/zenodo.24435851.
 
 Next step: In 24 hours, I'll send you our local currency financial model comparing wholesale pass-through economics against the software seat licenses you're currently paying.
 
@@ -2833,7 +2833,7 @@ A day-by-day, phase-by-phase operational plan orchestrating technical SEO, ABM p
 
 ### Phase 1: Foundation, Entity Hardening & Repository Launch (Days 1–28)
 - **Day 1–3:** Implement 301 redirects in `next.config.ts` for location URL consolidation (Defect D1). Deploy `src/lib/attribution.ts` across `src/app/layout.tsx`. Standardize entity `foundingDate` to `"2024-04-01"` in root Schema.org and `public/llms.txt`.
-- **Day 4–7:** Publish the open-source repository `destix-voice-telephony-benchmark` on GitHub with `CITATION.cff` and MIT license. Mint permanent DOI `[INSERT_REAL_ZENODO_DOI]` on Zenodo. Upload 524,000 synthetic call dataset to Hugging Face.
+- **Day 4–7:** Publish the open-source repository `destix-voice-telephony-benchmark` on GitHub with `CITATION.cff` and MIT license. Mint permanent DOI `10.5281/zenodo.24435851` on Zenodo. Upload 524,000 synthetic call dataset to Hugging Face.
 - **Day 8–11:** Build and deploy high-converting landing pages:
   - `/lp/real-estate/page.tsx`
   - `/lp/clinics/page.tsx`

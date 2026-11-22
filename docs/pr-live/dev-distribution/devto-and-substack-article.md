@@ -104,6 +104,6 @@ To foster open engineering standards in conversational telephony, we have releas
 
 - **Whitepaper & Mathematical Proof:** [https://ayush.company/research/2026-enterprise-ai-telephony-benchmark](https://ayush.company/research/2026-enterprise-ai-telephony-benchmark)
 - **GitHub Repository:** [https://github.com/ayushchatgpt/destix-voice-telephony-benchmark](https://github.com/ayushchatgpt/destix-voice-telephony-benchmark)
-- **Zenodo Academic Archive:** Registered under permanent DOI `[INSERT_REAL_ZENODO_DOI]`
+- **Zenodo Academic Archive:** Registered under permanent DOI `10.5281/zenodo.24435851`
 
 For technical inquiries or architectural consultations on deploying sovereign voice infrastructure, reach out directly at `ayushmeenadestixai@gmail.com` or explore [https://ayush.company/contact](https://ayush.company/contact).
