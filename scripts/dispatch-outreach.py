@@ -4,7 +4,7 @@ import sys
 import json
 import webbrowser
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timedelta
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTREACH_DIR = os.path.join(REPO_DIR, "docs", "earned-media", "outreach")
@@ -96,7 +96,7 @@ def update_tracker(pitch_records):
             "status": p.get("status", "READY_FOR_DISPATCH"),
             "staged_at": now,
             "gmail_compose_url": p["gmail_url"],
-            "follow_up_day_4": (datetime.now().strftime("%Y-%m-%d")),
+            "follow_up_day_4": (datetime.now() + timedelta(days=4)).strftime("%Y-%m-%d"),
         })
 
     with open(LOG_JSON_PATH, "w", encoding="utf-8") as f:
@@ -148,7 +148,9 @@ def main():
         for p in pitch_records:
             if target == "all" or target == p["id"]:
                 print(f"[DISPATCHING] Opening Gmail Web draft for: {p['name']}...")
+                p["status"] = "DISPATCH_LAUNCHED"
                 webbrowser.open(p["gmail_url"])
+        update_tracker(pitch_records)
 
 if __name__ == "__main__":
     main()
