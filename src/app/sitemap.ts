@@ -491,6 +491,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.94,
     },
 
+    // Global Canonical City & Market Money Pages (Direct 200 OK Routes)
+    { url: `${baseUrl}/london`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/miami`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/paris`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/france`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/fr/agent-vocal-ia`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/texas`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/uk`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/us`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/new-york`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+
     // Global Market Hubs
     { url: `${baseUrl}/locations/usa/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.98 },
     { url: `${baseUrl}/locations/usa/new-york/ai-voice-agents`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.97 },

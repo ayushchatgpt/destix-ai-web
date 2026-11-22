@@ -99,28 +99,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/london",
-        destination: "/locations/uk/london/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/uk",
-        destination: "/locations/uk/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/miami",
-        destination: "/locations/usa/miami/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/new-york",
-        destination: "/locations/usa/new-york/ai-voice-agents",
-        permanent: true,
-      },
-      {
         source: "/nyc",
-        destination: "/locations/usa/new-york/ai-voice-agents",
+        destination: "/new-york",
         permanent: true,
       },
       {
@@ -131,16 +111,6 @@ const nextConfig: NextConfig = {
       {
         source: "/la",
         destination: "/locations/usa/los-angeles/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/paris",
-        destination: "/locations/europe/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/france",
-        destination: "/locations/europe/ai-voice-agents",
         permanent: true,
       },
       {
