@@ -5,10 +5,12 @@
     "recipients": "editorial@analyticsindiamag.com,write-for-aim@analyticsindiamag.com",
     "subject": "Data Exclusive: Why 14 Voice AI Architectures Still Fail India's 500ms Human Parity Test (524,000-Call Benchmark)",
     "web_portal": "https://analyticsindiamag.com/write-for-aim/",
-    "status": "QUEUED_AND_STAGED",
+    "status": "SUBMITTED_AND_CONFIRMED",
     "staged_at": "2026-11-22 10:44:05",
     "gmail_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=editorial%40analyticsindiamag.com%2Cwrite-for-aim%40analyticsindiamag.com&su=Data%20Exclusive%3A%20Why%2014%20Voice%20AI%20Architectures%20Still%20Fail%20India%27s%20500ms%20Human%20Parity%20Test%20%28524%2C000-Call%20Benchmark%29&body=Hi%20%5BEditor%20First%20Name%5D%2C%0A%0AMost%20enterprise%20voice%20bots%20in%20India%20fail%20not%20because%20their%20LLM%20is%20hallucinating%2C%20but%20because%20conversational%20turn-taking%20latency%20averages%201%2C400ms%20to%202%2C500ms%E2%80%94forcing%20callers%20to%20endure%20awkward%20silences%20before%20the%20bot%20responds.%0A%0AWe%20just%20completed%20a%20benchmark%20analyzing%20524%2C000%20synthetic%20calls%20across%2014%20voice%20AI%20architectures%2C%20testing%20acoustic%20roundtrip%20time%20%28aRTT%29%20over%20Indian%20mobile%20carrier%20networks%20%28Airtel%2C%20Jio%29%3A%0Ahttps%3A//ayush.company/research/2026-enterprise-ai-telephony-benchmark%0AOpen-source%20harness%3A%20https%3A//github.com/ayushchatgpt/destix-voice-telephony-benchmark%0A%0AKey%20findings%3A%0A1.%20P50%20human%20conversational%20parity%20%28sub-450ms%29%20is%20only%20achievable%20when%20Silero%20VAD%20v4%2C%20Deepgram%20Nova-3%2C%20and%20streaming%20TTS%20%28Cartesia%29%20connect%20via%20direct%20Tier-1%20SIP%20interconnects%20rather%20than%20WebRTC%20browser%20relays.%0A2.%20Colloquial%20Hinglish%20and%20noisy%20street%20audio%20require%20interruption%20recovery%20below%20180ms%20to%20avoid%20constant%20caller%20crosstalk.%0A3.%20Compliant%20carrier%20routing%20on%20TRAI%20140/160%20series%20DLT%20lines%20cuts%20carrier%20spam-flagging%20from%2034%25%20to%200%25.%0A%0AI%20can%20offer%20AIM%20an%20exclusive%20first-look%20teardown%20with%20the%20complete%20architecture%20diagram%20and%20raw%20latency%20distribution%20CSVs.%20Would%20this%20fit%20your%20tech%20infrastructure%20beat%3F%0A%0ABest%20regards%2C%0A%0AAyush%20Meena%0AFounder%20%26%20Principal%20AI%20Systems%20Architect%2C%20DestiX%20AI%0AHQ%3A%20Connaught%20Place%2C%20New%20Delhi%0AWebsite%3A%20https%3A//ayush.company%0ADirect%20Desk%3A%20ayushmeenadestixai%40gmail.com",
-    "follow_up_day_4": "2026-11-26"
+    "follow_up_day_4": "2026-11-26",
+    "submitted_at": "2026-11-22 10:48:11",
+    "confirmation_notes": "Form submitted cleanly via browser subagent on https://analyticsindiamag.com/write-for-aim. On-page confirmation: Thank you. We have it. We have sent a confirmation to your inbox. Response expected within 5 working days."
   },
   {
     "id": "zawya",
