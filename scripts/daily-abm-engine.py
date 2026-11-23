@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 DestiX AI // Daily ABM Outbound Automation Engine
-Principal: Ayush Meena (ayushmeenadestixai@gmail.com | +91 8319699748)
+Principal: Ayush Meena (ayush@ayush.company | +91 8319699748)
 Target Ticket Size: $15k - $75k B2B Engagements across India, UAE, UK, US, Europe
 Compliance: 100% Client NDA Anonymization Enforced
 """
@@ -267,7 +267,7 @@ Best regards,
 
 Ayush Meena
 Principal AI Systems Architect, DestiX AI
-ayushmeenadestixai@gmail.com | +91 8319699748
+ayush@ayush.company | +91 8319699748
 https://ayush.company/lp/real-estate
 HQ: Connaught Place, New Delhi"""
 
@@ -288,7 +288,7 @@ Best regards,
 
 Ayush Meena
 Principal AI Systems Architect, DestiX AI
-ayushmeenadestixai@gmail.com | +91 8319699748
+ayush@ayush.company | +91 8319699748
 https://ayush.company/lp/clinics
 HQ: Connaught Place, New Delhi"""
 
@@ -311,7 +311,7 @@ Best,
 
 Ayush Meena
 Principal AI Systems Architect, DestiX AI
-ayushmeenadestixai@gmail.com | +91 8319699748
+ayush@ayush.company | +91 8319699748
 https://ayush.company/lp/white-label-agencies
 HQ: Connaught Place, New Delhi"""
 
@@ -332,7 +332,7 @@ Best regards,
 
 Ayush Meena
 Principal AI Systems Architect, DestiX AI
-ayushmeenadestixai@gmail.com | +91 8319699748
+ayush@ayush.company | +91 8319699748
 https://ayush.company
 HQ: Connaught Place, New Delhi"""
 
@@ -350,7 +350,7 @@ Best regards,
 
 Ayush Meena
 Principal AI Systems Architect, DestiX AI
-ayushmeenadestixai@gmail.com | +91 8319699748
+ayush@ayush.company | +91 8319699748
 https://ayush.company/pricing
 HQ: Connaught Place, New Delhi"""
 
