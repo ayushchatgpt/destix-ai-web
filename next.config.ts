@@ -148,21 +148,7 @@ const nextConfig: NextConfig = {
         destination: "/locations/pune/ai-voice-agents",
         permanent: true,
       },
-      {
-        source: "/gurugram",
-        destination: "/locations/gurugram/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/gurgaon",
-        destination: "/locations/gurugram/ai-voice-agents",
-        permanent: true,
-      },
-      {
-        source: "/noida",
-        destination: "/locations/noida/ai-voice-agents",
-        permanent: true,
-      },
+
       {
         source: "/locations/dubai",
         destination: "/locations/dubai/real-estate-ai-voice-agents",
