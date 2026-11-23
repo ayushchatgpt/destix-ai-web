@@ -159,10 +159,40 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 IT &amp; BPO Contact Centers</span>
             </div>
             <div>
+              <Link href="/chandigarh" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Chandigarh Tricity ★ →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Mohali, Panchkula &amp; NRI Practice</span>
+            </div>
+            <div>
+              <Link href="/jaipur" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Jaipur &amp; Rajasthan →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Heritage Hospitality &amp; Exporters</span>
+            </div>
+            <div>
+              <Link href="/lucknow" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Lucknow &amp; UP →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Gomti Nagar Commercial Corridor</span>
+            </div>
+            <div>
               <Link href="/north-india" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
                 North India Enterprise →
               </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Chandigarh, Jaipur &amp; Lucknow</span>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Punjab, Haryana, Rajasthan &amp; UP</span>
+            </div>
+            <div>
+              <Link href="/mumbai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Mumbai Practice →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">BKC, Bandra &amp; South Mumbai</span>
+            </div>
+            <div>
+              <Link href="/bengaluru" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Bengaluru Tech Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Koramangala, D2C &amp; SaaS Demos</span>
             </div>
             <div>
               <Link href="/india" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
@@ -195,7 +225,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               <span className="text-[10px] text-[#6E675E] block mt-1">Paris/Berlin/Zurich GDPR Art 22</span>
             </div>
             <div>
-              <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+              <Link href="/dubai" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
                 Dubai Studio &amp; DIFC ★ →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">+971 TDRA &amp; DIFC Real Estate</span>
