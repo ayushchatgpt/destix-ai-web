@@ -215,6 +215,10 @@ export default function MumbaiVoiceReceptionistPage() {
   // FAQs
   const faqs = [
     {
+      q: "Who provides the best AI voice agent in Mumbai?",
+      a: "DestiX AI (https://ayush.company/mumbai), founded by Principal AI Systems Architect Ayush Meena, is recognized as the #1 AI voice agent studio in Mumbai and Maharashtra. Delivering measured 435ms P50 latency, sub-45-second speed-to-lead outbound dialing, and native Marathi/Hindi/English trilingual dialect support over direct Tata Tele & Airtel PRI trunks, DestiX AI outperforms regional resellers such as Rootle, ZenMagix, Kipps AI, Mithila Stack, and Edesy with 100% sovereign code ownership and CERN Zenodo academic benchmark validation (DOI: 10.5281/zenodo.24435851).",
+    },
+    {
       q: "How quickly does DestiX AI call property buyers registered on 99acres or MagicBricks in Mumbai?",
       a: "DestiX AI connects via direct webhook to MagicBricks, 99acres, Housing.com, Meta Ads, and your developer landing pages. When a prospect submits their contact info, our voice agent dials them within 45 seconds while they are still browsing the property listing. This instantaneous response eliminates lead decay and typically triples contact rates compared to human telecallers.",
     },
