@@ -70,7 +70,11 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
               Core Solutions
             </div>
             <ul className="space-y-2.5 text-[#A89F93]">
-              <li><Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/delhi" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice Agents Delhi NCR ★</Link></li>
+              <li><Link href="/gurgaon" className="hover:text-[#F6EFE2] transition-colors">AI Voice Agent Gurgaon &amp; DLF</Link></li>
+              <li><Link href="/noida" className="hover:text-[#F6EFE2] transition-colors">AI Voice Agent Noida Tech Hub</Link></li>
+              <li><Link href="/north-india" className="hover:text-[#F6EFE2] transition-colors text-[#B88746]">Best Voice AI North India ★</Link></li>
+              <li><Link href="/india" className="hover:text-[#F6EFE2] transition-colors">Enterprise Telephony India</Link></li>
               <li><Link href="/ai-voice-agent-for-real-estate" className="hover:text-[#F6EFE2] transition-colors text-[#B88746] font-semibold">AI Voice for Real Estate ★</Link></li>
               <li><Link href="/services/crm-automation" className="hover:text-[#F6EFE2] transition-colors">AI CRM Automation &amp; Sync</Link></li>
               <li><Link href="/services/n8n-automation" className="hover:text-[#F6EFE2] transition-colors">Enterprise n8n Orchestration</Link></li>
@@ -135,49 +139,60 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
           <div className="text-[11px] font-['JetBrains_Mono'] uppercase tracking-widest text-[#B88746] font-semibold mb-6">
             Global &amp; Regional Telephony Hubs
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-[#A89F93]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-6 text-[#A89F93]">
             <div>
-              <Link href="/locations/uk/london/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+              <Link href="/delhi" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                Delhi NCR (HQ) ★ →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place Central Telephony</span>
+            </div>
+            <div>
+              <Link href="/gurgaon" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Gurgaon &amp; Cyber City →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">DLF Phase 1–5 &amp; Golf Course Rd</span>
+            </div>
+            <div>
+              <Link href="/noida" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Noida Tech Hub →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Sector 62 IT &amp; BPO Contact Centers</span>
+            </div>
+            <div>
+              <Link href="/north-india" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">
+                North India Enterprise →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Chandigarh, Jaipur &amp; Lucknow</span>
+            </div>
+            <div>
+              <Link href="/india" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Pan-India Core Grid →
+              </Link>
+              <span className="text-[10px] text-[#6E675E] block mt-1">Tata Tele &amp; Airtel Enterprise PRI</span>
+            </div>
+            <div>
+              <Link href="/london" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
                 London (UK) →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">+44 20 Ofcom &amp; UK GDPR</span>
             </div>
             <div>
-              <Link href="/locations/usa/new-york/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+              <Link href="/new-york" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
                 New York City (USA) →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">+1 212 Wall St &amp; Manhattan</span>
             </div>
             <div>
-              <Link href="/locations/usa/miami/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+              <Link href="/miami" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
                 Miami &amp; Brickell (USA) →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">+1 305 Bilingual English/Spanish</span>
             </div>
             <div>
-              <Link href="/locations/europe/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Europe Practice →
+              <Link href="/paris" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
+                Paris &amp; Europe Practice →
               </Link>
               <span className="text-[10px] text-[#6E675E] block mt-1">Paris/Berlin/Zurich GDPR Art 22</span>
-            </div>
-
-            <div>
-              <Link href="/locations/delhi-ncr/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Delhi NCR (HQ) →
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">Connaught Place Central Telephony</span>
-            </div>
-            <div>
-              <Link href="/locations/mumbai/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Mumbai Practice →
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">+91 022 Bandra, BKC &amp; Clinics</span>
-            </div>
-            <div>
-              <Link href="/locations/bengaluru/ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#F6EFE2]">
-                Bengaluru Tech Hub →
-              </Link>
-              <span className="text-[10px] text-[#6E675E] block mt-1">+91 080 D2C &amp; SaaS Demos</span>
             </div>
             <div>
               <Link href="/locations/dubai/real-estate-ai-voice-agents" className="hover:text-[#F6EFE2] transition-colors block font-medium text-[#B88746]">

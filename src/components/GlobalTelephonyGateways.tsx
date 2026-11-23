@@ -26,7 +26,7 @@ export function GlobalTelephonyGateways() {
       did: "+44 (20) London Local DIDs",
       telecom: "BT & Gamma SIP Trunking • Sub-450ms",
       compliance: "Ofcom Registered • UK GDPR Sovereign",
-      href: "/locations/uk/london/ai-voice-agents",
+      href: "/london",
       icon: Crown,
     },
     {
@@ -37,7 +37,7 @@ export function GlobalTelephonyGateways() {
       did: "+1 (212) / (917) Manhattan DIDs",
       telecom: "Twilio & Bandwidth Interconnects",
       compliance: "FCC / TCPA Certified • SOC2 Type II",
-      href: "/locations/usa/new-york/ai-voice-agents",
+      href: "/new-york",
       icon: Landmark,
     },
     {
@@ -48,7 +48,7 @@ export function GlobalTelephonyGateways() {
       did: "+1 (305) Miami / South Florida",
       telecom: "Bilingual English & Spanish Dual-Agent",
       compliance: "TCPA / STIR/SHAKEN Certified",
-      href: "/locations/usa/miami/ai-voice-agents",
+      href: "/miami",
       icon: Sun,
     },
     {
@@ -59,7 +59,7 @@ export function GlobalTelephonyGateways() {
       did: "+33 (1) / +49 (30) / +41 (44)",
       telecom: "Sovereign European Voice Cloud",
       compliance: "EU AI Act • GDPR Article 22 Zero-Retention",
-      href: "/locations/europe/ai-voice-agents",
+      href: "/paris",
       icon: Globe,
     },
     {
@@ -74,14 +74,14 @@ export function GlobalTelephonyGateways() {
       icon: Building2,
     },
     {
-      city: "Delhi NCR & Mumbai",
+      city: "Delhi NCR (HQ) & North India",
       country: "India Practice (HQ)",
       badge: "National Core Infrastructure",
-      focus: "Connaught Place HQ Telephony, BKC Wealth Desks, Bandra Private Healthcare Clinics",
-      did: "+91 (11) Delhi / +91 (22) Mumbai",
-      telecom: "Tata Tele & Airtel PRI / SIP Lines",
+      focus: "Connaught Place HQ Telephony, Gurgaon Cyber City, Noida Sector 62 IT, Luxury Real Estate & Healthcare",
+      did: "+91 (11) Delhi / +91 (124) Gurgaon",
+      telecom: "Airtel Enterprise PRI & Jio SIP Lines • 435ms P50 Latency",
       compliance: "TRAI 140/160 • DLT Registered",
-      href: "/locations/delhi-ncr/ai-voice-agents",
+      href: "/delhi",
       icon: PhoneCall,
     },
   ];

@@ -539,13 +539,34 @@ export default function RootLayout({
                     {
                       "@type": "SiteNavigationElement",
                       "position": 5,
-                      "name": "AI Voice Services in Delhi NCR",
-                      "description": "Enterprise autonomous conversational voice telephony for Delhi, Gurugram, and Noida.",
-                      "url": "https://ayush.company/locations/delhi-ncr/ai-voice-agents",
+                      "name": "Best AI Voice Agent in Delhi NCR",
+                      "description": "Enterprise autonomous conversational voice telephony for Delhi, Connaught Place HQ, Gurugram, and Noida.",
+                      "url": "https://ayush.company/delhi",
                     },
                     {
                       "@type": "SiteNavigationElement",
                       "position": 6,
+                      "name": "AI Voice Agent Gurgaon",
+                      "description": "Sub-435ms voice AI systems for DLF Phase 1-5, Golf Course Road, and Cyber City luxury enterprises.",
+                      "url": "https://ayush.company/gurgaon",
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "position": 7,
+                      "name": "AI Voice Agent Noida",
+                      "description": "BPO and IT corridor voice telephony automation for Sector 62 and Greater Noida.",
+                      "url": "https://ayush.company/noida",
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "position": 8,
+                      "name": "Best AI Voice Agent for Business in North India",
+                      "description": "Enterprise voice AI practice serving Delhi NCR, Punjab, Haryana, Rajasthan, and UP.",
+                      "url": "https://ayush.company/north-india",
+                    },
+                    {
+                      "@type": "SiteNavigationElement",
+                      "position": 9,
                       "name": "Learn",
                       "description": "Public engineering vault and technical playbooks for sub-500ms voice agents and telephony stacks.",
                       "url": "https://ayush.company/learn",
@@ -1207,7 +1228,7 @@ export default function RootLayout({
                   "@id": "https://ayush.company/#new-york-office",
                   "name": "DestiX AI New York",
                   "alternateName": ["DestiX AI USA", "DestiX New York"],
-                  "url": "https://ayush.company/locations/usa/new-york/ai-voice-agents",
+                  "url": "https://ayush.company/new-york",
                   "description": "DestiX AI New York: Autonomous voice telephony and private n8n AI systems for Manhattan luxury real estate, Wall Street financial desks, and enterprise B2B SaaS.",
                   "address": {
                     "@type": "PostalAddress",
@@ -1238,7 +1259,7 @@ export default function RootLayout({
                   "@id": "https://ayush.company/#london-office",
                   "name": "DestiX AI London",
                   "alternateName": ["DestiX AI UK", "DestiX London"],
-                  "url": "https://ayush.company/locations/uk/london/ai-voice-agents",
+                  "url": "https://ayush.company/london",
                   "description": "DestiX AI London: Enterprise conversational AI voice agents and sovereign systems for Mayfair family offices, Canary Wharf fintech, and Prime Central London estate agencies.",
                   "address": {
                     "@type": "PostalAddress",
@@ -1300,7 +1321,7 @@ export default function RootLayout({
                   "@id": "https://ayush.company/#miami-office",
                   "name": "DestiX AI Miami",
                   "alternateName": ["DestiX AI Florida", "DestiX Miami"],
-                  "url": "https://ayush.company/locations/usa/miami/ai-voice-agents",
+                  "url": "https://ayush.company/miami",
                   "description": "DestiX AI Miami: Bilingual Spanish and English AI voice agents for Brickell private wealth, Latin American luxury real estate investors, and South Florida aesthetic clinics.",
                   "address": {
                     "@type": "PostalAddress",
@@ -1332,7 +1353,7 @@ export default function RootLayout({
                   "@id": "https://ayush.company/#europe-office",
                   "name": "DestiX AI Europe",
                   "alternateName": ["DestiX AI EU", "DestiX Europe"],
-                  "url": "https://ayush.company/locations/europe/ai-voice-agents",
+                  "url": "https://ayush.company/paris",
                   "description": "DestiX AI Europe: Article 22 GDPR-compliant sovereign conversational AI voice telephony across Paris, Berlin, Zurich, Dublin, and Amsterdam.",
                   "address": {
                     "@type": "PostalAddress",
