@@ -492,6 +492,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // Global Canonical City & Market Money Pages (Direct 200 OK Routes)
+    { url: `${baseUrl}/delhi`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/gurgaon`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/gurugram`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/noida`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/north-india`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/india`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/london`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/miami`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/paris`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
