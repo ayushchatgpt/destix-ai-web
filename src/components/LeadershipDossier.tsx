@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -149,12 +149,12 @@ export function LeadershipDossier({ onOpenBooking }: LeadershipDossierProps) {
                 </button>
 
                 <a
-                  href="mailto:ayushmeenadestixai@gmail.com"
+                  href="mailto:ayush@ayush.company"
                   data-cursor-text="EMAIL"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-white hover:bg-[#EDE8DC] border border-[#E2DDD1] text-xs font-['JetBrains_Mono'] text-[#181614] transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#B88746]" />
-                  <span>ayushmeenadestixai@gmail.com</span>
+                  <span>ayush@ayush.company</span>
                 </a>
 
                 <a

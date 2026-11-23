@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best AI Voice Agents in North India | DestiX AI (Delhi NCR, Punjab, Haryana, Rajasthan, UP)",
@@ -58,7 +58,7 @@ export default function Layout({
                   "@id": "https://ayush.company/#organization",
                   "name": "DestiX AI",
                   "url": "https://ayush.company",
-                  "email": "ayushmeenadestixai@gmail.com",
+                  "email": "ayush@ayush.company",
                   "telephone": "+918319699748",
                   "address": {
                     "@type": "PostalAddress",

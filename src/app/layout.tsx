@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Inter, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { CustomCursor } from "@/components/CustomCursor";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -415,6 +415,8 @@ export default function RootLayout({
                       "https://www.linkedin.com/in/ayush-meena-065a89380/",
                       "https://github.com/ayushchatgpt/destix-ai-web",
                       "https://github.com/ayushchatgpt/destix-voice-telephony-benchmark",
+                      "https://doi.org/10.5281/zenodo.24435851",
+                      "https://dev.to/ayushchatgpt/dissecting-a-435ms-voice-ai-telephony-stack-how-we-built-a-sub-500ms-sovereign-voice-pipeline-23il",
                       "https://www.wikidata.org/wiki/Q142174891",
                       "https://ayush.company"
                     ],
@@ -435,13 +437,13 @@ export default function RootLayout({
                   "contactPoint": [
                     {
                       "@type": "ContactPoint",
-                      "email": "ayushmeenadestixai@gmail.com",
+                      "email": "ayush@ayush.company",
                       "contactType": "sales",
                       "availableLanguage": ["English", "Hindi"],
                     },
                     {
                       "@type": "ContactPoint",
-                      "email": "ayushmeenadestixai@gmail.com",
+                      "email": "ayush@ayush.company",
                       "contactType": "customer support",
                       "availableLanguage": ["English", "Hindi"],
                     }
@@ -641,7 +643,7 @@ export default function RootLayout({
                   ],
                   "url": "https://ayush.company",
                   "description": "Autonomous AI voice agents, human-sounding voice receptionists, category-defining 3D websites, and unified AI operating systems for luxury real estate and enterprise businesses globally.",
-                  "email": "ayushmeenadestixai@gmail.com",
+                  "email": "ayush@ayush.company",
                   "priceRange": "$2,000 - $$$$",
                   "currenciesAccepted": "USD, EUR, GBP, AED, INR, CAD, AUD",
                   "address": {

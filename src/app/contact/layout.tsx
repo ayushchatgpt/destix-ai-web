@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Book a Consultation with Ayush Meena | DestiX AI Private Desk",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Ayush Meena contact",
     "Desti consultation",
     "book AI diagnostic call",
-    "ayushmeenadestixai@gmail.com",
+    "ayush@ayush.company",
     "DestiX AI desk",
   ],
   alternates: {

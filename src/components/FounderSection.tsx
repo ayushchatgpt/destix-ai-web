@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -117,11 +117,11 @@ export const FounderSection: React.FC<FounderSectionProps> = ({ onOpenBooking })
               </button>
 
               <a
-                href="mailto:ayushmeenadestixai@gmail.com"
+                href="mailto:ayush@ayush.company"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-xs font-mono text-[#55514B] hover:text-[#B88746] hover:border-cyan-400 transition-colors"
               >
                 <Mail className="size-4 text-[#B88746]" />
-                <span>ayushmeenadestixai@gmail.com</span>
+                <span>ayush@ayush.company</span>
               </a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { X, CheckCircle, ArrowRight, ShieldCheck, Mail, MessageSquare, PhoneCall } from "lucide-react";
@@ -306,13 +306,13 @@ export function BookingModal({
               <div><span className="text-[#888277]">CONTACT:</span> {formData.email} &bull; {formData.phone}</div>
               <div><span className="text-[#888277]">FOCUS:</span> {selectedService}</div>
               <div><span className="text-[#888277]">WINDOW:</span> {selectedDate}</div>
-              <div><span className="text-[#888277]">PRINCIPAL:</span> Ayush Meena (ayushmeenadestixai@gmail.com)</div>
+              <div><span className="text-[#888277]">PRINCIPAL:</span> Ayush Meena (ayush@ayush.company)</div>
             </div>
 
             {/* Direct Instant Reach Actions */}
             <div className="space-y-3 max-w-md mx-auto mb-6">
               <a
-                href={`mailto:ayushmeenadestixai@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`}
+                href={`mailto:ayush@ayush.company?subject=${mailtoSubject}&body=${mailtoBody}`}
                 className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#181614] hover:bg-[#B88746] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
               >
                 <Mail className="size-3.5" />

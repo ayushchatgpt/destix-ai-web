@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -88,11 +88,11 @@ export default function AboutPage() {
               </button>
 
               <a
-                href="mailto:ayushmeenadestixai@gmail.com"
+                href="mailto:ayush@ayush.company"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-[#E2DDD1] bg-[#FFFFFF] hover:bg-[#EDE8DC] text-[#181614] font-semibold text-sm transition-all"
               >
                 <Mail className="w-4 h-4 text-[#B88746]" />
-                <span>ayushmeenadestixai@gmail.com</span>
+                <span>ayush@ayush.company</span>
               </a>
             </div>
           </div>
@@ -134,10 +134,10 @@ export default function AboutPage() {
               <div className="text-xs font-['JetBrains_Mono'] text-[#55514B]">
                 Direct Desk:{" "}
                 <a
-                  href="mailto:ayushmeenadestixai@gmail.com"
+                  href="mailto:ayush@ayush.company"
                   className="font-bold text-[#181614] hover:text-[#B88746] underline decoration-[#B88746]"
                 >
-                  ayushmeenadestixai@gmail.com
+                  ayush@ayush.company
                 </a>
               </div>
               <div className="text-xs font-['JetBrains_Mono'] text-[#55514B] flex items-center justify-center gap-1.5 pt-1.5 border-t border-[#E2DDD1]">

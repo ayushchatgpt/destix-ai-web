@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -54,11 +54,11 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             )}
 
             <a
-              href="mailto:ayushmeenadestixai@gmail.com"
+              href="mailto:ayush@ayush.company"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#23201C] hover:bg-[#2D2824] border border-[#3A332E] text-xs font-['JetBrains_Mono'] text-[#F6EFE2] transition-colors"
             >
               <Mail className="w-4 h-4 text-[#B88746]" />
-              <span>Direct Desk: ayushmeenadestixai@gmail.com</span>
+              <span>Direct Desk: ayush@ayush.company</span>
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@ export function FinalDeploymentFooter({ onOpenBooking }: FinalDeploymentFooterPr
             <div className="space-y-2.5 text-[#A89F93] font-['JetBrains_Mono']">
               <div>Principal: <span className="text-[#F6EFE2]">Ayush Meena</span></div>
               <div>Domain: <span className="text-[#B88746]">ayush.company</span></div>
-              <div>Desk: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6EFE2] hover:text-[#B88746]">ayushmeenadestixai@gmail.com</a></div>
+              <div>Desk: <a href="mailto:ayush@ayush.company" className="text-[#F6EFE2] hover:text-[#B88746]">ayush@ayush.company</a></div>
               <div>Network: <a href="https://www.linkedin.com/in/ayush-meena-065a89380/" target="_blank" rel="noopener noreferrer" className="text-[#F6EFE2] hover:text-[#B88746]">Founder LinkedIn ↗</a></div>
               <div>Company: <a href="https://www.linkedin.com/company/destix-ai/" target="_blank" rel="noopener noreferrer" className="text-[#B88746] hover:underline">DestiX AI LinkedIn ↗</a></div>
               <div>Base: <span className="text-[#F6EFE2]">Delhi NCR &amp; Global Remote</span></div>

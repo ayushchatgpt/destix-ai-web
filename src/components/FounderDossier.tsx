@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -128,11 +128,11 @@ export default function FounderDossier({ onOpenBooking }: FounderDossierProps) {
                 </button>
 
                 <a
-                  href="mailto:ayushmeenadestixai@gmail.com"
+                  href="mailto:ayush@ayush.company"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#16181F] hover:bg-[#1E222D] border border-white/10 text-xs font-['JetBrains_Mono'] text-[#F4F4F6] hover:text-[#00F5A0] transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#00F5A0]" />
-                  <span>ayushmeenadestixai@gmail.com</span>
+                  <span>ayush@ayush.company</span>
                 </a>
               </div>
             </div>

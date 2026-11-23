@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best AI Voice Agents in the UK | DestiX AI (Ofcom & UK GDPR Compliant)",
@@ -41,7 +41,7 @@ export default function Layout({
         "@id": "https://ayush.company/#organization",
         "name": "DestiX AI",
         "url": "https://ayush.company",
-        "email": "ayushmeenadestixai@gmail.com",
+        "email": "ayush@ayush.company",
         "telephone": "+918319699748",
         "address": {
           "@type": "PostalAddress",

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -120,11 +120,11 @@ export default function ContactPage() {
               </button>
 
               <a
-                href="mailto:ayushmeenadestixai@gmail.com"
+                href="mailto:ayush@ayush.company"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-[#E2DDD1] bg-[#FFFFFF] hover:bg-[#EDE8DC] text-[#181614] font-semibold text-sm transition-all"
               >
                 <Mail className="w-4 h-4 text-[#B88746]" />
-                <span>ayushmeenadestixai@gmail.com</span>
+                <span>ayush@ayush.company</span>
               </a>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function ContactPage() {
                 </p>
                 <div className="space-y-3 max-w-sm mx-auto mb-6">
                   <a
-                    href={`mailto:ayushmeenadestixai@gmail.com?subject=${encodeURIComponent(`[Operational Dossier] ${formData.name} - ${formData.company}`)}&body=${encodeURIComponent(`Hi Ayush,\n\nI submitted an inquiry via ayush.company:\n\nName: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nService: ${formData.service}\nVolume: ${formData.volume}\nNotes: ${formData.message}`)}`}
+                    href={`mailto:ayush@ayush.company?subject=${encodeURIComponent(`[Operational Dossier] ${formData.name} - ${formData.company}`)}&body=${encodeURIComponent(`Hi Ayush,\n\nI submitted an inquiry via ayush.company:\n\nName: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nService: ${formData.service}\nVolume: ${formData.volume}\nNotes: ${formData.message}`)}`}
                     className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#181614] hover:bg-[#B88746] text-white text-xs font-mono font-semibold transition-colors shadow-xs"
                   >
                     <Mail className="size-3.5" />
@@ -314,10 +314,10 @@ export default function ContactPage() {
                     DIRECT FOUNDER DESK
                   </div>
                   <a
-                    href="mailto:ayushmeenadestixai@gmail.com"
+                    href="mailto:ayush@ayush.company"
                     className="block font-['Plus_Jakarta_Sans'] font-semibold text-sm text-[#181614] hover:text-[#B88746] mt-1"
                   >
-                    ayushmeenadestixai@gmail.com
+                    ayush@ayush.company
                   </a>
                   <p className="text-xs font-['Plus_Jakarta_Sans'] text-[#55514B] mt-1">
                     Direct inbox of Principal Ayush Meena.

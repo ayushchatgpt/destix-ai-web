@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -75,10 +75,10 @@ export default function AgencyWhiteLabelPage() {
               <ArrowUpRight className="size-4 text-[#B88746] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
             <a
-              href="mailto:ayushmeenadestixai@gmail.com?subject=Agency%20White-Label%20Inquiry"
+              href="mailto:ayush@ayush.company?subject=Agency%20White-Label%20Inquiry"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white hover:bg-[#EFECE4] border border-[#E2DDD1] text-xs font-mono text-[#181614] transition-colors"
             >
-              <span>Direct Inquiries: ayushmeenadestixai@gmail.com</span>
+              <span>Direct Inquiries: ayush@ayush.company</span>
             </a>
           </div>
         </div>

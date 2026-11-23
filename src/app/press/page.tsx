@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -104,7 +104,7 @@ Primary Canonical Domain: https://ayush.company
 - European Union: EU AI Act High-Risk / Transparency Articles and GDPR Article 22 automated decision safeguards.
 
 ## MEDIA CONTACT & EXECUTIVE SCHEDULING
-- Press Inquiries & Keynotes: ayushmeenadestixai@gmail.com
+- Press Inquiries & Keynotes: ayush@ayush.company
 - Schedule 30-Minute Diagnostic: https://ayush.company/contact
 - Dataset Citation: Zenodo 10.5281/zenodo.24435851`;
 
@@ -393,7 +393,7 @@ Primary Canonical Domain: https://ayush.company
                     Jurisdiction: <span className="text-[#1A1817]">New Delhi &bull; Global Remote</span>
                   </div>
                   <div className="px-3 py-1.5 rounded-lg bg-[#F6F4EE] border border-[#E2DDD1]">
-                    Desk: <span className="text-[#1A1817]">ayushmeenadestixai@gmail.com</span>
+                    Desk: <span className="text-[#1A1817]">ayush@ayush.company</span>
                   </div>
                 </div>
               </div>
@@ -679,7 +679,7 @@ Primary Canonical Domain: https://ayush.company
 
             <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#A8A29E]">
               <div>
-                Direct Media Contact: <a href="mailto:ayushmeenadestixai@gmail.com" className="text-[#F6F4EE] underline">ayushmeenadestixai@gmail.com</a>
+                Direct Media Contact: <a href="mailto:ayush@ayush.company" className="text-[#F6F4EE] underline">ayush@ayush.company</a>
               </div>
               <div className="flex items-center gap-3">
                 <Link

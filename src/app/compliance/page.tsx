@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -229,10 +229,10 @@ export default function CompliancePage() {
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="mailto:ayushmeenadestixai@gmail.com"
+                  href="mailto:ayush@ayush.company"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/15 text-xs font-['JetBrains_Mono'] text-[#F6EFE2] transition-colors"
                 >
-                  <span>Desk: ayushmeenadestixai@gmail.com</span>
+                  <span>Desk: ayush@ayush.company</span>
                 </a>
               </div>
             </div>
