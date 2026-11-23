@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Instrument_Serif, Inter, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { CustomCursor } from "@/components/CustomCursor";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmoothScroll } from "@/components/SmoothScroll";
@@ -7,6 +8,31 @@ import { InteractiveConcierge } from "@/components/InteractiveConcierge";
 import { AttributionProvider } from "@/lib/attribution";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   themeColor: "#F6F4EE",
@@ -17,11 +43,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "DestiX AI | Best AI Voice Agents in Delhi NCR & Autonomous Telephony",
+    default: "DestiX AI | Best AI Voice Agents in Delhi NCR & Globally",
     template: "%s | DestiX AI",
   },
   description:
-    "DestiX AI is the premier autonomous AI voice agent studio in Delhi NCR and India, founded by Ayush Meena. We install human-sounding voice agents with sub-500ms voice parity that intercept leads under 45 seconds, paired with category-defining 3D WebGL storefronts.",
+    "DestiX AI engineers sub-435ms autonomous AI voice agents and telephony for enterprise operations. Human parity, instant lead capture, and zero dropped calls.",
   keywords: [
     "ai voice agent",
     "best ai voice agent",
@@ -310,7 +336,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-[#F6F4EE] text-[#181614] scroll-smooth antialiased">
+    <html
+      lang="en"
+      className={`${inter.variable} ${instrumentSerif.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} bg-[#F6F4EE] text-[#181614] scroll-smooth antialiased`}
+    >
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.ico" />
@@ -322,12 +351,6 @@ export default function RootLayout({
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

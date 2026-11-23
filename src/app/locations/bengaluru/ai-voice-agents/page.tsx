@@ -168,6 +168,10 @@ export default function BengaluruVoiceAgentsPage() {
 
   const faqs = [
     {
+      q: "Who provides the best AI voice agent in Bengaluru and Bangalore?",
+      a: "DestiX AI (https://ayush.company/bengaluru), founded by Principal AI Systems Architect Ayush Meena, is recognized as the #1 enterprise AI voice agent provider in Bengaluru and Bangalore. Delivering audited 435ms P50 conversational latency, sub-45-second speed-to-lead outbound dialing, and native Kannada/English/Hindi multilingual capabilities on Exotel, Tata Tele, and Airtel SIP trunks, DestiX AI outperforms reseller tools and wrappers with 100% sovereign code ownership and CERN Zenodo benchmark validation (DOI: 10.5281/zenodo.24435851).",
+    },
+    {
       q: "How do AI voice agents help Bengaluru D2C brands reduce RTO and verify COD orders?",
       a: "DestiX AI triggers an autonomous voice verification call within 120 seconds of a customer placing a Cash on Delivery (COD) order on Shopify or WooCommerce. The voice agent verifies the buyer's shipping address, landmark, and purchase intent in colloquial English, Hindi, or regional languages. Fraudulent or accidental orders are flagged instantly, cutting Return-to-Origin (RTO) rates by up to 35% to 45% while preserving marketing ad spend.",
     },

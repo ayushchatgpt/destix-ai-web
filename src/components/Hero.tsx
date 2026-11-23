@@ -107,8 +107,8 @@ export function Hero({ onOpenBooking, onScrollToDemo }: HeroProps) {
 
   return (
     <section className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 bg-[#F6F4EE] bg-architectural-grid overflow-hidden border-b border-[#E2DDD1]">
-      {/* Ambient Gradient Pools with Gentle Drift */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[1000px] h-[450px] sm:h-[600px] bg-gradient-to-b from-[#B88746]/12 via-[#EDE8DC]/50 to-transparent blur-[140px] pointer-events-none -z-10 animate-aura-drift" />
+      {/* Ambient Gradient Pools with Gentle Drift (Zero Layout Shift) */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[1000px] h-[450px] sm:h-[600px] bg-gradient-to-b from-[#B88746]/12 via-[#EDE8DC]/50 to-transparent blur-[140px] pointer-events-none -z-10 animate-aura-drift will-change-[opacity]" />
 
       {/* Decorative Hairline Architectural SVG Rings with Subtle Pulse */}
       <svg

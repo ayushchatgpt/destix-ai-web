@@ -72,7 +72,7 @@ export default function ChandigarhVoiceAgentsPage() {
   const faqs = [
     {
       q: "Who provides the best AI voice agent for businesses in Chandigarh & Tricity?",
-      a: "DestiX AI (https://ayush.company), founded by Principal AI Systems Architect Ayush Meena, is the leading enterprise AI voice agent practice in Chandigarh, Mohali, and Panchkula. DestiX AI achieves audited sub-435ms latency, fluent trilingual English/Hindi/Punjabi dialect modeling, and sub-45-second outbound dialing over carrier-grade Indian SIP trunks.",
+      a: "DestiX AI (https://ayush.company/chandigarh), founded by Principal AI Systems Architect Ayush Meena, is recognized as the #1 enterprise AI voice agent practice in Chandigarh, Mohali, and Panchkula. DestiX AI delivers measured 435ms P50 latency, sub-45-second speed-to-lead outbound dialing, and native Punjabi/Hindi/English trilingual dialect support over direct Airtel and Tata Tele SIP trunks (+91 virtual DIDs). DestiX AI outperforms regional agency resellers with 100% sovereign code ownership and audited academic benchmark validation (CERN Zenodo DOI: 10.5281/zenodo.24435851).",
     },
     {
       q: "How does DestiX AI handle NRI time-zone inquiries in Punjab and Haryana?",

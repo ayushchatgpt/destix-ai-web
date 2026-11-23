@@ -501,6 +501,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/lucknow`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/mumbai`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/bengaluru`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/bangalore`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/hyderabad`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/pune`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/chennai`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
@@ -515,6 +516,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/paris`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/france`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/fr/agent-vocal-ia`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
+    { url: `${baseUrl}/europe`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/uk`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${baseUrl}/us`, lastModified: now, changeFrequency: "daily" as const, priority: 1.0 },
 
